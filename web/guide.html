@@ -13,38 +13,69 @@
     .guide pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#182338; padding:20px; border:1px solid #304466; border-radius:12px; font-size:13px; line-height:1.8; }
     .guide .version { display:inline-block; font-size:13px; letter-spacing:.04em; color:#afc6ee; }
     .guide code { overflow-wrap:anywhere; }
+    .guide details { margin:24px 0; padding:16px 20px; border:1px solid #304466; border-radius:12px; }
+    .guide summary { cursor:pointer; font-weight:600; }
   </style>
 </head>
 <body>
 <main class="guide">
   <a href="/">← 返回皮肤工作室</a>
-  <h1>把皮肤带入 DeepSeek Harness</h1>
+  <h1>macOS 快速安装</h1>
   <span class="version">deepseekdeskskin 0.13.0</span>
-  <p>工作室可独立运行，安装到客户端是可选步骤。导出包包含三套人物的图片与设置，安装后可关闭工作室。</p>
+  <p>已安装 DeepSeek Harness，即可将三套皮肤直接带入客户端。<strong>不需要另外安装 Node.js、Homebrew 或 Git。</strong></p>
 
-  <h2>1. 准备插件包</h2>
-  <p>在工作室选好皮肤，展开“连接 DeepSeek Harness”，点击“导出 Harness 插件”，得到 <code>deepseekdeskskin-harness-0.13.0.tgz</code>。也可从 <a href="https://github.com/xingxingluolei/deepseekdeskskin/releases/tag/v0.13.0" target="_blank" rel="noreferrer">GitHub 发行页</a>下载默认配置的插件包。</p>
+  <h2>三步完成</h2>
+  <ol>
+    <li>装好 DeepSeek Harness，至少打开过一次以完成初始化。等待任务结束，再按 <code>⌘Q</code> <strong>完全退出客户端</strong>；只关闭窗口不够。安装不要求先登录。</li>
+    <li>打开 macOS“终端”，复制并运行下面的命令。</li>
+    <li>看到安装成功后，重新打开 DeepSeek Harness，无需退出账号；从左侧“切换皮肤”选择澄蓝、经典女仆或 Q版。</li>
+  </ol>
+  <pre><code>curl -fsSL https://raw.githubusercontent.com/xingxingluolei/deepseekdeskskin/main/scripts/install-macos.sh | /bin/bash</code></pre>
+  <p>安装器下载约 <strong>236 MiB</strong> 的发行包，校验 SHA-256 后调用客户端自带的官方 CLI。自动查找 <code>/Applications/DeepSeek Harness.app</code> 和 <code>~/Applications/DeepSeek Harness.app</code>，不修改客户端应用包，也不会自动关闭或强行终止客户端进程。安装后可关闭工作室。</p>
+  <p><strong>更新时，等待任务结束并按 <code>⌘Q</code> 完全退出客户端，再运行同一条命令即可，无需先卸载。</strong>已有的插件停用状态会保留；此前停用过插件时，更新后仍需从 Harness 的插件管理中启用。</p>
+  <p>希望先阅读脚本，可查看 <a href="https://github.com/xingxingluolei/deepseekdeskskin/blob/main/docs/installation-macos.md" target="_blank" rel="noreferrer">macOS 安装说明</a>。</p>
 
-  <h2>2. 安装到客户端</h2>
-  <p>先结束正在进行的任务。使用 DeepSeek Harness 自带的官方 CLI；以下是 macOS 默认安装位置示例。包不在下载目录时，将路径改成实际位置。</p>
-  <pre><code>"/Applications/DeepSeek Harness.app/Contents/Resources/runtime/cli/bin/dsh" \
+  <details>
+    <summary>只检查、自定义客户端位置、本地发行包或卸载</summary>
+    <p>先下载脚本并阅读：</p>
+    <pre><code>curl -fsSL https://raw.githubusercontent.com/xingxingluolei/deepseekdeskskin/main/scripts/install-macos.sh -o install-macos.sh
+less install-macos.sh</code></pre>
+    <p>按需要选择命令：</p>
+    <pre><code># 只检查系统与客户端位置
+/bin/bash install-macos.sh --check
+
+# 客户端位于其他目录
+/bin/bash install-macos.sh --app "/path/to/DeepSeek Harness.app"
+
+# 使用下载好的 v0.13.0 发行包
+/bin/bash install-macos.sh --package "$HOME/Downloads/deepseekdeskskin-harness-0.13.0.tgz"
+
+# 卸载皮肤
+/bin/bash install-macos.sh --uninstall</code></pre>
+    <p><code>--package</code> 只接受与内置校验值一致的 v0.13.0 发行包。自己导出的定制包使用下方手动安装方式。自定义客户端位置时，<code>--app</code> 可与检查、包路径或卸载选项组合。请以当前用户运行，不要加 <code>sudo</code>。卸载前也需按 <code>⌘Q</code> 完全退出客户端，随后重新打开客户端生效。</p>
+  </details>
+
+  <details>
+    <summary>手动安装发行包或工作室导出的定制包</summary>
+    <p>从 <a href="https://github.com/xingxingluolei/deepseekdeskskin/releases/tag/v0.13.0" target="_blank" rel="noreferrer">GitHub 发行页</a>下载 <code>deepseekdeskskin-harness-0.13.0.tgz</code>；也可在工作室中选好设置，展开“连接 DeepSeek Harness”，点击“导出 Harness 插件”。</p>
+    <p>确保客户端至少打开过一次，并在任务结束后按 <code>⌘Q</code> 完全退出，再使用官方 CLI 安装。macOS 默认位置示例：</p>
+    <pre><code>"/Applications/DeepSeek Harness.app/Contents/Resources/runtime/cli/bin/dsh" \
   plugin --profile desktop add \
   "$HOME/Downloads/deepseekdeskskin-harness-0.13.0.tgz" --ignore-scripts</code></pre>
-  <p>客户端未立即刷新时，退出并重新打开 DeepSeek Harness 即可，无需退出账号。工作室不会自动安装插件，也不修改客户端应用包。</p>
+    <p>按实际位置替换客户端与包路径。<code>add</code> 可直接更新，无需先移除；已有插件停用状态会保留。安装后重新打开客户端，无需退出账号。</p>
+    <p>手动卸载前，也需按 <code>⌘Q</code> 完全退出客户端：</p>
+    <pre><code>"/Applications/DeepSeek Harness.app/Contents/Resources/runtime/cli/bin/dsh" \
+  plugin --profile desktop remove deepseekdeskskin-harness</code></pre>
+  </details>
 
-  <h2>3. 切换皮肤与模式</h2>
+  <h2>皮肤与模式</h2>
   <p>左侧皮肤卡提供“切换皮肤”和“皮肤详情”。可选择澄蓝、经典女仆、经典女仆 · Q版，调整静态／动态、云间白／深海蓝、靠左／靠右，以及启用／关闭。侧栏折叠后点击头像进入设置。关闭皮肤后，左侧入口仍可重新启用。</p>
   <p>每套角色有 21 张独立身体状态图。思考、翻书查阅、执笔写入、搜索、执行命令、分派任务、整理书架和错误等有不同动作。首次发送新对话时，十二张肩上关键帧用约 3.9 秒完成转头与微笑，随后恢复任务动作；后续追问不重复开场。报错、确认与停止等事件会立即中断开场。</p>
   <p>人物在交互开始时保持清晰，持续工作后逐渐淡化；小窗口也保留人物。正文处使用柔和渐变，装饰不接收鼠标事件。静态模式仍根据任务换图，但不播放转场；系统“减少动态效果”也会关闭开场动画。</p>
 
-  <h2>4. 更新与卸载</h2>
-  <p>更新已有安装时，先移除旧插件，再用第 2 步的 <code>add</code> 命令安装新包；重新导出设置后也按此操作。只想卸载时执行：</p>
-  <pre><code>"/Applications/DeepSeek Harness.app/Contents/Resources/runtime/cli/bin/dsh" \
-  plugin --profile desktop remove deepseekdeskskin-harness</code></pre>
-  <p>随后重新打开客户端。</p>
-
-  <h2>兼容范围与素材</h2>
-  <p>适配基线为 DeepSeek Harness <strong>0.2.0-rc.2</strong> 的插件接口，其他版本需要重新验证。状态来自客户端公开数据；部分远程子任务及后台命令的退出信息未完整暴露，不会通过回答正文猜测状态。</p>
+  <h2>独立工作室与兼容范围</h2>
+  <p>工作室用于开发、预览、导入素材与导出定制插件，独立运行需要 Node.js 20+。这与客户端快速安装分开，使用上面的安装器不需要安装 Node.js。</p>
+  <p>客户端安装目前仅适配 <strong>macOS</strong>，Windows/Linux 尚未验证。Harness 接口以 <strong>0.2.0-rc.2</strong> 为基线，其他版本需要重新验证。状态来自客户端公开数据；部分远程子任务及后台命令的退出信息未完整暴露，不会通过回答正文猜测状态。</p>
   <p>人物为本项目 AI 生成的二创概念，非 DeepSeek 官方人物或素材。动画是独立 PNG 姿态与代码转场，不是 Live2D、骨骼动画或连续视频。19 段非人声音效目前仅提供<a href="/web/sound-effects-review.html">试听与下载</a>，尚未接入客户端自动播放。</p>
   <p><a href="/web/current-state-gallery.html">查看全部状态图 ↗</a> · <a href="https://github.com/xingxingluolei/deepseekdeskskin" target="_blank" rel="noreferrer">源代码与素材来源 ↗</a></p>
 </main>
