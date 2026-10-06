@@ -1,0 +1,944 @@
+{
+  "baseline": "0.2.0-rc.2",
+  "mappings": [
+    {
+      "domain": "connection",
+      "signal": "ctx.connection.state.getSnapshot() === 'connected'",
+      "phase": null,
+      "scope": "application",
+      "note": "Connection ready; resume the selected session task phase. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-client-connection/lib/client.js:1414-1421"
+    },
+    {
+      "domain": "connection",
+      "signal": "ctx.connection.state.getSnapshot() === 'connecting'",
+      "phase": "connecting",
+      "scope": "application",
+      "note": "Includes retry/backoff and explicit reconnect; there is no separate public reconnecting enum.",
+      "source": "@deepseek-ai/dsh-client-connection/lib/client.js:1414-1421"
+    },
+    {
+      "domain": "connection",
+      "signal": "ctx.connection.state.getSnapshot() === 'disconnected'",
+      "phase": "disconnected",
+      "scope": "application",
+      "note": "Network-unavailable suspension is folded into disconnected; the public state does not identify the outage cause.",
+      "source": "@deepseek-ai/dsh-client-connection/lib/client.js:1414-1421"
+    },
+    {
+      "domain": "connection",
+      "signal": "ctx.connection.state.getSnapshot() === undefined",
+      "phase": null,
+      "scope": "application",
+      "note": "Initial state or owner released; not disposed, offline, idle, task success or task failure. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-client-connection/lib/client.js:1374-1402"
+    },
+    {
+      "domain": "connection",
+      "signal": "ctx.connection.reconnect() / retry loop transitions to connecting",
+      "phase": "connecting",
+      "scope": "application",
+      "note": "Private controller initialisation, retry delay and browser-network predicates must not be imported as plugin state.",
+      "source": "@deepseek-ai/dsh-client-connection/lib/client.js:976-1056"
+    },
+    {
+      "domain": "session",
+      "signal": "openState === cold",
+      "phase": "idle",
+      "scope": "selected session",
+      "note": "Unopened session; no proof a task is queued.",
+      "source": "@deepseek-ai/dsh-cordis-client-runner/lib/client.js:1946"
+    },
+    {
+      "domain": "session",
+      "signal": "openState === loading",
+      "phase": null,
+      "scope": "selected session",
+      "note": "Session hydration is not task admission. Do not invent queued/working from loading alone; preserve current phase.",
+      "source": "@deepseek-ai/dsh-cordis-client-runner/lib/client.js:1946"
+    },
+    {
+      "domain": "session",
+      "signal": "openState === open",
+      "phase": null,
+      "scope": "selected session",
+      "note": "Open does not mean running or completed. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-cordis-client-runner/lib/client.js:1946"
+    },
+    {
+      "domain": "session",
+      "signal": "openState === error / openError !== null",
+      "phase": "error",
+      "scope": "selected session",
+      "note": "Current open error, not historical transcript errors.",
+      "source": "@deepseek-ai/dsh-api-session-controller/lib/client.js:2261-2295"
+    },
+    {
+      "domain": "session",
+      "signal": "awaitingFirstTurn === true without current open turn",
+      "phase": "thinking",
+      "scope": "selected session",
+      "note": "Native first-turn admission fallback stays thinking; current send error overrides sticky awaiting flag. Queued picture uses actual inbox/pending submission.",
+      "source": "@deepseek-ai/dsh-api-session-controller/lib/client.js:1752-1759;2274-2295"
+    },
+    {
+      "domain": "session",
+      "signal": "promptError !== null (op send|stop)",
+      "phase": "error",
+      "scope": "selected session",
+      "note": "send clears prior prompt error; stop failure is not successful cancellation.",
+      "source": "@deepseek-ai/dsh-cordis-client-runner/lib/client.js:1991"
+    },
+    {
+      "domain": "session",
+      "signal": "session.lastAgentError !== null while not running",
+      "phase": "error",
+      "scope": "selected session",
+      "note": "Current runtime error may precede turn/end or leave no turn record.",
+      "source": "@deepseek-ai/dsh-api-session-controller/lib/client.js:2021-2024;2274-2295"
+    },
+    {
+      "domain": "session",
+      "signal": "pendingSubmissions placement queued|steering|transcript",
+      "phase": "queued",
+      "scope": "selected session",
+      "note": "Actual local admission with transcript/queued/steering placement is queued when no current work has higher priority. New requestId resets old terminal before turn/start.",
+      "source": "@deepseek-ai/dsh-api-session-controller/lib/client.js:1686;2274-2295"
+    },
+    {
+      "domain": "session",
+      "signal": "session.running === true or selected status.running === true",
+      "phase": "thinking",
+      "scope": "selected session",
+      "note": "Default active phase only after excluding waiting, compaction, retries, live tools/children/jobs and answering.",
+      "source": "@deepseek-ai/dsh-api-session-controller/lib/client.js:2274-2295;2882-2895"
+    },
+    {
+      "domain": "session",
+      "signal": "session.running === false and no actionable current evidence",
+      "phase": "idle",
+      "scope": "selected session",
+      "note": "True lifecycle remains idle; never celebrate a historical completed turn on initial binding. The independent display layer can retain the answering image only for a real closed completed transcript with no running/awaiting/submission/inbox work; blank sessions retain left-looking idle.",
+      "source": "@deepseek-ai/dsh-api-session-controller/lib/client.js:2274-2295"
+    },
+    {
+      "domain": "turn",
+      "signal": "turn/end.reason.kind === 'completed'",
+      "phase": "complete",
+      "scope": "selected observed turn",
+      "note": "Show complete only for an observed live turn, never celebrate historical turns. Keep the normal 6-second complete lifecycle then return to idle; complete uses its independent finishing gesture, and eligible completed-transcript idle then uses the answering image without inventing answering activity.",
+      "source": "@deepseek-ai/dsh-agent-loop/lib/index.js:959-1029;1151-1155"
+    },
+    {
+      "domain": "turn",
+      "signal": "turn/end.reason.kind === 'blocked'",
+      "phase": "blocked",
+      "scope": "selected observed turn",
+      "note": "pre-step rejected; task did not complete.",
+      "source": "@deepseek-ai/dsh-agent-loop/lib/index.js:959-1029;1151-1155"
+    },
+    {
+      "domain": "turn",
+      "signal": "turn/end.reason.kind === 'error'",
+      "phase": "error",
+      "scope": "latest selected terminal turn",
+      "note": "Current turn failure; retain structured failure code. Latest historical error may remain visible without celebration; terminal error persists until new task.",
+      "source": "@deepseek-ai/dsh-agent-loop/lib/index.js:959-1029;1151-1155"
+    },
+    {
+      "domain": "turn",
+      "signal": "turn/end.reason.kind === 'max-tokens'",
+      "phase": "error",
+      "scope": "latest selected terminal turn",
+      "note": "Truncated output limit; not successful completion. Latest historical error may remain visible without celebration; terminal error persists until new task.",
+      "source": "@deepseek-ai/dsh-agent-loop/lib/index.js:959-1029;1151-1155"
+    },
+    {
+      "domain": "turn",
+      "signal": "turn/end.reason.kind === 'interrupted'",
+      "phase": "stopped",
+      "scope": "selected observed turn",
+      "note": "Synthetic close after interruption/crash recovery; outcome may be unknown.",
+      "source": "@deepseek-ai/dsh-session/lib/index.js:791;905"
+    },
+    {
+      "domain": "turn",
+      "signal": "turn/end.reason.kind === 'forked'",
+      "phase": "idle",
+      "scope": "selected observed turn",
+      "note": "Forked closure is history, neither failure nor cancellation celebration.",
+      "source": "@deepseek-ai/dsh-session/lib/index.js:932"
+    },
+    {
+      "domain": "turn",
+      "signal": "turn/end.reason.kind === 'aborted' && reason.reason.kind === 'user'",
+      "phase": "stopped",
+      "scope": "selected observed turn",
+      "note": "Cancellation cause is preserved; connection has no disposed enum. Do not map to complete.",
+      "source": "@deepseek-ai/dsh-agent-loop/lib/index.js:732-744;1007-1031"
+    },
+    {
+      "domain": "turn",
+      "signal": "turn/end.reason.kind === 'aborted' && reason.reason.kind === 'parent'",
+      "phase": "stopped",
+      "scope": "selected observed turn",
+      "note": "Cancellation cause is preserved; connection has no disposed enum. Do not map to complete.",
+      "source": "@deepseek-ai/dsh-agent-loop/lib/index.js:732-744;1007-1031"
+    },
+    {
+      "domain": "turn",
+      "signal": "turn/end.reason.kind === 'aborted' && reason.reason.kind === 'disposed'",
+      "phase": "stopped",
+      "scope": "selected observed turn",
+      "note": "Cancellation cause is preserved; connection has no disposed enum. Do not map to complete.",
+      "source": "@deepseek-ai/dsh-agent-loop/lib/index.js:732-744;1007-1031"
+    },
+    {
+      "domain": "turn",
+      "signal": "aborted.reason.kind === 'hook' && aborted.reason.reason === 'deepseek-account/signed-out'",
+      "phase": "disconnected",
+      "scope": "selected observed turn",
+      "note": "Explicit signed-out hook is an unavailable account state, separate from task success/failure; retained until a new admission.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9822;9858"
+    },
+    {
+      "domain": "turn",
+      "signal": "aborted.reason.kind === 'hook' with another reason",
+      "phase": "stopped",
+      "scope": "selected observed turn",
+      "note": "Closed extension reason; do not infer task success or automatically classify every hook as account error.",
+      "source": "@deepseek-ai/dsh-agent-loop/lib/index.js:732-744"
+    },
+    {
+      "domain": "turn",
+      "signal": "missing or unrecognised terminal reason",
+      "phase": "idle",
+      "scope": "selected session",
+      "note": "Unknown terminal is neither successful completion nor a fabricated task error.",
+      "source": "@deepseek-ai/dsh-agent-loop/lib/index.js:1025-1029"
+    },
+    {
+      "domain": "assistant",
+      "signal": "current open step assistant-step.status running, latest non-empty block.kind reasoning",
+      "phase": "thinking",
+      "scope": "selected live turn+step",
+      "note": "Must match turn/step and actual session running; ignore empty trailing text blocks.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:10088-10143"
+    },
+    {
+      "domain": "assistant",
+      "signal": "current open step assistant-step.status running, latest non-empty block.kind text",
+      "phase": "answering",
+      "scope": "selected live turn+step",
+      "note": "Only non-empty live text; a historical assistant/message or settled assistant node is not output-in-progress.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:10088-10143"
+    },
+    {
+      "domain": "assistant",
+      "signal": "assistant/live-chunk data.chunk / assistant/message data.stream",
+      "phase": null,
+      "scope": "selected turn+step",
+      "note": "Live chunk is singular. Durable stream is an array of chunk records. Settlement may insert below existing seq watermark; read change.entry directly and deduplicate.",
+      "source": "@deepseek-ai/dsh-llm/lib/index.js:1220-1234"
+    },
+    {
+      "domain": "assistant",
+      "signal": "attempt.finish kind stop|tool-calls|max-tokens",
+      "phase": null,
+      "scope": "host-only attempt",
+      "note": "stop/tool-calls are per-attempt boundaries; drive live tools or actual whole-turn outcome. Public data.stream finish max-tokens produces a recoverable error reaction until whole terminal arrives.",
+      "source": "@deepseek-ai/dsh-agent-loop/lib/index.js:1117-1155"
+    },
+    {
+      "domain": "tool-identity",
+      "signal": "current active leaf call.name exactly in read, read_image, web_fetch",
+      "phase": "reading",
+      "scope": "selected running session, current open turn, phase:start leaf in legacy.runningCalls/subCalls",
+      "note": "Public root/PTC Chat projection carries the wire tool name as name. Strict identity match only; no input/argument/description/message classification. Current active nested leaves replace wrapper classification; multiple active leaves or real child work yield parallel. Preparing, old turns and settled results do not count.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9528-9605;9676-9705;adapters/harness/activity.mjs"
+    },
+    {
+      "domain": "tool-identity",
+      "signal": "current active leaf call.name exactly in write, edit, apply_patch",
+      "phase": "writing",
+      "scope": "selected running session, current open turn, phase:start leaf in legacy.runningCalls/subCalls",
+      "note": "Public root/PTC Chat projection carries the wire tool name as name. Strict identity match only; no input/argument/description/message classification. Current active nested leaves replace wrapper classification; multiple active leaves or real child work yield parallel. Preparing, old turns and settled results do not count.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9528-9605;9676-9705;adapters/harness/activity.mjs"
+    },
+    {
+      "domain": "tool-identity",
+      "signal": "current active leaf call.name exactly in grep, glob, search, web_search",
+      "phase": "searching",
+      "scope": "selected running session, current open turn, phase:start leaf in legacy.runningCalls/subCalls",
+      "note": "Public root/PTC Chat projection carries the wire tool name as name. Strict identity match only; no input/argument/description/message classification. Current active nested leaves replace wrapper classification; multiple active leaves or real child work yield parallel. Preparing, old turns and settled results do not count.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9528-9605;9676-9705;adapters/harness/activity.mjs"
+    },
+    {
+      "domain": "tool-identity",
+      "signal": "current active leaf call.name exactly in bash, pwsh, exec_command, write_stdin, run_code",
+      "phase": "executing",
+      "scope": "selected running session, current open turn, phase:start leaf in legacy.runningCalls/subCalls",
+      "note": "Public root/PTC Chat projection carries the wire tool name as name. Strict identity match only; no input/argument/description/message classification. Current active nested leaves replace wrapper classification; multiple active leaves or real child work yield parallel. Preparing, old turns and settled results do not count.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9528-9605;9676-9705;adapters/harness/activity.mjs"
+    },
+    {
+      "domain": "tool-identity",
+      "signal": "current active leaf call.name exactly in subagent, create_subagent, subagent_create",
+      "phase": "delegating",
+      "scope": "selected running session, current open turn, phase:start leaf in legacy.runningCalls/subCalls",
+      "note": "Public root/PTC Chat projection carries the wire tool name as name. Strict identity match only; no input/argument/description/message classification. Current active nested leaves replace wrapper classification; multiple active leaves or real child work yield parallel. Preparing, old turns and settled results do not count.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9528-9605;9676-9705;adapters/harness/activity.mjs"
+    },
+    {
+      "domain": "tool",
+      "signal": "fresh nested legacy tool-result isError=true under runningCalls[].subCalls or legacy.nodes, matching an actually observed current callId",
+      "phase": "error",
+      "scope": "selected observed current turn; public projection fallback",
+      "note": "Inspect both still-active PTC root children and settled root trees, with cycle/depth guard. Deduplicate callId+seq across nested fallback, root settlement and raw tool/ptc-dispatch. Initial historical nodes and typed cancellation are silent. At least 4-second error pulse, then latest truthful work.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9528-9605;9676-9705;adapters/harness/activity.mjs;test/activity-tools-v012.test.mjs"
+    },
+    {
+      "domain": "assistant",
+      "signal": "fresh assistant/attempt or assistant/message stream finish error|max-tokens arrives after actually observed completed Chat projection",
+      "phase": "error",
+      "scope": "same observed selected turn and admission only",
+      "note": "The event source and Chat can publish separately. Preserve same-turn admission after the first completed render; reject old history, later submissions or session switches. Error pulse then resumes actual work or restarts the normal completion hold if truly settled.",
+      "source": "adapters/harness/activity.mjs;test/activity-tools-v012.test.mjs"
+    },
+    {
+      "domain": "visual-reaction",
+      "signal": "entry into error with decoded figure, enabled dynamic mode, no reduced-motion preference",
+      "phase": "error",
+      "scope": "visual layer only, after image/layout handoff",
+      "note": "One 1300ms gentle recoil (4px right / scale 0.986, then settle). Ordinary same-error updates do not replay it. Static/reduced-motion/disabled modes retain the error image with no movement; exit and disposal cancel the animation without persistent transform. Independent of the at-least-4000ms local-error state hold.",
+      "source": "src/reaction.mjs;adapters/harness/client.mjs"
+    },
+    {
+      "domain": "tool",
+      "signal": "one current unmatched phase:start live leaf call with unknown or unclassified wire name",
+      "phase": "working",
+      "scope": "selected live turn",
+      "note": "Match current open turn, actual running and call identity. Classify only the public wire name using the explicit tool identities below; never arguments, descriptions or prose. Unknown extension names retain working. Nested wrapper+child is one branch.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9528-9605"
+    },
+    {
+      "domain": "tool",
+      "signal": "two or more current unmatched phase:start live leaf calls",
+      "phase": "parallel",
+      "scope": "selected live turn",
+      "note": "Live leaves only, not whole-turn toolCallCount historical totals.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9528-9605"
+    },
+    {
+      "domain": "tool",
+      "signal": "fresh current tool/result data.message.isError === true, excluding structured cancellation codes",
+      "phase": "error",
+      "scope": "selected current live or actually observed just-completed turn, before any next-task admission",
+      "note": "At least 4 continuously visible seconds of error, then latest true base. Event and Chat publications may race: a fresh typed failure still belongs to the same actually observed completed turn, even after completion consumed its first observer. Do not admit old history, a later submission or another session. Match data.turn; fallback correlates observed callId; output text is never failure evidence.",
+      "source": "@deepseek-ai/dsh-agent-loop/lib/index.js:682-707"
+    },
+    {
+      "domain": "tool",
+      "signal": "tool/result error.code === ABORTED|ABORTED_BEFORE_DISPATCH|interrupted",
+      "phase": null,
+      "scope": "selected live turn",
+      "note": "Cancellation settles one call without claiming whole-turn failure; whole turn aborted/interrupted controls stopped picture.",
+      "source": "@deepseek-ai/dsh-tools/lib/index.js:2528-2530"
+    },
+    {
+      "domain": "tool",
+      "signal": "fresh tool/ptc-dispatch data.isError === true matched by observed current rootCallId",
+      "phase": "error",
+      "scope": "selected live root call",
+      "note": "Nested event has no turn/step. Correlate rootCallId to observed current root and show 4-second error reaction; unrelated/history/cancellation is ignored.",
+      "source": "@deepseek-ai/dsh-tools/lib/index.js:1331-1342"
+    },
+    {
+      "domain": "retry",
+      "signal": "current-turn/step model-retry.retryState === 'scheduled'",
+      "phase": "retrying",
+      "scope": "selected live turn+step",
+      "note": "Take latest retry node for current live turn/step. started/cancelled end retry-wait; they are not separate turn completion.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9440;9493-9503"
+    },
+    {
+      "domain": "retry",
+      "signal": "current-turn/step model-retry.retryState === 'started'",
+      "phase": null,
+      "scope": "selected live turn+step",
+      "note": "Take latest retry node for current live turn/step. started/cancelled end retry-wait; they are not separate turn completion. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9440;9493-9503"
+    },
+    {
+      "domain": "retry",
+      "signal": "current-turn/step model-retry.retryState === 'cancelled'",
+      "phase": null,
+      "scope": "selected live turn+step",
+      "note": "Take latest retry node for current live turn/step. started/cancelled end retry-wait; they are not separate turn completion. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9440;9493-9503"
+    },
+    {
+      "domain": "retry",
+      "signal": "retry attempts exhausted",
+      "phase": null,
+      "scope": "selected turn",
+      "note": "No dedicated exhaustion event/outcome. Observe actual assistant finish or terminal turn error; do not guess by counts or failure prose.",
+      "source": "@deepseek-ai/dsh-llm-retry/lib/index.js:119-145;163-167"
+    },
+    {
+      "domain": "interaction",
+      "signal": "pendingInteraction kind approval|question|plan-review, review === undefined",
+      "phase": "waiting",
+      "scope": "selected session",
+      "note": "Current actionable pending interaction has highest priority. Historical question.review carries already recorded answers and must be excluded.",
+      "source": "@deepseek-ai/dsh-cordis-client-runner/lib/client.js:1991"
+    },
+    {
+      "domain": "approval",
+      "signal": "approval/decided.outcome === 'allowed-once'",
+      "phase": null,
+      "scope": "selected approval",
+      "note": "Only allowed-once is a grant; all other outcomes close the approval and do not by themselves mean the whole task failed/stopped. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-user-approval/lib/index.js:30-35;132-143"
+    },
+    {
+      "domain": "approval",
+      "signal": "approval/decided.outcome === 'rejected'",
+      "phase": null,
+      "scope": "selected approval",
+      "note": "Only allowed-once is a grant; all other outcomes close the approval and do not by themselves mean the whole task failed/stopped. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-user-approval/lib/index.js:30-35;132-143"
+    },
+    {
+      "domain": "approval",
+      "signal": "approval/decided.outcome === 'cancelled'",
+      "phase": null,
+      "scope": "selected approval",
+      "note": "Only allowed-once is a grant; all other outcomes close the approval and do not by themselves mean the whole task failed/stopped. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-user-approval/lib/index.js:30-35;132-143"
+    },
+    {
+      "domain": "approval",
+      "signal": "approval/decided.outcome === 'unavailable'",
+      "phase": null,
+      "scope": "selected approval",
+      "note": "Only allowed-once is a grant; all other outcomes close the approval and do not by themselves mean the whole task failed/stopped. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-user-approval/lib/index.js:30-35;132-143"
+    },
+    {
+      "domain": "question",
+      "signal": "userQuestions.active[].state === 'open'",
+      "phase": "waiting",
+      "scope": "selected session",
+      "note": "Hidden live question still waits only when callId correlates with the current observed live root/tool call. Historical unrelated cards are ignored. Public current phase:start call metadata is sufficient even when native running temporarily falls false or the panel is hidden.",
+      "source": "@deepseek-ai/dsh-user-questions/lib/index.js:48-76"
+    },
+    {
+      "domain": "question",
+      "signal": "userQuestions.active[].state === 'continued' with queued reply",
+      "phase": null,
+      "scope": "selected session",
+      "note": "Reply queued is not unanswered waiting; exclude matching callId found in queued reply source. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-client-ui-user-questions/lib/client.js:1850-1860"
+    },
+    {
+      "domain": "question",
+      "signal": "ASK_TIMED_OUT request timeout with retained durable pending card",
+      "phase": null,
+      "scope": "selected session",
+      "note": "Timed request returns structured pending-question result and continued projection, not whole failure. Continued question is waiting only while idle without already queued matching reply.",
+      "source": "@deepseek-ai/dsh-user-questions/lib/index.js:603-648"
+    },
+    {
+      "domain": "question",
+      "signal": "question UI hide() / local reply draft",
+      "phase": null,
+      "scope": "local UI",
+      "note": "Hiding panel does not cancel task. Actual open/continued question comes from public projection; historical review answers are not live waiting.",
+      "source": "@deepseek-ai/dsh-client-ui-user-questions/lib/client.js:1689;1740-1742"
+    },
+    {
+      "domain": "compaction",
+      "signal": "compaction/start {compactionId,turn,sourceCommandId?} with no matching end",
+      "phase": "compacting",
+      "scope": "selected live transaction",
+      "note": "Automatic owner turn must match current open running turn; manual owner turn:null needs live command/current transaction, not historic unmatched start. Visual pose: place a book back on the character’s left-side bookshelf.",
+      "source": "@deepseek-ai/dsh-compaction-basic/lib/index.js:450-469"
+    },
+    {
+      "domain": "compaction",
+      "signal": "manual compact command node outcome === null",
+      "phase": "compacting",
+      "scope": "selected current command",
+      "note": "Native pending command is an independent reliable running criterion; restrict current boundary so history is not reanimated. Visual pose: place a book back on the character’s left-side bookshelf.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:6114-6128"
+    },
+    {
+      "domain": "compaction",
+      "signal": "compaction/end with no error",
+      "phase": null,
+      "scope": "selected transaction",
+      "note": "Closes transaction successfully, not whole turn; later manual persistence flush can still fail. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-compaction-basic/lib/index.js:477-518"
+    },
+    {
+      "domain": "compaction",
+      "signal": "compaction/end.error exists",
+      "phase": "error",
+      "scope": "selected transaction",
+      "note": "Fresh matched transaction failure receives 4-second reaction, then latest base. Automatic failure can continue turn; it is not permanent terminal error.",
+      "source": "@deepseek-ai/dsh-compaction-basic/lib/index.js:487-505;834-851"
+    },
+    {
+      "domain": "compaction",
+      "signal": "compactNow returned null => command/done.kind success",
+      "phase": null,
+      "scope": "selected observed manual command",
+      "note": "Manual success/no-op closes command and restores latest task base, never falsely celebrates a whole turn. No summary is not failure.",
+      "source": "@deepseek-ai/dsh-command-compact/lib/index.js:55-64"
+    },
+    {
+      "domain": "compaction",
+      "signal": "command/done.kind success after manual compact",
+      "phase": null,
+      "scope": "selected observed manual command",
+      "note": "Manual success/no-op closes command and restores latest task base, never falsely celebrates a whole turn. No summary is not failure.",
+      "source": "@deepseek-ai/dsh-commands/lib/index.js:334-346"
+    },
+    {
+      "domain": "compaction",
+      "signal": "command/done.kind error after manual compact",
+      "phase": "error",
+      "scope": "selected observed manual command",
+      "note": "Paired fresh manual compact error receives 4-second reaction then task base. Original subtype erased; do not parse text for cancellation.",
+      "source": "@deepseek-ai/dsh-command-compact/lib/index.js:19-42;65-70"
+    },
+    {
+      "domain": "compaction",
+      "signal": "manual closed transaction followed by persistence error",
+      "phase": "error",
+      "scope": "selected observed manual command",
+      "note": "Paired fresh manual compact error receives 4-second reaction then task base. Original subtype erased; do not parse text for cancellation.",
+      "source": "@deepseek-ai/dsh-compaction-basic/lib/index.js:507-518"
+    },
+    {
+      "domain": "compaction",
+      "signal": "historical automatic compaction checkpoint node",
+      "phase": null,
+      "scope": "selected session history",
+      "note": "Native compaction node materializes only after checkpoint; not a signal of currently compacting. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9088-9115"
+    },
+    {
+      "domain": "compaction",
+      "signal": "session binding eventSource getSnapshot/subscribe",
+      "phase": null,
+      "scope": "selected session",
+      "note": "Fold events by compactionId/owner/seq; whole window is lazy. Replace/reset/coalesced append changes require replay, not only final delta. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-api-session-controller/lib/client.js:1118-1148;3480-3484"
+    },
+    {
+      "domain": "goal",
+      "signal": "session projection values.goal.goal.phase === 'active'",
+      "phase": null,
+      "scope": "selected session goal",
+      "note": "Goal active does not mean model running; use current turn state. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-goal/lib/index.js:343-362;438-454"
+    },
+    {
+      "domain": "goal",
+      "signal": "session projection values.goal.goal.phase === 'paused'",
+      "phase": "paused",
+      "scope": "selected session goal",
+      "note": "True goal pause overrides its cancelling turn stopped state and remains paused. Historical paused goal does not override a different new manual running turn.",
+      "source": "@deepseek-ai/dsh-goal/lib/index.js:343-362;438-454"
+    },
+    {
+      "domain": "goal",
+      "signal": "session projection values.goal.goal.phase === 'blocked'",
+      "phase": "blocked",
+      "scope": "selected session goal",
+      "note": "Fresh explicit block overrides native running publication lag for that turn. Current blockedReason is authoritative; an old blocked goal does not cover a different new manual running turn.",
+      "source": "@deepseek-ai/dsh-goal/lib/index.js:343-362;438-454"
+    },
+    {
+      "domain": "goal",
+      "signal": "session projection values.goal.goal.phase === 'complete'",
+      "phase": "complete",
+      "scope": "selected session goal",
+      "note": "Fresh observed goal transition to complete can celebrate for 6 seconds after live work ends. Initial historical goal complete never celebrates.",
+      "source": "@deepseek-ai/dsh-goal/lib/index.js:343-362;438-454"
+    },
+    {
+      "domain": "goal",
+      "signal": "goal projection null",
+      "phase": null,
+      "scope": "selected session goal",
+      "note": "No current goal removes only goal override; current task activity remains authoritative.",
+      "source": "@deepseek-ai/dsh-goal/lib/index.js:343-363;438-454"
+    },
+    {
+      "domain": "goal",
+      "signal": "goal active with roundsStarted >= maxGoalRounds and no live running turn",
+      "phase": null,
+      "scope": "selected session goal",
+      "note": "Round count/cap is policy metadata, not an explicit blocked phase. No derived blockage: only actual phase blocked is mapped.",
+      "source": "@deepseek-ai/dsh-goal/lib/index.js:343-362"
+    },
+    {
+      "domain": "subagent",
+      "signal": "parent subagentCatalog plus child statuses.get(id).running or sessions.byId[id].running === true",
+      "phase": "parallel",
+      "scope": "selected parent",
+      "note": "Catalog supplies identities only; live running comes from public session status, never cumulative subagentCount.",
+      "source": "@deepseek-ai/dsh-client-ui-subagent/lib/client.js:354-363"
+    },
+    {
+      "domain": "jobs",
+      "signal": "ctx.jobs.state.rows[selectedSessionId][].status === 'running'",
+      "phase": "working",
+      "scope": "selected owned watched roster",
+      "note": "Restrict owner===selectedSessionId for task linkage; roster also lists global unowned jobs. Terminal rows require observed transition, never historical baseline. No exitCode/result is included.",
+      "source": "@deepseek-ai/dsh-jobs-local/lib/index.js:346-350;569-588"
+    },
+    {
+      "domain": "jobs",
+      "signal": "ctx.jobs.state.rows[selectedSessionId][].status === 'stopping'",
+      "phase": "working",
+      "scope": "selected owned watched roster",
+      "note": "Restrict owner===selectedSessionId for task linkage; roster also lists global unowned jobs. Terminal rows require observed transition, never historical baseline. No exitCode/result is included.",
+      "source": "@deepseek-ai/dsh-jobs-local/lib/index.js:346-350;569-588"
+    },
+    {
+      "domain": "jobs",
+      "signal": "ctx.jobs.state.rows[selectedSessionId][].status === 'completed'",
+      "phase": null,
+      "scope": "selected owned watched roster",
+      "note": "Restrict owner===selectedSessionId for task linkage; roster also lists global unowned jobs. Terminal rows require observed transition, never historical baseline. No exitCode/result is included. completed means execution ended, not success: bash nonzero exit is also completed. Do not parse detail for success. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-jobs-local/lib/index.js:346-350;569-588;@deepseek-ai/dsh-tool-bash/lib/index.js:42-50"
+    },
+    {
+      "domain": "jobs",
+      "signal": "ctx.jobs.state.rows[selectedSessionId][].status === 'failed'",
+      "phase": "error",
+      "scope": "selected owned watched roster",
+      "note": "Restrict owner===selectedSessionId for task linkage; roster also lists global unowned jobs. Terminal rows require observed transition, never historical baseline. No exitCode/result is included. Fresh owned transition produces at least 4-second reaction, then latest base. Baseline historical failed is seeded silently.",
+      "source": "@deepseek-ai/dsh-jobs-local/lib/index.js:346-350;569-588"
+    },
+    {
+      "domain": "jobs",
+      "signal": "ctx.jobs.state.rows[selectedSessionId][].status === 'killed'",
+      "phase": null,
+      "scope": "selected owned watched roster",
+      "note": "Explicit operation cancellation, not task failure. Remove live-job hold and resume truthful task base. Whole turn cancellation controls stopped.",
+      "source": "@deepseek-ai/dsh-jobs-local/lib/index.js:346-350;569-588"
+    },
+    {
+      "domain": "jobs",
+      "signal": "ctx.jobs.watchRows(sessionId) / rows drop after stream failure or last watcher",
+      "phase": null,
+      "scope": "selected visible roster",
+      "note": "Pair watch with cleanup; missing/dropped rows do not mean work completed. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-api-job-controller/lib/client.js:56-69;222-225"
+    },
+    {
+      "domain": "ownership",
+      "signal": "sessions.byId[id].retainedBy.mainView > 0",
+      "phase": null,
+      "scope": "surface owner",
+      "note": "Embedded child conversations render input.right too; only main retained session may claim the background driver. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-api-session-controller/lib/client.js:3415-3424;3508;3559"
+    },
+    {
+      "domain": "jobs",
+      "signal": "row.owner === undefined (global job)",
+      "phase": null,
+      "scope": "visible shared roster",
+      "note": "Global visible work may appear across sessions but must not block the selected task completion or create its task error. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-jobs-local/lib/index.js:493-495;@deepseek-ai/dsh-jobs/lib/index.js:40-43"
+    },
+    {
+      "domain": "subagent",
+      "signal": "child.running changes true → false",
+      "phase": null,
+      "scope": "selected parent current live child",
+      "note": "Only proves child no longer active; cropped client catalog/status does not provide success/failure/cancel reason. No independent visual override: continue the latest truthful task phase.",
+      "source": "@deepseek-ai/dsh-api-session-controller/lib/client.js:3518-3536;3552-3567"
+    },
+    {
+      "domain": "assistant",
+      "signal": "fresh assistant/live-chunk data.chunk.type finish, reason.kind error|max-tokens",
+      "phase": "error",
+      "scope": "current turn/step",
+      "note": "4-second recoverable reaction; actual whole-turn error then becomes persistent. Never parse failure.message.",
+      "source": "@deepseek-ai/dsh-agent-loop/lib/index.js:1117-1155;@deepseek-ai/dsh-llm/lib/index.js:2370-2386"
+    },
+    {
+      "domain": "assistant",
+      "signal": "fresh assistant/attempt or assistant/message data.stream[].chunk finish reason.kind error|max-tokens",
+      "phase": "error",
+      "scope": "current turn/step",
+      "note": "Array of records {type:chunk,chunk}; native chat skips finish publication, so eventSource settlement is necessary.",
+      "source": "@deepseek-ai/dsh-agent-loop/lib/index.js:448-449;1117-1155;@deepseek-ai/dsh-client-ui-chat/client-reference.js:7655-7657"
+    },
+    {
+      "domain": "assistant",
+      "signal": "eventSource.change.kind settle-assistant with change.entry even event.seq <= watermark",
+      "phase": "error",
+      "scope": "current structured failed attempt only",
+      "note": "Direct entry processing and operation dedup prevents missing durable error inserted behind transient seq watermark.",
+      "source": "@deepseek-ai/dsh-api-session-controller/lib/client.js:1192-1209"
+    },
+    {
+      "domain": "assistant",
+      "signal": "finish reason.kind stop|tool-calls|aborted",
+      "phase": null,
+      "scope": "current attempt",
+      "note": "Attempt success/cancellation does not imply whole-turn success/error. Restore true live tool/model state and wait for turn terminal.",
+      "source": "@deepseek-ai/dsh-agent-loop/lib/index.js:1117-1155"
+    },
+    {
+      "domain": "assistant",
+      "signal": "assistant-step.status settled|interrupted",
+      "phase": null,
+      "scope": "current step",
+      "note": "Settled or interrupted historical assistant blocks cannot claim live answering.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:10088-10143"
+    },
+    {
+      "domain": "tool",
+      "signal": "current call.phase preparing",
+      "phase": "thinking",
+      "scope": "current turn",
+      "note": "Preparation is model output, not tool execution. Only actual phase start counts work.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9528-9555"
+    },
+    {
+      "domain": "question",
+      "signal": "userQuestions.active[].state continued and no queued callId reply, session.running false",
+      "phase": "waiting",
+      "scope": "current public unanswered question",
+      "note": "Model may already continue after timeout; while running this never replaces thinking/work. Idle late answer is actionable attention.",
+      "source": "@deepseek-ai/dsh-client-ui-user-questions/lib/client.js:1845-1864"
+    },
+    {
+      "domain": "question",
+      "signal": "pendingInteraction.review contains historical answers",
+      "phase": null,
+      "scope": "local historical review",
+      "note": "Review UI can publish registry item but is not unanswered request; exclude from active waiting.",
+      "source": "@deepseek-ai/dsh-client-ui-user-questions/lib/client.js:1740-1742"
+    },
+    {
+      "domain": "session",
+      "signal": "projection.values.inbox[next-turn|next-step] nonempty",
+      "phase": "queued",
+      "scope": "selected admission",
+      "note": "Metadata-only queue, never read message text. Running turn and explicit attention have priority.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9232-9235"
+    },
+    {
+      "domain": "session",
+      "signal": "promptError or lastAgentError changes while genuinely running",
+      "phase": "error",
+      "scope": "selected session operation",
+      "note": "Fresh RPC/agent failure receives continuous 4-second reaction. Unchanged error from earlier task cannot cover active recovery.",
+      "source": "@deepseek-ai/dsh-api-session-controller/lib/client.js:1717-1720;1752-1759;1799-1815;2021-2024"
+    },
+    {
+      "domain": "session",
+      "signal": "removed === true",
+      "phase": "idle",
+      "scope": "selected session",
+      "note": "Release task holds and do not celebrate a removed session.",
+      "source": "@deepseek-ai/dsh-api-session-controller/lib/client.js:2274-2295"
+    },
+    {
+      "domain": "session",
+      "signal": "loadingOlder|hasMore|list phase pending|ready|idle|loading|error",
+      "phase": null,
+      "scope": "history/catalog UI",
+      "note": "History/paging/cache states are not model work or task outcome.",
+      "source": "@deepseek-ai/dsh-cordis-client-runner/lib/client.js:1946;2143"
+    },
+    {
+      "domain": "receipt",
+      "signal": "tools/result canonical value.kind=foreground and exitCode != null && exitCode != 0",
+      "phase": "error",
+      "scope": "selected current observed turn and actual started call",
+      "note": "Official independent host companion observes frozen canonical values, binds the actual live session/current started root call, and publishes a frozen whitelisted metadata-only DTO through an owned transient Typert Remote. Fresh selected-turn receipt produces at least 4-second visible error reaction then resumes latest true base. Nonzero command is a local operation failure, not automatically whole-turn failure. Receipt telemetry never appends session events, contributes raw session logs, or changes model-visible messages; no receipt history is replayed after reconnect. A fresh same-admission receipt arriving after the actually observed completed projection still gets its error pulse; old history, new submissions and session switches invalidate this boundary.",
+      "source": "@deepseek-ai/dsh-tools/lib/index.js:3408-3429;3536-3570;@deepseek-ai/dsh-tool-bash/lib/index.js:300-320;488;562-606; adapters/harness/receipt-host.mjs;@deepseek-ai/dsh-typert-registry/lib/index.js:398-417;562-566;@deepseek-ai/dsh-api-gateway/lib/index.js:962-988;1253-1279;1452-1461;@deepseek-ai/dsh-api-gateway/lib/client.js:1036-1062;1636-1647;1662-1684;adapters/harness/receipt-client.mjs"
+    },
+    {
+      "domain": "receipt",
+      "signal": "tools/result canonical value.kind=foreground and timedOut=true",
+      "phase": "error",
+      "scope": "selected current observed turn and actual started call",
+      "note": "Fresh typed foreground timeout uses the same scoped metadata-only receipt and visible local reaction. No rendered output or timeout prose is parsed. Receipt telemetry never appends session events, contributes raw session logs, or changes model-visible messages; no receipt history is replayed after reconnect. A fresh same-admission receipt arriving after the actually observed completed projection still gets its error pulse; old history, new submissions and session switches invalidate this boundary.",
+      "source": "@deepseek-ai/dsh-tools/lib/index.js:3408-3429;3536-3570;@deepseek-ai/dsh-tool-bash/lib/index.js:300-320;488;562-606; adapters/harness/receipt-host.mjs;@deepseek-ai/dsh-typert-registry/lib/index.js:398-417;562-566;@deepseek-ai/dsh-api-gateway/lib/index.js:962-988;1253-1279;1452-1461;@deepseek-ai/dsh-api-gateway/lib/client.js:1036-1062;1636-1647;1662-1684;adapters/harness/receipt-client.mjs"
+    },
+    {
+      "domain": "receipt",
+      "signal": "tools/result canonical value.kind=foreground and signal != null, aborted=false",
+      "phase": "error",
+      "scope": "selected current observed turn and actual started call",
+      "note": "Fresh typed foreground terminating signal is an operation failure. Explicit caller cancellation/aborted results do not become error receipts. Receipt telemetry never appends session events, contributes raw session logs, or changes model-visible messages; no receipt history is replayed after reconnect. A fresh same-admission receipt arriving after the actually observed completed projection still gets its error pulse; old history, new submissions and session switches invalidate this boundary.",
+      "source": "@deepseek-ai/dsh-tools/lib/index.js:3408-3429;3536-3570;@deepseek-ai/dsh-tool-bash/lib/index.js:300-320;488;562-606; adapters/harness/receipt-host.mjs;@deepseek-ai/dsh-typert-registry/lib/index.js:398-417;562-566;@deepseek-ai/dsh-api-gateway/lib/index.js:962-988;1253-1279;1452-1461;@deepseek-ai/dsh-api-gateway/lib/client.js:1036-1062;1636-1647;1662-1684;adapters/harness/receipt-client.mjs"
+    },
+    {
+      "domain": "receipt",
+      "signal": "tools/result canonical value.kind=foreground and exitCode=0,timedOut=false,signal=null,aborted=false",
+      "phase": null,
+      "scope": "selected current observed turn and actual started call",
+      "note": "Typed operation success causes no visual override and never by itself celebrates whole-turn completion. Every native stream generation starts with an opening epoch/cursor baseline; only future receipt frames are admitted, and duplicate rows are ignored. No session history or message content is read. Receipt telemetry never appends session events, contributes raw session logs, or changes model-visible messages; no receipt history is replayed after reconnect.",
+      "source": "@deepseek-ai/dsh-tools/lib/index.js:3408-3429;3536-3570;@deepseek-ai/dsh-tool-bash/lib/index.js:300-320;488;562-606; adapters/harness/receipt-host.mjs;@deepseek-ai/dsh-typert-registry/lib/index.js:398-417;562-566;@deepseek-ai/dsh-api-gateway/lib/index.js:962-988;1253-1279;1452-1461;@deepseek-ai/dsh-api-gateway/lib/client.js:1036-1062;1636-1647;1662-1684;adapters/harness/receipt-client.mjs"
+    },
+    {
+      "domain": "receipt",
+      "signal": "subagent/end stopReason === 'completed' with observed matching subagent/start exact parent",
+      "phase": null,
+      "scope": "selected exact live runtime parent session; local native child background outcomes included",
+      "note": "Official host lifecycle observer uses public agents.get(childId), child.header.parentSession as lookup candidate, and agents.isOwnedBy(childId,parent) for independent exact runtime parent proof; captures start parent then requires the same live parent registry object at end, correlating runId+childId+provider+local and emits one metadata-only transient Remote receipt. Normal child settlement/cancellation causes no independent override, no whole-parent celebration and no whole-parent stopped phase. Receipt telemetry never appends session events, contributes raw session logs, or changes model-visible messages; no receipt history is replayed after reconnect.",
+      "source": "@deepseek-ai/dsh-agent/lib/index.js:590-611;@deepseek-ai/dsh-subagent-in-process-driver/lib/index.js:180-188;220-230;@deepseek-ai/dsh-subagent/lib/index.js:235-279;1074-1088;1115-1118;2836;adapters/harness/receipt-host.mjs;@deepseek-ai/dsh-typert-registry/lib/index.js:398-417;562-566;@deepseek-ai/dsh-api-gateway/lib/index.js:962-988;1253-1279;1452-1461;@deepseek-ai/dsh-api-gateway/lib/client.js:1036-1062;1636-1647;1662-1684;adapters/harness/receipt-client.mjs"
+    },
+    {
+      "domain": "receipt",
+      "signal": "subagent/end stopReason === 'aborted' with observed matching subagent/start exact parent",
+      "phase": null,
+      "scope": "selected exact live runtime parent session; local native child background outcomes included",
+      "note": "Official host lifecycle observer uses public agents.get(childId), child.header.parentSession as lookup candidate, and agents.isOwnedBy(childId,parent) for independent exact runtime parent proof; captures start parent then requires the same live parent registry object at end, correlating runId+childId+provider+local and emits one metadata-only transient Remote receipt. Normal child settlement/cancellation causes no independent override, no whole-parent celebration and no whole-parent stopped phase. Receipt telemetry never appends session events, contributes raw session logs, or changes model-visible messages; no receipt history is replayed after reconnect.",
+      "source": "@deepseek-ai/dsh-agent/lib/index.js:590-611;@deepseek-ai/dsh-subagent-in-process-driver/lib/index.js:180-188;220-230;@deepseek-ai/dsh-subagent/lib/index.js:235-279;1074-1088;1115-1118;2836;adapters/harness/receipt-host.mjs;@deepseek-ai/dsh-typert-registry/lib/index.js:398-417;562-566;@deepseek-ai/dsh-api-gateway/lib/index.js:962-988;1253-1279;1452-1461;@deepseek-ai/dsh-api-gateway/lib/client.js:1036-1062;1636-1647;1662-1684;adapters/harness/receipt-client.mjs"
+    },
+    {
+      "domain": "receipt",
+      "signal": "subagent/end stopReason === 'error' with observed matching subagent/start exact parent",
+      "phase": "error",
+      "scope": "selected exact live runtime parent session; local native child background outcomes included",
+      "note": "Official host lifecycle observer uses public agents.get(childId), child.header.parentSession as lookup candidate, and agents.isOwnedBy(childId,parent) for independent exact runtime parent proof; captures start parent then requires the same live parent registry object at end, correlating runId+childId+provider+local and emits one metadata-only transient Remote receipt. Fresh parent-owned child failure gives at least 4-second visible local error reaction even after delegating parent turn closed; it is not automatically whole-parent failure. Receipt telemetry never appends session events, contributes raw session logs, or changes model-visible messages; no receipt history is replayed after reconnect.",
+      "source": "@deepseek-ai/dsh-agent/lib/index.js:590-611;@deepseek-ai/dsh-subagent-in-process-driver/lib/index.js:180-188;220-230;@deepseek-ai/dsh-subagent/lib/index.js:235-279;1074-1088;1115-1118;2836;adapters/harness/receipt-host.mjs;@deepseek-ai/dsh-typert-registry/lib/index.js:398-417;562-566;@deepseek-ai/dsh-api-gateway/lib/index.js:962-988;1253-1279;1452-1461;@deepseek-ai/dsh-api-gateway/lib/client.js:1036-1062;1636-1647;1662-1684;adapters/harness/receipt-client.mjs"
+    },
+    {
+      "domain": "receipt",
+      "signal": "subagent/end stopReason === 'max-tokens' with observed matching subagent/start exact parent",
+      "phase": "error",
+      "scope": "selected exact live runtime parent session; local native child background outcomes included",
+      "note": "Official host lifecycle observer uses public agents.get(childId), child.header.parentSession as lookup candidate, and agents.isOwnedBy(childId,parent) for independent exact runtime parent proof; captures start parent then requires the same live parent registry object at end, correlating runId+childId+provider+local and emits one metadata-only transient Remote receipt. Fresh parent-owned child failure gives at least 4-second visible local error reaction even after delegating parent turn closed; it is not automatically whole-parent failure. Receipt telemetry never appends session events, contributes raw session logs, or changes model-visible messages; no receipt history is replayed after reconnect.",
+      "source": "@deepseek-ai/dsh-agent/lib/index.js:590-611;@deepseek-ai/dsh-subagent-in-process-driver/lib/index.js:180-188;220-230;@deepseek-ai/dsh-subagent/lib/index.js:235-279;1074-1088;1115-1118;2836;adapters/harness/receipt-host.mjs;@deepseek-ai/dsh-typert-registry/lib/index.js:398-417;562-566;@deepseek-ai/dsh-api-gateway/lib/index.js:962-988;1253-1279;1452-1461;@deepseek-ai/dsh-api-gateway/lib/client.js:1036-1062;1636-1647;1662-1684;adapters/harness/receipt-client.mjs"
+    },
+    {
+      "domain": "receipt",
+      "signal": "subagent/end stopReason === 'refusal' with observed matching subagent/start exact parent",
+      "phase": "error",
+      "scope": "selected exact live runtime parent session; local native child background outcomes included",
+      "note": "Official host lifecycle observer uses public agents.get(childId), child.header.parentSession as lookup candidate, and agents.isOwnedBy(childId,parent) for independent exact runtime parent proof; captures start parent then requires the same live parent registry object at end, correlating runId+childId+provider+local and emits one metadata-only transient Remote receipt. Fresh parent-owned child failure gives at least 4-second visible local error reaction even after delegating parent turn closed; it is not automatically whole-parent failure. Receipt telemetry never appends session events, contributes raw session logs, or changes model-visible messages; no receipt history is replayed after reconnect.",
+      "source": "@deepseek-ai/dsh-agent/lib/index.js:590-611;@deepseek-ai/dsh-subagent-in-process-driver/lib/index.js:180-188;220-230;@deepseek-ai/dsh-subagent/lib/index.js:235-279;1074-1088;1115-1118;2836;adapters/harness/receipt-host.mjs;@deepseek-ai/dsh-typert-registry/lib/index.js:398-417;562-566;@deepseek-ai/dsh-api-gateway/lib/index.js:962-988;1253-1279;1452-1461;@deepseek-ai/dsh-api-gateway/lib/client.js:1036-1062;1636-1647;1662-1684;adapters/harness/receipt-client.mjs"
+    },
+    {
+      "domain": "receipt-transport",
+      "signal": "owned transient Remote opened {sessionId,epoch,cursor} on every native stream generation",
+      "phase": null,
+      "scope": "selected mainView session; current plugin admission only",
+      "note": "Legal src-json Typert carrier with independent exact request/DTO whitelist validation; it is not represented as strict Zod reflection. Opening baseline is acknowledged before future frames. New generation clears pending admission metadata; malformed, wrong-owner, old-epoch or lower-cursor rows are ignored. No durable custom session event or history replay.",
+      "source": "@deepseek-ai/dsh-typert-registry/lib/index.js:398-417;562-566;@deepseek-ai/dsh-api-gateway/lib/index.js:962-988;1253-1279;1452-1461;@deepseek-ai/dsh-api-gateway/lib/client.js:1036-1062;1636-1647;1662-1684;adapters/harness/receipt-client.mjs"
+    },
+    {
+      "domain": "receipt-transport",
+      "signal": "carrier disconnected, stream ended, namespace admission failure or plugin teardown",
+      "phase": null,
+      "scope": "owned transient metadata subscription",
+      "note": "Official same-realm RemoteStreamCarrierError enables native carrier backoff/recovery. Opening on a new generation resets baseline. Non-carrier failure or failed $mount retries only on the next ordinary public hook publication; no skin polling. Stream disposal/consumer completion precede namespace unmount. Source absence never fabricates success/failure.",
+      "source": "@deepseek-ai/dsh-typert-registry/lib/index.js:398-417;562-566;@deepseek-ai/dsh-api-gateway/lib/index.js:962-988;1253-1279;1452-1461;@deepseek-ai/dsh-api-gateway/lib/client.js:1036-1062;1636-1647;1662-1684;adapters/harness/receipt-client.mjs"
+    },
+    {
+      "domain": "receipt-transport",
+      "signal": "receipt observer during native session encode/save/reopen",
+      "phase": null,
+      "scope": "native durable session vocabulary",
+      "note": "Observer writes no native session event. rc.2 Session.append lacks an ignorable envelope option and persistence rejects unknown unmarked events; this companion deliberately uses only transient Remote frames, keeping saved native records unchanged.",
+      "source": "@deepseek-ai/dsh-session/lib/index.js:1441-1459;@deepseek-ai/dsh-session-persistence/lib/index.js:174-190;@deepseek-ai/dsh-session-log-deepseek/lib/index.js:36-77;143;test/receipt-persistence.test.mjs"
+    }
+  ],
+  "unsupported": [
+    {
+      "signal": "connection offline/reconnecting/paused/disposed as separate enum",
+      "reason": "Not present in public ctx.connection.state; use its three states plus undefined.",
+      "source": "@deepseek-ai/dsh-client-connection/lib/client.js:1414-1421"
+    },
+    {
+      "signal": "navigator.onLine/controller.networkAvailable/controller.running",
+      "reason": "Provider internals or heuristic; not plugin contract and not used as additional state.",
+      "source": "@deepseek-ai/dsh-client-connection/lib/client.js:945-954;1325-1326"
+    },
+    {
+      "signal": "manual compaction cancellation distinguished by structured outcome subtype",
+      "reason": "code erased by serialization to command/done kind error+text; no text parsing.",
+      "source": "@deepseek-ai/dsh-command-compact/lib/index.js:19-42;65-70"
+    },
+    {
+      "signal": "automatic compaction no summary = failure",
+      "reason": "No useful safe range returns null successfully; native checkpoint node is historical.",
+      "source": "@deepseek-ai/dsh-compaction-basic/lib/index.js:914-960;985-1010"
+    },
+    {
+      "signal": "host subagent stopReason directly available on client subagentCatalog",
+      "reason": "Client catalog alone crops terminal outcome. Independent official host companion now covers exact-parent lifecycle start/end metadata without child log access; outcomes of runs whose start predated companion admission remain unknown.",
+      "source": "@deepseek-ai/dsh-client-ui-subagent/lib/client.js:354-363"
+    },
+    {
+      "signal": "jobs roster exitCode/result/diagnostic",
+      "reason": "Roster status is public; output/result values require separate observe API and are excluded from skin telemetry.",
+      "source": "@deepseek-ai/dsh-api-job-controller/lib/client.js:11-16;222-230"
+    },
+    {
+      "signal": "missing jobs row = completed",
+      "reason": "Rows are removed when streams fail/unwatch, and global jobs may be visible in several sessions.",
+      "source": "@deepseek-ai/dsh-api-job-controller/lib/client.js:64-69"
+    },
+    {
+      "signal": "assistant host finish stop/tool-calls represented as equivalent dedicated client phase",
+      "reason": "Public client uses actual live blocks/tool calls/turn end; no dedicated attempt.finish export.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:7655"
+    },
+    {
+      "signal": "historical transcript output or error strings, historical tool names, retry/subagent/tool accumulated counts as current state",
+      "reason": "Use selected current turn/step/call identity and structured public status, not prose inference or accumulated counters. Current live wire name supports only explicit known tool-identity classification; arbitrary tool-name substrings are not semantic evidence.",
+      "source": "@deepseek-ai/dsh-client-ui-chat/client-reference.js:9557-9574;10088-10143"
+    },
+    {
+      "signal": "private session logs/configuration or LLMPET runtime/code dependency",
+      "reason": "Excluded from this independent implementation; only public local client contracts inventoried.",
+      "source": null
+    },
+    {
+      "signal": "goal round count equals policy cap as inferred blocked state",
+      "reason": "Only explicit projected goal.phase blocked is actionable; counts alone do not establish a state transition.",
+      "source": "@deepseek-ai/dsh-goal/lib/index.js:343-362"
+    },
+    {
+      "signal": "roster terminal failure dropped between coalesced publications",
+      "reason": "Latest public roster may omit the row; cannot recover exact outcome without a separate explicit metadata result source. Preserve unresolved completion boundary, no output watch.",
+      "source": "@deepseek-ai/dsh-api-job-controller/lib/client.js:50-69"
+    },
+    {
+      "signal": "background/promoted Bash typed exitCode, timedOut or signal after job settlement",
+      "reason": "The foreground canonical structured result is now covered by the independent official host receipt. Background/promoted acknowledgement contains only jobId; local background processOutcome records non-killed as completed and puts exit code only in detail/result rendering. No output watch or string parsing; roster alone cannot reliably classify nonzero exit as failure.",
+      "source": "@deepseek-ai/dsh-tool-bash/lib/index.js:42-50;421-482;@deepseek-ai/dsh-jobs-local/lib/index.js:569-588"
+    },
+    {
+      "signal": "host companion attached after foreground call or child run already started; future merge-extended unknown child stopReason",
+      "reason": "Require actual observed live turn/start+tool/call or exact-parent lifecycle start/end to associate receipts; do not reconstruct private history or infer unknown enum success/failure. Subsequent native tasks/runs are covered normally.",
+      "source": "adapters/harness/receipt-host.mjs;@deepseek-ai/dsh-subagent/lib/index.js:621-624"
+    },
+    {
+      "signal": "remote subagent local=false typed terminal outcome in the installed import-free companion",
+      "reason": "No local child registry entry exists. Optional official shared-instance carrierKeyOf can prove remote exact parent, but an extra installed scope package may have a different process-local WeakMap; the bundle deliberately imports no duplicate helper and does not infer remote ownership from IDs or lineage. Remote child running projection remains usable for parallel.",
+      "source": "@deepseek-ai/dsh-scope/lib/index.js:327-354;@deepseek-ai/dsh-subagent/lib/index.js:235-279;adapters/harness/receipt-host.mjs"
+    },
+    {
+      "signal": "foreground or child typed outcome emitted while no transient selected-session subscriber exists",
+      "reason": "Nonpersistent metadata deliberately has no history replay. Results before initial admission, during a failed/disconnected carrier, or while another session is selected are not reconstructed from output, private history or logs. Reconnection first seeds a fresh opening cursor; subsequent observed operations are covered. Native projected whole-turn/job failures remain independently usable.",
+      "source": "@deepseek-ai/dsh-typert-registry/lib/index.js:398-417;562-566;@deepseek-ai/dsh-api-gateway/lib/index.js:962-988;1253-1279;1452-1461;@deepseek-ai/dsh-api-gateway/lib/client.js:1036-1062;1636-1647;1662-1684;adapters/harness/receipt-client.mjs"
+    }
+  ],
+  "skinVersion": "0.12.0"
+}

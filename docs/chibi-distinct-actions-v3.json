@@ -1,0 +1,183 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "version": "0.13.0",
+  "records": [
+    {
+      "state": "thinking",
+      "file": "assets/actions/maid-chibi-thinking-v3.png",
+      "prompt": "Use case: identity-preserve. Edit the FIRST image only by correcting the character's face orientation to match the SECOND reference's front-facing face. Keep her existing distinctive STANDING thinking pose exactly: one forearm horizontally supports the other elbow, raised fingertips on chin, NO props. Turn head to a FRONTAL face facing directly at viewer, nose points toward camera, eyes both equal in size and clearly visible, eyes softly meet viewer in thoughtful eye contact. Head absolutely upright without tilt, no looking screen-left, no profile. Match exact cute chibi facial identity and same long blue hair, headband and whale-tail ornament from second image. Keep the first image's character costume, body proportions, both arm pose, full-body layout and both shoes, and original true transparent alpha background. Canvas 1024x1536, RGBA transparency; no background, vignette, glow or ground shadow. No pixel rescaling effect, no crop. No book, notebook, paper, furniture or additional objects. This is a focused face-turn correction with all original body/action elements preserved.",
+      "references": [
+        "generated://exec-0cb90f31-c469-40ac-92be-cc800220cd0f.png",
+        "assets/actions/maid-chibi-intro-front-neutral-v1.png"
+      ],
+      "source": "generated://exec-de0cb84d-a26b-45f8-ab50-7af46d58594e.png",
+      "facing": "front",
+      "faceCenter": [
+        0.481,
+        0.264
+      ],
+      "faceWidth": 0.33,
+      "sha256": "81247a079d7c7b3a02ee45b24b52c9d121f0eae89c10aed7dd9cb81d731ee67f",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA"
+      },
+      "pngColorType": 6
+    },
+    {
+      "state": "working",
+      "file": "assets/actions/maid-chibi-working-v3.png",
+      "prompt": "Use case: identity-preserve. Asset type: a full-body transparent PNG state sprite for the maid_chibi desktop pet, a polished detailed Japanese anime chibi illustration. Use the supplied image ONLY as the exact character identity, costume and rendering reference. Keep the SAME petite 2.7-head-tall chibi proportions, large round cobalt-blue eyes and face, long flowing deep sapphire-blue hair with braided side bun, blue translucent whale-tail hair accessory with dangling blue diamonds, white ruffled maid headband, navy puff-sleeved maid dress, white apron and ruffle skirt, blue neck bow and diamond brooch, white tights, navy Mary Jane shoes with blue jewel bows, and whale-tail detail by her skirt. Do not age her up or make adult body proportions. Change her entire body pose as specified below; the pose must be unmistakable at small size.\n\nOUTPUT: 1024 x 1536 pixels, portrait, true transparent RGBA background with clean alpha edges. No background image, no dark/blue/white backdrop, no glow or vignette, no ground plane or cast shadow. One character only. Full body, shoes, hair, skirt and ALL props completely inside the canvas with comfortable margins. No cropping. Both arms and hands anatomically clear. High polish, fine clean linework and soft blue-white shading matching the reference. Head upright, no habitual head tilt. Face always toward SCREEN LEFT in three-quarter view or toward viewer slightly left; NEVER toward screen right. No text, labels, icons, symbols floating over head, watermark, panels or frame.\n\nState WORKING / actively repairing. She kneels LOW on ONE KNEE beside an OPEN silver-and-blue TOOLBOX on the floor at screen left. With one hand she uses a conspicuously LARGE OPEN-END WRENCH to adjust a visible bolt on a small silver-blue MECHANICAL WHALE beside the toolbox; her other hand steadies the mechanical whale. Toolbox, large wrench and small mechanical whale must read instantly as repair work. One knee on floor and one foot planted, modest skirt fully covering her, both shoes visible. Focused gaze DOWN toward SCREEN LEFT at the whale. No desk, chair, stool, computer, books, papers, reading or writing.",
+      "references": [
+        "assets/actions/maid-chibi-intro-away-v1.png"
+      ],
+      "source": "generated://exec-e6e8f7e5-7293-4c4c-914e-217f04252746.png",
+      "facing": "left",
+      "faceCenter": [
+        0.46,
+        0.397
+      ],
+      "faceWidth": 0.31,
+      "sha256": "73f64835009493d9d2776750c2acfc02c4a5af84e846c0f87853f3db01c7eb9a",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA"
+      },
+      "pngColorType": 6
+    },
+    {
+      "state": "retrying",
+      "file": "assets/actions/maid-chibi-retrying-v3.png",
+      "prompt": "Use case: identity-preserve. Asset type: a full-body transparent PNG state sprite for the maid_chibi desktop pet, a polished detailed Japanese anime chibi illustration. Use the supplied image ONLY as the exact character identity, costume and rendering reference. Keep the SAME petite 2.7-head-tall chibi proportions, large round cobalt-blue eyes and face, long flowing deep sapphire-blue hair with braided side bun, blue translucent whale-tail hair accessory with dangling blue diamonds, white ruffled maid headband, navy puff-sleeved maid dress, white apron and ruffle skirt, blue neck bow and diamond brooch, white tights, navy Mary Jane shoes with blue jewel bows, and whale-tail detail by her skirt. Do not age her up or make adult body proportions. Change her entire body pose as specified below; the pose must be unmistakable at small size.\n\nOUTPUT: 1024 x 1536 pixels, portrait, true transparent RGBA background with clean alpha edges. No background image, no dark/blue/white backdrop, no glow or vignette, no ground plane or cast shadow. One character only. Full body, shoes, hair, skirt and ALL props completely inside the canvas with comfortable margins. No cropping. Both arms and hands anatomically clear. High polish, fine clean linework and soft blue-white shading matching the reference. Head upright, no habitual head tilt. Face always toward SCREEN LEFT in three-quarter view or toward viewer slightly left; NEVER toward screen right. No text, labels, icons, symbols floating over head, watermark, panels or frame.\n\nState RETRYING / restarting. She STANDS beside a WAIST-HIGH silver-and-blue mechanical WINCH / REWIND SPOOL at screen left. It has a large distinct circular HAND-CRANK WHEEL facing the viewer. She actively turns the large wheel, with one hand on its offset crank handle and the other hand bracing the mechanism. The upright pose and broad circular wheel silhouette should immediately show trying to restart / rewind. Determined concentrated gaze toward SCREEN LEFT. Both feet fully visible; entire winch, base, spool and wheel in frame. No documents, books, computer, chair, desk, hourglass or cables extending outside frame.",
+      "references": [
+        "assets/actions/maid-chibi-intro-away-v1.png"
+      ],
+      "source": "generated://exec-578c2af4-0c65-4bb0-9224-95652c9ca00a.png",
+      "facing": "left",
+      "faceCenter": [
+        0.49,
+        0.318
+      ],
+      "faceWidth": 0.3,
+      "sha256": "5e35e0c3516cf2c0e1f30f337fabbe04896c4536459087a39046d33928047c73",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA"
+      },
+      "pngColorType": 6
+    },
+    {
+      "state": "queued",
+      "file": "assets/actions/maid-chibi-queued-v3.png",
+      "prompt": "Use case: identity-preserve. Asset type: a full-body transparent PNG state sprite for the maid_chibi desktop pet, a polished detailed Japanese anime chibi illustration. Use the supplied image ONLY as the exact character identity, costume and rendering reference. Keep the SAME petite 2.7-head-tall chibi proportions, large round cobalt-blue eyes and face, long flowing deep sapphire-blue hair with braided side bun, blue translucent whale-tail hair accessory with dangling blue diamonds, white ruffled maid headband, navy puff-sleeved maid dress, white apron and ruffle skirt, blue neck bow and diamond brooch, white tights, navy Mary Jane shoes with blue jewel bows, and whale-tail detail by her skirt. Do not age her up or make adult body proportions. Change her entire body pose as specified below; the pose must be unmistakable at small size.\n\nOUTPUT: 1024 x 1536 pixels, portrait, true transparent RGBA background with clean alpha edges. No background image, no dark/blue/white backdrop, no glow or vignette, no ground plane or cast shadow. One character only. Full body, shoes, hair, skirt and ALL props completely inside the canvas with comfortable margins. No cropping. Both arms and hands anatomically clear. High polish, fine clean linework and soft blue-white shading matching the reference. Head upright, no habitual head tilt. Face must be FRONTAL, looking directly at the viewer / camera, with no more than 0–15 degrees of yaw. Both eyes evenly visible, both sides of nose visible, friendly eye contact, nose pointing toward camera rather than pointing to left or right. Head straight and upright, no tilt. Body and props may angle slightly left. No text, labels, icons, symbols floating over head, watermark, panels or frame.\n\nState QUEUED / waiting patiently. She SITS SIDEWAYS on a SIMPLE TALL silver-blue STOOL, body angled toward SCREEN LEFT but head turned to face directly toward the camera. BOTH HANDS steadily support a LARGE unmistakable GLASS HOURGLASS resting upright on her lap, its two clear glass bulbs and narrow neck visible, with blue-silver frame and pale sand trickling through. Her face is near-frontal to camera, both eyes visible, eyes meet the viewer patiently, neutral gentle expression. Feet and entire stool legs clearly visible. The stool is plain and minimal, no ornate armchair. No papers, book, notebook, folder, computer, desk or wrench.",
+      "references": [
+        "assets/actions/maid-chibi-intro-front-neutral-v1.png"
+      ],
+      "source": "generated://exec-e2faaa47-142d-4f50-ab28-50b7e349cf36.png",
+      "facing": "front",
+      "faceCenter": [
+        0.502,
+        0.283
+      ],
+      "faceWidth": 0.33,
+      "sha256": "f8ed43e0f43076cf2ebc48dee1ef111c19b48195720ef324a7ce0d99cecded0e",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA"
+      },
+      "pngColorType": 6
+    },
+    {
+      "state": "error",
+      "file": "assets/actions/maid-chibi-error-v3.png",
+      "prompt": "Use case: identity-preserve. Asset type: a full-body transparent PNG state sprite for the maid_chibi desktop pet, a polished detailed Japanese anime chibi illustration. Use the supplied image ONLY as the exact character identity, costume and rendering reference. Keep the SAME petite 2.7-head-tall chibi proportions, large round cobalt-blue eyes and face, long flowing deep sapphire-blue hair with braided side bun, blue translucent whale-tail hair accessory with dangling blue diamonds, white ruffled maid headband, navy puff-sleeved maid dress, white apron and ruffle skirt, blue neck bow and diamond brooch, white tights, navy Mary Jane shoes with blue jewel bows, and whale-tail detail by her skirt. Do not age her up or make adult body proportions. Change her entire body pose as specified below; the pose must be unmistakable at small size.\n\nOUTPUT: 1024 x 1536 pixels, portrait, true transparent RGBA background with clean alpha edges. No background image, no dark/blue/white backdrop, no glow or vignette, no ground plane or cast shadow. One character only. Full body, shoes, hair, skirt and ALL props completely inside the canvas with comfortable margins. No cropping. Both arms and hands anatomically clear. High polish, fine clean linework and soft blue-white shading matching the reference. Head upright, no habitual head tilt. Face must be FRONTAL, looking directly at the viewer / camera, with no more than 0–15 degrees of yaw. Both eyes evenly visible, both sides of nose visible, friendly eye contact, nose pointing toward camera rather than pointing to left or right. Head straight and upright, no tilt. Body and props may angle slightly left. No text, labels, icons, symbols floating over head, watermark, panels or frame.\n\nState ERROR / puzzled setback. She STANDS and visibly leans her upper body BACK slightly, taking a HALF-STEP BACK, one shoe ahead of the other. BOTH HANDS raised on opposite sides of her head: one hand touches her FOREHEAD while the other hand opens PALM UP beside the other side of her head. Clearly knitted brows and a mildly perplexed frown, confused but composed. Her head is upright, face directly toward the camera, both eyes equally visible, she makes puzzled eye contact with the viewer. Strong distinct pose with both elbows spread and a slight backward lean. No crying, tears, melodrama, comedy expression, sweat symbols, book, paper, file, computer or furniture.",
+      "references": [
+        "assets/actions/maid-chibi-intro-front-neutral-v1.png"
+      ],
+      "source": "generated://exec-741cac42-a6e5-4d0b-a1da-3c4934857253.png",
+      "facing": "front",
+      "faceCenter": [
+        0.497,
+        0.291
+      ],
+      "faceWidth": 0.33,
+      "sha256": "b9462d08bff117b4eb83136d05a934e3d88014d1aaeb2bbec3d211d73064b563",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA"
+      },
+      "pngColorType": 6
+    },
+    {
+      "state": "disconnected",
+      "file": "assets/actions/maid-chibi-disconnected-v3.png",
+      "prompt": "Use case: identity-preserve. Asset type: a full-body transparent PNG state sprite for the maid_chibi desktop pet, a polished detailed Japanese anime chibi illustration. Use the supplied image ONLY as the exact character identity, costume and rendering reference. Keep the SAME petite 2.7-head-tall chibi proportions, large round cobalt-blue eyes and face, long flowing deep sapphire-blue hair with braided side bun, blue translucent whale-tail hair accessory with dangling blue diamonds, white ruffled maid headband, navy puff-sleeved maid dress, white apron and ruffle skirt, blue neck bow and diamond brooch, white tights, navy Mary Jane shoes with blue jewel bows, and whale-tail detail by her skirt. Do not age her up or make adult body proportions. Change her entire body pose as specified below; the pose must be unmistakable at small size.\n\nOUTPUT: 1024 x 1536 pixels, portrait, true transparent RGBA background with clean alpha edges. No background image, no dark/blue/white backdrop, no glow or vignette, no ground plane or cast shadow. One character only. Full body, shoes, hair, skirt and ALL props completely inside the canvas with comfortable margins. No cropping. Both arms and hands anatomically clear. High polish, fine clean linework and soft blue-white shading matching the reference. Head upright, no habitual head tilt. Face must be FRONTAL, looking directly at the viewer / camera, with no more than 0–15 degrees of yaw. Both eyes evenly visible, both sides of nose visible, friendly eye contact, nose pointing toward camera rather than pointing to left or right. Head straight and upright, no tilt. Body and props may angle slightly left. No text, labels, icons, symbols floating over head, watermark, panels or frame.\n\nState DISCONNECTED. She stands with body leaning slightly FORWARD, looking toward the viewer with concern. Her hands extend apart left and right, each holding one of TWO LARGE blue-and-silver PLUG CONNECTORS. The two exposed connector tips are visibly separated by a broad obvious AIR GAP at chest height, facing inward toward one another. The blue cable attached to the back of each plug forms ONE loose fully visible U-SHAPED LOOP hanging below her hands, so the disconnected tips and slack cable instantly communicate broken connection. Make connectors conspicuous and large. The ENTIRE U-shaped cable, both large plugs, fingers, feet, hair and dress remain within the image. No tiny USB plugs, no hidden cable, no cable leading out of frame. Face directly toward the viewer, front view, head straight. No other props, no paper, books, computer or furniture.",
+      "references": [
+        "assets/actions/maid-chibi-intro-front-neutral-v1.png"
+      ],
+      "source": "generated://exec-e3d01284-8a8f-4666-9f21-95275171864c.png",
+      "facing": "front",
+      "faceCenter": [
+        0.498,
+        0.299
+      ],
+      "faceWidth": 0.34,
+      "sha256": "0fd8ba79d70826a90190820a781b2003a3fa3f132268baa5dbfa6ef2bf7dc57a",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA"
+      },
+      "pngColorType": 6
+    },
+    {
+      "state": "stopped",
+      "file": "assets/actions/maid-chibi-stopped-v3.png",
+      "prompt": "Use case: identity-preserve. Asset type: a full-body transparent PNG state sprite for the maid_chibi desktop pet, a polished detailed Japanese anime chibi illustration. Use the supplied image ONLY as the exact character identity, costume and rendering reference. Keep the SAME petite 2.7-head-tall chibi proportions, large round cobalt-blue eyes and face, long flowing deep sapphire-blue hair with braided side bun, blue translucent whale-tail hair accessory with dangling blue diamonds, white ruffled maid headband, navy puff-sleeved maid dress, white apron and ruffle skirt, blue neck bow and diamond brooch, white tights, navy Mary Jane shoes with blue jewel bows, and whale-tail detail by her skirt. Do not age her up or make adult body proportions. Change her entire body pose as specified below; the pose must be unmistakable at small size.\n\nOUTPUT: 1024 x 1536 pixels, portrait, true transparent RGBA background with clean alpha edges. No background image, no dark/blue/white backdrop, no glow or vignette, no ground plane or cast shadow. One character only. Full body, shoes, hair, skirt and ALL props completely inside the canvas with comfortable margins. No cropping. Both arms and hands anatomically clear. High polish, fine clean linework and soft blue-white shading matching the reference. Head upright, no habitual head tilt. Face must be FRONTAL, looking directly at the viewer / camera, with no more than 0–15 degrees of yaw. Both eyes evenly visible, both sides of nose visible, friendly eye contact, nose pointing toward camera rather than pointing to left or right. Head straight and upright, no tilt. Body and props may angle slightly left. No text, labels, icons, symbols floating over head, watermark, panels or frame.\n\nState STOPPED / halt. She STANDS firmly upright with BOTH FOREARMS CROSSED in front of her CHEST to create a very large, clear letter-X shape. Elbows spread wide and open palms terminate the upper two branches of the X, wrists cross visibly at the center of her upper chest, hands do not touch her face. Calm serious resolute expression, mouth closed, eyes directly toward the viewer in a near-frontal face view, head straight. This broad unmistakable stop gesture is the only action. No book, paper, file or any hand-held prop, no computer or furniture, no drawn X symbol.",
+      "references": [
+        "assets/actions/maid-chibi-intro-front-neutral-v1.png"
+      ],
+      "source": "generated://exec-166f28e1-dd5f-4195-ac9b-c86ee053c9ad.png",
+      "facing": "front",
+      "faceCenter": [
+        0.498,
+        0.285
+      ],
+      "faceWidth": 0.34,
+      "sha256": "3dfba8cc8487383f13fa580019612f3c62022c474f4c4201475e4d10a6e5de23",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA"
+      },
+      "pngColorType": 6
+    },
+    {
+      "state": "complete",
+      "file": "assets/actions/maid-chibi-complete-v3.png",
+      "prompt": "Use case: identity-preserve. Asset type: a full-body transparent PNG state sprite for the maid_chibi desktop pet, a polished detailed Japanese anime chibi illustration. Use the supplied image ONLY as the exact character identity, costume and rendering reference. Keep the SAME petite 2.7-head-tall chibi proportions, large round cobalt-blue eyes and face, long flowing deep sapphire-blue hair with braided side bun, blue translucent whale-tail hair accessory with dangling blue diamonds, white ruffled maid headband, navy puff-sleeved maid dress, white apron and ruffle skirt, blue neck bow and diamond brooch, white tights, navy Mary Jane shoes with blue jewel bows, and whale-tail detail by her skirt. Do not age her up or make adult body proportions. Change her entire body pose as specified below; the pose must be unmistakable at small size.\n\nOUTPUT: 1024 x 1536 pixels, portrait, true transparent RGBA background with clean alpha edges. No background image, no dark/blue/white backdrop, no glow or vignette, no ground plane or cast shadow. One character only. Full body, shoes, hair, skirt and ALL props completely inside the canvas with comfortable margins. No cropping. Both arms and hands anatomically clear. High polish, fine clean linework and soft blue-white shading matching the reference. Head upright, no habitual head tilt. Face must be FRONTAL, looking directly at the viewer / camera, with no more than 0–15 degrees of yaw. Both eyes evenly visible, both sides of nose visible, friendly eye contact, nose pointing toward camera rather than pointing to left or right. Head straight and upright, no tilt. Body and props may angle slightly left. No text, labels, icons, symbols floating over head, watermark, panels or frame.\n\nState COMPLETE / respectful completion. She faces directly toward the viewer, frontal face with no more than 5 degrees of turn and gives an elegant SHALLOW BOW / CURTSY. BOTH HANDS gently grasp and lift the two LOW SIDE EDGES of her skirt outward a little in a symmetrical polite maid curtsy, elbows low. Knees softly bent with one foot a small step behind, upper torso inclined forward just a little, face raised and FULLY VISIBLE with a soft satisfied warm closed-mouth smile. Head level, never buried or looking down. Keep her chibi, composed and graceful; clear curtsy silhouette, both feet visible. No waving, no raised hand, no book, documents, computers, furniture or other props.",
+      "references": [
+        "assets/actions/maid-chibi-intro-front-neutral-v1.png"
+      ],
+      "source": "generated://exec-79b8182d-4960-4b70-9a1e-9e2a9b1648ff.png",
+      "facing": "front",
+      "faceCenter": [
+        0.504,
+        0.305
+      ],
+      "faceWidth": 0.34,
+      "sha256": "3cbea7928e8cf731a770d2532019488e6c81a437c1460ef39cf5c74fcc58f065",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA"
+      },
+      "pngColorType": 6
+    }
+  ]
+}

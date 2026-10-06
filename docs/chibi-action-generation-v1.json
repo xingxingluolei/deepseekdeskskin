@@ -1,0 +1,635 @@
+{
+  "schema": 1,
+  "character": "maid_chibi",
+  "tool": "image_gen.imagegen",
+  "scope": "16 independent fullbody pose PNGs + 4 greeting keyframes",
+  "referencePolicy": "Only independent deepseekdeskskin assets, no LLMPET resource",
+  "notes": [
+    "Original generated PNGs copied byte-for-byte; no programmatic image edits.",
+    "All images independently viewed for fullbody/limbs/props; alpha verified with Pillow.",
+    "faceCenter normalized to source image; backgroundScale is a UI crop suggestion.",
+    "Four independently generated intro frames may have minor hair/body drift; keyframe sequence, not skeletal animation."
+  ],
+  "records": [
+    {
+      "state": "idle",
+      "filename": "maid-chibi-idle-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nSTATE idle / ready: Stand upright centered, feet naturally together, both arms resting behind the back, shoulders level and balanced. Face directly toward the camera: eyes symmetrical and fully visible, gaze toward the viewer, small calm closed-mouth smile, nose centered, head roll zero. Keep a compact dignified vertical standing silhouette. No desk or chair, no hand gesture.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png"
+      ],
+      "rawPath": "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "inspection": "完整发饰/双鞋可见，双臂自然背后，无多肢；RGBA alpha0–254，透明像素821807。",
+      "faceCenter": [
+        0.49,
+        0.3
+      ],
+      "backgroundScale": "280% auto",
+      "destination": "assets/actions/maid-chibi-idle-v1.png",
+      "sha256": "b7c5e544e4ede49b423ffdc50af97ca6d725783c2b7003164878f45c5bc8e666",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 821807,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "answering",
+      "filename": "maid-chibi-answering-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing identity anchor. Preserve the exact face, maid costume and CHIBI proportions, but replace the whole posture with a visibly distinct body action:\nSTATE answering: Upright standing with torso slightly turned toward viewer's left toward the reading area; one arm broadly OPEN with palm up to explain a point, other arm relaxed low near the apron. Both feet visible, one foot slightly forward. Head almost front with both blue eyes clearly visible, lively gentle speaking smile, naturally looking between viewer and the open explanatory hand. Distinct open one-sided silhouette, no book, chair or desk.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-357aa1d5-c508-4079-9f89-9f42e3af6c5e.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.505,
+        0.3
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整双鞋与发饰、两臂两腿无多肢；回应张开单臂，并行双臂持两块任务板，完成高位挥手，轮廓不同。",
+      "destination": "assets/actions/maid-chibi-answering-v1.png",
+      "sha256": "7f565965ac63ff6e048b881a20743fef59732ae8fd63896ed4bb4b4d2b507ad9",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 706490,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "parallel",
+      "filename": "maid-chibi-parallel-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing identity anchor. Preserve the exact face, maid costume and CHIBI proportions, but replace the whole posture with a visibly distinct body action:\nSTATE parallel: Stand confidently with feet apart and BOTH arms widely extended, one to each side, balancing two separate small blue task boards, one held in each hand. Boards show only blank abstract rectangular panels, no text or floating icons. Wide symmetrical horizontal arm silhouette, body upright, focused composed gaze toward one task then forward. Exactly two hands, no extra arms, all boards safely inside canvas.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-66f18e4b-134d-4c18-982a-1d18b92e7fd7.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.505,
+        0.3
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整双鞋与发饰、两臂两腿无多肢；回应张开单臂，并行双臂持两块任务板，完成高位挥手，轮廓不同。",
+      "destination": "assets/actions/maid-chibi-parallel-v1.png",
+      "sha256": "9a924f78955a6f8d2b73905ca5b8071ca2cbc779818577b561fa58c0731b29dd",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 679987,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "complete",
+      "filename": "maid-chibi-complete-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing identity anchor. Preserve the exact face, maid costume and CHIBI proportions, but replace the whole posture with a visibly distinct body action:\nSTATE complete: Stand upright facing FRONT, one hand lifted HIGH in a graceful small wave near head level, other arm relaxed low, weight on one leg and the other toe lightly touching the ground. Both blue eyes look directly into the camera, genuinely relaxed happy small open-mouth smile. High waving hand makes a distinctive top silhouette; all fingertips, head ornament and both shoes have clear transparent margins. No confetti or floating icons.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-d3155896-6502-4840-971d-9415f77f1c19.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.515,
+        0.295
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整双鞋与发饰、两臂两腿无多肢；回应张开单臂，并行双臂持两块任务板，完成高位挥手，轮廓不同。",
+      "destination": "assets/actions/maid-chibi-complete-v1.png",
+      "sha256": "3f651bceb690ac2aee448fb901d362c1155fed0d2830ebc97d725e06b91a71f7",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 754937,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "thinking",
+      "filename": "maid-chibi-thinking-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing character anchor. Preserve the SAME face identity and outfit while changing the entire body posture for the following state. Keep CHIBI proportions and fit all furniture.\nSTATE thinking: Sitting fully on a small elegant silver-blue chair, full chair and both shoes visible. One elbow supported, one hand gently under the chin, the other hand holds an open small blue book on the lap. Body has a clear seated L-shaped silhouette, gaze naturally down toward the open book with a thoughtful focused face, upright head with no sideways tilt. Exactly two arms. Furniture minimal and independent, not a backdrop.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-518cc9ce-6ba6-415e-809f-a52b4843a684.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.51,
+        0.32
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整双鞋、发饰和双臂，无多肢。思考托下巴持书坐姿，执行双手键盘完整桌椅，出错明确皱眉低蹲检查笔记本，整理单膝归档；四种低位轮廓不同。",
+      "destination": "assets/actions/maid-chibi-thinking-v1.png",
+      "sha256": "390e35602826f97f7a6dad2392ef32c0784a0574eecfc1381e2eaa55d53af6ea",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 711672,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "working",
+      "filename": "maid-chibi-working-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing character anchor. Preserve the SAME face identity and outfit while changing the entire body posture for the following state. Keep CHIBI proportions and fit all furniture.\nSTATE working: Fully seated at a small narrow silver-blue work desk, both forearms reaching FORWARD and both hands operating a compact blue keyboard, a small open blue laptop above the desk. Complete lower legs, two shoes, chair feet and desk feet visibly fit inside transparent margins. Side-three-quarter body facing the viewer's left toward the work surface, gaze naturally at the laptop; focused serious mouth. The desk/chair and forward arms form an unmistakable work silhouette. No cables across the canvas, no text on laptop.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-bb7b6037-88ed-4eae-a506-691c6b586278.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.52,
+        0.325
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整双鞋、发饰和双臂，无多肢。思考托下巴持书坐姿，执行双手键盘完整桌椅，出错明确皱眉低蹲检查笔记本，整理单膝归档；四种低位轮廓不同。",
+      "destination": "assets/actions/maid-chibi-working-v1.png",
+      "sha256": "84f9a413db85b410b2ebe80f9853c6c5fbf76746779df4be367e9867de87cc98",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 698226,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "error",
+      "filename": "maid-chibi-error-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing character anchor. Preserve the SAME face identity and outfit while changing the entire body posture for the following state. Keep CHIBI proportions and fit all furniture.\nSTATE error / careful inspection: Very low balanced CROUCH, both knees bent, both feet firmly visible on the same baseline, holding a small open BLUE NOTEBOOK low beside the knees and carefully inspecting its page. One hand supports the notebook and the other touches a page; exactly two arms. Brow clearly furrowed, eyes focused down, mouth small and concerned, serious thoughtful problem-solving rather than crying or slapstick. Hair and skirt conform to low posture. No chair, desk, text or error icon.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-72862c4a-cd88-4463-821e-69d9ddbf22ae.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.5,
+        0.44
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整双鞋、发饰和双臂，无多肢。思考托下巴持书坐姿，执行双手键盘完整桌椅，出错明确皱眉低蹲检查笔记本，整理单膝归档；四种低位轮廓不同。",
+      "destination": "assets/actions/maid-chibi-error-v1.png",
+      "sha256": "6ddc87868fa9417817c6e8ac616307ed6a4fed74077e3511675bc34ad4a83ef1",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 665896,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "compacting",
+      "filename": "maid-chibi-compacting-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing identity anchor. Preserve the exact face, maid costume and CHIBI proportions, but replace the whole posture with a visibly distinct body action:\nSTATE compacting: Low asymmetric ONE-KNEE kneeling pose, one knee down and the other foot planted. Both hands sort three small blue paper cards into an open blue document folder on a compact silver-blue case by the knees. Head naturally lowered to the papers, focused precise expression. Complete bent legs, both shoes and all hair visible. This is a low kneeling silhouette, not a standing pose or seated desk. No text on paper.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-fa6317db-a6d6-4f39-971d-133f67e8b777.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.465,
+        0.4
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整双鞋、发饰和双臂，无多肢。思考托下巴持书坐姿，执行双手键盘完整桌椅，出错明确皱眉低蹲检查笔记本，整理单膝归档；四种低位轮廓不同。",
+      "destination": "assets/actions/maid-chibi-compacting-v1.png",
+      "sha256": "731b77bab5af0cd84044e62ec91be030d95658556b5e84614d9edcf6a4aa9d12",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 700882,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "retrying",
+      "filename": "maid-chibi-retrying-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing identity anchor. Preserve the exact face, maid costume and CHIBI proportions, but replace the whole posture with a visibly distinct body action:\nSTATE retrying: Clearly RISING from the work position, one knee partly straightening and one foot taking a firm forward step toward viewer's left; torso slightly leaning forward, one hand reaching ahead ready to act, other hand carrying a closed small blue notebook behind the hip. No chair or desk, full shoes visible. Determined focused expression, natural gaze toward the forward task. Distinct diagonal forward-moving body silhouette, no running comedy.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-ce6f718b-1290-445a-bc41-71f76cdb1a07.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.4,
+        0.325
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整发饰、双鞋、两臂两腿，无多肢；重试前跨伸手，等待正脸前递空白确认板，排队侧抱资料，连接斜向上伸手看设备；四种动作不同。",
+      "destination": "assets/actions/maid-chibi-retrying-v1.png",
+      "sha256": "8018fd91a5d03e912b046aecf2a43fa6a3cfaaee577936afd21b18d15480339b",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 784860,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "waiting",
+      "filename": "maid-chibi-waiting-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing identity anchor. Preserve the exact face, maid costume and CHIBI proportions, but replace the whole posture with a visibly distinct body action:\nSTATE waiting / confirmation: Stand upright facing FRONT, both arms held FORWARD presenting a small blank silver-blue confirmation board at lower chest height toward the viewer. Board stays below the chin and does not cover the eyes or face. Both blue eyes directly look at viewer, calm attentive expression with small hopeful closed-mouth smile, head upright, feet together. Exactly two hands visibly hold the board, board has no text or symbols.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-d009cb5a-3ab3-407f-9ad5-adb184e4466d.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.51,
+        0.285
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整发饰、双鞋、两臂两腿，无多肢；重试前跨伸手，等待正脸前递空白确认板，排队侧抱资料，连接斜向上伸手看设备；四种动作不同。",
+      "destination": "assets/actions/maid-chibi-waiting-v1.png",
+      "sha256": "59ff7282ee932ebeb7a8ec6a7e0129f14fd94317a3146af6bfa565a6965ac5c0",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 770468,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "queued",
+      "filename": "maid-chibi-queued-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing identity anchor. Preserve the exact face, maid costume and CHIBI proportions, but replace the whole posture with a visibly distinct body action:\nSTATE queued: Compact side-three-quarter standing pose facing viewer's left, both arms firmly hugging a neat blue stack of pending folders at waist level. Legs straight and feet close together, posture patiently still, head naturally upright and gaze toward the future work area. Calm neutral closed mouth, full face still has both eyes partly visible rather than a pure profile. Tight gathered arms distinguish this from waiting's forward offered board.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-7e7ddc0a-a140-47a8-abf8-52d7ac5abc84.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.47,
+        0.315
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整发饰、双鞋、两臂两腿，无多肢；重试前跨伸手，等待正脸前递空白确认板，排队侧抱资料，连接斜向上伸手看设备；四种动作不同。",
+      "destination": "assets/actions/maid-chibi-queued-v1.png",
+      "sha256": "874ca2dcb834bdedf54fd3e7d37f572f5abbe7b2e800cf5e17caa041f22dc23c",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 735443,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "connecting",
+      "filename": "maid-chibi-connecting-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing identity anchor. Preserve the exact face, maid costume and CHIBI proportions, but replace the whole posture with a visibly distinct body action:\nSTATE connecting: Stand with one arm stretched DIAGONALLY UPWARD toward a small blue connector node held in the raised hand, the other arm low and sideways for balance; torso reaching gently upward, one heel slightly raised while both shoes remain visible. Look naturally upward toward the connector with concentrated alert eyes, not toward viewer. Clear high diagonal arm silhouette, small blue connector device has no light beams, cable or status text.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-fb0fc5ae-f9e8-458e-a74a-567e57feedd5.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.51,
+        0.31
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整发饰、双鞋、两臂两腿，无多肢；重试前跨伸手，等待正脸前递空白确认板，排队侧抱资料，连接斜向上伸手看设备；四种动作不同。",
+      "destination": "assets/actions/maid-chibi-connecting-v1.png",
+      "sha256": "8bf958e47d3de7ea96c42ed66d2229ac7cd69512abda8d5fe9b6dbce824e169f",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 780583,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "disconnected",
+      "filename": "maid-chibi-disconnected-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing identity anchor. Preserve the exact face, maid costume and CHIBI proportions, but replace the whole posture with a visibly distinct body action:\nSTATE disconnected: Standing but upper body subtly draws BACK, knees soft, BOTH hands held LOW near waist carefully examining a small separated blue connector/device, head looks down toward the hands. Calm worried knitted brows, closed neutral mouth; do not cry, joke, fall or celebrate. Distinct rearward body and low hands silhouette, full shoes visible, no large symbols or lightning graphics.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-3d5f01a4-27a7-4c44-8754-198ae7cfa657.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.47,
+        0.325
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整发饰、双鞋与两臂两腿，无多肢。断线担忧检查分离连接器，停止低位合上资料，暂停清醒靠坐完整扶手椅，阻塞正脸皱眉前伸五指掌；动作严肃且有区别。",
+      "destination": "assets/actions/maid-chibi-disconnected-v1.png",
+      "sha256": "7843abd7f5ff397b976d114912079bb326966409e585e313919e335a839a4dfc",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 818917,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "stopped",
+      "filename": "maid-chibi-stopped-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing identity anchor. Preserve the exact face, maid costume and CHIBI proportions, but replace the whole posture with a visibly distinct body action:\nSTATE stopped: Quiet straight FRONT standing pose, shoulders relaxed, BOTH arms hanging low while both hands hold a CLOSED blue folder vertically in front of the thighs. Feet planted evenly, neutral composed expression, gaze softly ahead toward the viewer, head straight. No smile celebration, wave or palm-stop gesture; visibly gathered and finished body language.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-f7828d21-f794-43c1-bfc1-0a62a274b8ac.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.5,
+        0.295
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整发饰、双鞋与两臂两腿，无多肢。断线担忧检查分离连接器，停止低位合上资料，暂停清醒靠坐完整扶手椅，阻塞正脸皱眉前伸五指掌；动作严肃且有区别。",
+      "destination": "assets/actions/maid-chibi-stopped-v1.png",
+      "sha256": "275ff2e67f2e53d7fb608a3994130599990e2e04ae835fa1d92198269a561bb2",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 795967,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "paused",
+      "filename": "maid-chibi-paused-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing identity anchor. Preserve the exact face, maid costume and CHIBI proportions, but replace the whole posture with a visibly distinct body action:\nSTATE paused: Clearly reclined comfortable SITTING on a minimal silver-blue armchair, torso supported back against chair, both hands resting on armrests or knees, feet relaxed and complete shoes visibly extended slightly forward. Awake peaceful expression, eyes softly open and gaze slightly toward the work area, no sleep symbols. Wide relaxed lean-back silhouette distinct from focused thinking seat. Entire chair safely inside transparent canvas.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-25a3752a-8c22-4f80-8e79-286524cfec60.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.575,
+        0.325
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整发饰、双鞋与两臂两腿，无多肢。断线担忧检查分离连接器，停止低位合上资料，暂停清醒靠坐完整扶手椅，阻塞正脸皱眉前伸五指掌；动作严肃且有区别。",
+      "destination": "assets/actions/maid-chibi-paused-v1.png",
+      "sha256": "8b67ecffbdd7ba7e5f611e8db85de1503de3fb3510366775d8262f00f16f2c14",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 677858,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "blocked",
+      "filename": "maid-chibi-blocked-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: one production full-body transparent character cutout for an independent desktop skin. Input image 1 is the character identity and costume reference ONLY, never its pale-blue opaque background or landscape layout. Match this exact premium anime CHIBI blue-haired maid: about 3 heads tall, large clear sapphire-blue eyes, long deep cobalt blue wavy hair, small braided side bun, white ruffled maid headband, glossy blue whale-tail hair ornament with dangling blue crystal, blue crystal earrings, navy blue short puff-sleeve maid dress, white frilled apron, navy chest bow with blue gem, white stockings, navy Mary Jane shoes. Sweet elegant high-detail polished anime rendering, SAME outfit construction, hair identity and blue/white palette. A single character, exactly two arms and two legs. Draw the ENTIRE character and all pose props, from the top of the headband to both shoe soles, with at least 7% truly transparent safe margin on ALL four edges. Portrait transparent canvas, preferably 1024x1536. No opaque backdrop, no floor, no full-width shadows, no text, no status icons, no watermark, no additional characters. Head naturally upright, no repeated cute head tilt; adapt gaze to the stated action. The entire body silhouette must make the pose recognizable.\nInput image 2 is the approved transparent standing identity anchor. Preserve the exact face, maid costume and CHIBI proportions, but replace the whole posture with a visibly distinct body action:\nSTATE blocked / needs intervention: Firm upright FRONT standing, feet stable apart slightly, ONE palm held clearly FORWARD toward viewer as a serious stop/wait gesture, fingers naturally separated, other arm hugs a blue issue folder against the side waist. Both eyes directly face viewer, brows mildly tense and serious closed mouth, head naturally upright. Clear forward palm silhouette. Do not make angry, comedic, crying or cute exaggerated panic.",
+      "references": [
+        "assets/maid-chibi-scene-idle-v1.png",
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-b6c09c06-1cc6-4e8c-8687-df27b8062788.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.505,
+        0.285
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：完整发饰、双鞋与两臂两腿，无多肢。断线担忧检查分离连接器，停止低位合上资料，暂停清醒靠坐完整扶手椅，阻塞正脸皱眉前伸五指掌；动作严肃且有区别。",
+      "destination": "assets/actions/maid-chibi-blocked-v1.png",
+      "sha256": "465b60148493d1f31b8f7282ad4a09ad33da5801ceda75bd380daf416eaad5e6",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 728935,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "intro-away",
+      "frame": "away",
+      "filename": "maid-chibi-intro-away-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: a single transparent full-body PNG keyframe for a short task-start greeting. Input image 1 is the APPROVED exact CHIBI maid standing cutout and is the EDIT TARGET. Preserve its entire body, two arms behind the back, exact legs and shoes, feet baseline, skirt, apron, chest bow, maid headband, long cobalt hair silhouette, whale-tail hair ornament, blue crystal earrings, exact canvas 1024x1536 and transparent padding. Change ONLY head yaw, eye gaze and facial expression as specified. Do not tilt/roll the head. Do not move, enlarge or crop the body. Still same charming premium anime chibi, blue-white maid identity. True transparent background preserved, no opaque plate, no text or symbols, no extra limbs. FULL feet and ornament always in frame.\nKEYFRAME away: Head turns naturally about 25 degrees toward the viewer's LEFT to look at the offscreen task area. The neck remains vertical, head roll zero, shoulders remain front and level. Eyes look to the side, small neutral CLOSED mouth. It is the START of a horizontal turn, not a cute tilted pose.",
+      "references": [
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-7efbfd9e-6db8-48c3-a99e-b9e0a98e0443.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.445,
+        0.293
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：同一正面站姿、双臂背后与完整双鞋；away侧向任务视线，turning中间视線转向，front-neutral真正正脸双眼对视，front-smile正脸明显柔和微笑。无多肢，原PNG不裁改；独立生成关键帧，不宣称骨骼流畅动画。",
+      "destination": "assets/actions/maid-chibi-intro-away-v1.png",
+      "sha256": "b93869bf824303a4e1452b1958511bbfcc6fd65aa2428074795324cdb9588208",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 813242,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "intro-turning",
+      "frame": "turning",
+      "filename": "maid-chibi-intro-turning-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: a single transparent full-body PNG keyframe for a short task-start greeting. Input image 1 is the APPROVED exact CHIBI maid standing cutout and is the EDIT TARGET. Preserve its entire body, two arms behind the back, exact legs and shoes, feet baseline, skirt, apron, chest bow, maid headband, long cobalt hair silhouette, whale-tail hair ornament, blue crystal earrings, exact canvas 1024x1536 and transparent padding. Change ONLY head yaw, eye gaze and facial expression as specified. Do not tilt/roll the head. Do not move, enlarge or crop the body. Still same charming premium anime chibi, blue-white maid identity. True transparent background preserved, no opaque plate, no text or symbols, no extra limbs. FULL feet and ornament always in frame.\nKEYFRAME turning: Input image 1 is the exact body/canvas EDIT TARGET, and image 2 is only the target FRONT face orientation reference. Change ONLY the head yaw and eye gaze to an intermediate orientation halfway between image 1's leftward glance and image 2's frontal face: about 10–12 degrees head yaw toward viewer's left, both eyes visible, eyes beginning to meet the camera. Mouth remains neutral closed, shoulders/front stance unchanged, head roll zero. This must visibly sit BETWEEN away and front-neutral, not remain the fully side-looking away frame. Preserve body and foot baseline exactly.",
+      "references": [
+        "generated://exec-7efbfd9e-6db8-48c3-a99e-b9e0a98e0443.png",
+        "generated://exec-dd6e585d-ac93-4bf3-b5f1-ac0bac3d3eda.png"
+      ],
+      "rawPath": "generated://exec-565c4bfa-cd28-4fea-9826-46add8b9d0f8.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.455,
+        0.293
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：同一正面站姿、双臂背后与完整双鞋；away侧向任务视线，turning中间视線转向，front-neutral真正正脸双眼对视，front-smile正脸明显柔和微笑。无多肢，原PNG不裁改；独立生成关键帧，不宣称骨骼流畅动画。",
+      "destination": "assets/actions/maid-chibi-intro-turning-v1.png",
+      "sha256": "a79f48914157066105bbc19b9e7086f866171cc469bf6e4f6b14dd8b037dd6a4",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 815349,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "intro-front-neutral",
+      "frame": "front-neutral",
+      "filename": "maid-chibi-intro-front-neutral-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: a single transparent full-body PNG keyframe for a short task-start greeting. Input image 1 is the APPROVED exact CHIBI maid standing cutout and is the EDIT TARGET. Preserve its entire body, two arms behind the back, exact legs and shoes, feet baseline, skirt, apron, chest bow, maid headband, long cobalt hair silhouette, whale-tail hair ornament, blue crystal earrings, exact canvas 1024x1536 and transparent padding. Change ONLY head yaw, eye gaze and facial expression as specified. Do not tilt/roll the head. Do not move, enlarge or crop the body. Still same charming premium anime chibi, blue-white maid identity. True transparent background preserved, no opaque plate, no text or symbols, no extra limbs. FULL feet and ornament always in frame.\nKEYFRAME front-neutral: Head faces EXACTLY FRONT square to the camera, zero yaw, zero head tilt, upright neck. BOTH blue eyes equally and completely visible, gaze directly into the camera, balanced eyebrows, small relaxed NEUTRAL CLOSED mouth, nose centered. True frontal face, not three-quarter or a side glance.",
+      "references": [
+        "generated://exec-5f8af0c1-02b2-4e33-88f6-900a32a53e09.png"
+      ],
+      "rawPath": "generated://exec-dd6e585d-ac93-4bf3-b5f1-ac0bac3d3eda.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.5,
+        0.292
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：同一正面站姿、双臂背后与完整双鞋；away侧向任务视线，turning中间视線转向，front-neutral真正正脸双眼对视，front-smile正脸明显柔和微笑。无多肢，原PNG不裁改；独立生成关键帧，不宣称骨骼流畅动画。",
+      "destination": "assets/actions/maid-chibi-intro-front-neutral-v1.png",
+      "sha256": "6f6bdfc0c23d88bf4b1ce0292442ce5dffbbfc765ac1b24d77b9d677af44977c",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 779610,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "state": "intro-front-smile",
+      "frame": "front-smile",
+      "filename": "maid-chibi-intro-front-smile-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: a single transparent full-body PNG keyframe for a short task-start greeting. Input image 1 is the APPROVED exact CHIBI maid standing cutout and is the EDIT TARGET. Preserve its entire body, two arms behind the back, exact legs and shoes, feet baseline, skirt, apron, chest bow, maid headband, long cobalt hair silhouette, whale-tail hair ornament, blue crystal earrings, exact canvas 1024x1536 and transparent padding. Change ONLY head yaw, eye gaze and facial expression as specified. Do not tilt/roll the head. Do not move, enlarge or crop the body. Still same charming premium anime chibi, blue-white maid identity. True transparent background preserved, no opaque plate, no text or symbols, no extra limbs. FULL feet and ornament always in frame.\nKEYFRAME front-smile: Keep the exact TRUE FRONTAL face orientation and gaze directly into the camera from input1, both eyes symmetrical and fully visible, zero head tilt. Change ONLY the facial expression to a gently delighted natural smile: brows relax slightly, eyes warmly soften, mouth forms a clear small warm smiling curve, cheeks subtly lifted. Do not rotate the face, close the eyes, laugh broadly or move the standing body. This is the greeting's final front-facing smile.",
+      "references": [
+        "generated://exec-dd6e585d-ac93-4bf3-b5f1-ac0bac3d3eda.png"
+      ],
+      "rawPath": "generated://exec-48520a35-23c3-45bd-b598-f164eb8ce817.png",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true,
+      "faceCenter": [
+        0.5,
+        0.292
+      ],
+      "backgroundScale": "280% auto",
+      "inspection": "已逐图view：同一正面站姿、双臂背后与完整双鞋；away侧向任务视线，turning中间视線转向，front-neutral真正正脸双眼对视，front-smile正脸明显柔和微笑。无多肢，原PNG不裁改；独立生成关键帧，不宣称骨骼流畅动画。",
+      "destination": "assets/actions/maid-chibi-intro-front-smile-v1.png",
+      "sha256": "a5565ea766a21f79adef365c953d92f2166dfececaac2c3ce155a942ae995dd6",
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          254
+        ],
+        "transparentPixels": 791104,
+        "totalPixels": 1572864
+      }
+    }
+  ]
+}

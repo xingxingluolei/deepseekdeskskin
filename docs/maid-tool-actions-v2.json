@@ -1,0 +1,215 @@
+{
+  "version": "0.12.0",
+  "character": "maid",
+  "createdAt": "2026-10-05T01:55:46.584982+00:00",
+  "tool": "built-in image_gen.imagegen",
+  "assets": [
+    {
+      "state": "compacting",
+      "ref": "maid-thinking-v1.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: transparent full-body task-state character for DeepSeek desktop skin.\nInput images: the supplied existing illustration is identity, costume and rendering reference, not a pose constraint.\nKeep exactly the elegant young adult anime woman from the reference: long cobalt blue hair, braided side bun, blue whale-tail hairpin, blue eyes, white frilled maid headband, modest classic navy blue and white maid dress, white apron, white tights and blue Mary Jane heels. Normal mature anime proportions, NOT chibi. Crisp polished anime illustration, same gentle face and finely rendered white frills. Face and body angled toward SCREEN LEFT, never toward screen right.\nOutput one isolated character with action props only, 1024 x 1536 portrait, genuine transparent alpha background. Full body including shoes and props entirely in frame with small margins. No scene rectangle, no atmospheric glow, no vignette, no gradient background, no shadows covering the transparent canvas. No words, letters, numbers, logo or watermark. No other characters.\nNew action: standing and organizing a compact elegant silver-white and blue bookshelf. The narrow waist-to-shoulder-height bookshelf stands to her SCREEN LEFT with three shelves and neat rows of blue and cream books. She turns slightly left, with one hand carefully sliding a blue book upright into a row at chest height and the other hand holding two additional books against her waist. Face visible above the books, calm satisfied concentration. Bookshelf and character form one balanced compact silhouette, fill the portrait, no giant empty space. Use natural graceful anatomy and plausible hands. This must clearly depict putting books away rather than merely reading.",
+      "source": "generated://exec-67bf0a61-d93f-4a6a-a269-56417fb73755.png",
+      "destination": "assets/actions/maid-compacting-v2.png",
+      "reference": "assets/actions/maid-thinking-v1.png",
+      "faceApproxPixels": {
+        "cx": 526,
+        "cy": 218,
+        "width": 150
+      },
+      "facing": "screen-left",
+      "inspection": "Accepted after visual inspection: coherent identity, recognizable action, full body and props within frame. No legible text or extra people.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "d3d117e6eebc21a1148d18d5d56fb5dbdc4a9df7a5fc7c475a15fef687d68549",
+      "sourceSha256": "d3d117e6eebc21a1148d18d5d56fb5dbdc4a9df7a5fc7c475a15fef687d68549",
+      "referenceSha256": "367145fea16d2da65764e15de600dd56c035449c47c698007c047dc58038f145",
+      "alpha": {
+        "minMax": [
+          0,
+          254
+        ],
+        "zeroPixels": 595027,
+        "lowAlpha1to31Pixels": 53790,
+        "highAlpha200PlusPixels": 901645,
+        "corners": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "method": "built-in image_gen.imagegen; original output bytes copied without pixel editing"
+    },
+    {
+      "state": "writing",
+      "ref": "maid-working-v1.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: transparent full-body task-state character for DeepSeek desktop skin.\nInput images: the supplied existing illustration is identity, costume and rendering reference, not a pose constraint.\nKeep exactly the elegant young adult anime woman from the reference: long cobalt blue hair, braided side bun, blue whale-tail hairpin, blue eyes, white frilled maid headband, modest classic navy blue and white maid dress, white apron, white tights and blue Mary Jane heels. Normal mature anime proportions, NOT chibi. Crisp polished anime illustration, same gentle face and finely rendered white frills. Face and body angled toward SCREEN LEFT, never toward screen right.\nOutput one isolated character with action props only, 1024 x 1536 portrait, genuine transparent alpha background. Full body including shoes and props entirely in frame with small margins. No scene rectangle, no atmospheric glow, no vignette, no gradient background, no shadows covering the transparent canvas. No words, letters, numbers, logo or watermark. No other characters.\nNew action: sitting at a small elegant silver writing desk to her SCREEN LEFT, writing by hand with a fountain pen in a clearly open cream-paper notebook. Her face turns left and down toward the writing; focused gentle expression. Right writing hand touches pen tip to page; other hand rests on the notebook to steady it. Show a clearly readable writing gesture, no laptop or keyboard. A small inkwell and closed blue book may sit on the desktop. Whole seated body, chair and shoes visible; compact desk. Fill portrait with a balanced silhouette, no oversized blank margins. Use natural graceful anatomy and plausible hands.",
+      "source": "generated://exec-f92b91d2-b38e-48ed-8b46-badeef83810e.png",
+      "destination": "assets/actions/maid-writing-v2.png",
+      "reference": "assets/actions/maid-working-v1.png",
+      "faceApproxPixels": {
+        "cx": 514,
+        "cy": 270,
+        "width": 150
+      },
+      "facing": "screen-left",
+      "inspection": "Accepted after visual inspection: coherent identity, recognizable action, full body and props within frame. No legible text or extra people.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "1236f63c23eebea63878e9093bc35664c95b16ebd110cbd4fefa6955b520f2e6",
+      "sourceSha256": "1236f63c23eebea63878e9093bc35664c95b16ebd110cbd4fefa6955b520f2e6",
+      "referenceSha256": "7ed3da98670226ca6f532781899d70e480dfcbb7daaf0aa684648a17eca89c30",
+      "alpha": {
+        "minMax": [
+          0,
+          254
+        ],
+        "zeroPixels": 738900,
+        "lowAlpha1to31Pixels": 66597,
+        "highAlpha200PlusPixels": 746052,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "method": "built-in image_gen.imagegen; original output bytes copied without pixel editing"
+    },
+    {
+      "state": "reading",
+      "ref": "maid-thinking-v1.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: transparent full-body task-state character for DeepSeek desktop skin.\nInput images: the supplied existing illustration is identity, costume and rendering reference, not a pose constraint.\nKeep exactly the elegant young adult anime woman from the reference: long cobalt blue hair, braided side bun, blue whale-tail hairpin, blue eyes, white frilled maid headband, modest classic navy blue and white maid dress, white apron, white tights and blue Mary Jane heels. Normal mature anime proportions, NOT chibi. Crisp polished anime illustration, same gentle face and finely rendered white frills. Face and body angled toward SCREEN LEFT, never toward screen right.\nOutput one isolated character with action props only, 1024 x 1536 portrait, genuine transparent alpha background. Full body including shoes and props entirely in frame with small margins. No scene rectangle, no atmospheric glow, no vignette, no gradient background, no shadows covering the transparent canvas. No words, letters, numbers, logo or watermark. No other characters.\nNew action: seated gracefully on a small elegant silver and blue chair, holding a large OPEN blue hardback book on her lap, one hand supporting the spine while the other hand gently points along a page as if carefully reading. Both cream pages clearly visible, blank with faint abstract decorative lines only, NO legible writing. Her face and eyes turn SCREEN LEFT and slightly downward toward the book with a calm attentive expression; head upright, no chin-on-hand thinking pose. Book lowered below chest so face and costume stay visible. Whole seated body including shoes and chair legs in frame. No desk, no computer, no extra characters. Compact silhouette filling the portrait.",
+      "source": "generated://exec-d544ed91-3cec-4328-97b6-572cdb2fa133.png",
+      "destination": "assets/actions/maid-reading-v2.png",
+      "reference": "assets/actions/maid-thinking-v1.png",
+      "faceApproxPixels": {
+        "cx": 443,
+        "cy": 262,
+        "width": 145
+      },
+      "facing": "screen-left",
+      "inspection": "Accepted after visual inspection: coherent identity, recognizable action, full body and props within frame. No legible text or extra people.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "126364731f32a8107335652d516e6b224fdc8ac59513ee60f610bfc660419b8e",
+      "sourceSha256": "126364731f32a8107335652d516e6b224fdc8ac59513ee60f610bfc660419b8e",
+      "referenceSha256": "367145fea16d2da65764e15de600dd56c035449c47c698007c047dc58038f145",
+      "alpha": {
+        "minMax": [
+          0,
+          254
+        ],
+        "zeroPixels": 710355,
+        "lowAlpha1to31Pixels": 51787,
+        "highAlpha200PlusPixels": 791300,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "method": "built-in image_gen.imagegen; original output bytes copied without pixel editing"
+    },
+    {
+      "state": "searching",
+      "ref": "maid-working-v1.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: transparent full-body task-state character for DeepSeek desktop skin.\nInput images: the supplied existing illustration is identity, costume and rendering reference, not a pose constraint.\nKeep exactly the elegant young adult anime woman from the reference: long cobalt blue hair, braided side bun, blue whale-tail hairpin, blue eyes, white frilled maid headband, modest classic navy blue and white maid dress, white apron, white tights and blue Mary Jane heels. Normal mature anime proportions, NOT chibi. Crisp polished anime illustration, same gentle face and finely rendered white frills. Face and body angled toward SCREEN LEFT, never toward screen right.\nOutput one isolated character with action props only, 1024 x 1536 portrait, genuine transparent alpha background. Full body including shoes and props entirely in frame with small margins. No scene rectangle, no atmospheric glow, no vignette, no gradient background, no shadows covering the transparent canvas. No words, letters, numbers, logo or watermark. No other characters.\nNew action: STANDING and leaning very slightly toward a small waist-high elegant silver reading desk on her SCREEN LEFT. She holds a clearly visible small silver magnifying glass above an unfolded blue map/blueprint on the desk, with the other hand holding one corner flat. Paper has abstract pale line diagrams only, no letters or text. Gaze focused left-down through the lens, curious alert expression, face fully visible. No laptop, no keyboard, no books held in hands. Whole standing body and both shoes visible. This pose must clearly read as searching or investigation, not merely reading. Compact desk and one rolled sheet beside the map, balanced silhouette filling portrait.",
+      "source": "generated://exec-170bb831-6987-4bb7-afc2-879435c69719.png",
+      "destination": "assets/actions/maid-searching-v2.png",
+      "reference": "assets/actions/maid-working-v1.png",
+      "faceApproxPixels": {
+        "cx": 470,
+        "cy": 211,
+        "width": 140
+      },
+      "facing": "screen-left",
+      "inspection": "Accepted after visual inspection: coherent identity, recognizable action, full body and props within frame. No legible text or extra people.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "fa98fbe5ddb04d60d9822f97ade4d208d10cba4e96cf58006dd15713e932d6a4",
+      "sourceSha256": "fa98fbe5ddb04d60d9822f97ade4d208d10cba4e96cf58006dd15713e932d6a4",
+      "referenceSha256": "7ed3da98670226ca6f532781899d70e480dfcbb7daaf0aa684648a17eca89c30",
+      "alpha": {
+        "minMax": [
+          0,
+          254
+        ],
+        "zeroPixels": 836055,
+        "lowAlpha1to31Pixels": 64372,
+        "highAlpha200PlusPixels": 650989,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "method": "built-in image_gen.imagegen; original output bytes copied without pixel editing"
+    },
+    {
+      "state": "delegating",
+      "ref": "maid-thinking-v1.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: transparent full-body task-state character for DeepSeek desktop skin.\nInput images: the supplied existing illustration is identity, costume and rendering reference, not a pose constraint.\nKeep exactly the elegant young adult anime woman from the reference: long cobalt blue hair, braided side bun, blue whale-tail hairpin, blue eyes, white frilled maid headband, modest classic navy blue and white maid dress, white apron, white tights and blue Mary Jane heels. Normal mature anime proportions, NOT chibi. Crisp polished anime illustration, same gentle face and finely rendered white frills. Face and body angled toward SCREEN LEFT, never toward screen right.\nOutput one isolated character with action props only, 1024 x 1536 portrait, genuine transparent alpha background. Full body including shoes and props entirely in frame with small margins. No scene rectangle, no atmospheric glow, no vignette, no gradient background, no shadows covering the transparent canvas. No words, letters, numbers, logo or watermark. No other characters.\nNew action: STANDING upright, slightly turned toward SCREEN LEFT, gently smiling while extending one arm to the LEFT to hand out a single rectangular blue task card. Other arm holds a tidy stack of blue and cream document folders at her waist. The extended card is clearly separated from the stack and visible to the viewer; its only design is a small abstract silver whale-tail emblem, NO text, no check mark, no digits. Face looks left toward the task recipient off frame. No second person or extra hands. Whole body and shoes visible, modest flowing maid skirt. Clear confident dispatching/delegation gesture, balanced compact silhouette filling portrait, no desk or chair.",
+      "source": "generated://exec-b2304719-683e-414d-a8a7-a61c166d9c8e.png",
+      "destination": "assets/actions/maid-delegating-v2.png",
+      "reference": "assets/actions/maid-thinking-v1.png",
+      "faceApproxPixels": {
+        "cx": 519,
+        "cy": 194,
+        "width": 150
+      },
+      "facing": "screen-left",
+      "inspection": "Accepted after visual inspection: coherent identity, recognizable action, full body and props within frame. No legible text or extra people.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "4b800f949c5f161d6f5be46a2f40c0c091e2e3a8d53f33120469449256e2d353",
+      "sourceSha256": "4b800f949c5f161d6f5be46a2f40c0c091e2e3a8d53f33120469449256e2d353",
+      "referenceSha256": "367145fea16d2da65764e15de600dd56c035449c47c698007c047dc58038f145",
+      "alpha": {
+        "minMax": [
+          0,
+          254
+        ],
+        "zeroPixels": 823558,
+        "lowAlpha1to31Pixels": 44880,
+        "highAlpha200PlusPixels": 686793,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "method": "built-in image_gen.imagegen; original output bytes copied without pixel editing"
+    }
+  ],
+  "reused": {
+    "state": "executing",
+    "file": "assets/actions/maid-working-v1.png",
+    "sha256": "7ed3da98670226ca6f532781899d70e480dfcbb7daaf0aa684648a17eca89c30",
+    "facing": "screen-left",
+    "faceApproxPixels": {
+      "cx": 559,
+      "cy": 352,
+      "width": 150
+    },
+    "reason": "Existing working illustration clearly shows sitting at a laptop typing. Reuse original filename and bytes; no fabricated new asset."
+  }
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>桌边的小声音 · 音效试听</title>
+  <link rel="stylesheet" href="/web/sound-effects-review.css">
+  <script type="module" src="/web/sound-effects-review.mjs"></script>
+</head>
+<body>
+  <main>
+    <header class="heading">
+      <div>
+        <p class="eyebrow">DEEPSEEKDESKSKIN / SOUND STUDY 01</p>
+        <h1>桌边的小声音<span aria-hidden="true">。</span></h1>
+        <p class="intro">翻页、落笔、轻敲与提示音，让每一个状态都有一点回应。</p>
+      </div>
+      <span class="mode-badge">非人声 · 手动试听</span>
+    </header>
+
+    <section class="preview" aria-labelledby="preview-heading">
+      <div class="preview-copy">
+        <p class="eyebrow">START HERE</p>
+        <h2 id="preview-heading">先听一段日常</h2>
+        <p>六个核心场景，依次听听它们的质感和分寸。</p>
+        <p id="core-order" class="sequence">开场 → 整理书架 → 完成 → 等待确认 → 出错 → 写字</p>
+        <div class="preview-actions">
+          <button id="play-core" class="primary" type="button" disabled>试听核心六段</button>
+          <button id="play-all" class="secondary" type="button" disabled>试听全部音效</button>
+        </div>
+      </div>
+      <div class="player-panel">
+        <div class="sound-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <p id="now-playing" class="now-playing">等待你按下播放</p>
+        <audio id="player" controls preload="none" aria-label="音效试听播放器"></audio>
+        <p id="playback-status" class="playback-status" role="status">点击试听后才会播放；每次只播放一段。</p>
+      </div>
+    </section>
+
+    <div class="library-heading">
+      <div><h2>逐个听听</h2><p id="library-summary">正在载入音效清单…</p></div>
+      <a id="download-archive" class="download-all" hidden download>下载整套 ZIP <span aria-hidden="true">↗</span></a>
+    </div>
+    <p id="load-error" class="load-error" role="alert" hidden></p>
+    <div id="sound-library" aria-busy="true"></div>
+    <footer><span>WAV / PCM · 合成音效 · 无人声</span><span>试听素材 v1</span></footer>
+  </main>
+</body>
+</html>

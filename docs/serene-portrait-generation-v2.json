@@ -1,0 +1,1061 @@
+{
+  "schema_version": 1,
+  "character": "serene",
+  "generator": "Built-in image_gen.imagegen; one independent image per state/frame, plus one identical built-in transport retry for intro-front-smile",
+  "transparent_background": true,
+  "pixel_postprocessing": "none; original generated PNG bytes preserved; no crop/resize/upscale/edit outside imagegen",
+  "expected_count": 21,
+  "status": "21 generated, individually viewed, and copied into project; original bytes verified",
+  "source_identity_paths": [
+    "assets/actions/serene-intro-away-v1.png",
+    "assets/actions/serene-intro-front-smile-v1.png",
+    "assets/serene-avatar-v1.png"
+  ],
+  "common_framing_suggestion": {
+    "cropWidth": 1,
+    "cx": 0.5,
+    "cy": 0.48,
+    "container_aspect_ratio": "4/5",
+    "note": "Use almost full native 1024px source width instead of .30 crop. Final UI framing belongs to root and is not modified here."
+  },
+  "intro_order": [
+    "intro-away",
+    "intro-noticing",
+    "intro-turning",
+    "intro-front-neutral",
+    "intro-soft-smile",
+    "intro-front-smile"
+  ],
+  "idle_source_key": "intro-away",
+  "generation_validation": {
+    "all_width": 1024,
+    "all_height": 1536,
+    "all_rgba": true,
+    "all_have_zero_alpha_pixels": true,
+    "all_under_8_mib": true,
+    "unique_sha256": 21,
+    "individual_originals_viewed": 21,
+    "native_validation": "Not performed by this asset subagent; root owns studio/native acceptance."
+  },
+  "limitations": [
+    "Face widths and faceCenter are visual estimates, not automatic measured face segmentation.",
+    "Away/side states have about430px visible facial skin width, frontal states around490px.",
+    "Independent edits preserve the shared composition closely but are not pixel-aligned animation; small hair/eyelid/neck changes remain.",
+    "Waiting and complete have a subtle near-front three-quarter/oblique eye line rather than exact symmetric front view; neutral/smile introduction endpoints are genuinely frontal.",
+    "Bottom and side garment/hair intentionally leave the frame in a shoulder-up portrait; transparency checks therefore do not require transparent bottom corners."
+  ],
+  "pending_copy_files": [],
+  "records": [
+    {
+      "key": "intro-away",
+      "final_file": "assets/portraits/serene-intro-away-v2.png",
+      "original_output": "generated://exec-094545d9-70a1-42d9-ae4a-35eccc408a5b.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: purpose-built high-definition shoulder-up transparent portrait for the independent desktop skin deepseekdeskskin, character 澄蓝 / SERENE BLUE, introduction frame AWAY.\nInput images: Image 1 is the exact identity, blue-white costume, silver whale-tail, braid and LEFTWARD gaze reference. Image 2 confirms the same adult face seen frontally. Image 3 is a supporting high-detail face/hair/jewelry reference only, NOT a backdrop or tilted-head composition to reproduce.\nPrimary request: Redraw this exact elegant adult anime woman as a genuine large HEAD-AND-SHOULDERS cutout, not a crop/enlargement of the small full-body face. Preserve facial identity, cobalt blue eyes, midnight/navy flowing hair, silver whale-tail hair ornament with small blue crystals, braided side hair, delicate crystal earrings and modest pearl-white high collar with cobalt/silver embroidery.\nCanvas and precise composition: one 1024 x 1536 portrait PNG with genuine transparent alpha. Tight shoulder-up framing: crown/hair top at y approximately 0.06; chin at y approximately 0.64; broad face visible skin approximately 450–550 source pixels wide; the head with all hair ornaments fills the upper two-thirds. Include both shoulder outlines and only the upper collar/shoulder garment at the bottom. NO chest, waist, abdomen, hands, full body or feet. Shoulders stay level, neck vertical and head upright with NO habitual tilt. Main head mass centered near x 0.50; complete crown and silver whale-tail within the canvas, small transparent side margin. This exact head/shoulder placement will anchor all later frames.\nAWAY pose and expression: shoulders face the viewer, ONLY head yaws horizontally about 35–40 degrees toward the LEFT edge of the image; nose and pupils point to image LEFT, looking at the user's reading area away from the camera. Neutral closed mouth with no smile, relaxed brows, clear calm open eyes, no sadness. Do not look right. No paper-flat rotation of the body.\nStyle: exquisite crisp anime linework with clear individual lashes, iris gradients and precise crystal facets, fine painterly cel shading, controlled cool pearl daylight. Mature refined natural proportions, blue-white identity. No blur, no haze on the face, no depth-of-field blur.\nBackground: completely transparent outside the character. No painted dark blue/black/white backdrop, no glow cloud, no floor, no box. Preserve clean alpha hair edges.\nConstraints: one character only, no text, symbols, logo, watermark, UI or extra accessories. Do not turn her into a maid or chibi. Render only head and shoulders at high native detail, never a half-body/full-body illustration.",
+      "referenced_image_paths": [
+        "assets/actions/serene-intro-away-v1.png",
+        "assets/actions/serene-intro-front-smile-v1.png",
+        "assets/serene-avatar-v1.png"
+      ],
+      "faceCenter": [
+        0.44,
+        0.41
+      ],
+      "face_width_estimate_px": 430,
+      "metadata": {
+        "path": "generated://exec-094545d9-70a1-42d9-ae4a-35eccc408a5b.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2865268,
+        "sha256": "c31c7c9992d79e66e0aa6b4367994d7d343205dfc5e3d5c0cc7ab74b68c0a12b",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 317492,
+          "opaque_pixels": 0,
+          "partial_pixels": 1255372,
+          "corners": [
+            0,
+            0,
+            242,
+            250
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            25,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            102,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: crisp large face looking left, level head, full crown/whale-tail and visible two shoulders, clean transparent top region; shoulder/collar intentionally exits bottom and sides. Chin observed about y.56 rather than requested .64; side-view facial skin is roughly430px wide."
+    },
+    {
+      "key": "intro-noticing",
+      "final_file": "assets/portraits/serene-intro-noticing-v2.png",
+      "original_output": "generated://exec-464b90f5-4b6d-45d6-bed8-ddcaaaff2fc2.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: INTRO NOTICING intermediate: keep shoulders exactly fixed, yaw ONLY the head horizontally toward image LEFT by about 30 degrees from frontal, less leftward than the away frame (40 degrees) but more leftward than turning (15–20 degrees). Eyes start shifting their pupils back toward the VIEWER while the nose still points somewhat left. Calm neutral CLOSED mouth, absolutely no smile yet. Same head scale, no zoom, upright neck/head, no tilt. This is the first moment she notices the new user.\nFor any front/near-front frame, keep both eye centers on a horizontal line and do NOT roll/tilt the head. Preserve existing head scale and position with no zoom.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.44,
+        0.41
+      ],
+      "face_width_estimate_px": 430,
+      "metadata": {
+        "path": "generated://exec-464b90f5-4b6d-45d6-bed8-ddcaaaff2fc2.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2760045,
+        "sha256": "7e4a90bf1e3891abf6d6ab6525e538aa67b29960c04f04f6b67ca705e092db46",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 322419,
+          "opaque_pixels": 0,
+          "partial_pixels": 1250445,
+          "corners": [
+            0,
+            0,
+            249,
+            250
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            69,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            97,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Intermediate leftward yaw about30 degrees, gaze starts noticing viewer, closed neutral mouth, fixed shoulder framing."
+    },
+    {
+      "key": "intro-turning",
+      "final_file": "assets/portraits/serene-intro-turning-v2.png",
+      "original_output": "generated://exec-bf4865be-c6d4-409e-b6db-96dcd826c079.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: INTRO TURNING: turn only the head horizontally from looking LEFT toward the viewer, to about 15–20 degrees from a true front view. Both eyes are clearly visible, pupils beginning to look at the viewer. Neutral CLOSED mouth, no smile, relaxed level brows. Keep shoulder/body direction identical to the reference. Do not rotate the whole portrait like a flat card. This is a bridge between the leftward away frame and a fully frontal neutral frame.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.45,
+        0.41
+      ],
+      "face_width_estimate_px": 430,
+      "metadata": {
+        "path": "generated://exec-bf4865be-c6d4-409e-b6db-96dcd826c079.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2796801,
+        "sha256": "38fff7a1b6127ffa973d86661ea4790aba83101d94ed0221d82f5a63b9a79f9e",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 313502,
+          "opaque_pixels": 0,
+          "partial_pixels": 1259362,
+          "corners": [
+            0,
+            0,
+            245,
+            221
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            71,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            85,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: head visibly transitions closer to frontal, both eyes visible, gaze begins toward viewer, neutral closed mouth, shoulders fixed."
+    },
+    {
+      "key": "intro-front-neutral",
+      "final_file": "assets/portraits/serene-intro-front-neutral-v2.png",
+      "original_output": "generated://exec-6329673b-7228-42ea-94b4-5483208e6c27.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: INTRO FRONT NEUTRAL: turn only the head into an EXACT FRONT VIEW, nose at horizontal center of the face, left and right cheek symmetric, both eyes equally full visible and on a horizontal line, pupils directly looking at the viewer. Neutral closed mouth with no smile, relaxed brows. Head upright, shoulders remain same as reference. No three-quarter or side view; do not imitate the reference leftward gaze.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.5,
+        0.42
+      ],
+      "face_width_estimate_px": 490,
+      "metadata": {
+        "path": "generated://exec-6329673b-7228-42ea-94b4-5483208e6c27.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2869064,
+        "sha256": "13e607d1f9f6dc864f0d9213312208cc8650b0847ab5f4ccd5ffe06f59753771",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 321804,
+          "opaque_pixels": 0,
+          "partial_pixels": 1251060,
+          "corners": [
+            0,
+            0,
+            246,
+            245
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            83,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            87,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: true centered front view, equal level eyes, no smile, complete crown and silver whale-tail; shoulders share baseline framing."
+    },
+    {
+      "key": "intro-soft-smile",
+      "final_file": "assets/portraits/serene-intro-soft-smile-v2.png",
+      "original_output": "generated://exec-b6d871df-0edc-4926-b8aa-905dfea46104.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: INTRO SOFT SMILE intermediate: exact FRONT VIEW with symmetric face and both eyes level/equally visible, pupils looking at the VIEWER. CLOSED mouth corners only JUST BEGIN to rise in a tiny restrained smile, smaller and softer than the full warm smile, relaxed gentle eyebrows. Body and shoulders stay fixed, head size/center fixed, no tilt or zoom. This bridges front-neutral and front-smile, never a broad grin.\nInput image 2 is a supporting face-yaw/level-eye reference for the exact frontal neutral endpoint ONLY; keep the main target canvas/shoulder framing from image 1.\nFor any front/near-front frame, keep both eye centers on a horizontal line and do NOT roll/tilt the head. Preserve existing head scale and position with no zoom.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png",
+        "generated://exec-6329673b-7228-42ea-94b4-5483208e6c27.png"
+      ],
+      "faceCenter": [
+        0.5,
+        0.42
+      ],
+      "face_width_estimate_px": 490,
+      "metadata": {
+        "path": "generated://exec-b6d871df-0edc-4926-b8aa-905dfea46104.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2837715,
+        "sha256": "8d9f243ccc11727e9853ef30a1e711af149f28157080c6f5ac69a75764cab077",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 296283,
+          "opaque_pixels": 0,
+          "partial_pixels": 1276581,
+          "corners": [
+            0,
+            0,
+            251,
+            252
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            67,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            74,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Exact front view, level eyes, tiny initial closed-mouth smile before full smile, same framing."
+    },
+    {
+      "key": "intro-front-smile",
+      "final_file": "assets/portraits/serene-intro-front-smile-v2.png",
+      "original_output": "generated://exec-ea36aa48-98d0-4078-97ea-1408746a3051.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: INTRO FRONT SMILE: turn only the head into an EXACT FRONT VIEW, symmetric face, nose centered, both eyes equally full visible and level, pupils directly looking at the viewer. Add a refined clearly visible warm closed-mouth smile, mouth corners softly raised and relaxed friendly eyebrows, eyes softly brighter. No coy head tilt, no blush exaggeration. Keep shoulders and outfit exactly in place.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.5,
+        0.41
+      ],
+      "face_width_estimate_px": 490,
+      "metadata": {
+        "path": "generated://exec-ea36aa48-98d0-4078-97ea-1408746a3051.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2956647,
+        "sha256": "7ac5b928e944277a54751897e75f21709277595893c39552d294897ee615fac7",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 264648,
+          "opaque_pixels": 0,
+          "partial_pixels": 1308216,
+          "corners": [
+            0,
+            0,
+            252,
+            238
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            36,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            41,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: True level front view with warm visible closed-mouth smile, direct viewer gaze and same shoulder framing."
+    },
+    {
+      "key": "thinking",
+      "final_file": "assets/portraits/serene-thinking-v2.png",
+      "original_output": "generated://exec-1609f60d-567d-4a4b-8933-d760bcc8f1f1.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: THINKING: retain mild leftward head yaw, eyes visibly gaze toward upper LEFT in thought, brows slightly drawn together in clear thoughtful concentration, lips gently pressed closed, no smile. Intelligent focused expression, stronger than idle neutral, mature and restrained.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.45,
+        0.41
+      ],
+      "face_width_estimate_px": 430,
+      "metadata": {
+        "path": "generated://exec-1609f60d-567d-4a4b-8933-d760bcc8f1f1.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2732445,
+        "sha256": "dabec68f21258081c60b316a01a2c822fd2e5f73b42d9b4053722f164fed1fa5",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 321480,
+          "opaque_pixels": 0,
+          "partial_pixels": 1251384,
+          "corners": [
+            0,
+            0,
+            243,
+            245
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            55,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            101,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: left/up thoughtful gaze and mildly gathered brow, closed lips, crisp face and fixed shoulder framing."
+    },
+    {
+      "key": "working",
+      "final_file": "assets/portraits/serene-working-v2.png",
+      "original_output": "generated://exec-42286ca1-d933-4022-88f4-d442bf18a300.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: WORKING: retain mild leftward head yaw, steady eyes focus DOWN-LEFT toward work, upper eyelids slightly narrowed, brow line more intent/straight, closed mouth firm and level. Clearly sustained execution/concentration, not sadness or sleep, no smile.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.44,
+        0.41
+      ],
+      "face_width_estimate_px": 430,
+      "metadata": {
+        "path": "generated://exec-42286ca1-d933-4022-88f4-d442bf18a300.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2695685,
+        "sha256": "187ec325e13a8ae063cd169da41ef4ac580093019e3cb7dfdbf8a1b191fbb0e8",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 325792,
+          "opaque_pixels": 0,
+          "partial_pixels": 1247072,
+          "corners": [
+            0,
+            0,
+            241,
+            252
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            73,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            103,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Steady focused left/down-left gaze, firmer eyebrows and closed mouth; same portrait framing."
+    },
+    {
+      "key": "answering",
+      "final_file": "assets/portraits/serene-answering-v2.png",
+      "original_output": "generated://exec-feda772f-6e8f-48bd-844b-ad4dbbf5ba5a.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: ANSWERING: turn head closer toward the viewer (small three-quarter view), both eyes warm and attentive to the viewer, eyebrows gently open, mouth slightly OPEN in a clear conversational speaking shape. Do not show a wide laughing mouth; subtle mid-sentence speaking must be distinctly visible.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.44,
+        0.41
+      ],
+      "face_width_estimate_px": 430,
+      "metadata": {
+        "path": "generated://exec-feda772f-6e8f-48bd-844b-ad4dbbf5ba5a.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2854183,
+        "sha256": "3af31ea616a46306d83c9d5bdeed61b2abf120fbeef6cfd6ddf652d28151c57b",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 288116,
+          "opaque_pixels": 0,
+          "partial_pixels": 1284748,
+          "corners": [
+            0,
+            0,
+            251,
+            251
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            77,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            80,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Small three-quarter view toward viewer, clearly open speaking mouth and attentive eyes; same portrait framing."
+    },
+    {
+      "key": "parallel",
+      "final_file": "assets/portraits/serene-parallel-v2.png",
+      "original_output": "generated://exec-883d78f3-90b9-4553-85cf-cc78e5d81420.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: PARALLEL COORDINATION: small three-quarter head view toward the viewer, alert wide focused eyes looking LEFT, eyebrows slightly higher and one gently arched as she monitors several tasks, mouth small and slightly parted in attentive coordination. More alert and active than thinking/working, elegant, no comedic face and no added task icons/objects.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.44,
+        0.41
+      ],
+      "face_width_estimate_px": 430,
+      "metadata": {
+        "path": "generated://exec-883d78f3-90b9-4553-85cf-cc78e5d81420.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2844809,
+        "sha256": "375601337cdd55049e72a041582f1a85e4000d7aacd8d52a7f17994ca646c35e",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 271571,
+          "opaque_pixels": 0,
+          "partial_pixels": 1301293,
+          "corners": [
+            0,
+            0,
+            251,
+            248
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            67,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            75,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Alert monitoring expression with higher open eyebrows and parted lips, eyes directed left; same framing, no icons or extra props."
+    },
+    {
+      "key": "compacting",
+      "final_file": "assets/portraits/serene-compacting-v2.png",
+      "original_output": "generated://exec-3369feca-5f6b-425e-8a7f-4223b768879c.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: COMPACTING / ORGANIZING CONTEXT: upright head with slightly lowered gaze but no tilt, eyelids half lowered, pupils clearly look DOWN in careful review, brows gather mildly, lips slightly PURSED and closed in systematic concentration. Distinct from sleepy closed eyes and from looking up while thinking.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.44,
+        0.42
+      ],
+      "face_width_estimate_px": 430,
+      "metadata": {
+        "path": "generated://exec-3369feca-5f6b-425e-8a7f-4223b768879c.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2790458,
+        "sha256": "31766be10fa39320bbe03c68567edca7063f07bbee1a9809a6ba09584effb728",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 298394,
+          "opaque_pixels": 0,
+          "partial_pixels": 1274470,
+          "corners": [
+            0,
+            0,
+            242,
+            242
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            73,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            94,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Lowered reviewing gaze, half-lowered eyelids, gathered brow and closed pursed mouth; same shoulder framing."
+    },
+    {
+      "key": "retrying",
+      "final_file": "assets/portraits/serene-retrying-v2.png",
+      "original_output": "generated://exec-19885d65-47dd-4f0d-a9c4-ddfb562cc349.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: RETRYING: mild leftward yaw, eyes determined and clearly open toward LEFT, one subtle firm brow furrow, mouth closed with purposeful slight tension. Calm resolve after a retry, not anxiety, not panic, no smile and no angry exaggerated eyebrows.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.44,
+        0.42
+      ],
+      "face_width_estimate_px": 430,
+      "metadata": {
+        "path": "generated://exec-19885d65-47dd-4f0d-a9c4-ddfb562cc349.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2729302,
+        "sha256": "b42cee6b174c9aa97d663f884669a31079a92d71fddc00c888fd0349cf11f9b9",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 325108,
+          "opaque_pixels": 0,
+          "partial_pixels": 1247756,
+          "corners": [
+            0,
+            0,
+            240,
+            247
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            41,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            103,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Determined open leftward eyes with one firm brow furrow and tense closed lips, no fear or smile."
+    },
+    {
+      "key": "waiting",
+      "final_file": "assets/portraits/serene-waiting-v2.png",
+      "original_output": "generated://exec-26b1012c-9a99-4203-a56d-59938dce17be.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: WAITING FOR CONFIRMATION: turn head to almost frontal, eyes clearly looking toward the VIEWER, eyebrows gently raised inviting a response, tiny patient closed-mouth smile. Open expectant eyes distinguish it from closed-eye completion; polite patience, no broad grin.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.5,
+        0.42
+      ],
+      "face_width_estimate_px": 490,
+      "metadata": {
+        "path": "generated://exec-26b1012c-9a99-4203-a56d-59938dce17be.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2789912,
+        "sha256": "9263242993b56c4af55872a66006972112cdf60756c844247adce3c5fa5a3d2e",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 313956,
+          "opaque_pixels": 0,
+          "partial_pixels": 1258908,
+          "corners": [
+            0,
+            0,
+            251,
+            253
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            78,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            81,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Gentle expectant near-front viewer gaze and patient closed smile; eyes show a mild oblique alignment due to small three-quarter pose."
+    },
+    {
+      "key": "complete",
+      "final_file": "assets/portraits/serene-complete-v2.png",
+      "original_output": "generated://exec-a0296af7-0954-4b16-824f-6e298a8c7202.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: COMPLETE: exact frontal upright face, eyes GENTLY CLOSED, eyebrows relaxed, clearly visible gentle satisfied closed-mouth smile with raised corners. Peaceful completed-task satisfaction, mature and understated, no confetti or visual symbols.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.5,
+        0.42
+      ],
+      "face_width_estimate_px": 490,
+      "metadata": {
+        "path": "generated://exec-a0296af7-0954-4b16-824f-6e298a8c7202.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2826123,
+        "sha256": "860eee77997ddacde1ade9ff9fa5c80d9159cf7b8e821640522084b09d1d154f",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 299881,
+          "opaque_pixels": 0,
+          "partial_pixels": 1272983,
+          "corners": [
+            0,
+            0,
+            250,
+            247
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            79,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            82,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: near-front view with gently closed eyes and clearly satisfied closed-mouth smile; slight oblique eye alignment remains (about5 degrees) rather than an exact symmetric front view; same shoulder framing."
+    },
+    {
+      "key": "error",
+      "final_file": "assets/portraits/serene-error-v2.png",
+      "original_output": "generated://exec-75642f35-1b16-4220-94ee-8fa2b9f28d57.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: ERROR / CHECK NEEDED: almost frontal upright face looking toward the viewer, eyebrows VISIBLY KNIT into a concerned inward frown, eyes clearly worried and slightly narrowed, lips closed with mouth corners DOWN. Clear concern distinguishable from neutral and patient waiting. Not angry, no tears, no panic, no comedy.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.5,
+        0.42
+      ],
+      "face_width_estimate_px": 490,
+      "metadata": {
+        "path": "generated://exec-75642f35-1b16-4220-94ee-8fa2b9f28d57.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2891137,
+        "sha256": "2a3177ed248b1f4eb32a146728291609260f6dc8807e27982ec746c1d97cdefc",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 289955,
+          "opaque_pixels": 0,
+          "partial_pixels": 1282909,
+          "corners": [
+            0,
+            0,
+            250,
+            252
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            56,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            59,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Almost frontal view, visibly worried knitted brows and clearly downturned closed mouth, no smile, same crisp portrait framing."
+    },
+    {
+      "key": "queued",
+      "final_file": "assets/portraits/serene-queued-v2.png",
+      "original_output": "generated://exec-0e857765-660f-4a5c-9f87-c1e0f75c0cda.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: QUEUED: retain LEFTWARD head yaw, eyes calmly look LEFT and slightly farther away, eyebrows level and relaxed, lips gently pressed together, neutral unhurried patience with no smile. An attentive waiting-in-line expression, not active concentration, no raised request-for-confirmation brows.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.44,
+        0.41
+      ],
+      "face_width_estimate_px": 430,
+      "metadata": {
+        "path": "generated://exec-0e857765-660f-4a5c-9f87-c1e0f75c0cda.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2725952,
+        "sha256": "23963531a68529b7631b379dd7dbc771848f896de3faeb0a4039562898f19ec5",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 325093,
+          "opaque_pixels": 0,
+          "partial_pixels": 1247771,
+          "corners": [
+            0,
+            0,
+            239,
+            243
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            37,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            102,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Relaxed neutral leftward gaze, level brow and gently pressed lips, patient rather than active; subtle difference from idle, independent original."
+    },
+    {
+      "key": "connecting",
+      "final_file": "assets/portraits/serene-connecting-v2.png",
+      "original_output": "generated://exec-f17b7d89-02d9-46fb-9d85-7b9acc7408cf.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: CONNECTING: retain LEFTWARD head yaw, eyes clearly look UP-LEFT as if attentively listening for a connection, brows slightly lifted with focused hopeful anticipation, lips subtly PARTED, no smile. Head/neck remain perfectly upright; no hand or props.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.44,
+        0.41
+      ],
+      "face_width_estimate_px": 430,
+      "metadata": {
+        "path": "generated://exec-f17b7d89-02d9-46fb-9d85-7b9acc7408cf.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2723702,
+        "sha256": "75de01b574e8fefab2f4b64b9854dc0bf302f28137b9447766befffc7d14b013",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 321694,
+          "opaque_pixels": 0,
+          "partial_pixels": 1251170,
+          "corners": [
+            0,
+            0,
+            241,
+            248
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            64,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            102,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Anticipatory up-left gaze with lifted brow and slightly parted lips, upright head, same portrait framing."
+    },
+    {
+      "key": "disconnected",
+      "final_file": "assets/portraits/serene-disconnected-v2.png",
+      "original_output": "generated://exec-998f0888-a7ac-4e1f-9cae-632618982dd0.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: DISCONNECTED: retain mild LEFTWARD yaw, pupils look clearly DOWN-LEFT with a noticeably troubled lowered gaze, inner eyebrows raised and drawn together, eyelids heavier, mouth corners mildly DOWN. Restrained worried uncertainty from lost connection, no smile. Different from direct-view active error frown; no tears or melodrama.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.44,
+        0.41
+      ],
+      "face_width_estimate_px": 430,
+      "metadata": {
+        "path": "generated://exec-998f0888-a7ac-4e1f-9cae-632618982dd0.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2720774,
+        "sha256": "732655c809dc66cb2f8df2dad5a27cfdb7ae04279d242451fe0030316d0bd732",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 325337,
+          "opaque_pixels": 0,
+          "partial_pixels": 1247527,
+          "corners": [
+            0,
+            0,
+            241,
+            251
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            73,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            102,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Lowered troubled down-left gaze, heavier eyelids and downturned closed lips; distinct from error direct viewer concern."
+    },
+    {
+      "key": "stopped",
+      "final_file": "assets/portraits/serene-stopped-v2.png",
+      "original_output": "generated://exec-ede4d31d-77cb-43a2-808d-bbad3ad8c23a.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: STOPPED: almost frontal upright head, open eyes calm and level, eyebrows neutral and even, lips closed perfectly level with NO smile. Clear stillness after stopping, neither upset nor celebrating. No sleepy eyelids, no concerned furrow.\nFor any front/near-front frame, keep both eye centers on a horizontal line and do NOT roll/tilt the head. Preserve existing head scale and position with no zoom.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.5,
+        0.42
+      ],
+      "face_width_estimate_px": 490,
+      "metadata": {
+        "path": "generated://exec-ede4d31d-77cb-43a2-808d-bbad3ad8c23a.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2877592,
+        "sha256": "8e9e0a0c51984193eb4c4085fabcf7bbbae68334185a3543a5f67aac333d4ddc",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 282242,
+          "opaque_pixels": 0,
+          "partial_pixels": 1290622,
+          "corners": [
+            0,
+            0,
+            250,
+            249
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            61,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            63,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Almost frontal calm open eyes, neutral even eyebrows and level closed mouth with no celebration; same portrait framing."
+    },
+    {
+      "key": "paused",
+      "final_file": "assets/portraits/serene-paused-v2.png",
+      "original_output": "generated://exec-8ec3d539-e543-46cb-ae67-2e7b016fef5f.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: PAUSED: almost frontal upright head, eyes GENTLY CLOSED at rest, completely relaxed eyebrows, closed mouth NEUTRAL and level with NO satisfied smile and NO downturned upset corners. A quiet rest, clearly distinct from smiling completion. No tilt or sleeping props.\nFor any front/near-front frame, keep both eye centers on a horizontal line and do NOT roll/tilt the head. Preserve existing head scale and position with no zoom.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.5,
+        0.42
+      ],
+      "face_width_estimate_px": 490,
+      "metadata": {
+        "path": "generated://exec-8ec3d539-e543-46cb-ae67-2e7b016fef5f.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2777344,
+        "sha256": "205cb6cbe0ef908565b1c45ea69f5d0dfa27413e47c319d9c12bfdd2e34d38ce",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 323000,
+          "opaque_pixels": 0,
+          "partial_pixels": 1249864,
+          "corners": [
+            0,
+            0,
+            248,
+            248
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            71,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            100,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Front/near-front rested closed eyes with relaxed brows and a flat neutral mouth, no smile; distinct from completion."
+    },
+    {
+      "key": "blocked",
+      "final_file": "assets/portraits/serene-blocked-v2.png",
+      "original_output": "generated://exec-888529dc-bf44-4f56-8398-8a472a89d88d.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-definition shoulder-up transparent portrait of 澄蓝 / SERENE BLUE for deepseekdeskskin.\nInput image 1 is the EDIT TARGET and exact shared framing/identity/lighting anchor: preserve this newly generated large portrait, NOT a full-body source.\nInvariants: keep the 1024 x 1536 transparent canvas; preserve the existing crown, hair silhouette, shoulder placement/width, modest pearl-white high collar, navy/cobalt hair, silver whale-tail ornament, braid, crystal earrings and precise mature adult face. Keep the same overall head scale/position and both shoulders. The head stays upright, neck vertical, no roll/tilted head. Only head yaw, eyes, brows and mouth described below may change. Use the whole high-resolution source for detailed sharp eyes/lashes/iris facets and jewelry, no blur and no downsizing. Genuine transparent alpha outside the character; no opaque background/gradient/glow cloud. Shoulder-up only: NO chest emphasis, torso, waist, hands, props, feet, full body, UI, text, icons, extra characters or costume changes.\nState/frame change: BLOCKED / USER HELP NEEDED: frontal upright head with eyes looking directly at VIEWER, eyebrows visibly lift at their INNER ends with a questioning light furrow, mouth slightly OPEN in a small asking/help-needed shape, no smile. Clear gentle query, different from closed-mouth error and patient smiling waiting. No icons or text.\nFor any front/near-front frame, keep both eye centers on a horizontal line and do NOT roll/tilt the head. Preserve existing head scale and position with no zoom.",
+      "referenced_image_paths": [
+        "assets/portraits/serene-intro-away-v2.png"
+      ],
+      "faceCenter": [
+        0.5,
+        0.42
+      ],
+      "face_width_estimate_px": 490,
+      "metadata": {
+        "path": "generated://exec-888529dc-bf44-4f56-8398-8a472a89d88d.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2768649,
+        "sha256": "16e37bbd953a329c195dcbcb96ed9f60e5535e60c5ab6c1754e46055eb238d45",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 323694,
+          "opaque_pixels": 0,
+          "partial_pixels": 1249170,
+          "corners": [
+            0,
+            0,
+            251,
+            250
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            86,
+            1023,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            0,
+            90,
+            1023,
+            1535
+          ]
+        }
+      },
+      "visual_review": "Viewed original: Front/near-front direct viewer gaze, questioning raised inner brows and a small open asking mouth, no smile."
+    }
+  ]
+}

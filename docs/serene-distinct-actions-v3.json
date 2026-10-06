@@ -1,0 +1,191 @@
+{
+  "tool": "image_gen.imagegen",
+  "version": "0.13.0",
+  "records": [
+    {
+      "state": "thinking",
+      "file": "assets/actions/serene-thinking-v3.png",
+      "source": "generated://exec-1c51f57c-1852-472e-897f-df0457837c78.png",
+      "prompt": "Use case: identity-preserve. Edit this exact character action. CORRECT ONLY the head and eye direction: her beautiful face must be almost STRAIGHT-ON to the camera, yaw 0–10 degrees, both eyes evenly visible, nose centered between eyes, upright head, eye contact with viewer. Her BODY and props may remain angled left, but her HEAD TURNS BACK TO CAMERA. This distinction is critical. Preserve same deep cobalt hair, silver whale-tail hair ornament, blue crystal earrings, elegant blue-white gown, sleeves, white boots, original distinct body gesture, full body and all props within frame. Preserve genuine transparent RGBA background. 1024x1536 sharp detailed painted anime. No background, no halo, no text or symbols, no additional limbs. Do not mirror or change the entire body. Keep the standing thinking pose: one forearm across waist supports the other elbow, one hand gently touches chin. Thoughtful face, gaze directly towards camera slightly upwards as if considering a question.",
+      "references": [
+        "generated://exec-5d57329d-926b-4dfc-82d0-e477a30c09e2.png"
+      ],
+      "rejectedSource": "generated://exec-5d57329d-926b-4dfc-82d0-e477a30c09e2.png",
+      "faceCenter": [
+        0.438,
+        0.095
+      ],
+      "facing": "front",
+      "sha256": "7aed86745e7035231e632651e86bb061ef5deedd70f1fe782bb8fb9a9e5d4a48",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6,
+      "alphaZeroFraction": 0.3754,
+      "faceWidth": 0.17
+    },
+    {
+      "state": "working",
+      "file": "assets/actions/serene-working-v3.png",
+      "source": "generated://exec-5641e406-27e7-4249-9b5f-4bf450ddbb6f.png",
+      "prompt": "Use case: identity-preserve. Create one replacement full-body task action for the exact SAME elegant adult anime woman in the reference: long deep cobalt hair, blue eyes, silver whale-tail hair ornament, blue crystal earrings, fine white/navy/sapphire flowing dress with translucent blue oversleeves, crystal waist jewelry, white boots. Keep painted fine anime rendering, tasteful adult proportions, and costume completely consistent. The references define identity and LEFT facing; DO NOT copy their old pose or props. Design a dramatically distinct whole-body action readily identifiable at small thumbnail size, not merely a facial variation. Figure faces screen LEFT in a natural three-quarter view (both eyes visible as possible); head upright, no habitual sideways tilt. Full body, head to both complete feet, and every prop entirely inside the canvas with 5-7 percent safe padding. 1024x1536 portrait PNG with genuine transparent RGBA alpha. NO room/floor/backdrop/painted halo/background rectangle, no words, letters, icons, UI, watermark, extra people or extra limbs. Only props explicitly requested. Sharp clean cutout with refined blue-white palette. GENERAL TOOL WORK: She kneels gracefully on ONE knee beside a compact OPEN silver-blue TOOLBOX at screen LEFT, using a clearly visible large silver WRENCH to adjust a small blue-silver mechanical whale-shaped gadget resting on the toolbox. The other hand steadies the gadget. Show two or three orderly tools in the box, unmistakably a repair/tool action. Long modest lined dress drapes around her knees naturally, both boots complete. Head and gaze turn down-left toward the mechanism with focused calm face. NO BOOK, paper, chair, desk, laptop, keyboard. Distinct low mechanical-work silhouette.",
+      "references": [
+        "assets/actions/serene-intro-away-v1.png",
+        "assets/actions/serene-working-v1.png"
+      ],
+      "faceCenter": [
+        0.4,
+        0.2
+      ],
+      "facing": "left",
+      "sha256": "9c3c621f71a9a04b69091beb7a03fb4b41a470386bf2e1ce4438a9eacaec2071",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6,
+      "alphaZeroFraction": 0.4206,
+      "faceWidth": 0.17
+    },
+    {
+      "state": "retrying",
+      "file": "assets/actions/serene-retrying-v3.png",
+      "source": "generated://exec-8ac76a15-bf79-45d2-bd08-bf604382c23f.png",
+      "prompt": "Use case: identity-preserve. Create one replacement full-body task action for the exact SAME elegant adult anime woman in the reference: long deep cobalt hair, blue eyes, silver whale-tail hair ornament, blue crystal earrings, fine white/navy/sapphire flowing dress with translucent blue oversleeves, crystal waist jewelry, white boots. Keep painted fine anime rendering, tasteful adult proportions, and costume completely consistent. The references define identity and LEFT facing; DO NOT copy their old pose or props. Design a dramatically distinct whole-body action readily identifiable at small thumbnail size, not merely a facial variation. Figure faces screen LEFT in a natural three-quarter view (both eyes visible as possible); head upright, no habitual sideways tilt. Full body, head to both complete feet, and every prop entirely inside the canvas with 5-7 percent safe padding. 1024x1536 portrait PNG with genuine transparent RGBA alpha. NO room/floor/backdrop/painted halo/background rectangle, no words, letters, icons, UI, watermark, extra people or extra limbs. Only props explicitly requested. Sharp clean cutout with refined blue-white palette. \nAction RETRYING: standing in three-quarter LEFT view beside a compact waist-high ornate silver-blue spool/winch mechanism on a narrow stand. Both hands actively turn a very LARGE circular hand crank in front-left of the body to rewind and try again. The large visible circular crank is the distinctive prop. Determined raised brows and focused mouth. No chair, no computer, no book, no document, no duplicated limbs. Full body and entire crank mechanism framed comfortably.",
+      "references": [
+        "assets/actions/serene-intro-away-v1.png",
+        "assets/actions/serene-working-v1.png"
+      ],
+      "faceCenter": [
+        0.391,
+        0.103
+      ],
+      "facing": "left",
+      "sha256": "c599b9662f59e077e5b5d423872a9010b5410b25b14491af86e14a18d17201ed",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6,
+      "alphaZeroFraction": 0.3305,
+      "faceWidth": 0.17
+    },
+    {
+      "state": "error",
+      "file": "assets/actions/serene-error-v3.png",
+      "source": "generated://exec-c41352c9-3f53-41b0-b122-23c7cfc23498.png",
+      "prompt": "Use case: identity-preserve. Edit this exact character action. CORRECT ONLY the head and eye direction: her beautiful face must be almost STRAIGHT-ON to the camera, yaw 0–10 degrees, both eyes evenly visible, nose centered between eyes, upright head, eye contact with viewer. Her BODY and props may remain angled left, but her HEAD TURNS BACK TO CAMERA. This distinction is critical. Preserve same deep cobalt hair, silver whale-tail hair ornament, blue crystal earrings, elegant blue-white gown, sleeves, white boots, original distinct body gesture, full body and all props within frame. Preserve genuine transparent RGBA background. 1024x1536 sharp detailed painted anime. No background, no halo, no text or symbols, no additional limbs. Do not mirror or change the entire body. Keep BOTH hands high near head: one on forehead, other palm open beside head. Furrowed eyebrows and worried confused expression must be very obvious to the viewer; face oriented FRONT with direct eye contact, not profile.",
+      "references": [
+        "generated://exec-036e4aa9-6e7e-49b0-b5d2-f786ff7eb3fa.png"
+      ],
+      "rejectedSource": "generated://exec-036e4aa9-6e7e-49b0-b5d2-f786ff7eb3fa.png",
+      "faceCenter": [
+        0.38,
+        0.102
+      ],
+      "facing": "front",
+      "sha256": "7216799e0a9ec8dd21bb3946779cdc3fca4d27949411968b35c4c164cf021c4e",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6,
+      "alphaZeroFraction": 0.3681,
+      "faceWidth": 0.17
+    },
+    {
+      "state": "stopped",
+      "file": "assets/actions/serene-stopped-v3.png",
+      "source": "generated://exec-6daa557d-e71a-400c-b482-9cba62669761.png",
+      "prompt": "Use case: identity-preserve. Edit this exact character action. CORRECT ONLY the head and eye direction: her beautiful face must be almost STRAIGHT-ON to the camera, yaw 0–10 degrees, both eyes evenly visible, nose centered between eyes, upright head, eye contact with viewer. Her BODY and props may remain angled left, but her HEAD TURNS BACK TO CAMERA. This distinction is critical. Preserve same deep cobalt hair, silver whale-tail hair ornament, blue crystal earrings, elegant blue-white gown, sleeves, white boots, original distinct body gesture, full body and all props within frame. Preserve genuine transparent RGBA background. 1024x1536 sharp detailed painted anime. No background, no halo, no text or symbols, no additional limbs. Do not mirror or change the entire body. Keep BOTH forearms crossed in a LARGE X at chest, outward open palms. Calm firm serious face oriented FRONT and looking directly at user.",
+      "references": [
+        "generated://exec-bab3809a-30a2-422e-88ba-095bb24b2660.png"
+      ],
+      "rejectedSource": "generated://exec-bab3809a-30a2-422e-88ba-095bb24b2660.png",
+      "faceCenter": [
+        0.467,
+        0.097
+      ],
+      "facing": "front",
+      "sha256": "bba3cd4c5908a0e0f0c4340530cc7eaa1200a30bc7dcac30393a1458f953e3b7",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6,
+      "alphaZeroFraction": 0.3587,
+      "faceWidth": 0.17
+    },
+    {
+      "state": "queued",
+      "file": "assets/actions/serene-queued-v3.png",
+      "source": "generated://exec-45ae46bf-5cc5-4e0e-af03-730f264c6c03.png",
+      "prompt": "Use case: identity-preserve. Input 1 defines the exact beautiful FACE and direct-to-camera gaze; input 2 defines full-body blue-white gown with translucent oversleeves, deep cobalt long hair, silver whale-tail ornament, crystal earrings, and white boots. Make a distinct full-body action for same elegant adult anime character, full head to both feet and props inside 5 percent padding. Her body and props can be turned slightly left but HEAD faces the CAMERA, almost STRAIGHT-ON 0–10 degrees, both eyes evenly visible, upright head, direct eye contact. Do NOT copy a left profile or right profile. Crisp refined anime illustration. 1024x1536 portrait PNG with genuine TRANSPARENT RGBA background. No halo, no backdrop, no floor, no text, no icons, no other people. QUEUED action: sitting sideways on simple tall silverblue stool, body slightly left but HEAD TURNED BACK TOWARDS CAMERA, full pleasant patient face with direct eye contact. Both hands support a VERY LARGE silverblue HOURGLASS upright on knees. The hourglass must be very visible. Feet and stool legs within frame. No book, no files or electronics. Patient calm expression.",
+      "references": [
+        "assets/portraits/serene-intro-front-smile-v4.png",
+        "assets/actions/serene-answering-v1.png"
+      ],
+      "rejectedSource": "generated://exec-879c7863-db1b-4c27-b63e-5a052d233e50.png",
+      "faceCenter": [
+        0.553,
+        0.13
+      ],
+      "facing": "front",
+      "sha256": "7f72a988bdbc14d3120fb111420f5010666a4d326692f3a3d4328c3b4a588665",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6,
+      "alphaZeroFraction": 0.3286,
+      "faceWidth": 0.17
+    },
+    {
+      "state": "disconnected",
+      "file": "assets/actions/serene-disconnected-v3.png",
+      "source": "generated://exec-eb0acb9d-11d0-482a-a618-c30d4fb209c6.png",
+      "prompt": "Use case: identity-preserve. Input 1 defines the exact beautiful FACE and direct-to-camera gaze; input 2 defines full-body blue-white gown with translucent oversleeves, deep cobalt long hair, silver whale-tail ornament, crystal earrings, and white boots. Make a distinct full-body action for same elegant adult anime character, full head to both feet and props inside 5 percent padding. Her body and props can be turned slightly left but HEAD faces the CAMERA, almost STRAIGHT-ON 0–10 degrees, both eyes evenly visible, upright head, direct eye contact. Do NOT copy a left profile or right profile. Crisp refined anime illustration. 1024x1536 portrait PNG with genuine TRANSPARENT RGBA background. No halo, no backdrop, no floor, no text, no icons, no other people. DISCONNECTED action: torso gently leaned forward, BOTH arms spread WIDELY apart, each hand holding one half of a LARGE disconnected silver-blue cable connector. Clear air gap between the two large plug ends. Loose U-shaped cable hangs down to knee level, entirely within frame. Worried eyebrows and frown directed at VIEWER as if asking for help. No book, no documents, no chair. Wide spread arms define the silhouette.",
+      "references": [
+        "assets/portraits/serene-intro-front-smile-v4.png",
+        "assets/actions/serene-answering-v1.png"
+      ],
+      "faceCenter": [
+        0.48,
+        0.12
+      ],
+      "facing": "front",
+      "sha256": "a9fe31c4a90a756f02734595a96ca11cb7759c035a7c36f36adda9f7852c31d3",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6,
+      "alphaZeroFraction": 0.2904,
+      "faceWidth": 0.17
+    },
+    {
+      "state": "complete",
+      "file": "assets/actions/serene-complete-v3.png",
+      "source": "generated://exec-9a7f3c66-f319-42a7-a975-6e56fa6a32ef.png",
+      "prompt": "Use case: identity-preserve. Input 1 defines the exact beautiful FACE and direct-to-camera gaze; input 2 defines full-body blue-white gown with translucent oversleeves, deep cobalt long hair, silver whale-tail ornament, crystal earrings, and white boots. Make a distinct full-body action for same elegant adult anime character, full head to both feet and props inside 5 percent padding. Her body and props can be turned slightly left but HEAD faces the CAMERA, almost STRAIGHT-ON 0–10 degrees, both eyes evenly visible, upright head, direct eye contact. Do NOT copy a left profile or right profile. Crisp refined anime illustration. 1024x1536 portrait PNG with genuine TRANSPARENT RGBA background. No halo, no backdrop, no floor, no text, no icons, no other people. COMPLETE action: graceful shallow curtsy to the VIEWER, knees slightly bent, one foot behind, both hands hold the dress hem low at hip/thigh level and spread it out gently on both sides. Broad graceful skirt silhouette, low symmetric hands, warm confident satisfied smile, head upright enough to make face completely visible, eye contact with viewer. Not deep bow that hides face. No book, no device, no chair.",
+      "references": [
+        "assets/portraits/serene-intro-front-smile-v4.png",
+        "assets/actions/serene-answering-v1.png"
+      ],
+      "faceCenter": [
+        0.485,
+        0.114
+      ],
+      "facing": "front",
+      "sha256": "d3c69b84d8532a1f1c2525044781d024eaca5ac347e3961343d5d94f1b2b3f18",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6,
+      "alphaZeroFraction": 0.3549,
+      "faceWidth": 0.17
+    }
+  ]
+}

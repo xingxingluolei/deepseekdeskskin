@@ -1,0 +1,674 @@
+{
+  "schemaVersion": 1,
+  "project": "deepseekdeskskin",
+  "generator": "OpenAI builtin image_gen.imagegen",
+  "transparentBackground": true,
+  "postProcessing": "None. Selected original PNG outputs copied byte-for-byte.",
+  "expectedStates": [
+    "idle",
+    "thinking",
+    "working",
+    "answering",
+    "parallel",
+    "compacting",
+    "retrying",
+    "waiting",
+    "complete",
+    "error",
+    "queued",
+    "connecting",
+    "disconnected",
+    "stopped",
+    "paused",
+    "blocked"
+  ],
+  "completed": 16,
+  "assets": [
+    {
+      "state": "idle",
+      "file": "assets/actions/maid-idle-v1.png",
+      "originalOutput": "generated://exec-240c881f-88ae-42bb-a40d-256b5586be26.png",
+      "sourceFile": "assets/concepts/maid-intro-front-smile-v1.png",
+      "origin": "Reused approved builtin-generated concept, copied without changes.",
+      "prompt": "Use case: precise-object-edit.\nAsset type: smiling keyframe matching the supplied front-neutral full-body maid; portrait 1024x1536 genuinely transparent PNG.\nInput image: the supplied maid-intro-front-neutral-v1.png is the ONLY edit target and reference. Change ONLY the small facial expression, keeping every other part of this image as nearly identical as possible.\nPrimary request: change her neutral closed mouth into a natural gentle warm CLOSED-MOUTH smile. Lift the mouth corners subtly, soften the eyebrows and relax her eyes slightly while retaining fully open blue eyes and clear DIRECT eye contact. A quiet welcoming smile, not laughing or grinning, no teeth, no blushing exaggeration. She is still genuinely looking straight into the camera: true frontal face, equally visible eyes and cheeks, centered nose tip/mouth/chin, head level and neck upright.\nStrict invariants: preserve the exact current face identity and frontal orientation, head position/size, hairline, headband and whale-tail clip placement, eye positions, navy hair shape and flow, all costume details, body posture with both hands behind the back, legs and BOTH complete Mary Jane shoes, all ruffled skirt and white apron shapes, figure scale, framing, camera and transparent canvas position. Do not rotate or tilt the head, do not move the torso/arms/feet, do not zoom or reframe. This pair is a neutral-to-smile expression transition, so the full-body silhouette and accessories must stay aligned.\nKeep the same youthful ADULT normal-proportioned anime maid, refined navy-blue hair and blue eyes, white ruffled headband, navy modest maid dress with white apron and opaque white stockings. Exactly one woman, two arms and two legs, complete hair and shoes.\nBackground: retain actual transparent alpha outside the character. No opaque or translucent backdrop, no broad glow, no floor, no vignette, no gradient, no checkerboard drawing. Clean antialiased cutout edges. No props, text, logo, watermark or UI. ONLY change the facial expression from neutral to a restrained tender smile.",
+      "references": [
+        "assets/concepts/maid-intro-front-neutral-v1.png"
+      ],
+      "copiedSha256": "abd914d606d6191144ed9054351318d286785d83c2af001da1babb37f306a03c",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.5,
+        0.133
+      ],
+      "alphaInspection": {
+        "transparent": 960797,
+        "opaque": 0,
+        "partial": 612067,
+        "transparentRatio": 0.6108582814534506,
+        "bbox128": [
+          82,
+          30,
+          943,
+          1503
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "Approved full-body concept; copied without changes."
+    },
+    {
+      "state": "thinking",
+      "file": "assets/actions/maid-thinking-v1.png",
+      "originalOutput": "generated://exec-1c19f439-a493-4765-a3ce-dc859d0c045d.png",
+      "sourceFile": "assets/concepts/maid-action-thinking-v1.png",
+      "origin": "Reused approved builtin-generated concept, copied without changes.",
+      "prompt": "Use case: precise-object-edit.\nThis is ONLY a safe-framing correction of the supplied transparent full-body seated thinking maid concept. Preserve her exact identity and detailed painting, navy hair/blue eyes/white ruffled headband with whale-tail clip, modest navy maid dress with white apron, opaque white stockings and both whole navy Mary Jane shoes. Keep the same calm seated THINKING action: head level facing screen LEFT, right hand at chin, left arm holding a closed blank blue book, ankles lightly crossed, entire simple silver-blue stool. Do not change pose, face, costume, props or anatomy.\nThe previous version had hair near the side edges and insufficient empty space. Output portrait 1024x1536 RGBA with genuinely transparent background. UNIFORMLY zoom the ENTIRE complete figure with all hair, book and stool farther out to roughly 74% of its present size and center it. The full visible silhouette should occupy only 70–76% of total canvas height and no more than 76–80% of width. Leave obvious EMPTY TRANSPARENT safety margins of at least 10–12% above the highest headband, below BOTH shoe soles and stool legs, and to the left/right of the longest hair or skirt. Include every hair end, all fingers, both full shoes and every stool leg without crop.\nActual transparent alpha outside only the figure, closed book and stool. NO broad glowing halo, no opaque or translucent colored cloud, no backdrop, no floor, no vignette, no shadow sheet, no background gradient, no checkerboard drawing. Clean antialiased character edges only. No text, logo, watermark, UI, additional people or objects. The only change is reducing the complete existing cutout uniformly inside the unchanged canvas for clear empty transparent margins.",
+      "references": [
+        "generated://exec-f697a717-1e06-464a-ac14-deaaf0e582a9.png"
+      ],
+      "copiedSha256": "367145fea16d2da65764e15de600dd56c035449c47c698007c047dc58038f145",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.43,
+        0.237
+      ],
+      "alphaInspection": {
+        "transparent": 994917,
+        "opaque": 0,
+        "partial": 577947,
+        "transparentRatio": 0.6325511932373047,
+        "bbox128": [
+          87,
+          162,
+          938,
+          1360
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "Approved full-body concept; copied without changes."
+    },
+    {
+      "state": "working",
+      "file": "assets/actions/maid-working-v1.png",
+      "originalOutput": "generated://exec-36e27402-7fa7-44cb-a4d6-24075a75d110.png",
+      "sourceFile": "assets/concepts/maid-action-working-v2.png",
+      "origin": "Reused approved builtin-generated concept, copied without changes.",
+      "prompt": "Use case: precise-object-edit.\nPrimary request: 只修正这张已经生成的全身角色设计预览的构图留边。保持人物身份、正常成年比例、精致蓝白女仆衣装、所有现有物件、姿势、面部表情、双手动作、双腿角度和鞋子完全相同，不设计新姿势，不增加/移除现有物件。\nInput image: 唯一参考图就是当前这张 坐在银蓝桌凳上操作笔记本键盘的经典女仆 cutout。\nEdit: 将人物与全部道具作为一个整体等比例缩小约20%，完整居中放进1024x1536竖幅，所有可见外轮廓（包括最外发梢、头箍、抬掌、裙角、双鞋、以及桌角/桌腿/凳腿/笔记本或小册）均与画幅四边保持8–12%纯透明安全留边。外轮廓目标范围大致 x=102..922、y=154..1382。原图贴边部分自然补足完整外缘：银蓝桌面左角完整，桌腿完整；长发最右梢完整。 不裁去一丁点发丝、鞋尖或任何道具外角。不要把原图背景当一块不透明矩形进行缩小。\nBackground: 真正完全透明的clean-alpha cutout，四边留白区域alpha=0，保持透明缝隙；不添加不透明黑底、蓝色光晕、地板、阴影背景、棋盘格图案、文字、logo或水印。\nInvariants: 保持同一端正坐姿、头颈水平面向左侧笔记本、双手操作键盘、膝盖端庄并拢、双白袜与海军蓝Mary Jane鞋完整；保留原有简洁银蓝桌、凳、电脑与已有小花瓶/书叠，不能新增物件。 只通过整体缩小与必要外缘补足提供透明安全边距，画风和材质保留。",
+      "references": [
+        "generated://exec-5c207517-2627-426d-900d-23a313715125.png"
+      ],
+      "copiedSha256": "7ed3da98670226ca6f532781899d70e480dfcbb7daaf0aa684648a17eca89c30",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.55,
+        0.235
+      ],
+      "alphaInspection": {
+        "transparent": 994740,
+        "opaque": 0,
+        "partial": 578124,
+        "transparentRatio": 0.6324386596679688,
+        "bbox128": [
+          67,
+          173,
+          965,
+          1335
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "Approved full-body concept; copied without changes."
+    },
+    {
+      "state": "answering",
+      "file": "assets/actions/maid-answering-v1.png",
+      "originalOutput": "generated://exec-8d9ad400-4b7c-48c3-8e0c-37c9afac6bee.png",
+      "sourceFile": null,
+      "origin": "Builtin generation based on approved frontal classic maid reference.",
+      "prompt": "Use case: identity-preserve.\nAsset type: one complete classic-maid full-body action state, portrait 1024x1536 PNG with GENUINE transparent alpha.\nInput image: the supplied front-facing maid is the identity, painting quality and costume reference ONLY. Keep exactly the SAME youthful ADULT anime woman with normal elegant human proportions, navy-blue long hair, blue eyes, white ruffled maid headband with pale-blue whale-tail clip, white high collar/navy ribbon/blue jewel, modest navy classic maid dress with white ruffled sleeves and knee-length skirt, white apron, opaque white stockings and navy Mary Jane shoes. Never chibi. Retain fine cloth folds and delicate face rendering.\nPrimary request: REDRAW her into the specified distinct whole-body ACTION below. Body silhouette and weight shift must communicate the state, not just a changed face. Keep the head/neck natural and not tilted toward a shoulder. Choose face direction according to the specified action; do not reflexively repeat a left profile.\nFraming: the ENTIRE character and ALL specified props fit within canvas, including all hair ends, headband, fingers, legs and BOTH whole shoes. Leave around 5–10% empty transparent safety space on all four sides; zoom out the complete silhouette if necessary. Keep normal adult anatomy and head-to-body proportions. Lower seated/kneeling actions remain naturally compact rather than an enlarged giant head. No cropped props. Clean readable silhouette.\nBackground: completely transparent alpha outside only the character and specified small props, including gaps between arms/legs and through furniture. No opaque or translucent scene/background haze, no floor, no cast-shadow sheet, no glow cloud, no vignette, no gradient, no checkerboard drawing.\nConstraints: exactly one adult woman, exactly two arms/hands and two legs/shoes, anatomically coherent joints, modest nonsexual posture and camera angle. No other people/pets; no text, digits, logo, watermark, UI, icons, warning badges or tool names. Any paper, book, board, folder or screen is blank without writing. No new props beyond the action. Do not repeat the reference's idle pose.\nACTION:\nState answering — responding and explaining. She STANDS and turns her torso gently toward screen LEFT (the reading area), one arm extending outward left with a natural open-palm explanatory gesture; the other hand relaxed low near her waist. Both whole legs stand naturally, skirt swings a little with the turn. Her HEAD turns back slightly toward the audience, so BOTH eyes are visible and her gaze warmly meets the viewer while explaining; not a full left profile. A subtle natural closed-mouth smile. No props. This clearly differs from idle hands-behind-back and from two-arm parallel.",
+      "references": [
+        "assets/concepts/maid-intro-front-smile-v1.png"
+      ],
+      "copiedSha256": "6c3b97900d4c6cd8a854935cda4de5b6059976242894eff537cd55052f03eb3c",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.48,
+        0.126
+      ],
+      "alphaInspection": {
+        "transparent": 934699,
+        "opaque": 0,
+        "partial": 638165,
+        "transparentRatio": 0.5942656199137369,
+        "bbox128": [
+          96,
+          22,
+          972,
+          1491
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "Complete standing figure and shoes; one arm opens toward reading area, face turns toward viewer with both eyes visible and gentle smile. No evident extra/missing limbs."
+    },
+    {
+      "state": "parallel",
+      "file": "assets/actions/maid-parallel-v1.png",
+      "originalOutput": "generated://exec-ce5f9f4d-9dc9-4042-92c1-464238754b61.png",
+      "sourceFile": null,
+      "origin": "Builtin generation based on approved frontal classic maid reference.",
+      "prompt": "Use case: identity-preserve.\nAsset type: one complete classic-maid full-body action state, portrait 1024x1536 PNG with GENUINE transparent alpha.\nInput image: the supplied front-facing maid is the identity, painting quality and costume reference ONLY. Keep exactly the SAME youthful ADULT anime woman with normal elegant human proportions, navy-blue long hair, blue eyes, white ruffled maid headband with pale-blue whale-tail clip, white high collar/navy ribbon/blue jewel, modest navy classic maid dress with white ruffled sleeves and knee-length skirt, white apron, opaque white stockings and navy Mary Jane shoes. Never chibi. Retain fine cloth folds and delicate face rendering.\nPrimary request: REDRAW her into the specified distinct whole-body ACTION below. Body silhouette and weight shift must communicate the state, not just a changed face. Keep the head/neck natural and not tilted toward a shoulder. Choose face direction according to the specified action; do not reflexively repeat a left profile.\nFraming: the ENTIRE character and ALL specified props fit within canvas, including all hair ends, headband, fingers, legs and BOTH whole shoes. Leave around 5–10% empty transparent safety space on all four sides; zoom out the complete silhouette if necessary. Keep normal adult anatomy and head-to-body proportions. Lower seated/kneeling actions remain naturally compact rather than an enlarged giant head. No cropped props. Clean readable silhouette.\nBackground: completely transparent alpha outside only the character and specified small props, including gaps between arms/legs and through furniture. No opaque or translucent scene/background haze, no floor, no cast-shadow sheet, no glow cloud, no vignette, no gradient, no checkerboard drawing.\nConstraints: exactly one adult woman, exactly two arms/hands and two legs/shoes, anatomically coherent joints, modest nonsexual posture and camera angle. No other people/pets; no text, digits, logo, watermark, UI, icons, warning badges or tool names. Any paper, book, board, folder or screen is blank without writing. No new props beyond the action. Do not repeat the reference's idle pose.\nACTION:\nState parallel — coordinating two simultaneous tasks. She stands with feet planted a little apart in a balanced confident stance. BOTH ARMS extend independently to either side in a broad but natural diagonal silhouette: one hand presents a small CLOSED plain navy folder, the other hand holds a separate small group of BLANK white pages. Exactly two hands, each manages its own physical task group. Keep both complete forearms, fingers and task groups safely within canvas. Head upright near-FRONTAL, both eyes visible looking toward the audience, calm focused closed mouth, no smile or anger. No floating UI or glowing icons. Wide double-sided action should read instantly differently from the one-arm explaining state.",
+      "references": [
+        "assets/concepts/maid-intro-front-smile-v1.png"
+      ],
+      "copiedSha256": "e12efe073fa6c92e49aac295f713fcaa39b6887d8fe7fa2fb75576d1afbbfce2",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.5,
+        0.128
+      ],
+      "alphaInspection": {
+        "transparent": 863187,
+        "opaque": 0,
+        "partial": 709677,
+        "transparentRatio": 0.5487995147705078,
+        "bbox128": [
+          65,
+          26,
+          991,
+          1498
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "Strong wide standing silhouette, each hand holds a distinct blank task group. Frontal focused face, complete hands/legs/shoes and documents; no obvious limb errors."
+    },
+    {
+      "state": "compacting",
+      "file": "assets/actions/maid-compacting-v1.png",
+      "originalOutput": "generated://exec-a0d88d38-e58a-469c-86b2-5c38554dd656.png",
+      "sourceFile": null,
+      "origin": "Builtin generation based on approved frontal classic maid reference.",
+      "prompt": "Use case: identity-preserve.\nAsset type: one complete classic-maid full-body action state, portrait 1024x1536 PNG with GENUINE transparent alpha.\nInput image: the supplied front-facing maid is the identity, painting quality and costume reference ONLY. Keep exactly the SAME youthful ADULT anime woman with normal elegant human proportions, navy-blue long hair, blue eyes, white ruffled maid headband with pale-blue whale-tail clip, white high collar/navy ribbon/blue jewel, modest navy classic maid dress with white ruffled sleeves and knee-length skirt, white apron, opaque white stockings and navy Mary Jane shoes. Never chibi. Retain fine cloth folds and delicate face rendering.\nPrimary request: REDRAW her into the specified distinct whole-body ACTION below. Body silhouette and weight shift must communicate the state, not just a changed face. Keep the head/neck natural and not tilted toward a shoulder. Choose face direction according to the specified action; do not reflexively repeat a left profile.\nFraming: the ENTIRE character and ALL specified props fit within canvas, including all hair ends, headband, fingers, legs and BOTH whole shoes. Leave around 5–10% empty transparent safety space on all four sides; zoom out the complete silhouette if necessary. Keep normal adult anatomy and head-to-body proportions. Lower seated/kneeling actions remain naturally compact rather than an enlarged giant head. No cropped props. Clean readable silhouette.\nBackground: completely transparent alpha outside only the character and specified small props, including gaps between arms/legs and through furniture. No opaque or translucent scene/background haze, no floor, no cast-shadow sheet, no glow cloud, no vignette, no gradient, no checkerboard drawing.\nConstraints: exactly one adult woman, exactly two arms/hands and two legs/shoes, anatomically coherent joints, modest nonsexual posture and camera angle. No other people/pets; no text, digits, logo, watermark, UI, icons, warning badges or tool names. Any paper, book, board, folder or screen is blank without writing. No new props beyond the action. Do not repeat the reference's idle pose.\nACTION:\nState compacting — carefully organizing material. She lowers into an ASYMMETRIC ONE-KNEE half-kneeling pose: one white-stocking knee rests low, the other leg bent with its navy Mary Jane foot planted forward. Both whole shoes remain visible with plausible leg joints. In front of the bent knee, one hand holds an OPEN plain navy FILE FOLDER and the other carefully slides a few BLANK pages neatly into it. Her torso leans gently toward the folder, head/neck naturally straight, gaze downward toward the pages and concentrated closed mouth. Modest skirt and apron drape naturally and fully cover the thighs/body, no underskirt camera. Complete folder, both hands and all hair ends. No stool, no desktop, no other items. A clearly low, asymmetric organizing silhouette, not seated thinking or two-knee crouching.",
+      "references": [
+        "assets/concepts/maid-intro-front-smile-v1.png"
+      ],
+      "copiedSha256": "6b3b38229bace7f0c3701e0f391b2a6000600eeaa1ead4e6182e5d1216d27c5f",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.458,
+        0.188
+      ],
+      "alphaInspection": {
+        "transparent": 620280,
+        "opaque": 0,
+        "partial": 952584,
+        "transparentRatio": 0.3943634033203125,
+        "bbox128": [
+          19,
+          28,
+          1013,
+          1496
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "Distinct one-knee organizing pose, inserting blank papers into an open folder. Both shoes, knee geometry and hands visible, eyes follow material, no evident extra/missing limbs. Figure fills much of canvas but outline stays complete."
+    },
+    {
+      "state": "retrying",
+      "file": "assets/actions/maid-retrying-v1.png",
+      "originalOutput": "generated://exec-775f0407-48ae-4a89-bf96-b989a49ca209.png",
+      "sourceFile": null,
+      "origin": "Builtin generation based on approved frontal classic maid reference.",
+      "prompt": "Use case: identity-preserve.\nAsset type: one complete classic-maid full-body action state, portrait 1024x1536 PNG with GENUINE transparent alpha.\nInput image: the supplied front-facing maid is the identity, painting quality and costume reference ONLY. Keep exactly the SAME youthful ADULT anime woman with normal elegant human proportions, navy-blue long hair, blue eyes, white ruffled maid headband with pale-blue whale-tail clip, white high collar/navy ribbon/blue jewel, modest navy classic maid dress with white ruffled sleeves and knee-length skirt, white apron, opaque white stockings and navy Mary Jane shoes. Never chibi. Retain fine cloth folds and delicate face rendering.\nPrimary request: REDRAW her into the specified distinct whole-body ACTION below. Body silhouette and weight shift must communicate the state, not just a changed face. Keep the head/neck natural and not tilted toward a shoulder. Choose face direction according to the specified action; do not reflexively repeat a left profile.\nFraming: the ENTIRE character and ALL specified props fit within canvas, including all hair ends, headband, fingers, legs and BOTH whole shoes. Leave around 5–10% empty transparent safety space on all four sides; zoom out the complete silhouette if necessary. Keep normal adult anatomy and head-to-body proportions. Lower seated/kneeling actions remain naturally compact rather than an enlarged giant head. No cropped props. Clean readable silhouette.\nBackground: completely transparent alpha outside only the character and specified small props, including gaps between arms/legs and through furniture. No opaque or translucent scene/background haze, no floor, no cast-shadow sheet, no glow cloud, no vignette, no gradient, no checkerboard drawing.\nConstraints: exactly one adult woman, exactly two arms/hands and two legs/shoes, anatomically coherent joints, modest nonsexual posture and camera angle. No other people/pets; no text, digits, logo, watermark, UI, icons, warning badges or tool names. Any paper, book, board, folder or screen is blank without writing. No new props beyond the action. Do not repeat the reference's idle pose.\nACTION:\nState retrying — rising and trying again. She is in a DYNAMIC RISING-TO-STEP action from a small silver-blue work stool behind her: hips now lifted from the stool, torso straightens and weight advances, one foot takes a clear forward step toward screen LEFT while the other remains behind for balance. Both whole shoes and complete small stool are visible. One arm reaches forward in readiness to operate again, the other lower arm balances near her side, exactly two arms. No table or laptop. Head upright turned only slightly toward the forward direction, BOTH eyes visible with a determined calm gaze, closed mouth, no scared/sad smile, no hand at temple. The silhouette must unmistakably show rising/forward movement rather than a stationary standing pose.",
+      "references": [
+        "assets/concepts/maid-intro-front-smile-v1.png"
+      ],
+      "copiedSha256": "bc73e545b0f745ec7759b7b1bc656851b0a2e6d3210f66b52c27394e93ef6ece",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.413,
+        0.144
+      ],
+      "alphaInspection": {
+        "transparent": 844710,
+        "opaque": 0,
+        "partial": 728154,
+        "transparentRatio": 0.5370521545410156,
+        "bbox128": [
+          55,
+          22,
+          1007,
+          1496
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "Clear forward step away from a complete silver-blue stool; one arm reaches forward, the other balances low. Both eyes visible, whole hands and shoes; no evident extra/missing limbs."
+    },
+    {
+      "state": "waiting",
+      "file": "assets/actions/maid-waiting-v1.png",
+      "originalOutput": "generated://exec-a3c6ec47-bc48-43c8-a1e4-4aefb458889a.png",
+      "sourceFile": null,
+      "origin": "Builtin generation based on approved frontal classic maid reference.",
+      "prompt": "Use case: identity-preserve.\nAsset type: one complete classic-maid full-body action state, portrait 1024x1536 PNG with GENUINE transparent alpha.\nInput image: the supplied front-facing maid is the identity, painting quality and costume reference ONLY. Keep exactly the SAME youthful ADULT anime woman with normal elegant human proportions, navy-blue long hair, blue eyes, white ruffled maid headband with pale-blue whale-tail clip, white high collar/navy ribbon/blue jewel, modest navy classic maid dress with white ruffled sleeves and knee-length skirt, white apron, opaque white stockings and navy Mary Jane shoes. Never chibi. Retain fine cloth folds and delicate face rendering.\nPrimary request: REDRAW her into the specified distinct whole-body ACTION below. Body silhouette and weight shift must communicate the state, not just a changed face. Keep the head/neck natural and not tilted toward a shoulder. Choose face direction according to the specified action; do not reflexively repeat a left profile.\nFraming: the ENTIRE character and ALL specified props fit within canvas, including all hair ends, headband, fingers, legs and BOTH whole shoes. Leave around 5–10% empty transparent safety space on all four sides; zoom out the complete silhouette if necessary. Keep normal adult anatomy and head-to-body proportions. Lower seated/kneeling actions remain naturally compact rather than an enlarged giant head. No cropped props. Clean readable silhouette.\nBackground: completely transparent alpha outside only the character and specified small props, including gaps between arms/legs and through furniture. No opaque or translucent scene/background haze, no floor, no cast-shadow sheet, no glow cloud, no vignette, no gradient, no checkerboard drawing.\nConstraints: exactly one adult woman, exactly two arms/hands and two legs/shoes, anatomically coherent joints, modest nonsexual posture and camera angle. No other people/pets; no text, digits, logo, watermark, UI, icons, warning badges or tool names. Any paper, book, board, folder or screen is blank without writing. No new props beyond the action. Do not repeat the reference's idle pose.\nACTION:\nState waiting — asking for confirmation. She stands upright facing the viewer with BOTH hands extending a small plain navy-bordered silver-white CONFIRMATION BOARD forward at chest/waist height, as if handing it to the audience. Board completely blank with no text, ticks, buttons or icons, modest size so face and both hands remain visible. Head TRUE FRONT-ON, both blue eyes equally fully visible, centered nose/chin and pupils making direct eye contact. Upright neck, relaxed expectant eyebrows and a faint gentle closed-mouth expression. Both feet naturally planted and full skirt/shoes visible. The frontward offering gesture is clearly distinct from holding a folder against the body.",
+      "references": [
+        "assets/concepts/maid-intro-front-smile-v1.png"
+      ],
+      "copiedSha256": "1770435f4bffa9f7471178ea361a6c3d31fbd59b9e9eb6c9652dc30b15e7769b",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.498,
+        0.122
+      ],
+      "alphaInspection": {
+        "transparent": 897738,
+        "opaque": 0,
+        "partial": 675126,
+        "transparentRatio": 0.5707664489746094,
+        "bbox128": [
+          69,
+          5,
+          945,
+          1498
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "True frontal direct eye contact, both arms visibly offer a blank board forward. Entire headband and shoes visible; no apparent limb problems. Top safety margin is small."
+    },
+    {
+      "state": "complete",
+      "file": "assets/actions/maid-complete-v1.png",
+      "originalOutput": "generated://exec-53090553-1474-46d2-b77f-b37d3ff1a246.png",
+      "sourceFile": null,
+      "origin": "Builtin generation based on approved frontal classic maid reference.",
+      "prompt": "Use case: identity-preserve.\nAsset type: one complete classic-maid full-body action state, portrait 1024x1536 PNG with GENUINE transparent alpha.\nInput image: the supplied front-facing maid is the identity, painting quality and costume reference ONLY. Keep exactly the SAME youthful ADULT anime woman with normal elegant human proportions, navy-blue long hair, blue eyes, white ruffled maid headband with pale-blue whale-tail clip, white high collar/navy ribbon/blue jewel, modest navy classic maid dress with white ruffled sleeves and knee-length skirt, white apron, opaque white stockings and navy Mary Jane shoes. Never chibi. Retain fine cloth folds and delicate face rendering.\nPrimary request: REDRAW her into the specified distinct whole-body ACTION below. Body silhouette and weight shift must communicate the state, not just a changed face. Keep the head/neck natural and not tilted toward a shoulder. Choose face direction according to the specified action; do not reflexively repeat a left profile.\nFraming: the ENTIRE character and ALL specified props fit within canvas, including all hair ends, headband, fingers, legs and BOTH whole shoes. Leave around 5–10% empty transparent safety space on all four sides; zoom out the complete silhouette if necessary. Keep normal adult anatomy and head-to-body proportions. Lower seated/kneeling actions remain naturally compact rather than an enlarged giant head. No cropped props. Clean readable silhouette.\nBackground: completely transparent alpha outside only the character and specified small props, including gaps between arms/legs and through furniture. No opaque or translucent scene/background haze, no floor, no cast-shadow sheet, no glow cloud, no vignette, no gradient, no checkerboard drawing.\nConstraints: exactly one adult woman, exactly two arms/hands and two legs/shoes, anatomically coherent joints, modest nonsexual posture and camera angle. No other people/pets; no text, digits, logo, watermark, UI, icons, warning badges or tool names. Any paper, book, board, folder or screen is blank without writing. No new props beyond the action. Do not repeat the reference's idle pose.\nACTION:\nState complete — finished and greeting the viewer. She stands relaxed facing FRONT toward the audience, one arm lifted HIGH in a small graceful wave above shoulder/head height with natural open hand and five fingers; the other arm lowered comfortably beside her skirt. One foot lightly points and touches the ground by its toe, the other bears her weight. BOTH shoes fully visible and limbs anatomically coherent. Head upright truly front-on, both blue eyes looking directly at the viewer, warm relaxed CLOSED-MOUTH smile, not a laughing/chibi expression. Complete raised hand and headband safely within frame. No props, confetti, symbols or effects. High one-arm waving silhouette should differ from explaining and the serious stopping palm.\nFinal framing priority: the reference is near the canvas edges; do NOT inherit that enlarged near-border scale. Redraw the complete pose a little smaller, keeping the highest waving fingertip and headband below y=100 and both lowest soles above y=1436, all outer hair/props inside x=60..964. Extra empty alpha above the raised hand is required. Nothing touches the border.",
+      "references": [
+        "assets/concepts/maid-intro-front-smile-v1.png"
+      ],
+      "copiedSha256": "40a54766d1a63d5909ba63f96facfc291cb86d44e1701fef07ad451b5f7bdcf5",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.516,
+        0.17
+      ],
+      "alphaInspection": {
+        "transparent": 989748,
+        "opaque": 0,
+        "partial": 583116,
+        "transparentRatio": 0.6292648315429688,
+        "bbox128": [
+          96,
+          61,
+          939,
+          1474
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "Warm direct gaze with both eyes visible, one high waving hand and relaxed offset feet. Complete fingers/headband/shoes; no evident limb errors. Slight natural head angle follows relaxed pose rather than fixed profile."
+    },
+    {
+      "state": "error",
+      "file": "assets/actions/maid-error-v1.png",
+      "originalOutput": "generated://exec-1d74bf78-bfd0-4e88-a7a3-b69b63fdf564.png",
+      "sourceFile": "assets/concepts/maid-action-error-v2.png",
+      "origin": "Reused approved builtin-generated concept, copied without changes.",
+      "prompt": "Use case: precise-object-edit.\nPrimary request: 只修正这张已经生成的全身角色设计预览的构图留边。保持人物身份、正常成年比例、精致蓝白女仆衣装、所有现有物件、姿势、面部表情、双手动作、双腿角度和鞋子完全相同，不设计新姿势，不增加/移除现有物件。\nInput image: 唯一参考图就是当前这张 蹲下检查打开的小册并抬停止掌的经典女仆 cutout。\nEdit: 将人物与全部道具作为一个整体等比例缩小约20%，完整居中放进1024x1536竖幅，所有可见外轮廓（包括最外发梢、头箍、抬掌、裙角、双鞋、以及桌角/桌腿/凳腿/笔记本或小册）均与画幅四边保持8–12%纯透明安全留边。外轮廓目标范围大致 x=102..922、y=154..1382。原图贴边部分自然补足完整外缘：长发与裙摆最右外缘完整。 不裁去一丁点发丝、鞋尖或任何道具外角。不要把原图背景当一块不透明矩形进行缩小。\nBackground: 真正完全透明的clean-alpha cutout，四边留白区域alpha=0，保持透明缝隙；不添加不透明黑底、蓝色光晕、地板、阴影背景、棋盘格图案、文字、logo或水印。\nInvariants: 保持同一低重心蹲姿、明显担忧皱眉和闭合略下弯嘴唇、一手托打开的无字小册、一手抬停止掌、完整白袜与海军蓝Mary Jane双鞋；不能增加桌椅或物件。 只通过整体缩小与必要外缘补足提供透明安全边距，画风和材质保留。",
+      "references": [
+        "generated://exec-706fd424-3762-4207-abfe-708e26379a96.png"
+      ],
+      "copiedSha256": "dc78ea75a186668066ced89ea47dc79d2a2d9e708c67d04cae487c8aa31f952d",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.43,
+        0.285
+      ],
+      "alphaInspection": {
+        "transparent": 886249,
+        "opaque": 0,
+        "partial": 686615,
+        "transparentRatio": 0.5634619394938151,
+        "bbox128": [
+          106,
+          183,
+          956,
+          1367
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "Approved full-body concept; copied without changes."
+    },
+    {
+      "state": "queued",
+      "file": "assets/actions/maid-queued-v1.png",
+      "originalOutput": "generated://exec-f07db75f-7c9f-4d91-8fa3-885bb0e5dc64.png",
+      "sourceFile": null,
+      "origin": "Builtin generation based on approved frontal classic maid reference.",
+      "prompt": "Use case: identity-preserve.\nAsset type: one complete classic-maid full-body action state, portrait 1024x1536 PNG with GENUINE transparent alpha.\nInput image: the supplied front-facing maid is the identity, painting quality and costume reference ONLY. Keep exactly the SAME youthful ADULT anime woman with normal elegant human proportions, navy-blue long hair, blue eyes, white ruffled maid headband with pale-blue whale-tail clip, white high collar/navy ribbon/blue jewel, modest navy classic maid dress with white ruffled sleeves and knee-length skirt, white apron, opaque white stockings and navy Mary Jane shoes. Never chibi. Retain fine cloth folds and delicate face rendering.\nPrimary request: REDRAW her into the specified distinct whole-body ACTION below. Body silhouette and weight shift must communicate the state, not just a changed face. Keep the head/neck natural and not tilted toward a shoulder. Choose face direction according to the specified action; do not reflexively repeat a left profile.\nFraming: the ENTIRE character and ALL specified props fit within canvas, including all hair ends, headband, fingers, legs and BOTH whole shoes. Leave around 5–10% empty transparent safety space on all four sides; zoom out the complete silhouette if necessary. Keep normal adult anatomy and head-to-body proportions. Lower seated/kneeling actions remain naturally compact rather than an enlarged giant head. No cropped props. Clean readable silhouette.\nBackground: completely transparent alpha outside only the character and specified small props, including gaps between arms/legs and through furniture. No opaque or translucent scene/background haze, no floor, no cast-shadow sheet, no glow cloud, no vignette, no gradient, no checkerboard drawing.\nConstraints: exactly one adult woman, exactly two arms/hands and two legs/shoes, anatomically coherent joints, modest nonsexual posture and camera angle. No other people/pets; no text, digits, logo, watermark, UI, icons, warning badges or tool names. Any paper, book, board, folder or screen is blank without writing. No new props beyond the action. Do not repeat the reference's idle pose.\nACTION:\nState queued — patient while work is queued. She stands SIDE-ON/three-quarter toward screen LEFT in a compact relaxed silhouette, BOTH arms gently hugging a small neat stack of BLANK folders/documents against her torso at waist/chest level. Neither hand extends outward or offers the stack. Feet close and weight relaxed with both whole shoes visible. Head turns naturally a little toward the audience, BOTH eyes may be visible in three-quarter view, quiet patient closed mouth without sadness. Upright neck, no habitual head tilt. No desk/chair. The side-hugged compact task bundle must differ from the forward-offering waiting board.\nFinal framing: do not inherit the near-border enlarged scale of reference. Place the COMPLETE outer silhouette well inside x=60..964 and y=100..1436, with empty alpha all around. Full shoes and hair ends are mandatory.",
+      "references": [
+        "assets/concepts/maid-intro-front-smile-v1.png"
+      ],
+      "copiedSha256": "f384a607750529b21e28f982e1dc575c1658f3962039396cc54eb26df8117bce",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.461,
+        0.134
+      ],
+      "alphaInspection": {
+        "transparent": 1018850,
+        "opaque": 0,
+        "partial": 554014,
+        "transparentRatio": 0.6477673848470052,
+        "bbox128": [
+          143,
+          29,
+          934,
+          1502
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "Compact three-quarter standing silhouette hugging a blank document stack, both arms/hands and shoes visible. Calm gaze toward audience; distinct from forward board offering, no evident limb errors."
+    },
+    {
+      "state": "connecting",
+      "file": "assets/actions/maid-connecting-v1.png",
+      "originalOutput": "generated://exec-40b81703-440b-4950-a5f3-bf0a8701a475.png",
+      "sourceFile": null,
+      "origin": "Builtin generation based on approved frontal classic maid reference.",
+      "prompt": "Use case: identity-preserve.\nAsset type: one complete classic-maid full-body action state, portrait 1024x1536 PNG with GENUINE transparent alpha.\nInput image: the supplied front-facing maid is the identity, painting quality and costume reference ONLY. Keep exactly the SAME youthful ADULT anime woman with normal elegant human proportions, navy-blue long hair, blue eyes, white ruffled maid headband with pale-blue whale-tail clip, white high collar/navy ribbon/blue jewel, modest navy classic maid dress with white ruffled sleeves and knee-length skirt, white apron, opaque white stockings and navy Mary Jane shoes. Never chibi. Retain fine cloth folds and delicate face rendering.\nPrimary request: REDRAW her into the specified distinct whole-body ACTION below. Body silhouette and weight shift must communicate the state, not just a changed face. Keep the head/neck natural and not tilted toward a shoulder. Choose face direction according to the specified action; do not reflexively repeat a left profile.\nFraming: the ENTIRE character and ALL specified props fit within canvas, including all hair ends, headband, fingers, legs and BOTH whole shoes. Leave around 5–10% empty transparent safety space on all four sides; zoom out the complete silhouette if necessary. Keep normal adult anatomy and head-to-body proportions. Lower seated/kneeling actions remain naturally compact rather than an enlarged giant head. No cropped props. Clean readable silhouette.\nBackground: completely transparent alpha outside only the character and specified small props, including gaps between arms/legs and through furniture. No opaque or translucent scene/background haze, no floor, no cast-shadow sheet, no glow cloud, no vignette, no gradient, no checkerboard drawing.\nConstraints: exactly one adult woman, exactly two arms/hands and two legs/shoes, anatomically coherent joints, modest nonsexual posture and camera angle. No other people/pets; no text, digits, logo, watermark, UI, icons, warning badges or tool names. Any paper, book, board, folder or screen is blank without writing. No new props beyond the action. Do not repeat the reference's idle pose.\nACTION:\nState connecting — reaching to make a connection. She stands balanced with one arm reaching DIAGONALLY UPWARD toward screen LEFT, fingers carefully holding a tiny silver-blue connector at the end of a thin short navy cable. The other arm is low and relaxed for balance, holding the short cable's small plain blue coupling at her side. All cable/connector parts lie safely inside frame, no UI or glowing symbols. The loose physical cable connection is the only prop. Her head follows the reaching hand naturally with an attentive upward gaze; both eyes remain visible in a near-frontal/three-quarter head angle, neck not leaning toward shoulder. Calm closed mouth, feet planted, both complete shoes visible. A strong upward diagonal reach that differs from high frontal waving.\nFinal framing: do not inherit the near-border enlarged scale of reference. Keep the complete raised connector, fingertips, headband, hair and shoes inside x=60..964 and y=100..1436. The whole physical cable remains in canvas, no cut edges.",
+      "references": [
+        "assets/concepts/maid-intro-front-smile-v1.png"
+      ],
+      "copiedSha256": "04973c065925276e22bce2e60afd31e962f6acdc3bd6bee80c30240b78c4b54d",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.482,
+        0.179
+      ],
+      "alphaInspection": {
+        "transparent": 898599,
+        "opaque": 0,
+        "partial": 674265,
+        "transparentRatio": 0.5713138580322266,
+        "bbox128": [
+          69,
+          52,
+          976,
+          1490
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "Strong diagonal up-reaching arm with complete physical cable connectors; gaze follows raised hand, other arm balances low. Both eyes and all limbs/shoes visible, no evident anatomy errors."
+    },
+    {
+      "state": "disconnected",
+      "file": "assets/actions/maid-disconnected-v1.png",
+      "originalOutput": "generated://exec-3d233131-2ff8-4077-8991-ea88e32ea755.png",
+      "sourceFile": null,
+      "origin": "Builtin generation based on approved frontal classic maid reference.",
+      "prompt": "Use case: identity-preserve.\nAsset type: one complete classic-maid full-body action state, portrait 1024x1536 PNG with GENUINE transparent alpha.\nInput image: the supplied front-facing maid is the identity, painting quality and costume reference ONLY. Keep exactly the SAME youthful ADULT anime woman with normal elegant human proportions, navy-blue long hair, blue eyes, white ruffled maid headband with pale-blue whale-tail clip, white high collar/navy ribbon/blue jewel, modest navy classic maid dress with white ruffled sleeves and knee-length skirt, white apron, opaque white stockings and navy Mary Jane shoes. Never chibi. Retain fine cloth folds and delicate face rendering.\nPrimary request: REDRAW her into the specified distinct whole-body ACTION below. Body silhouette and weight shift must communicate the state, not just a changed face. Keep the head/neck natural and not tilted toward a shoulder. Choose face direction according to the specified action; do not reflexively repeat a left profile.\nFraming: the ENTIRE character and ALL specified props fit within canvas, including all hair ends, headband, fingers, legs and BOTH whole shoes. Leave around 5–10% empty transparent safety space on all four sides; zoom out the complete silhouette if necessary. Keep normal adult anatomy and head-to-body proportions. Lower seated/kneeling actions remain naturally compact rather than an enlarged giant head. No cropped props. Clean readable silhouette.\nBackground: completely transparent alpha outside only the character and specified small props, including gaps between arms/legs and through furniture. No opaque or translucent scene/background haze, no floor, no cast-shadow sheet, no glow cloud, no vignette, no gradient, no checkerboard drawing.\nConstraints: exactly one adult woman, exactly two arms/hands and two legs/shoes, anatomically coherent joints, modest nonsexual posture and camera angle. No other people/pets; no text, digits, logo, watermark, UI, icons, warning badges or tool names. Any paper, book, board, folder or screen is blank without writing. No new props beyond the action. Do not repeat the reference's idle pose.\nACTION:\nState disconnected — calmly checking an interrupted connection. She draws her torso and shoulders SLIGHTLY BACKWARD in a cautious weight shift, one foot subtly set back for balance, without turning away from the viewer. BOTH hands are LOW at waist height checking a small plain navy connection device and its clearly UNPLUGGED loose cable connector. Show a small visible separation between connector and socket; no warning icons, glowing dots, text or UI. Her gaze lowers toward her hands/device, brows mildly drawn together, lips closed neutral with quiet concern, not smiling or panicking. Natural upright neck, BOTH whole shoes and all cable ends visible. The rearward drawn-in checking silhouette must differ from the upward connecting reach and standing stop gesture.\nFinal framing: do not inherit the reference's near-border enlarged scale. Keep the entire figure, complete fingers, loose connector and shoes within x=60..964 and y=100..1436, with genuine empty alpha margins. Nothing touches the canvas edge.",
+      "references": [
+        "assets/concepts/maid-intro-front-smile-v1.png"
+      ],
+      "copiedSha256": "eaa6b09196552d1432407a8ad76c374aa64ad7ed9ab1a5783a5e8cec1fa9aaa1",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.488,
+        0.15
+      ],
+      "alphaInspection": {
+        "transparent": 950771,
+        "opaque": 0,
+        "partial": 622093,
+        "transparentRatio": 0.6044839223225912,
+        "bbox128": [
+          105,
+          43,
+          954,
+          1491
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "Hands close to waist inspecting a detached plug and small device, slight backward weight shift with offset feet. Mild concerned downward gaze, no smile. Complete body/device/cable; no evident extra/missing limbs."
+    },
+    {
+      "state": "stopped",
+      "file": "assets/actions/maid-stopped-v1.png",
+      "originalOutput": "generated://exec-6e4fde8d-0851-4459-b91d-5a4e62c6b24f.png",
+      "sourceFile": null,
+      "origin": "Builtin generation based on approved frontal classic maid reference.",
+      "prompt": "Use case: identity-preserve.\nAsset type: one complete classic-maid full-body action state, portrait 1024x1536 PNG with GENUINE transparent alpha.\nInput image: the supplied front-facing maid is the identity, painting quality and costume reference ONLY. Keep exactly the SAME youthful ADULT anime woman with normal elegant human proportions, navy-blue long hair, blue eyes, white ruffled maid headband with pale-blue whale-tail clip, white high collar/navy ribbon/blue jewel, modest navy classic maid dress with white ruffled sleeves and knee-length skirt, white apron, opaque white stockings and navy Mary Jane shoes. Never chibi. Retain fine cloth folds and delicate face rendering.\nPrimary request: REDRAW her into the specified distinct whole-body ACTION below. Body silhouette and weight shift must communicate the state, not just a changed face. Keep the head/neck natural and not tilted toward a shoulder. Choose face direction according to the specified action; do not reflexively repeat a left profile.\nFraming: the ENTIRE character and ALL specified props fit within canvas, including all hair ends, headband, fingers, legs and BOTH whole shoes. Leave around 5–10% empty transparent safety space on all four sides; zoom out the complete silhouette if necessary. Keep normal adult anatomy and head-to-body proportions. Lower seated/kneeling actions remain naturally compact rather than an enlarged giant head. No cropped props. Clean readable silhouette.\nBackground: completely transparent alpha outside only the character and specified small props, including gaps between arms/legs and through furniture. No opaque or translucent scene/background haze, no floor, no cast-shadow sheet, no glow cloud, no vignette, no gradient, no checkerboard drawing.\nConstraints: exactly one adult woman, exactly two arms/hands and two legs/shoes, anatomically coherent joints, modest nonsexual posture and camera angle. No other people/pets; no text, digits, logo, watermark, UI, icons, warning badges or tool names. Any paper, book, board, folder or screen is blank without writing. No new props beyond the action. Do not repeat the reference's idle pose.\nACTION:\nState stopped — motion ended. She stands squarely FRONT-ON with both feet planted steadily, shoulders level. BOTH arms lowered naturally, both hands hold one CLOSED plain navy folder low in front of her thighs. No reaching, waving, offering forward or crossed arms. Folder modest size, both hands visible; face and knees unobstructed. Head truly frontal, both eyes equally visible looking directly toward viewer, centered nose/chin, level head, calm neutral CLOSED mouth with NO smile. Complete clothing/hair/shoes. No props beyond the closed folder. A settled symmetric low-hands silhouette distinct from idle hands behind back and waiting frontward board.\nFinal framing: do not copy the reference's enlarged near-border scale. Full headband, hair ends, hands, closed folder and both shoe soles must remain inside x=60..964 and y=100..1436, with genuinely transparent room all around. Keep the torso centered and upright.",
+      "references": [
+        "assets/concepts/maid-intro-front-smile-v1.png"
+      ],
+      "copiedSha256": "4bb00459c1eeffcc83beed3317f3772a7563c6aa525a029d70de5a744fafaf8f",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.501,
+        0.133
+      ],
+      "alphaInspection": {
+        "transparent": 940783,
+        "opaque": 0,
+        "partial": 632081,
+        "transparentRatio": 0.5981337229410807,
+        "bbox128": [
+          96,
+          26,
+          929,
+          1475
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "True frontal neutral face and level head, settled symmetric stance; both lowered hands hold a closed navy folder. Complete fingers and shoes, distinct from idle hands-behind-back and waiting forward offering."
+    },
+    {
+      "state": "paused",
+      "file": "assets/actions/maid-paused-v1.png",
+      "originalOutput": "generated://exec-1bb56e97-d724-4fa2-8aed-1c28ef83b8e1.png",
+      "sourceFile": null,
+      "origin": "Builtin generation based on approved frontal classic maid reference.",
+      "prompt": "Use case: identity-preserve.\nAsset type: one complete classic-maid full-body action state, portrait 1024x1536 PNG with GENUINE transparent alpha.\nInput image: the supplied front-facing maid is the identity, painting quality and costume reference ONLY. Keep exactly the SAME youthful ADULT anime woman with normal elegant human proportions, navy-blue long hair, blue eyes, white ruffled maid headband with pale-blue whale-tail clip, white high collar/navy ribbon/blue jewel, modest navy classic maid dress with white ruffled sleeves and knee-length skirt, white apron, opaque white stockings and navy Mary Jane shoes. Never chibi. Retain fine cloth folds and delicate face rendering.\nPrimary request: REDRAW her into the specified distinct whole-body ACTION below. Body silhouette and weight shift must communicate the state, not just a changed face. Keep the head/neck natural and not tilted toward a shoulder. Choose face direction according to the specified action; do not reflexively repeat a left profile.\nFraming: the ENTIRE character and ALL specified props fit within canvas, including all hair ends, headband, fingers, legs and BOTH whole shoes. Leave around 5–10% empty transparent safety space on all four sides; zoom out the complete silhouette if necessary. Keep normal adult anatomy and head-to-body proportions. Lower seated/kneeling actions remain naturally compact rather than an enlarged giant head. No cropped props. Clean readable silhouette.\nBackground: completely transparent alpha outside only the character and specified small props, including gaps between arms/legs and through furniture. No opaque or translucent scene/background haze, no floor, no cast-shadow sheet, no glow cloud, no vignette, no gradient, no checkerboard drawing.\nConstraints: exactly one adult woman, exactly two arms/hands and two legs/shoes, anatomically coherent joints, modest nonsexual posture and camera angle. No other people/pets; no text, digits, logo, watermark, UI, icons, warning badges or tool names. Any paper, book, board, folder or screen is blank without writing. No new props beyond the action. Do not repeat the reference's idle pose.\nACTION:\nState paused — awake and resting. She is SEATED and gently LEANS BACK against a simple silver-blue chair BACKREST, a clearly visible modest chair with slim legs and low armrests. BOTH hands rest relaxed on the armrests or lap; neither at chin, book or keyboard. Feet rest naturally on the implied ground, both whole navy Mary Jane shoes visible, modest skirt/apron draped over knees. Upper torso supported by backrest, neck natural/straight, face near-FRONTAL and eyes OPEN with calm alert gaze, neutral relaxed closed mouth. She is awake, not sleeping, not celebratory. Whole chair and all legs safely visible with alpha-transparent gaps. No book, table, screen or other props. A relaxed backward-leaning seated silhouette contrasting forward thinking and working.\nFinal framing: preserve normal adult head/body proportions and keep a naturally LOWER seated silhouette; do not enlarge her head just to fill the canvas. Whole chair backrest, all chair legs, every hand and BOTH full shoes must be inside x=60..964 and y=100..1436. No crop and clear alpha gaps through the furniture.",
+      "references": [
+        "assets/concepts/maid-intro-front-smile-v1.png"
+      ],
+      "copiedSha256": "3e5bd9f9c196000d35c39bb255125c3b1e6dfe1ed5bd1154bc778a4585135aec",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.591,
+        0.15
+      ],
+      "alphaInspection": {
+        "transparent": 811085,
+        "opaque": 0,
+        "partial": 761779,
+        "transparentRatio": 0.5156739552815756,
+        "bbox128": [
+          77,
+          33,
+          1001,
+          1489
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "Awake near-frontal relaxed face; torso supported by chair backrest, both hands rest on armrests. Complete chair and both shoes; visually distinct from forward-thinking pose and keyboard work, no evident extra/missing limbs."
+    },
+    {
+      "state": "blocked",
+      "file": "assets/actions/maid-blocked-v1.png",
+      "originalOutput": "generated://exec-fb3066c4-4950-4960-a179-a55b585a0fa5.png",
+      "sourceFile": null,
+      "origin": "Builtin generation based on approved frontal classic maid reference.",
+      "prompt": "Use case: identity-preserve.\nAsset type: one complete classic-maid full-body action state, portrait 1024x1536 PNG with GENUINE transparent alpha.\nInput image: the supplied front-facing maid is the identity, painting quality and costume reference ONLY. Keep exactly the SAME youthful ADULT anime woman with normal elegant human proportions, navy-blue long hair, blue eyes, white ruffled maid headband with pale-blue whale-tail clip, white high collar/navy ribbon/blue jewel, modest navy classic maid dress with white ruffled sleeves and knee-length skirt, white apron, opaque white stockings and navy Mary Jane shoes. Never chibi. Retain fine cloth folds and delicate face rendering.\nPrimary request: REDRAW her into the specified distinct whole-body ACTION below. Body silhouette and weight shift must communicate the state, not just a changed face. Keep the head/neck natural and not tilted toward a shoulder. Choose face direction according to the specified action; do not reflexively repeat a left profile.\nFraming: the ENTIRE character and ALL specified props fit within canvas, including all hair ends, headband, fingers, legs and BOTH whole shoes. Leave around 5–10% empty transparent safety space on all four sides; zoom out the complete silhouette if necessary. Keep normal adult anatomy and head-to-body proportions. Lower seated/kneeling actions remain naturally compact rather than an enlarged giant head. No cropped props. Clean readable silhouette.\nBackground: completely transparent alpha outside only the character and specified small props, including gaps between arms/legs and through furniture. No opaque or translucent scene/background haze, no floor, no cast-shadow sheet, no glow cloud, no vignette, no gradient, no checkerboard drawing.\nConstraints: exactly one adult woman, exactly two arms/hands and two legs/shoes, anatomically coherent joints, modest nonsexual posture and camera angle. No other people/pets; no text, digits, logo, watermark, UI, icons, warning badges or tool names. Any paper, book, board, folder or screen is blank without writing. No new props beyond the action. Do not repeat the reference's idle pose.\nACTION:\nState blocked — needs the viewer to intervene. She STANDS firmly FRONT-ON with both feet planted and body upright. One arm extends toward the viewer, palm forward in a clear serious STOP/please-wait gesture at shoulder height, natural five-finger hand not obscuring face. The other arm hugs one CLOSED plain navy document folder low against her side. Face truly FRONT-ON, both eyes equally fully visible, centered nose/chin and DIRECT gaze at the audience; brows gently firm and lips CLOSED with a serious calm expression, NO smile and no panic. Neck level without tilt. Complete arms/legs/shoes/hair. No symbols or text. The high forward palm and firm standing silhouette must be plainly distinct from the low crouching error check.\nFinal priority: TRUE frontal direct eye contact, level head and serious CLOSED mouth WITHOUT smiling. Keep one clear forward STOP palm and the other arm holding a closed folder; exactly two hands. Do not inherit enlarged near-border scale: full fingers/headband/hair/shoes inside x=60..964 and y=100..1436 with clear alpha margins.",
+      "references": [
+        "assets/concepts/maid-intro-front-smile-v1.png"
+      ],
+      "copiedSha256": "44cc0eb68fbdafe6dc3be65976c16ca98b448da3b9523fbc627d0a1d51b0693d",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "format": "PNG RGBA",
+      "faceCenter": [
+        0.49,
+        0.132
+      ],
+      "alphaInspection": {
+        "transparent": 870456,
+        "opaque": 0,
+        "partial": 702408,
+        "transparentRatio": 0.5534210205078125,
+        "bbox128": [
+          64,
+          16,
+          966,
+          1507
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "visualReview": "True frontal serious direct gaze and level head; one forward five-finger stop palm, other arm holds closed folder. Both feet planted and all body parts visible; clearly differs from low crouching error and high relaxed waving completion."
+    }
+  ],
+  "status": "All 16 formal classic maid full-body transparent action resources completed.",
+  "notes": [
+    "All original generated outputs retained. No raster editing, cropping, alpha extraction or recoloring performed.",
+    "Per-state faceCenter is an estimated normalized face center for avatar framing, not a face-detection result.",
+    "Some generated images have smaller safety margins than requested. All selected figures and their props retain complete visible outlines. Runtime uses contain and per-state scale calibration."
+  ]
+}

@@ -1,0 +1,11 @@
+node_modules/
+.research/
+dist/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+coverage/
+docs/proof-*/
+docs/verification*/

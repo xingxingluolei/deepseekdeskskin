@@ -1,0 +1,142 @@
+[
+  {
+    "key": "attention-eyes",
+    "refs": [
+      "assets/portraits/serene-intro-away-v2.png",
+      "assets/portraits/serene-intro-noticing-v2.png"
+    ],
+    "prompt": "Use case: identity-preserve. Create ONE animation in-between keyframe, 1024x1536 PNG with genuine transparent alpha background, no backdrop. Input image 1 is the main edit target and framing anchor; image 2 is the next pose reference. Preserve the adult anime woman's exact identity, illustration style, dark sapphire long hair, braided hair on image-right, silver whale-tail ornament and blue crystal earrings, blue-white high collar outfit, lighting, edge sharpness. Keep crown around y100, shoulder line around y1120, exact close-up scale and placement as image 1. Change only her eye direction: her head stays looking screen-left, the nose/jaw angle stays identical to image 1; the eyes have just begun noticing the viewer, halfway in gaze direction between image 1 and image 2. Very subtle alertness, lips neutral, head upright with no tilt. Tiny continuous facial change for a smooth cinematic head-turn sequence, no new pose, no zoom, no crop shift, no extra details, no text, no opaque blue or black background. Preserve the original clean transparent silhouette.",
+    "originalPath": "generated://exec-e576b831-1e8f-4ad6-ad1e-92f7a3f17927.png",
+    "finalPath": "assets/portraits/serene-intro-attention-eyes-v3.png",
+    "sha256": "31cdb1853822aeca672e40ac12f0fbca761300d75e48255bb42ba9404444bf02",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      254
+    ]
+  },
+  {
+    "key": "turn-early",
+    "refs": [
+      "assets/portraits/serene-intro-noticing-v2.png",
+      "assets/portraits/serene-intro-turning-v2.png"
+    ],
+    "prompt": "Use case: identity-preserve. ONE in-between animation keyframe only. Make a sharp 1024x1536 transparent PNG portrait. Image 1 and image 2 are consecutive head-turn reference poses of the SAME adult anime woman. Draw the exact intermediate pose: halfway in head yaw between image 1 (more screen-left) and image 2 (more toward viewer), nose and jaw shift just a small continuous step toward camera, eyes attentive to viewer, mouth neutral. Same sapphire hair, braid on image-right, silver whale-tail jewel, blue crystal earrings, white-blue high collar dress. Lock the camera, scale, face size, crown y~100, shoulder y~1120, upright head/no tilt, lighting, linework, and sharp detailed painterly anime finish. Shoulders and torso stay unchanged as image 1; only tiny head rotation and natural adjacent hair adjustment. This must align as a middle frame in a film sequence, not a redesign. Preserve transparent silhouette and genuinely transparent alpha background. No text, no objects, no scenery, no opaque gradient background, no zoom.",
+    "originalPath": "generated://exec-51ad6c29-9fed-4b20-87d5-5c82bef49f00.png",
+    "finalPath": "assets/portraits/serene-intro-turn-early-v3.png",
+    "sha256": "50dfb0cf3afb32e69b317f29fb48722f92e87d6a76b7f5d184ea601630d7f5f5",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      254
+    ]
+  },
+  {
+    "key": "turn-late",
+    "refs": [
+      "assets/portraits/serene-intro-turning-v2.png",
+      "assets/portraits/serene-intro-front-neutral-v2.png"
+    ],
+    "prompt": "Use case: identity-preserve. Generate ONE sharp transparent PNG animation keyframe at 1024x1536. Image 1 and image 2 anchor the motion. Create an intermediate near-frontal head yaw halfway between them, roughly only 12 degrees toward screen-left: both cheeks and both eyes almost equally visible, nose close to center, head upright no tilt, eyes looking at the viewer, lips neutral. This frame must be distinctly MORE FRONTAL than image 1, but still slightly turned left compared to image 2. Torso and shoulder positions remain locked. Keep the same adult anime woman and rendering quality: sapphire long hair, braid and silver whale-tail hairpin at image-right, blue crystalline earrings, ornate blue-white high collar outfit. Same precise face identity, framing, lighting, colors, detailed linework. Crown near y100 and shoulders near y1120. No camera move, no zoom, no costume redesign, no extra objects/text. Genuine transparent alpha background and original soft transparent silhouette, no opaque scenery or color backdrop.",
+    "originalPath": "generated://exec-543ca2db-fef6-4da2-a9b0-667ae8ee529a.png",
+    "finalPath": "assets/portraits/serene-intro-turn-late-v3.png",
+    "sha256": "17f015bb0b5f2dbae2fe775c30145d94f79e7cdee4a1ecb0974241f6cc0bb422",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      254
+    ]
+  },
+  {
+    "key": "front-blink",
+    "refs": [
+      "assets/portraits/serene-intro-front-neutral-v2.png",
+      "assets/portraits/serene-intro-soft-smile-v2.png"
+    ],
+    "prompt": "Use case: identity-preserve. Generate ONE sharp transparent PNG animation keyframe at 1024x1536. Image 1 is the STRICT geometry anchor, image 2 only corroborates identity. Close both eyelids softly in a natural single blink, mouth still neutral and relaxed with the tiniest hint of warmth. Preserve EXACT straight-on head angle, eye level, nose, chin, face scale, head height, all hair silhouette and shoulder positions from image 1. Absolutely no nod, no tilt, no lowering head. Change eyelids ONLY; this is one frame of a blink. Keep the same adult anime woman and rendering quality: sapphire long hair, braid and silver whale-tail hairpin at image-right, blue crystalline earrings, ornate blue-white high collar outfit. Same precise face identity, framing, lighting, colors, detailed linework. Crown near y100 and shoulders near y1120. No camera move, no zoom, no costume redesign, no extra objects/text. Genuine transparent alpha background and original soft transparent silhouette, no opaque scenery or color backdrop.",
+    "originalPath": "generated://exec-dfa8d6e4-cea4-459d-90de-e0631d712354.png",
+    "finalPath": "assets/portraits/serene-intro-front-blink-v3.png",
+    "sha256": "617a0b6485f6dc72bf4d33568b27757df52cd65bb0cdd0abe0bcb42d17d81496",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      254
+    ]
+  },
+  {
+    "key": "front-open",
+    "refs": [
+      "assets/portraits/serene-intro-front-neutral-v2.png",
+      "assets/portraits/serene-intro-soft-smile-v2.png"
+    ],
+    "prompt": "Use case: identity-preserve. Make ONE animation keyframe, 1024x1536 transparent PNG, sharp high-resolution illustration. The woman has JUST reopened her eyes after a soft blink. Face STRICTLY frontal as image 1, upright, no head tilt or nod. Both sapphire eyes open, making direct eye contact; lips beginning the faintest smile, halfway between image 1's neutral mouth and image 2's gentle smile. The smile is smaller than image 2. Keep eye level, nose/chin position, face size and shoulder placement exactly anchored to image 1. Preserve the same adult anime character's precise identity, sapphire blue long hair and braid at image-right, silver whale-tail hairpin and blue crystal earrings, high collar blue-white outfit, polished detailed anime linework, soft lighting and exact palette. Fixed close-up camera with crown near y100 and shoulders near y1120, no zoom, no scaling. Genuine transparent alpha backdrop, no opaque background, no scenery, no text, no extra objects.",
+    "originalPath": "generated://exec-93b862c2-0b55-4d9f-b290-ab256fa29711.png",
+    "finalPath": "assets/portraits/serene-intro-front-open-v3.png",
+    "sha256": "6c61884d99c002c92561247645dba1dfa63475f8d96e0c20d8deceb66ad9f0aa",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      254
+    ]
+  },
+  {
+    "key": "smile-settle",
+    "refs": [
+      "assets/portraits/serene-intro-front-smile-v2.png",
+      "assets/portraits/serene-intro-soft-smile-v2.png"
+    ],
+    "prompt": "Use case: identity-preserve. Make ONE animation keyframe, 1024x1536 transparent PNG, sharp high-resolution illustration. Image 1 is the exact camera/framing anchor. The adult woman has finished greeting and her warm frontal smile gently settles to a relaxed, calm sustained smile. Slightly less lifted lip corners than image 1, eyes open with soft direct eye contact; shoulders naturally relaxed but still exactly the same overall placement. Keep head strictly upright and straight at viewer, no tilt/no nod/no yaw. Preserve exact crown, face size, eye height, chin position and hair silhouette of image 1. This is a tiny continuous relaxation after a smile, no new posture. Preserve the same adult anime character's precise identity, sapphire blue long hair and braid at image-right, silver whale-tail hairpin and blue crystal earrings, high collar blue-white outfit, polished detailed anime linework, soft lighting and exact palette. Fixed close-up camera with crown near y100 and shoulders near y1120, no zoom, no scaling. Genuine transparent alpha backdrop, no opaque background, no scenery, no text, no extra objects.",
+    "originalPath": "generated://exec-d734630e-53a8-474c-bb7e-c0c140c90778.png",
+    "finalPath": "assets/portraits/serene-intro-smile-settle-v3.png",
+    "sha256": "b568c92c0d2805158bc4976a88b1f8a140ecc1af1fa6c6b819eb09cdd565fd34",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      254
+    ]
+  },
+  {
+    "key": "turn-middle",
+    "refs": [
+      "assets/portraits/serene-intro-turn-early-v3.png",
+      "assets/portraits/serene-intro-turn-late-v3.png"
+    ],
+    "prompt": "Use case: identity-preserve. ONE 1024x1536 transparent PNG in-between portrait frame. These are two consecutive frames of the SAME adult anime woman turning from screen-left to face the viewer. Synthesize the exact halfway head yaw between image 1 and image 2, making a steady monotonic smooth turn toward camera. Head must be MORE frontal than image 1 and LESS frontal than image 2, eyes on viewer, neutral lips. Match geometric middle positions of nose, jaw and eyes between the two images. Keep camera zoom/position, crown height (about y90), shoulder line about y1100, face proportions and upright head orientation. Preserve exact dark sapphire hair, braid, whale-tail silver hairpin, blue crystal earrings, blue-white high collar dress, lighting and crisp refined anime illustration style. Torso and hair silhouette must barely move, no independent pose, no head tilt, no zoom, no objects/text. Preserve genuine transparent alpha backdrop as inputs, no opaque background.",
+    "originalPath": "generated://exec-fb71ebb1-fc80-49b0-841e-c85fe3017501.png",
+    "finalPath": "assets/portraits/serene-intro-turn-middle-v3.png",
+    "sha256": "f787c7cb9de7864e5b4aad7b268e0031fd1983ff7a555afe6c7c9982d90b629b",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      254
+    ]
+  }
+]

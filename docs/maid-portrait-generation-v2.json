@@ -1,0 +1,942 @@
+{
+  "schemaVersion": 2,
+  "project": "deepseekdeskskin",
+  "character": "maid",
+  "generator": "OpenAI builtin image_gen.imagegen",
+  "transparentBackground": true,
+  "postProcessing": "None. Original generated PNGs copied byte-for-byte; no resizing, pixel editing, or alpha modification.",
+  "purpose": "Dedicated high-resolution shoulder-above portraits for the classic non-chibi maid. Source image coordinates are not the client crop.",
+  "expectedKeys": [
+    "intro-away",
+    "intro-noticing",
+    "intro-turning",
+    "intro-front-neutral",
+    "intro-soft-smile",
+    "intro-front-smile",
+    "thinking",
+    "working",
+    "answering",
+    "parallel",
+    "compacting",
+    "retrying",
+    "waiting",
+    "complete",
+    "error",
+    "queued",
+    "connecting",
+    "disconnected",
+    "stopped",
+    "paused",
+    "blocked"
+  ],
+  "framingNote": "The approved away image's chin is approximately y=0.53; subsequent portraits use that actual camera rather than the original prompt's y=0.64 target. Client framing is owned by integration.",
+  "records": [
+    {
+      "key": "intro-away",
+      "prompt": "Use case: stylized-concept.\nAsset type: ONE high-resolution classic-maid shoulder-and-head portrait PNG for a desktop client. Generate exactly ONE asset, portrait canvas 1024x1536 pixels with genuine transparent alpha background.\nInput images: all three supplied images are identity/style references ONLY; DO NOT use their full-body framing, do not retain their background glow. Reference 1/2 define the same adult classic maid; Reference 3 defines her detailed face, hair, whale-tail hair ornament, ruffled white maid headband and navy/white collar.\nSubject: the same elegant young adult woman (adult normal proportions, NOT chibi): very long rich navy-blue hair, bright sapphire-blue eyes, pale natural skin, white ruffled maid headband, distinctive small cyan/silver whale-tail hair ornament over her braided side hair, navy classic-maid shoulders, white ruffled shoulder trims, modest white high collar and navy ribbon with a tiny blue crystal brooch.\nPrimary request: her initial idle portrait looks distinctly toward the LEFT side of the image, as if quietly looking at something off-screen. Shoulders remain frontal and level; neck and head are absolutely upright with ZERO head tilt/roll. Head yaw about 55 degrees toward image-left; eye gaze also image-left. Calm neutral relaxed eyebrows, mouth gently closed, no smile yet.\nComposition/framing MUST be a newly drawn SHARP shoulder-above close-up, not enlargement of a small old face. Face is very large and crisply resolved, roughly 450–550 pixels wide including cheek/jaw silhouette, locked head centre near x=0.50. Whole headband/hair top lies around y=0.06 of canvas; chin lies around y=0.64; face landmarks concentrated in middle: eye line about y=.40, nose y=.52, mouth y=.58. Both shoulders are visible toward the bottom, extending to about y=.94. The lower canvas contains only shoulders and collar: no waist, arms, hands, legs, body-wide dress, tools or props. Leave modest transparent margins beside hair and above headband. Hair drapes naturally behind each shoulder, not wind-blown.\nStyle/medium: premium finely rendered anime illustration, clean precise linework, clear eyelash/iris/eyebrow/lip detail, rich navy hair strands, tasteful soft material shading, coherent elegant maid identity. Face must be easy to read when downscaled in the UI; no blur or soft-focus.\nLighting: gentle neutral even illumination, clear facial contrast without strong side shadows.\nConstraints: genuine transparent background outside the character, no halo, no glow, no black/white backdrop, no checkerboard painted into pixels, no text, no watermark. Single head and neck, no duplicate eyes/limbs. Keep hair and shoulders within canvas. Do not copy a crop from the reference; produce a native close-up at this scale.",
+      "referenced_image_paths": [
+        "assets/actions/maid-intro-away-v1.png",
+        "assets/actions/maid-intro-front-smile-v1.png",
+        "assets/maid-avatar-v1.png"
+      ],
+      "original_output": "generated://exec-ff4065f1-f666-4018-91b6-4cc86516872b.png",
+      "final_file": "assets/portraits/maid-intro-away-v2.png",
+      "faceCenter": [
+        0.47,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 445,
+      "visualInspection": "Approved by root after view_image: sharp large adult maid face looking image-left; shoulder close-up; no full body. Subsequent frames must retain camera/head scale.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "ee72ad2d4fbd76ccff48b0ae6b158f0e7b8382f8b4b284033a4d0cba7718bd00",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 303120,
+        "opaquePixels": 0,
+        "partialPixels": 1269744,
+        "transparentRatio": 0.192718505859375,
+        "bbox128": [
+          0,
+          49,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          251,
+          252
+        ]
+      }
+    },
+    {
+      "key": "intro-front-neutral",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 portrait PNG with genuine transparent alpha.\nThe supplied image is the approved high-resolution classic non-chibi maid portrait and the ONLY edit target/reference. Preserve her exact adult face identity, blue eyes, rich navy hair, white maid headband, cyan/silver whale-tail side ornament, braided image-right side hair, blue crystal earrings, white high collar, navy bow/crystal and ruffled shoulders. Maintain the approved camera and large head size: whole headband top around y=.03–.06, eyes around y=.36, chin around y=.53, shoulders reaching the bottom. Front face approx450–550px wide. Do NOT zoom out or add body/limbs/props. Keep shoulder positions and costume contour unchanged. Hair silhouette/headband stay as similar and aligned as possible. Head and neck straight upright, zero head tilt/roll. Clear crisp native iris/eyelash/eyebrow/lip detail, not a blurred enlargement. No text, watermark, white mist, halo or opaque/translucent painted background; preserve genuine alpha outside the character.\nCHANGE ONLY the head yaw and facial expression: rotate her face to a TRUE STRAIGHT-ON FRONT view, fully facing the camera, with equal-size equally visible eyes, level eye line, symmetric cheeks, centered nose/mouth/chin on x=.50, both ears at consistent perspective, head upright not tilted. Eyes make direct eye contact. Relaxed neutral eyebrows and a gently CLOSED NEUTRAL mouth, no smile yet. The body remains frontal and steady. This is the front-neutral greeting keyframe, not a three-quarter side face. Draw the full face newly at native resolution; maintain the approved shoulder/head camera. The face is entirely visible with no veil/mist crossing any facial features.",
+      "referenced_image_paths": [
+        "assets/portraits/maid-intro-away-v2.png"
+      ],
+      "original_output": "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png",
+      "final_file": "assets/portraits/maid-intro-front-neutral-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "True front with level paired eyes and centred nose/chin; large sharp adult face. Same shoulder camera.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "f58c29a2f4b1cdcc97f02e70d4e22059276d3df5b60b0bfd6080b5bb583831f2",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 283253,
+        "opaquePixels": 0,
+        "partialPixels": 1289611,
+        "transparentRatio": 0.18008740743001303,
+        "bbox128": [
+          0,
+          18,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          249,
+          248
+        ]
+      }
+    },
+    {
+      "key": "intro-turning",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 portrait PNG with genuine transparent alpha.\nThe supplied image is the approved high-resolution classic non-chibi maid portrait and the ONLY edit target/reference. Preserve her exact adult face identity, blue eyes, rich navy hair, white maid headband, cyan/silver whale-tail side ornament, braided image-right side hair, blue crystal earrings, white high collar, navy bow/crystal and ruffled shoulders. Maintain the approved camera and large head size: whole headband top around y=.03–.06, eyes around y=.36, chin around y=.53, shoulders reaching the bottom. Front face approx450–550px wide. Do NOT zoom out or add body/limbs/props. Keep shoulder positions and costume contour unchanged. Hair silhouette/headband stay as similar and aligned as possible. Head and neck straight upright, zero head tilt/roll. Clear crisp native iris/eyelash/eyebrow/lip detail, not a blurred enlargement. No text, watermark, white mist, halo or opaque/translucent painted background; preserve genuine alpha outside the character.\nCHANGE ONLY the head yaw: her head is halfway through turning from the original image-left gaze toward the viewer, with about25 degrees yaw toward image-left (near-front three-quarter). Both eyes are clearly visible and the far eye remains nearly full-size; eye gaze shifts toward the viewer. Neutral relaxed eyebrows and mouth gently CLOSED, no smile yet. Keep skull centre and chin height aligned to the source, neck upright, zero head tilt/roll; shoulders/costume/hair contour stay still. This is visibly intermediate between the original55-degree-left portrait and a true frontal portrait, not the original leftward pose again.",
+      "referenced_image_paths": [
+        "assets/portraits/maid-intro-away-v2.png"
+      ],
+      "original_output": "generated://exec-d9ee6a5c-b6b4-45bf-8f70-55d16030905d.png",
+      "final_file": "assets/portraits/maid-intro-turning-v2.png",
+      "faceCenter": [
+        0.48,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 460,
+      "visualInspection": "Intermediate near-front 3/4, both eyes visible and gaze moving toward viewer; same adult maid and shoulder camera.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "f15d5bc4fcde91470997ec72e057c9808d1c5e63988ad6159c6d9491932ec4bc",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 305067,
+        "opaquePixels": 0,
+        "partialPixels": 1267797,
+        "transparentRatio": 0.1939563751220703,
+        "bbox128": [
+          0,
+          40,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          252,
+          250
+        ]
+      }
+    },
+    {
+      "key": "intro-front-smile",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\nPrimary request: intro-front-smile. Both blue eyes continue to look DIRECTLY into the camera, fully open and level. Relax the eyebrows and lower lids subtly; raise the mouth corners into a clear, gentle, welcoming CLOSED-MOUTH smile. Warm natural adult friendliness, not laughing, no teeth, no exaggerated blush. This is the smile keyframe after front-neutral, so every nonfacial pixel/shape should stay as aligned to the source as possible.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-2ce7a0e8-ec9b-4744-a28a-0ec4c716e56e.png",
+      "final_file": "assets/portraits/maid-intro-front-smile-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "True frontal direct eye contact with gently raised mouth corners; shoulders/head/camera match neutral. Face is crisp and clear.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "c8a029415ff990df4bef12bf88b1a76b5d820f7c1fac5974ad5f65118990fa04",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 284518,
+        "opaquePixels": 0,
+        "partialPixels": 1288346,
+        "transparentRatio": 0.18089167277018228,
+        "bbox128": [
+          0,
+          17,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          251,
+          253
+        ]
+      }
+    },
+    {
+      "key": "intro-noticing",
+      "prompt": "Use case: identity-preserve. ONE native1024x1536 shoulder/head portrait PNG, genuine transparent alpha. Reference1 is the approved image-left classic adult maid away portrait and primary edit target. Reference2 is her near-front turning endpoint, used ONLY to establish the rotation direction. Preserve her exact face identity, head scale, shoulder positions, straight neck, rich navy hair/white maid headband, image-right cyan/silver whale-tail clip/braid, blue earrings, white collar/navy bow/crystal, and ruffled maid shoulders. Keep headband top y≈.03, eye line y≈.36, chin y≈.53, shoulder camera and torso unchanged; no zoom/reframe. Create ONE intermediate NOTICING keyframe: head yaw about30 degrees toward IMAGE-LEFT, between the away and turning endpoints. Both eyes visible, eyes just beginning to shift toward the user, relaxed neutral eyebrows and closed neutral mouth (no smile yet). Absolutely upright head with zero roll. Preserve hairstyle/costume/shoulder contour as closely as possible; newly draw the face sharply at original≈500px scale. No fullbody/arms/hands/props/text/watermarks. No white mist over face, no halo or painted backdrop; real transparent alpha outside character.",
+      "referenced_image_paths": [
+        "assets/portraits/maid-intro-away-v2.png",
+        "generated://exec-d9ee6a5c-b6b4-45bf-8f70-55d16030905d.png"
+      ],
+      "original_output": "generated://exec-7b07dec4-962b-4821-87c2-bd986d34da4a.png",
+      "final_file": "assets/portraits/maid-intro-noticing-v2.png",
+      "faceCenter": [
+        0.47,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 460,
+      "visualInspection": "Viewed original: upright head yawed left between away and turning, eye gaze starts returning to viewer; no head tilt, unchanged shoulder/collar camera.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "1f81340f628a740b64165771d101aa383d9e13e679dc60aa84aa72f38486bf41",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 295091,
+        "opaquePixels": 0,
+        "partialPixels": 1277773,
+        "transparentRatio": 0.18761380513509116,
+        "bbox128": [
+          0,
+          39,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          252,
+          253
+        ]
+      }
+    },
+    {
+      "key": "intro-soft-smile",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\nPrimary request: intro-soft-smile. Keep the TRUE FRONTAL direct eye contact and fully open blue eyes. Only the very beginnings of a welcoming smile: raise each CLOSED mouth corner a tiny amount, retain almost-neutral eyelids and relaxed eyebrows. Clearly less smile than the full front-smile endpoint; no teeth/laughing/blush. This frame lies BETWEEN front-neutral and fully warm smiling. Do not rotate/tilt the head or move any hair/costume/shoulders/camera.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-a799a28f-70b1-4beb-bc5e-bc24f71be51f.png",
+      "final_file": "assets/portraits/maid-intro-soft-smile-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: true front symmetric eye/nose alignment, very slight closed-mouth corner lift; head/camera and shoulder placement unchanged.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "4ca35e1353b29df5a2814dc0a9d357ed598c1e2ca560ba543d6afb3be5a9a95f",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 287100,
+        "opaquePixels": 0,
+        "partialPixels": 1285764,
+        "transparentRatio": 0.18253326416015625,
+        "bbox128": [
+          0,
+          18,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          251,
+          252
+        ]
+      }
+    },
+    {
+      "key": "thinking",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\nPrimary request: THINKING expression. Head stays completely frontal, upright and still. Both eyes glance perceptibly UP toward image-left, not at the camera, with one eyebrow slightly raised inquisitively and the other relaxed. Lips visibly pursed into a small closed thoughtful line, with slight concentration in the lower eyelids. A calm adult problem-solving expression, distinct from neutral/smile and from angry failure; no mouth smile. Do not add hands/chin-touch or props. Preserve facial detail and camera.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-2e2a73e9-1282-40da-99e4-7dd829854a3c.png",
+      "final_file": "assets/portraits/maid-thinking-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: front upright head, eyes directed up-left with thoughtful raised brows and small pursed lips; face remains clear and sharp.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "43ebfd5c0e1c8f774d2e189df38b65611e44b10d98586c5b24dee827568b1b70",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 286479,
+        "opaquePixels": 0,
+        "partialPixels": 1286385,
+        "transparentRatio": 0.18213844299316406,
+        "bbox128": [
+          0,
+          18,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          251,
+          252
+        ]
+      }
+    },
+    {
+      "key": "working",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\nPrimary request: WORKING/EXECUTING expression. Frontal upright head remains still, eyes look perceptibly DOWN toward image-left as if checking the task below the image. Both brows lower slightly in steady focused concentration, eyelids slightly narrowed, mouth firmly CLOSED in a straight determined line. Composed efficient adult focus, not anger, no smile, no sadness. This must differ strongly from thinking's upward curious eyes. No props or hands; same camera/head/shoulders.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-1f2c1bcd-1920-4dab-b2a9-3fc43de97ade.png",
+      "final_file": "assets/portraits/maid-working-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: front upright head, lowered focused eyes, firm brows and straight closed lips; distinct from thinking, no props or body recomposition.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "071d7375a0c376894fc6d2bcae7e6a78177a9ae2017ebe4edc0e058c370b6165",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 285599,
+        "opaquePixels": 0,
+        "partialPixels": 1287265,
+        "transparentRatio": 0.1815789540608724,
+        "bbox128": [
+          0,
+          18,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          250,
+          252
+        ]
+      }
+    },
+    {
+      "key": "answering",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\n\nState ANSWERING: talking clearly and warmly to the viewer. Eyes make direct eye contact and eyebrows are open and gently engaged. Mouth visibly OPEN mid-sentence, a small natural vertical oval with a hint of upper teeth; this must read as speaking, not a closed-mouth smile. Keep the head perfectly upright and the rest unchanged.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-165e8651-f2c2-42d3-b60c-9267b64a34dc.png",
+      "final_file": "assets/portraits/maid-answering-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: true front upright speaking portrait with clearly open mouth, small upper teeth and direct engaged eyes; unchanged hair/shoulders/camera.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "d2c65f44167c7dfede3c228c3d69cd27b17a322cff1c1378e975e19d004bbcd3",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 285342,
+        "opaquePixels": 0,
+        "partialPixels": 1287522,
+        "transparentRatio": 0.18141555786132812,
+        "bbox128": [
+          0,
+          18,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          249,
+          252
+        ]
+      }
+    },
+    {
+      "key": "parallel",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\n\nState PARALLEL: actively coordinating several tasks. Eyes shift slightly to image-right with a wide alert gaze, eyebrows lifted asymmetrically (image-left brow slightly higher), mouth visibly parted in concentrated alertness. Not worried, not angry, not smiling; clearly different from downward focused working. Keep head entirely front/upright unchanged.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-a124cd48-9343-4c8d-9fc6-aafb4efd7f48.png",
+      "final_file": "assets/portraits/maid-parallel-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: true front upright portrait, gaze shifts right, alert raised brows and small parted mouth; clearly different from working and answering.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "307948254a1f378ec6264d7c480139f241d27bc45bd1ba12c91c9ad8bbde3bb2",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 285324,
+        "opaquePixels": 0,
+        "partialPixels": 1287540,
+        "transparentRatio": 0.18140411376953125,
+        "bbox128": [
+          0,
+          18,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          251,
+          252
+        ]
+      }
+    },
+    {
+      "key": "compacting",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\n\nState COMPACTING: carefully organising and condensing information. Eyes are lowered toward the center, upper lids visibly half lowered; eyebrows gently gathered toward center in thoughtful concentration, mouth small and tightly pursed as if considering carefully. Serious and composed, no angry frown; keep front head unchanged.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-7c647a6b-a4f0-41df-a098-6d87c84f6745.png",
+      "final_file": "assets/portraits/maid-compacting-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: true front upright portrait, half-lidded downward gaze with thoughtful centered brows and small pursed lips; unchanged face size.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "ea844b5b20e463f65c2de941551a37fdf5cd8a47b752bd8f2aa58552c63a99ae",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 286333,
+        "opaquePixels": 0,
+        "partialPixels": 1286531,
+        "transparentRatio": 0.18204561869303384,
+        "bbox128": [
+          0,
+          18,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          252,
+          252
+        ]
+      }
+    },
+    {
+      "key": "retrying",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\n\nState RETRYING: calm determination to try again. Eyes level and slightly image-left, one eyebrow firmly arched and the other concentrated, mouth closed in a visibly firm determined line with one corner very slightly raised. This is resolved optimism rather than concern or defeat. Keep front upright head unchanged.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-d61a19f9-c934-4c67-8944-19df8143c9b1.png",
+      "final_file": "assets/portraits/maid-retrying-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: true front upright portrait, level side glance and visibly firm arched brows with determined closed-mouth corner; no concern or head tilt.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "330af00ea4c6c7baf5ad7b4138f4e2206f4391a909666e5753115d6595d4e03a",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 287150,
+        "opaquePixels": 0,
+        "partialPixels": 1285714,
+        "transparentRatio": 0.18256505330403647,
+        "bbox128": [
+          0,
+          18,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          251,
+          252
+        ]
+      }
+    },
+    {
+      "key": "waiting",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\n\nState WAITING FOR USER: look directly into the viewer's eyes with an unmistakably expectant questioning expression. Inner eyebrows lifted, eyes wide and attentive, lips form a small clearly visible open questioning O. Polite and calm, not surprised or frightened. The head remains absolutely straight and front-facing.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-c73486b2-4fc3-413b-9460-603771b42aec.png",
+      "final_file": "assets/portraits/maid-waiting-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: direct upright face, raised inner brows and visibly round questioning open mouth; clearly expectant and different from speaking.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "247b2d500e7f34c47e9ba4e05a273132396ad917ed582e723124e6bb5f0d216f",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 286486,
+        "opaquePixels": 0,
+        "partialPixels": 1286378,
+        "transparentRatio": 0.18214289347330728,
+        "bbox128": [
+          0,
+          17,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          251,
+          252
+        ]
+      }
+    },
+    {
+      "key": "complete",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\n\nState COMPLETE: successful completion and warm satisfaction. Make the smile distinctly stronger than intro-front-smile: both eyes joyfully closed into gently curved natural eyelids and a clear broad happy OPEN smile with a small upper-teeth highlight. Tasteful adult anime expression, no comic symbols. Head and framing remain upright/front and exactly unchanged.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-eeff229b-4d62-4662-b710-79b61c4dab80.png",
+      "final_file": "assets/portraits/maid-complete-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: upright front face with joyfully curved closed eyelids, broad open smile and small upper teeth; distinctly happier than intro smile, no comic effects.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "a974b2c0fdf450abdf3e5f4fcdcf0c47d1965a6c4a7557c2361a862b6ed72782",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 284041,
+        "opaquePixels": 0,
+        "partialPixels": 1288823,
+        "transparentRatio": 0.1805884043375651,
+        "bbox128": [
+          0,
+          18,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          251,
+          252
+        ]
+      }
+    },
+    {
+      "key": "error",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\n\nState ERROR / NEEDS CHECKING: serious visible concern, unmistakable frown. Both eyebrows sharply knit inward with raised inner tips, eyes worried and a little wider, lower lip/mouth corners clearly downturned into an unhappy frown. Make eyebrow and mouth differences strong enough at small portrait size. No tears, sweat, comic effects, anger, or head tilt; front upright head unchanged.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-162d85ac-7955-4307-9649-fb2beae46a6f.png",
+      "final_file": "assets/portraits/maid-error-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: upright front serious worried face, gathered inward/raised-inner eyebrows and clearly downturned lips; frown visible without tears or comic effects.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "dd259a6d0e70cbcb04acd95331625c69bda4fcf7fc8751b6c27f2570be8ebb1a",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 284116,
+        "opaquePixels": 0,
+        "partialPixels": 1288748,
+        "transparentRatio": 0.1806360880533854,
+        "bbox128": [
+          0,
+          17,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          250,
+          252
+        ]
+      }
+    },
+    {
+      "key": "queued",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\n\nState QUEUED: patient anticipation before the work starts. Eyes gaze clearly up toward image-left, eyebrows relaxed and gently raised at outer ends, lips closed with a small neutral patient line and one tiny reassuring corner. Not sleepy, not concerned, not concentrated. Preserve the front head and shoulder location unchanged.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-639cc192-b612-44ac-a3c8-47a736a20ae6.png",
+      "final_file": "assets/portraits/maid-queued-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: upright front head, relaxed up-left gaze and soft closed patient mouth; distinct from thinking by relaxed brow/mouth.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "429614e86474ba5f4db6823e98e07b930d61f71c399803c729782d72ed26edc6",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 286624,
+        "opaquePixels": 0,
+        "partialPixels": 1286240,
+        "transparentRatio": 0.18223063151041666,
+        "bbox128": [
+          0,
+          18,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          252,
+          252
+        ]
+      }
+    },
+    {
+      "key": "connecting",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\n\nState CONNECTING: hopeful anticipation while establishing a connection. Eyes look distinctly upward toward image-right; both eyebrows gently lifted; lips slightly open in a small expectant half-smile. Engaged and attentive, not worried. Keep the head upright and true front, zero tilt, exact same framing.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-3123770b-f0ef-4937-8926-90ca323df46d.png",
+      "final_file": "assets/portraits/maid-connecting-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: upright front face, upward image-right hopeful gaze, relaxed lifted brows and small expectant parted half-smile; no head tilt.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "082b31e595c7f34e7ea8478ffdcb9f6b4f2805136b673900df8ddaade836c06a",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 287080,
+        "opaquePixels": 0,
+        "partialPixels": 1285784,
+        "transparentRatio": 0.18252054850260416,
+        "bbox128": [
+          0,
+          17,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          251,
+          253
+        ]
+      }
+    },
+    {
+      "key": "disconnected",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\n\nState DISCONNECTED: visibly worried about loss of contact. Eyes lowered and shifted left, upper eyelids slightly heavy, inner eyebrows raised into a clear worried arch, lips visibly turned downward and slightly parted. This is quieter concern than the deeply knitted ERROR expression; no tears or comic marks. Head upright/front and camera unchanged.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-5aae45e3-b88a-47ae-a3f8-7d12f61e2ecf.png",
+      "final_file": "assets/portraits/maid-disconnected-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: upright front head, lowered side gaze with visibly heavy lids, worried raised-inner brows and downturned parted mouth; distinct from direct error frown.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "916a24b232e2be1242c2ef8062a585a9bcb6e402cec70d73a511d0761179e0ef",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 288013,
+        "opaquePixels": 0,
+        "partialPixels": 1284851,
+        "transparentRatio": 0.18311373392740884,
+        "bbox128": [
+          0,
+          18,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          250,
+          252
+        ]
+      }
+    },
+    {
+      "key": "stopped",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\n\nState STOPPED: calm, serious composure after stopping work. Look directly at viewer with level open eyes, neutral straight eyebrows and a visibly firm closed straight mouth. No smile, no worry, no anger; a steady unequivocal stop expression. Keep front upright head and camera unchanged.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-02e1e398-0c3b-4e4a-b2ac-445480f84af5.png",
+      "final_file": "assets/portraits/maid-stopped-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: upright direct face, level eyes, straight neutral brows and firm closed mouth; calm serious stop, no smile or concern.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "ef8ed4100f1388edac915c79152960f27155c982a5762e6481d8347b4c8bd3de",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 286745,
+        "opaquePixels": 0,
+        "partialPixels": 1286119,
+        "transparentRatio": 0.18230756123860678,
+        "bbox128": [
+          0,
+          18,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          252,
+          252
+        ]
+      }
+    },
+    {
+      "key": "paused",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\n\nState PAUSED: restful, awake patience. Both eyes remain OPEN but gently half-lidded, eyebrows fully relaxed, mouth a tiny relaxed closed smile. Soft calm gaze slightly down toward image-right; she is waiting comfortably, not sleepy, not worried. No head tilt and same front camera.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-fc7b6f9e-253b-40ab-8f0f-ecbccc25bc66.png",
+      "final_file": "assets/portraits/maid-paused-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: upright front head, awake half-lidded gentle side gaze, relaxed eyebrows and tiny closed smile; clearly calm rather than sleepy.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "25fb244a35f8a2561c9b37ec5305ffa9a1c2b02dfa2542f18b560e98161e73d7",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 287780,
+        "opaquePixels": 0,
+        "partialPixels": 1285084,
+        "transparentRatio": 0.1829655965169271,
+        "bbox128": [
+          0,
+          18,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          252,
+          252
+        ]
+      }
+    },
+    {
+      "key": "blocked",
+      "prompt": "Use case: identity-preserve. Asset: ONE 1024x1536 PNG with genuine transparent alpha.\nThe supplied image is the ONLY edit target and camera/identity reference. Keep this exact adult classic non-chibi maid portrait: rich navy hair, sapphire-blue eyes, white ruffled maid headband, image-right cyan/silver whale-tail ornament/braid, crystal earrings, high white collar and navy bow, modest ruffled shoulder clothing. Keep the TRUE FRONT upright head, neck, camera, native close-up face size ~500px, eye line y≈.36, chin y≈.53, shoulders, collar, hair/headband silhouette and canvas position IDENTICAL. Zero head tilt. Face must remain sharp at native resolution with clearly drawn eyebrows, irises, eyelids and lips. No props/hands/arms/full body. Actual alpha outside hair, no mist/veil crossing face, no backdrop, no added halo, no text/logo/watermark. Change ONLY the facial expression and specified eye gaze. Do not recompose or zoom.\n\nState BLOCKED / NEEDS HUMAN HELP: unmistakable request for assistance addressed directly to viewer. Eyes straight into camera and slightly wide, inner brows raised with a small center crease, mouth clearly open mid-request but narrower and more serious than friendly answering. Concern and resolve together, not a crying error frown, not comic surprise. Head upright/front and exactly unchanged camera.",
+      "referenced_image_paths": [
+        "generated://exec-5c55a582-e257-4b18-bf22-b3940e7d9c6b.png"
+      ],
+      "original_output": "generated://exec-ad60f550-76ad-4f47-8bed-c80d152e31a0.png",
+      "final_file": "assets/portraits/maid-blocked-v2.png",
+      "faceCenter": [
+        0.5,
+        0.43
+      ],
+      "faceWidthEstimatePixels": 495,
+      "visualInspection": "Viewed original: direct upright face, raised/gathered inner brows and wider request mouth, serious concerned eye contact; distinct from friendly speaking and closed frown.",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "bdad99a4262ea8cbb9e05f0b72e9d8e162e1f9b1035767bd7a3c8a30ebf21dbf",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "transparentPixels": 287692,
+        "opaquePixels": 0,
+        "partialPixels": 1285172,
+        "transparentRatio": 0.1829096476236979,
+        "bbox128": [
+          0,
+          18,
+          1024,
+          1536
+        ],
+        "corners": [
+          0,
+          0,
+          251,
+          252
+        ]
+      }
+    }
+  ],
+  "completed": 21
+}

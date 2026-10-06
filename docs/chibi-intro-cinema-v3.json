@@ -1,0 +1,174 @@
+{
+  "version": "3",
+  "skin": "maid_chibi",
+  "assets": [
+    {
+      "key": "attention-eyes",
+      "prompt": "Use case: identity-preserve. Asset type: one transparent animation keyframe for an existing desktop portrait sequence. Inputs image 1 is exact framing and character reference (away), image 2 is its next keyframe (noticing). Create only one intermediate ATTENTION-EYES frame, not a sheet. Preserve this exact blue-haired blue-eyed chibi maid identity, large head proportions, navy/white modest maid clothing, whale-tail sapphire hair ornament on image-right, ribbon and diamond earrings, line quality and detailed anime coloring. Same locked camera, same head top y≈94, face scale and shoulder/bow position as references. Keep head looking to image-left exactly as image1, with no tilt. ONLY the pupils have just started shifting slightly toward the viewer, halfway between the two references; mouth neutral, eyebrows slightly attentive. Hair, headdress, shoulders should stay registered. Output 1024x1536 portrait PNG, genuinely transparent background, clean alpha silhouette, no opaque scenery or glow plate, no text, no watermark. Sharp high resolution face and hair, no blur.",
+      "refs": [
+        "assets/portraits/maid-chibi-intro-away-v2.png",
+        "assets/portraits/maid-chibi-intro-noticing-v2.png"
+      ],
+      "tool": "built-in image_gen",
+      "original_path": "generated://exec-4a75e419-e1e3-4920-b714-a516dc893abe.png",
+      "final_path": "assets/portraits/maid-chibi-intro-attention-eyes-v3.png",
+      "sha256": "3faf9322d3ca4cd3bd7b123fb8fbc7d8147e3a2010b8d1d797c47df9fec87e98",
+      "byte_identical_to_generated": true,
+      "png": {
+        "width": 1024,
+        "height": 1536,
+        "color_type": 6,
+        "bit_depth": 8,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "transparent_pixels": 268139,
+        "partial_alpha_pixels": 1304725
+      }
+    },
+    {
+      "key": "turn-early",
+      "prompt": "Use case: identity-preserve. Asset type: one transparent animation intermediate keyframe TURN-EARLY. Image1 and image2 are neighboring noticing and turning reference keyframes of the exact same character. Create a single frame, not montage. The blue-haired chibi maid begins turning her head from image-left toward the viewer: head yaw roughly 25 degrees left of straight-on, eyes already meeting viewer, mouth neutral. Keep skull vertical with no tilt. Precisely preserve identity and large-head chibi proportions, navy/white modest maid costume, white ruffle headband, sapphire whale-tail hair ornament at image-right, earrings, hairstyle, line style and lighting. Locked 1024x1536 portrait camera; head top y≈94, eyes level y≈820, shoulder/bow positions unchanged from references; do not zoom out, do not resize head. Intermediate facial angle should be clearly less side-facing than image1, moving toward a straight-on view. Only turn head, with minimal natural hair movement. Fully transparent background with real alpha, sharp anime detail, no painted background/glow plate, no text/watermark.",
+      "refs": [
+        "assets/portraits/maid-chibi-intro-noticing-v2.png",
+        "assets/portraits/maid-chibi-intro-turning-v2.png"
+      ],
+      "tool": "built-in image_gen",
+      "original_path": "generated://exec-a6e15033-6c3a-4360-aed9-0d2046143484.png",
+      "final_path": "assets/portraits/maid-chibi-intro-turn-early-v3.png",
+      "sha256": "4947312099f8c6506945a2f267491227c74f981163338080dcead0755f590697",
+      "byte_identical_to_generated": true,
+      "png": {
+        "width": 1024,
+        "height": 1536,
+        "color_type": 6,
+        "bit_depth": 8,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "transparent_pixels": 265602,
+        "partial_alpha_pixels": 1307262
+      }
+    },
+    {
+      "key": "turn-late",
+      "attempt": 2,
+      "prompt": "Use case: identity-preserve. Edit INPUT IMAGE 1 (front-neutral) to create a near-frontal in-between frame of a head-turn animation. INPUT IMAGE 2 (turning) is secondary orientation reference only. Keep the FIRST image's almost symmetrical frontal face; rotate the nose only a tiny amount toward image-left (about 8 degrees), so tip of nose is at x≈470 instead of x≈500 on this 1024px canvas, and mouth at x≈480. Both eyes must stay almost equal size. DO NOT copy the second image's strong three-quarter pose. Exactly preserve the first image framing, head top y94, jaw height y1030, shoulder/bow positions, head size, chibi anatomy, blue hair, huge blue eyes, white maid ruffles, blue whale ornament on image-right, costume, identity, detailed anime rendering. Eyeline horizontal, head not tilted. Neutral expression. One single transparent PNG keyframe 1024x1536, no sheet, text, watermark, or background; genuine alpha. This is TURN-LATE, only one small step from the frontal first reference.",
+      "refs": [
+        "assets/portraits/maid-chibi-intro-front-neutral-v2.png",
+        "assets/portraits/maid-chibi-intro-turning-v2.png"
+      ],
+      "tool": "built-in image_gen",
+      "original_path": "generated://exec-4fba3985-add6-4e15-8ccd-ef5156ddbec6.png",
+      "final_path": "assets/portraits/maid-chibi-intro-turn-late-v3.png",
+      "sha256": "bbd1e358e49f1dd6654f41ba4c53425acdbbe59d7cf3d5838258151a486a8478",
+      "byte_identical_to_generated": true,
+      "png": {
+        "width": 1024,
+        "height": 1536,
+        "color_type": 6,
+        "bit_depth": 8,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "transparent_pixels": 252314,
+        "partial_alpha_pixels": 1320550
+      }
+    },
+    {
+      "key": "front-blink",
+      "prompt": "Use case: identity-preserve. Edit image1 front-neutral into a single FRONT-BLINK animation frame. Image2 soft-smile is identity and warmth reference only. Exact same centered frontal chibi maid portrait, head perfectly upright, both eyes have just gently fully closed in a natural blink, not a broad laughing expression. Tiny neutral relaxed mouth unchanged from image1. Keep everything other than eyelids unchanged: the huge head scale, nose and mouth position, head top y≈94, chin y≈1030, shoulder line and bow, blue hair, white maid headband, blue whale jewel and earrings, navy and white clothes, light and detailed crisp anime style. No head tilt or body shift. Match original 1024x1536 composition precisely. Actual transparent PNG cutout background with soft alpha edges; no opaque background, no halo plate, no text/watermark. One frame only, not collage.",
+      "refs": [
+        "assets/portraits/maid-chibi-intro-front-neutral-v2.png",
+        "assets/portraits/maid-chibi-intro-soft-smile-v2.png"
+      ],
+      "tool": "built-in image_gen",
+      "original_path": "generated://exec-943cbc53-2c72-474b-82de-b01537851cce.png",
+      "final_path": "assets/portraits/maid-chibi-intro-front-blink-v3.png",
+      "sha256": "093266db51223ec99dd21bdff4c457c4f471595eff4b40f7db9cfc6191ef85e7",
+      "byte_identical_to_generated": true,
+      "png": {
+        "width": 1024,
+        "height": 1536,
+        "color_type": 6,
+        "bit_depth": 8,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "transparent_pixels": 252614,
+        "partial_alpha_pixels": 1320250
+      }
+    },
+    {
+      "key": "front-open",
+      "prompt": "Use case: identity-preserve. Create one FRONT-OPEN frame for a subtle blink animation. INPUT1 front-neutral is exact layout reference; INPUT2 soft-smile is very small expression target. The same blue-haired chibi maid has just reopened her eyes after one gentle blink. Both big blue eyes fully open and looking directly at viewer. Mouth has the very faint beginning of a friendly smile, only halfway from neutral to reference2. Eyelids slightly relaxed, head upright and straight at camera. Match references precisely: centered enormous chibi head, head top y94, chin y1030, shoulder/bow positions, blue braided hair and image-right sapphire whale-tail jewel, white ruffle maid headband, navy-white clothing, diamond earrings, crisp highly detailed anime style and same lighting. Locked camera 1024x1536 portrait, no tilt, no zoom or translation. Transparent PNG with real alpha and no background, no text/watermark. One single frame.",
+      "refs": [
+        "assets/portraits/maid-chibi-intro-front-neutral-v2.png",
+        "assets/portraits/maid-chibi-intro-soft-smile-v2.png"
+      ],
+      "tool": "built-in image_gen",
+      "original_path": "generated://exec-8fc2eeb9-b2d0-407d-a29b-a05fc00fb0de.png",
+      "final_path": "assets/portraits/maid-chibi-intro-front-open-v3.png",
+      "sha256": "74bc270e2591dcb2216988aff487ac05a618569c205d00ed866e50078278a096",
+      "byte_identical_to_generated": true,
+      "png": {
+        "width": 1024,
+        "height": 1536,
+        "color_type": 6,
+        "bit_depth": 8,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "transparent_pixels": 253019,
+        "partial_alpha_pixels": 1319845
+      }
+    },
+    {
+      "key": "smile-settle",
+      "refs": [
+        "assets/portraits/maid-chibi-intro-front-smile-v2.png",
+        "assets/portraits/maid-chibi-intro-soft-smile-v2.png"
+      ],
+      "prompt": "Use case: identity-preserve. One final SMILE-SETTLE keyframe of a greeting animation. Use INPUT1 front-smile as exact edit target and INPUT2 soft-smile as relaxed expression reference. Same cute blue-haired chibi maid, looking straight into camera, head upright without tilt. Her smile has naturally softened a very little after greeting, eyes gently warm, upper shoulders only a tiny relaxed release, like a quiet exhale. Keep head and face perfectly registered with input1; head top at y94, chin y1030, eyes y820, bow position same, fixed 1024x1536 portrait framing. Preserve original huge head proportions, hair and white maid headband, blue whale-tail ornament at image-right, diamond earrings, navy-white modest outfit, rendering detail and lighting. Change only tiny smile relaxation and subtle eyelid softening, not identity or costume. Transparent PNG with genuine alpha, no backdrop or text/watermark. Single frame only.",
+      "tool": "built-in image_gen",
+      "original_path": "generated://exec-ee494624-a5c4-4e3e-917d-bee54fdaf78e.png",
+      "final_path": "assets/portraits/maid-chibi-intro-smile-settle-v3.png",
+      "sha256": "a41013fd764bd5c42bef1bd0092a8b1e234f24446e17d596edf2bd9e01799620",
+      "byte_identical_to_generated": true,
+      "png": {
+        "width": 1024,
+        "height": 1536,
+        "color_type": 6,
+        "bit_depth": 8,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "transparent_pixels": 252107,
+        "partial_alpha_pixels": 1320757
+      }
+    },
+    {
+      "key": "turn-middle",
+      "refs": [
+        "assets/portraits/maid-chibi-intro-turn-early-v3.png",
+        "assets/portraits/maid-chibi-intro-turn-late-v3.png"
+      ],
+      "prompt": "Use case: identity-preserve. One animation in-between frame TURN-MIDDLE. Image1 is turn-early and Image2 is turn-late of the exact same chibi maid. The new head rotation MUST be exactly halfway between these two supplied poses: face turned a little to image-left, eyes looking at viewer. Nose and mouth horizontally halfway between the two images, facial widths intermediate. Keep head upright with level eyes and no tilt. Maintain same locked camera and body registration, head top y94, chin y1030, shoulder/bow positions and exact huge-headed chibi proportions. Blue hair, white maid headband, navy-white dress, sapphire whale-tail hair ornament on image-right, blue diamond earrings must be identical. Preserve crisp anime linework and light. Neutral mouth. Output one 1024x1536 transparent PNG, real alpha, no backdrop, no text/watermark, no panel sheet. Do not merely duplicate either input: subtle but real intermediate yaw.",
+      "tool": "built-in image_gen",
+      "original_path": "generated://exec-7b16c33b-b516-4b53-8592-99faa59e2917.png",
+      "final_path": "assets/portraits/maid-chibi-intro-turn-middle-v3.png",
+      "sha256": "a96d61115c6d9307229252ce1169dbd0852d55b8cb05adc25bcfd6a86285f6fd",
+      "byte_identical_to_generated": true,
+      "png": {
+        "width": 1024,
+        "height": 1536,
+        "color_type": 6,
+        "bit_depth": 8,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "transparent_pixels": 258895,
+        "partial_alpha_pixels": 1313969
+      }
+    }
+  ],
+  "notes": [
+    "All outputs generated independently using built-in image_gen; only byte-for-byte file copy, no pixel post-processing.",
+    "Existing v2 noticing and turning are almost identical angles. Replaced turning source with a new turn-middle so early-middle-late progress toward frontal without a backward step.",
+    "First turn-late attempt remained too side-facing; regenerated with front-neutral as primary reference.",
+    "Generative intermediate frames preserve identity/framing closely but minor hair/headdress registration and expression drift remain; these are illustration keyframes, not optical-flow video."
+  ]
+}

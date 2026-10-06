@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>deepseekdeskskin · 皮肤工作室</title>
+  <link rel="stylesheet" href="/web/style.css">
+  <script type="module" src="/web/app.mjs"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="deepseekdeskskin 首页"><span class="brand-symbol">d<span>✦</span></span><span>deepseek<span class="brand-light">deskskin</span></span><span class="version">0.13.0</span></a>
+    <a class="local-status" href="/design"><i></i>角色与界面图鉴 ↗</a>
+  </header>
+  <main class="workspace">
+    <aside class="controls" aria-label="皮肤设置">
+      <div class="intro"><span class="eyebrow">A QUIETER COMPANION</span><h1>深蓝之间。</h1><p>一抹蓝，一份安静的陪伴。</p></div>
+      <section class="control-section">
+        <div class="section-heading"><h2>角色皮肤</h2><span>01</span></div>
+        <div id="character-assets" class="character-assets" role="group" aria-label="角色皮肤"></div>
+        <button id="upload-image" class="upload-button"><span>＋</span> 导入自己的形象 <small>PNG · JPG · GIF · WebP</small></button>
+        <p class="file-hint" id="custom-hint" hidden>已选用自定义形象</p>
+        <input id="image-file" type="file" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
+      </section>
+      <section class="control-section">
+        <div class="section-heading"><h2>表现方式</h2><span>02</span></div>
+        <div class="segmented" role="group" aria-label="表现方式">
+          <button data-mode="static" aria-pressed="false">◇ 静态</button><button data-mode="dynamic" aria-pressed="true">✧ 动态</button>
+        </div>
+        <p class="field-note" id="mode-note">缓慢轻浮动，像一阵经过衣角的风。</p>
+        <label class="toggle-label motion-toggle" for="motion"><span>动作效果 <small>动态模式生效</small></span><input id="motion" type="checkbox" role="switch" checked></label>
+        <label class="range-label" for="size">形象大小 <output id="size-value">340 px</output></label>
+        <input id="size" type="range" min="160" max="420" step="10" value="340">
+        <label class="range-label" for="opacity">透明度 <output id="opacity-value">90%</output></label>
+        <input id="opacity" type="range" min="10" max="100" step="5" value="90">
+        <div class="inline-field"><span>出现位置</span><div class="small-segmented" role="group" aria-label="出现位置"><button data-position="left" aria-pressed="false">左侧</button><button data-position="right" aria-pressed="true">右侧</button></div></div>
+      </section>
+      <section class="control-section finish-section">
+        <div class="section-heading"><h2>界面配色</h2><span>03</span></div>
+        <div class="palette-row" role="group" aria-label="界面配色"><button data-palette="dark" aria-pressed="false"><i class="swatch dark"></i>深海蓝</button><button data-palette="light" aria-pressed="true"><i class="swatch light"></i>云间白</button></div>
+        <label class="toggle-label" for="enabled"><span>显示形象</span><input id="enabled" type="checkbox" role="switch" checked></label>
+      </section>
+      <div class="save-area"><div class="save-meta"><span id="save-state">正在读取设置…</span><button class="text-button" id="reset">恢复默认</button></div><button class="primary-button" id="save">保存皮肤 <span>↗</span></button></div>
+    </aside>
+    <section class="preview-area" aria-label="皮肤预览与导出">
+      <div class="preview-heading"><div><span class="eyebrow" id="preview-eyebrow">DEEPSEEK · CHARACTER SKIN</span><h2 id="preview-title">澄蓝，静静相伴。</h2></div><span class="preview-tag">实时预览</span></div>
+      <div class="action-preview"><label for="preview-state">预览任务状态 <select id="preview-state"></select></label><button id="preview-start" class="secondary-button">预览新任务</button></div>
+      <div class="preview-window" id="preview-window" data-palette="light">
+        <div class="window-chrome"><span class="traffic-lights"><i></i><i></i><i></i></span><span>DeepSeek 娘 · 皮肤画布</span><span class="chrome-mark">✦</span></div>
+        <div class="mock-app">
+          <nav class="mock-sidebar" aria-label="预览示意"><span class="mock-logo">d<span>✦</span></span><span class="mock-nav active">＋</span><span class="mock-nav">▤</span><span class="mock-nav">◇</span><span class="mock-avatar">D</span></nav>
+          <div class="mock-chat">
+            <div class="mock-project"><span>我的工作空间</span><span class="subtle">⌘ K</span></div>
+            <div class="welcome"><div class="welcome-star">✧</div><h3>今天，想创造些什么？</h3><p>把想法写下来，我们一起开始。</p></div>
+            <div class="idea-chips"><span>探索新灵感 ↗</span><span>写下一个计划 ↗</span></div>
+            <div id="skin-layer" class="skin-layer" data-position="right"></div>
+            <div class="mock-composer"><span>从一个好奇心开始…</span><div><span>＋ <small>探索</small></span><span class="mock-send">↑</span></div></div>
+            <span class="preview-disclaimer">此处为皮肤预览，不会发送对话</span>
+          </div>
+        </div>
+      </div>
+      <div class="preview-caption"><span><i id="motion-dot"></i><span id="preview-caption">DeepSeek 娘 · 澄蓝 · 动态</span></span><span id="preview-details">340 px / 90%</span></div>
+      <section class="export-panel" aria-label="使用皮肤"><div><span class="export-icon">↗</span><h3>把喜欢的样子带走</h3><p>皮肤包包含图片和设置，换台电脑也能继续用。</p></div><div class="export-actions"><button id="import-pack" class="secondary-button">导入皮肤包</button><button id="export-pack" class="secondary-button">导出皮肤包 ↓</button></div></section>
+      <details class="adapter-panel"><summary><span>连接 DeepSeek Harness</span><span class="optional">可选适配</span></summary><div class="adapter-content"><p>导出可独立安装的客户端插件，把当前形象带入 DeepSeek Harness。工作室无需安装任何其他项目即可运行。</p><p class="adapter-note">适配 0.2.0-rc.2 的插件接口。客户端插件内可切换静态／动态、配色或暂时隐藏；更新后的设置需重新导出安装。</p><button id="export-plugin" class="secondary-button">导出 Harness 插件 ↓</button><a class="doc-link" href="/guide" target="_blank" rel="noreferrer">安装说明 ↗</a></div></details>
+      <footer>DESIGNED AROUND DEEPSEEK 娘 <span>独立项目 · 本地保存 · 无运行时第三方依赖</span></footer>
+    </section>
+  </main>
+  <input id="pack-file" type="file" accept=".json,application/json" hidden>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

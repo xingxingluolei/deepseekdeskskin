@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>澄蓝 · 源素材与界面图鉴 · 0.13.0</title>
+  <link rel="stylesheet" href="/web/design.css">
+  <script type="module" src="/web/design.mjs"></script>
+</head>
+<body class="light">
+<header>
+  <a class="wordmark" href="/">deepseekdeskskin <span>/ ATELIER</span></a>
+  <nav><a href="/">皮肤工作室</a><a href="#character">角色设定</a><a href="#surfaces">界面元素</a><button id="palette">切换深海蓝</button></nav>
+</header>
+<main>
+  <section class="opening" aria-labelledby="scene-title">
+    <div class="scene-images">
+      <img class="scene-image visible" id="scene-front" src="/assets/actions/serene-intro-away-v1.png" alt="澄蓝待机源图：安静等待">
+      <img class="scene-image" id="scene-back" alt="" aria-hidden="true">
+    </div>
+    <div class="reading-wash"></div>
+    <div class="opening-copy">
+      <p class="eyebrow">SOURCE ART / 状态源素材</p>
+      <h1 id="scene-title"><b id="scene-name">澄蓝</b><span>静水深流，陪你探索。</span></h1>
+      <p class="intro">蓝白的光，银色的鲸尾。<br>新会话以肩上特写相迎，任务中保留完整身体动作。</p>
+      <a class="primary" href="#character">展开角色档案 <span>↘</span></a>
+    </div>
+    <div class="scene-controls">
+      <div class="state-heading">
+        <span class="state-mark" aria-hidden="true">✧</span>
+        <div><p class="eyebrow">TWENTY-ONE STATES / 二十一种工作状态</p><p id="scene-description" aria-live="polite">安静等待下一项任务。</p></div>
+      </div>
+      <label class="character-choice" for="scene-character">预览角色 <select id="scene-character"><option value="serene">澄蓝</option><option value="maid">经典女仆</option><option value="maid_chibi">经典女仆 · Q版</option></select></label>
+      <div class="state-buttons" role="group" aria-label="选择角色神态">
+        <button data-state="idle" aria-pressed="true">就绪</button>
+        <button data-state="thinking" aria-pressed="false">思考</button>
+        <button data-state="working" aria-pressed="false">工作</button>
+        <button data-state="reading" aria-pressed="false">查阅中</button>
+        <button data-state="writing" aria-pressed="false">写入中</button>
+        <button data-state="searching" aria-pressed="false">搜索中</button>
+        <button data-state="executing" aria-pressed="false">命令执行</button>
+        <button data-state="delegating" aria-pressed="false">任务分派</button>
+        <button data-state="answering" aria-pressed="false">回应</button>
+        <button data-state="parallel" aria-pressed="false">并行</button>
+        <button data-state="compacting" aria-pressed="false">整理</button>
+        <button data-state="retrying" aria-pressed="false">重试</button>
+        <button data-state="waiting" aria-pressed="false">等待</button>
+        <button data-state="error" aria-pressed="false">需要检查</button>
+        <button data-state="complete" aria-pressed="false">完成</button>
+        <button data-state="queued" aria-pressed="false">排队</button>
+        <button data-state="connecting" aria-pressed="false">连接</button>
+        <button data-state="disconnected" aria-pressed="false">断线</button>
+        <button data-state="stopped" aria-pressed="false">停止</button>
+        <button data-state="paused" aria-pressed="false">暂停</button>
+        <button data-state="blocked" aria-pressed="false">介入</button>
+
+      </div>
+      <p class="preview-note">源素材画册 · 开场特写，任务中展示身体动作；点击仅预览，不连接模型或客户端</p>
+    </div>
+  </section>
+  <section id="state-atlas" aria-labelledby="atlas-title">
+    <div class="section-title"><div><p class="eyebrow">TASK SOURCES / 任务源素材</p><h2 id="atlas-title">每个状态，都有对应的源素材。</h2></div><p id="atlas-character">澄蓝 · 二十一种状态源素材</p></div>
+    <div id="state-grid" class="state-grid"></div>
+    <div class="section-title intro-title"><div><p class="eyebrow">A NEW BEGINNING / 新任务开场</p><h2>看向你，再开始。</h2></div><p>注意 → 转头 → 对视 → 眨眼 → 微笑</p></div>
+    <div id="intro-grid" class="state-grid"></div>
+    <p class="subtle">工作动作以身体与道具表达方向，脸部主要正面朝镜头。以上展示完整开场源图。客户端沿用专门的开场素材，只在新会话首次发送时以肩上特写转向你微笑，再交回最新任务的身体动作；静态模式跳过开场，打开旧对话不重播。</p>
+    <details><summary>DSH 公开状态与画面的对应关系</summary><p class="subtle">读取结构化状态，不对任务正文或推理内容作猜测。不同错误共用后仰扶额画面；局部失败会停留提示，再恢复当前真实进程。</p><div id="state-mapping"></div><p id="state-boundaries" class="subtle"></p></details>
+  </section>
+  <section id="character">
+    <div class="section-title"><div><p class="eyebrow">01 / THE CHARACTER</p><h2>从人设，到每一处细节。</h2></div><p>沉静 · 聪慧 · 温柔而克制<br>成年形象 / 长蓝发 / 银鲸尾 / 蓝白衣裙</p></div>
+    <a href="/assets/serene-character-sheet-v1.png" target="_blank" rel="noreferrer"><img class="sheet" src="/assets/serene-character-sheet-v1.png" alt="澄蓝人设图：正背面、三种表情、发饰和衣裙细节" loading="lazy"></a>
+    <div class="swatches">
+      <div><i style="background:#142044"></i><b>深海蓝</b><code>#142044</code></div>
+      <div><i style="background:#486dc6"></i><b>澄蓝</b><code>#486DC6</code></div>
+      <div><i style="background:#a9c9f0"></i><b>潮汐蓝</b><code>#A9C9F0</code></div>
+      <div><i style="background:#f4f6fb"></i><b>云间白</b><code>#F4F6FB</code></div>
+      <div><i style="background:#c4cddc"></i><b>银灰</b><code>#C4CDDC</code></div>
+    </div>
+  </section>
+  <section id="surfaces">
+    <div class="section-title"><div><p class="eyebrow">02 / THE INTERFACE</p><h2>同一个角色，完整的界面语言。</h2></div><p>头像、神态与衣纹，共用蓝白和银色。<br>以下为组件示意；实际效果在 Harness 客户端。</p></div>
+    <div class="kit">
+      <article class="sidebar-sample"><small>SIDEBAR / 侧栏</small><div class="sample-brand"><img src="/assets/serene-avatar-v1.png" alt="澄蓝小头像"><b>deepseek</b></div><button class="new-session">＋ 新建会话</button><p class="subtle">工作区</p><div class="sample-row active">澄蓝界面设计</div><div class="sample-row">探索新的可能</div><div class="sample-skin"><div class="companion"><img src="/assets/serene-avatar-v1.png" alt=""><span><strong>澄蓝</strong><small>云间白 · 动态</small></span></div><div class="sample-skin-actions"><a href="/">切换皮肤</a><button id="portrait-detail">皮肤详情</button></div></div></article>
+      <article class="composer-sample"><small>COMPOSER / 输入与选择</small><h3>让灵感，从这里启航。</h3><div class="composer"><label for="draft">工作灵感</label><textarea id="draft" placeholder="描述你想要构建的内容…"></textarea><div><span>＋ &nbsp; 标准模式</span><button id="sample-send" aria-label="预览输入框反馈">↑</button></div></div><p id="sample-note" class="subtle">示意输入不会发送到模型。</p><div class="chips"><span>文件</span><span>终端</span><span class="selected">预览</span></div></article>
+      <article class="empty-sample"><small>EMPTY STATE / 空状态</small><img src="/assets/serene-avatar-v1.png" alt="澄蓝头像"><h3>等待下一个想法</h3><p class="subtle">肖像与轻线条，共同延伸界面的语气。</p><div class="sample-row">▧ &nbsp; 打开文件 <span>↗</span></div><div class="sample-row">⌘ &nbsp; 打开终端 <span>↗</span></div></article>
+    </div>
+    <div class="principles">
+      <p><b>01 · 空间</b>人物朝向正文，衣纹连续流动；长消息、代码与表格始终有完整清晰的阅读面。</p>
+      <p><b>02 · 材质</b>蓝白衣裙延伸为柔和背景，银色鲸尾对应细边框、焦点与选中线。</p>
+      <p><b>03 · 神态</b>工具执行细分为查阅、写入、搜索、命令与任务分派，整理上下文对应整理书架；每轮结束保留回应姿态。客户端根据任务进程切换，静态模式也切换神态，关闭淡入动画。</p>
+    </div>
+  </section>
+  <section>
+    <div class="section-title"><div><p class="eyebrow">03 / SURFACE MAP</p><h2>客户端元素地图</h2></div><p id="inventory-count">正在读取本地提取清单…</p></div>
+    <div id="surface-map" class="map"></div>
+    <details><summary>查看原生模块与组件索引</summary><p class="subtle">来自已安装的 Harness 0.2.0-rc.2 静态扫描。包含重复样式条目，不等于独立控件数量；运行时动态扩展不保证穷尽。</p><input id="filter" type="search" placeholder="搜索模块或组件，例如 sidebar、input、approval" aria-label="搜索原生组件"><div id="module-list"></div></details>
+  </section>
+  <footer><span>deepseekdeskskin / 独立于 LLMPET 与 deepseekdesk</span><p>原创概念形象，非 DeepSeek 官方角色。布局思路参考 <a href="https://github.com/Fei-Away/Codex-Dream-Skin" target="_blank" rel="noreferrer">Codex Dream Skin</a> 的整窗主题与阅读区域处理。</p></footer>
+</main>
+</body>
+</html>

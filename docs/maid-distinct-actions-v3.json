@@ -1,0 +1,182 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "version": "0.13.0",
+  "records": [
+    {
+      "state": "thinking",
+      "prompt": "Use case: identity-preserve. Edit image 1 only to correct head and face orientation. Image 2 is identity and near-frontal FACE reference only, do not copy its body pose. Keep every existing full-body action, all props, costume, hair identity and elegant anime detail of image 1. MAIN CHANGE: rotate ONLY her head toward the camera until her face is near straight-on at 0–10 degrees yaw, BOTH eyes and both cheeks clearly visible, nose points toward the viewer, direct viewer eye contact. Head upright, no sideways head tilt. Her body can remain angled left, but face must NOT be left profile or 3/4 profile. Preserve the full standing thinker pose: one horizontal forearm supporting the opposite elbow, fingertips at chin. Thoughtful restrained expression, direct eye contact with the viewer. Preserve full image 1024x1536, true transparent RGBA background and complete unclipped body, shoes, hair and props. No scene, halo, glow or additional objects. This is adult normal-proportioned elegant maid, not chibi. The output must visibly face the camera.",
+      "references": [
+        "generated://exec-b0dd3256-b0ca-44e1-9109-95d9dfc12036.png",
+        "assets/actions/maid-intro-front-neutral-v1.png"
+      ],
+      "source": "generated://exec-52a1fd16-459f-411a-82e4-9ebde997426f.png",
+      "file": "assets/actions/maid-thinking-v3.png",
+      "facing": "front",
+      "faceCenter": [
+        0.49,
+        0.124
+      ],
+      "faceWidth": 0.124,
+      "sha256": "fa4af09e6b0f0401596bf35175f24158028594719464f42c78ec03dabf4746e7",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6
+    },
+    {
+      "state": "queued",
+      "prompt": "Use case: identity-preserve. Edit image 1 only to correct head and face orientation. Image 2 is identity and near-frontal FACE reference only, do not copy its body pose. Keep every existing full-body action, all props, costume, hair identity and elegant anime detail of image 1. MAIN CHANGE: rotate ONLY her head toward the camera until her face is near straight-on at 0–10 degrees yaw, BOTH eyes and both cheeks clearly visible, nose points toward the viewer, direct viewer eye contact. Head upright, no sideways head tilt. Her body can remain angled left, but face must NOT be left profile or 3/4 profile. Preserve exact side-seated pose on tall stool, very large hourglass held with both hands on lap, full stool and shoes. Patient relaxed expression, looking at the viewer. Preserve full image 1024x1536, true transparent RGBA background and complete unclipped body, shoes, hair and props. No scene, halo, glow or additional objects. This is adult normal-proportioned elegant maid, not chibi. The output must visibly face the camera.",
+      "references": [
+        "generated://exec-6f7b129c-f5b8-4bc7-9d3d-83aa05b7f51e.png",
+        "assets/actions/maid-intro-front-neutral-v1.png"
+      ],
+      "source": "generated://exec-5fcfb4fe-6282-4974-a092-e73606c179bf.png",
+      "file": "assets/actions/maid-queued-v3.png",
+      "facing": "front",
+      "faceCenter": [
+        0.497,
+        0.137
+      ],
+      "faceWidth": 0.129,
+      "sha256": "fd622557c56ea0ec611149cb0e9dc316cf7f70b342dd26e02671337c7af72f08",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6
+    },
+    {
+      "state": "error",
+      "prompt": "Use case: identity-preserve. Edit image 1 only to correct head and face orientation. Image 2 is identity and near-frontal FACE reference only, do not copy its body pose. Keep every existing full-body action, all props, costume, hair identity and elegant anime detail of image 1. MAIN CHANGE: rotate ONLY her head toward the camera until her face is near straight-on at 0–10 degrees yaw, BOTH eyes and both cheeks clearly visible, nose points toward the viewer, direct viewer eye contact. Head upright, no sideways head tilt. Her body can remain angled left, but face must NOT be left profile or 3/4 profile. Preserve recoil half-step standing pose and both hands beside head, one on forehead and the other palm upward. Clearly furrowed eyebrows and restrained puzzled frown while looking at the viewer, no crying. Preserve full image 1024x1536, true transparent RGBA background and complete unclipped body, shoes, hair and props. No scene, halo, glow or additional objects. This is adult normal-proportioned elegant maid, not chibi. The output must visibly face the camera.",
+      "references": [
+        "generated://exec-9513e86a-f05d-427e-9bfb-9e739e8d14de.png",
+        "assets/actions/maid-intro-front-neutral-v1.png"
+      ],
+      "source": "generated://exec-106791d3-3020-4ec4-bb83-aa134a5827d5.png",
+      "file": "assets/actions/maid-error-v3.png",
+      "facing": "front",
+      "faceCenter": [
+        0.484,
+        0.132
+      ],
+      "faceWidth": 0.129,
+      "sha256": "47fa4bce86cf0fbf70dce6a3a2a9ba5b6213157b5d6005c23136a11d9198ac1c",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6
+    },
+    {
+      "state": "working",
+      "prompt": "Use case: identity-preserve. Edit image 1 (action sprite) with image 2 ONLY as face identity and frontal-angle reference. Keep exquisite adult normal human anime proportions and unchanged navy-white maid outfit, blue flowing hair, whale-tail hair accessory and blue eyes. Keep the low ONE-KNEE kneeling pose, open toolbox, conspicuously large wrench actively adjusting the opened mechanical whale, two hands correctly engaged with whale and wrench. Pull back the virtual camera so the entire toolbox on the left, all hair flowing to the right, all whale fins and tail, both knees and shoes are comfortably contained with at least 65 pixels of transparent empty margin on each side. Compose slightly smaller within the same tall canvas. No hair strand or toolbox edge may touch the frame. Head can lower to the whale slightly, but ROTATE THE FACE MORE TOWARD CAMERA: both blue eyes clearly visible, near frontal 15-degree view, not a left-facing profile. Preserve all detail and premium quality. Output 1024x1536 PNG with true transparent RGBA background. No new objects, no background, no halo, no cast shadow backdrop, no text. Ensure complete full-body and complete props are NOT cropped. This is framing and slight head rotation correction ONLY; preserve the strong action and all unique props.",
+      "references": [
+        "generated://exec-33bcc4b5-a361-444b-b83f-ad21a7381e8e.png",
+        "assets/actions/maid-intro-front-neutral-v1.png"
+      ],
+      "source": "generated://exec-3ce371e4-b0c9-4794-bcd1-f367ed454578.png",
+      "file": "assets/actions/maid-working-v3.png",
+      "facing": "front",
+      "faceCenter": [
+        0.513,
+        0.252
+      ],
+      "faceWidth": 0.137,
+      "sha256": "514002d6b334412ff7fc8199fa19a05a6f80e4723c69e901b69d4b382eb7c831",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6
+    },
+    {
+      "state": "retrying",
+      "prompt": "Use case: identity-preserve. Edit image 1 (action sprite) with image 2 ONLY as face identity and frontal-angle reference. Keep exquisite adult normal human anime proportions and unchanged navy-white maid outfit, blue flowing hair, whale-tail hair accessory and blue eyes. Keep the standing active stance beside silver-blue waist-high mechanical winch with large round wheel and visible cable drum, her two hands actively turning the wheel. REMOVE the single cable strand that exits the left edge of the frame. All cable is now wound entirely onto the drum, with a short terminated end tucked onto the drum. Pull back virtual camera so ALL of her hair, headband, clothes, both shoes, whole winch and stand legs fit with at least 65 pixels of transparent empty margin at each side. Rotate her head from left profile toward the camera: both blue eyes fully visible, face at most 15 degrees turned from frontal, upright head and determined expression. Body remains engaged with handwheel. Preserve all detail and premium quality. Output 1024x1536 PNG with true transparent RGBA background. No new objects, no background, no halo, no cast shadow backdrop, no text. Ensure complete full-body and complete props are NOT cropped. This is framing and slight head rotation correction ONLY; preserve the strong action and all unique props.",
+      "references": [
+        "generated://exec-850573ff-81c0-48e4-a5aa-cbfa2c1d1960.png",
+        "assets/actions/maid-intro-front-neutral-v1.png"
+      ],
+      "source": "generated://exec-8de09717-b6c5-48e4-be99-f2c9565ab0e5.png",
+      "file": "assets/actions/maid-retrying-v3.png",
+      "facing": "front",
+      "faceCenter": [
+        0.49,
+        0.137
+      ],
+      "faceWidth": 0.13,
+      "sha256": "2608e31c63f30b7b020677d7567e71854bba3a31abb5bcbeb2e6590996edb794",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6
+    },
+    {
+      "state": "disconnected",
+      "file": "assets/actions/maid-disconnected-v3.png",
+      "prompt": "Use case: identity-preserve. Make one production full-body task-state cutout for the exact same elegant adult anime maid woman in the two references. Reference 1 supplies body/costume and front orientation; reference 2 supplies high quality face rendering. Normal adult 7-head proportions, NOT chibi. Long cobalt blue flowing hair, clear blue eyes, white frilled maid headband, blue whale-tail hair clip with white ribbons, navy classic maid dress, white apron and ruffles, blue jeweled neck bow, white stockings, navy Mary Jane shoes. Keep costume and identity. HEAD STRAIGHT UPRIGHT, FACE DIRECTLY TOWARDS CAMERA 0–10 degree angle, BOTH EYES CLEARLY SYMMETRICALLY VISIBLE AND LOOKING AT THE VIEWER. No profile, no three-quarter side face, no tilted head. Figure head to complete shoes and all props fit fully within 1024x1536 portrait canvas, 5–7 percent safe margins. Sharp refined anime illustration. Genuinely transparent RGBA PNG background. No backdrop, floor, glow/halo, background shape, text, icons, UI, watermark or extra characters. Only props specified. ACTION: Disconnected. Standing with torso subtly leaning toward viewer. Both arms dramatically separated left and right, each hand holds one large unplugged silver-and-blue connector. The connector tips are conspicuously apart with wide empty gap, short cable ends joining one loose U-shaped cable draping to knee height, no plugs connected. Whole silhouette reads disconnected wires. Worried gently furrowed brows, facing and looking directly at viewer. No book, laptop, paper, desk.",
+      "references": [
+        "assets/actions/maid-intro-front-smile-v1.png",
+        "assets/portraits/maid-intro-front-smile-v4.png"
+      ],
+      "source": "generated://exec-26d8fa7d-b7e1-4591-a9b4-db740c97a822.png",
+      "facing": "front",
+      "faceCenter": [
+        0.496,
+        0.137
+      ],
+      "faceWidth": 0.151,
+      "sha256": "d60b55b4777e2a9eb6976607321b08f98891fb503a5606f489c52c074575de1a",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6
+    },
+    {
+      "state": "stopped",
+      "file": "assets/actions/maid-stopped-v3.png",
+      "prompt": "Use case: identity-preserve. Make one production full-body task-state cutout for the exact same elegant adult anime maid woman in the two references. Reference 1 supplies body/costume and front orientation; reference 2 supplies high quality face rendering. Normal adult 7-head proportions, NOT chibi. Long cobalt blue flowing hair, clear blue eyes, white frilled maid headband, blue whale-tail hair clip with white ribbons, navy classic maid dress, white apron and ruffles, blue jeweled neck bow, white stockings, navy Mary Jane shoes. Keep costume and identity. HEAD STRAIGHT UPRIGHT, FACE DIRECTLY TOWARDS CAMERA 0–10 degree angle, BOTH EYES CLEARLY SYMMETRICALLY VISIBLE AND LOOKING AT THE VIEWER. No profile, no three-quarter side face, no tilted head. Figure head to complete shoes and all props fit fully within 1024x1536 portrait canvas, 5–7 percent safe margins. Sharp refined anime illustration. Genuinely transparent RGBA PNG background. No backdrop, floor, glow/halo, background shape, text, icons, UI, watermark or extra characters. Only props specified. ACTION: Stopped. Standing fully upright with both FOREARMS CROSSED IN A BIG X ACROSS HER UPPER CHEST, hands open and palms visibly facing outward, wrists at upper chest below chin so NO FACE OCCLUSION. Calm firm serious expression looking straight into camera. Complete feet slightly apart. Bold X silhouette immediately recognizable at small size. No props, papers, book, wires, furniture.",
+      "references": [
+        "assets/actions/maid-intro-front-smile-v1.png",
+        "assets/portraits/maid-intro-front-smile-v4.png"
+      ],
+      "source": "generated://exec-f05913af-ca8b-47bb-bcbc-8063d4c700f4.png",
+      "facing": "front",
+      "faceCenter": [
+        0.487,
+        0.13
+      ],
+      "faceWidth": 0.15,
+      "sha256": "00f4abedf6f9d5a9b1f58891d411cc2f7c5df8e7a4ec154a87582eb61fddec97",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6
+    },
+    {
+      "state": "complete",
+      "file": "assets/actions/maid-complete-v3.png",
+      "prompt": "Use case: identity-preserve. Make one production full-body task-state cutout for the exact same elegant adult anime maid woman in the two references. Reference 1 supplies body/costume and front orientation; reference 2 supplies high quality face rendering. Normal adult 7-head proportions, NOT chibi. Long cobalt blue flowing hair, clear blue eyes, white frilled maid headband, blue whale-tail hair clip with white ribbons, navy classic maid dress, white apron and ruffles, blue jeweled neck bow, white stockings, navy Mary Jane shoes. Keep costume and identity. HEAD STRAIGHT UPRIGHT, FACE DIRECTLY TOWARDS CAMERA 0–10 degree angle, BOTH EYES CLEARLY SYMMETRICALLY VISIBLE AND LOOKING AT THE VIEWER. No profile, no three-quarter side face, no tilted head. Figure head to complete shoes and all props fit fully within 1024x1536 portrait canvas, 5–7 percent safe margins. Sharp refined anime illustration. Genuinely transparent RGBA PNG background. No backdrop, floor, glow/halo, background shape, text, icons, UI, watermark or extra characters. Only props specified. ACTION: Completed, graceful thanks to the user. She does a small shallow CURTSY, both hands holding the skirt's side hems outward and low, one hand on EACH SIDE at thigh height to form wide lowered wing-like fabric spread, knees slightly bent, one foot slightly behind the other. Gentle satisfied warm smile facing DIRECTLY TOWARDS CAMERA, head upright and face visible, NOT bowing the head. Keep proper adult proportions and neat navy-and-white maid apron dress. It must read curtsy with two lowered symmetrical arms holding fabric, NOT one-arm explaining gesture. No props, papers, books, furniture.",
+      "references": [
+        "assets/actions/maid-intro-front-smile-v1.png",
+        "assets/portraits/maid-intro-front-smile-v4.png"
+      ],
+      "source": "generated://exec-04e1eab2-1055-4ea9-8733-b01c489cdee9.png",
+      "facing": "front",
+      "faceCenter": [
+        0.506,
+        0.131
+      ],
+      "faceWidth": 0.154,
+      "sha256": "17563552af0a6665a6c1d588216bb34c856ab3e438497363d97513a0ebf6726f",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6
+    }
+  ]
+}

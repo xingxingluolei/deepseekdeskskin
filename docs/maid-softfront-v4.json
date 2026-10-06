@@ -1,0 +1,411 @@
+{
+  "version": "maid-softfront-v4",
+  "date": "2026-10-04",
+  "tool": "image_gen.imagegen (built-in)",
+  "method": "Seven individual identity-preserving edits; originals copied without pixel post-processing.",
+  "intent": "Replace rigid frontal endpoint with a soft 15–20 degree screen-left pose, gaze directed to viewer; lock all six facial-expression keyframes to the same geometry.",
+  "observations": [
+    "Old away-v2 is clearly screen-left; old turn-late-v3 is almost frontal, so it should not precede the new 15–20 degree left endpoint unchanged.",
+    "All seven final images were visually inspected. The new turn-late remains between old middle and new neutral in face yaw; six expression frames hold nose near x400 and chin near x454. Headband, shoulders and hair silhouette stay registered.",
+    "Blink changes eyelids; reopen returns to attentive gaze; smile grows subtly with closed lips and settles without a head tilt.",
+    "Do not claim optical-flow interpolation: these are six discrete hand-directed generated keyframes.",
+    "The added turn-late-v4 replaces turn-late-v3 to avoid overshooting the left-biased endpoint. Generated landmarks are not exact pixel interpolation; minimal face-height drift remains across the turning frames."
+  ],
+  "assets": [
+    {
+      "key": "turn-late",
+      "prompt": "Use case: identity-preserve. SINGLE in-between frame for a slow cinematic head turn. The two reference images are exact consecutive anchor poses of the SAME adult blue-haired maid. Image1 face is more leftwards; Image2 face is slightly more turned toward the camera. Draw the exact halfway facial angle. Please INTERPOLATE facial positions: nose tip must be around x385, between x369 in Image1 and x400 in Image2. Chin must be around x444 y796, between x432 y786 in Image1 and x454 y807 in Image2. Maintain unchanged camera/framing 1024x1536. Keep head upright/no roll, not tilted, eye-line and brows halfway between references. Both eyes meet camera naturally, lips neutral. The head remains noticeably SCREEN-LEFT-biased; do not turn all the way frontal, do not overshoot Image2. Maid headband, whale-tail jewel, braid and ears on image-right, navy-white costume, shoulder positions and bow must interpolate very little. Detailed beautiful anime paint, crisp linework and fine hair. Keep original identity, no stylization change, no enlargement, no zoom, no moving whole body. One portrait transparent PNG with actual alpha, no extra backdrop or opaque glow.",
+      "refs": [
+        "assets/portraits/maid-intro-turn-middle-v3.png",
+        "assets/portraits/maid-intro-front-neutral-v4.png"
+      ],
+      "source": "generated://exec-cde8812b-bba8-4c88-b95f-162928b5d66d.png",
+      "output": "assets/portraits/maid-intro-turn-late-v4.png",
+      "inspection": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA",
+        "bitDepth": 8,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "transparentPixels": 272864,
+        "partiallyTransparentPixels": 1300000,
+        "alphaUnder8": 292112,
+        "alphaUnder32": 295413,
+        "alphaSamples": {
+          "0": {
+            "0": 0,
+            "100": 0,
+            "512": 0,
+            "923": 0,
+            "1023": 0
+          },
+          "100": {
+            "0": 0,
+            "100": 0,
+            "512": 253,
+            "923": 0,
+            "1023": 0
+          },
+          "500": {
+            "0": 0,
+            "100": 0,
+            "512": 253,
+            "923": 253,
+            "1023": 0
+          }
+        },
+        "bytes": 2378387,
+        "sha256": "50e8ecf6f69a70faf760cdd1045ab8653f43c6bd8ca7eea2bc741c8831a12fa9"
+      }
+    },
+    {
+      "key": "front-neutral",
+      "prompt": "Use case: identity-preserve.\nAsset: precise animation keyframe, adult anime woman DeepSeek classic maid, 1024x1536 transparent RGBA PNG.\nEdit target Image 1 is the old front-neutral frame. Image 2 is her original screen-left profile; Image 3 is the adjacent turning frame.\nCreate a more beautiful and natural neutral greeting pose: head upright with NO sideways tilt, gently turned 15–20 degrees toward SCREEN LEFT (her nose must visibly project slightly toward image left); eyes softly looking to viewer/camera. Not a perfectly frontal face and not screen-right. Keep elegant adult proportions, soft natural almond-shaped blue eyes, subtle cheeks, delicate defined nose and mouth; no widened doll eyes or stretched chin. Lips relaxed and almost neutral, no open mouth.\nLOCK composition to Image 1: identical head size, top maid-headband at same location, eye line around y540, chin around y810, neck, shoulder width and bow position unchanged; same blue hair, braids, blue whale-tail hairpin on image right, white ruffle maid headband, jewelry, navy/white maid dress. Change only face angle and small corresponding bangs/cheek geometry, keep silhouette tightly registered so subsequent expressions animate smoothly. Shoulder-up hero crop exactly as original. Sharp painted anime linework and rich natural blue-white shading. Keep background genuinely transparent, not any dark/color gradient. No text, no watermark, no new props, no extra glow.",
+      "refs": [
+        "assets/portraits/maid-intro-front-neutral-v2.png",
+        "assets/portraits/maid-intro-away-v2.png",
+        "assets/portraits/maid-intro-turn-late-v3.png"
+      ],
+      "source": "generated://exec-38b81070-1a1e-44ef-b126-a81d4d6fb0f9.png",
+      "output": "assets/portraits/maid-intro-front-neutral-v4.png",
+      "inspection": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA",
+        "bitDepth": 8,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "transparentPixels": 270119,
+        "partiallyTransparentPixels": 1302745,
+        "alphaUnder8": 289430,
+        "alphaUnder32": 292530,
+        "alphaSamples": {
+          "0": {
+            "0": 0,
+            "100": 0,
+            "512": 0,
+            "923": 0,
+            "1023": 0
+          },
+          "100": {
+            "0": 0,
+            "100": 0,
+            "512": 253,
+            "923": 0,
+            "1023": 0
+          },
+          "500": {
+            "0": 0,
+            "100": 0,
+            "512": 253,
+            "923": 253,
+            "1023": 0
+          }
+        },
+        "bytes": 2366325,
+        "sha256": "8565706e0a464113359010ff7ef109ea4412df8bc47a9d3f1d66af3391276119"
+      }
+    },
+    {
+      "key": "front-blink",
+      "prompt": "Use case: identity-preserve. Edit this single transparent animation frame. Change ONLY BOTH EYELIDS: close them in a soft natural blink. Keep mouth relaxed, same neutral mouth as reference. STRICTLY preserve ALL other pixels and geometric alignment as closely as possible: nose pointing slightly SCREEN LEFT, the exact upright 15–20 degree leftward head yaw, nose and chin location, ears, eyebrows, face scale, hair silhouette, headband, whale-tail ornament, shoulders, bow, dress, lighting. Absolutely do not turn or tilt the head, nod, zoom, move the character, redesign face or open the mouth. Same elegant adult anime maid identity and high detail. Output exactly one 1024x1536 PNG with original transparent alpha, not an opaque background. This is frame front-blink immediately after supplied neutral frame.",
+      "refs": [
+        "generated://exec-38b81070-1a1e-44ef-b126-a81d4d6fb0f9.png"
+      ],
+      "source": "generated://exec-292c322e-5fc6-4cbc-a7e1-31adf47af07a.png",
+      "output": "assets/portraits/maid-intro-front-blink-v4.png",
+      "inspection": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA",
+        "bitDepth": 8,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "transparentPixels": 274665,
+        "partiallyTransparentPixels": 1298199,
+        "alphaUnder8": 291737,
+        "alphaUnder32": 294580,
+        "alphaSamples": {
+          "0": {
+            "0": 0,
+            "100": 0,
+            "512": 0,
+            "923": 0,
+            "1023": 0
+          },
+          "100": {
+            "0": 0,
+            "100": 0,
+            "512": 253,
+            "923": 0,
+            "1023": 0
+          },
+          "500": {
+            "0": 0,
+            "100": 0,
+            "512": 253,
+            "923": 254,
+            "1023": 0
+          }
+        },
+        "bytes": 2314851,
+        "sha256": "5b05a611f936fc00517da7dbf6317b02c236e531ea8e8ba78f8791fdfa69aafe"
+      }
+    },
+    {
+      "key": "front-open",
+      "prompt": "Use case: identity-preserve. Edit the supplied neutral animation frame to create the frame just AFTER a blink. Change ONLY eye expression and microscopic mouth expression: blue eyes reopening to 90% of original eyelid aperture, a tender attentive gaze toward the viewer, mouth still almost neutral with just barely softened lips, no smile yet. STRICTLY preserve ALL other pixels and geometric alignment as closely as possible: the exact upright 15–20 degree SCREEN LEFT head yaw, nose and chin location, ears, eyebrows, face scale, hair silhouette, headband, whale-tail ornament, shoulders, bow, dress, lighting. Absolutely no turn, head tilt, nod, zoom, camera move, face redesign, or open mouth. Same elegant adult anime maid identity and high detail. Output exactly one 1024x1536 PNG with original transparent alpha, not an opaque background. This is front-open frame of a smooth facial animation; tiny change only.",
+      "refs": [
+        "generated://exec-38b81070-1a1e-44ef-b126-a81d4d6fb0f9.png"
+      ],
+      "source": "generated://exec-40479890-7708-4df6-84a8-ec77cc6031d7.png",
+      "output": "assets/portraits/maid-intro-front-open-v4.png",
+      "inspection": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA",
+        "bitDepth": 8,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "transparentPixels": 275013,
+        "partiallyTransparentPixels": 1297851,
+        "alphaUnder8": 291331,
+        "alphaUnder32": 293264,
+        "alphaSamples": {
+          "0": {
+            "0": 0,
+            "100": 0,
+            "512": 0,
+            "923": 0,
+            "1023": 0
+          },
+          "100": {
+            "0": 0,
+            "100": 0,
+            "512": 253,
+            "923": 0,
+            "1023": 0
+          },
+          "500": {
+            "0": 0,
+            "100": 0,
+            "512": 253,
+            "923": 253,
+            "1023": 0
+          }
+        },
+        "bytes": 2305241,
+        "sha256": "c9f095ea576172bd8a1ad31c4972a5ddc7e2100a6f837e07e2721d3b292ec65c"
+      }
+    },
+    {
+      "key": "soft-smile",
+      "prompt": "Use case: identity-preserve. Edit the supplied neutral animation frame. Change ONLY the closed mouth to the START of a gentle smile: corners lift just 2–3 pixels, barely perceptible warm affection. Eyes remain open with natural direct gaze and the original size, slightly relaxed upper eyelids. No teeth, no open mouth, no grin. STRICTLY preserve ALL other pixels and geometry as closely as possible: exact upright 15–20 degree SCREEN LEFT head yaw, nose at x~400 and chin near x~454, face scale, ears, eyebrows, hair silhouette, headband, whale-tail ornament, shoulders, bow, dress, lighting. Absolutely no head tilt, nod, turn, zoom or movement; no redesign. Same elegant adult anime maid and high detail. Output exactly one 1024x1536 PNG with original transparent alpha, not an opaque background. This is soft-smile beginning, halfway from neutral to a gentle welcoming smile; small continuous change only.",
+      "refs": [
+        "generated://exec-38b81070-1a1e-44ef-b126-a81d4d6fb0f9.png"
+      ],
+      "source": "generated://exec-5abaf978-277c-45bf-8e1a-b97282a113be.png",
+      "output": "assets/portraits/maid-intro-soft-smile-v4.png",
+      "inspection": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA",
+        "bitDepth": 8,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "transparentPixels": 276484,
+        "partiallyTransparentPixels": 1296380,
+        "alphaUnder8": 292097,
+        "alphaUnder32": 294054,
+        "alphaSamples": {
+          "0": {
+            "0": 0,
+            "100": 0,
+            "512": 0,
+            "923": 0,
+            "1023": 0
+          },
+          "100": {
+            "0": 0,
+            "100": 0,
+            "512": 253,
+            "923": 0,
+            "1023": 0
+          },
+          "500": {
+            "0": 0,
+            "100": 0,
+            "512": 253,
+            "923": 253,
+            "1023": 0
+          }
+        },
+        "bytes": 2300987,
+        "sha256": "952eb3422bb00eb3482d2108794b6f8bdf87d59921025e6abdebecc6104edefd"
+      }
+    },
+    {
+      "key": "front-smile",
+      "prompt": "Use case: identity-preserve. MICRO-EDIT this single animation frame. Preserve absolutely every part of this image including its exact clean transparent alpha background; make only the woman's CLOSED LIP SMILE a tiny bit warmer, lifting corners by about TWO pixels. Eyes keep original size, gentle eye contact. Everything else unchanged: exact leftward head angle, face alignment, nose/chin location, hair outline, maid headband, blue hair, whale-tail jewel, body/clothing, shoulder/bow positions and lighting. No tilt, no turn, no nod, no scaling, no camera change. No teeth or open mouth; subtle adult beauty. IMPORTANT background outside character must be exactly TRANSPARENT, alpha zero, not a translucent dark gradient or hazy fill. Preserve all original foreground pixels and original transparent silhouette. One1024x1536 RGBA PNG for front-smile frame.",
+      "refs": [
+        "assets/portraits/maid-intro-soft-smile-v4.png"
+      ],
+      "source": "generated://exec-a2705c5d-799e-4374-846c-58e5abef1b79.png",
+      "output": "assets/portraits/maid-intro-front-smile-v4.png",
+      "inspection": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA",
+        "bitDepth": 8,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "transparentPixels": 274718,
+        "partiallyTransparentPixels": 1298146,
+        "alphaUnder8": 290113,
+        "alphaUnder32": 292117,
+        "alphaSamples": {
+          "0": {
+            "0": 0,
+            "100": 0,
+            "512": 0,
+            "923": 0,
+            "1023": 0
+          },
+          "100": {
+            "0": 0,
+            "100": 0,
+            "512": 253,
+            "923": 0,
+            "1023": 0
+          },
+          "500": {
+            "0": 0,
+            "100": 0,
+            "512": 253,
+            "923": 254,
+            "1023": 0
+          }
+        },
+        "bytes": 2307848,
+        "sha256": "e619a832bec9e612bcd55ac8cf0a2dcc6b67f0b830d18cee61ec48e35f6ba9da"
+      }
+    },
+    {
+      "key": "smile-settle",
+      "prompt": "Use case: identity-preserve. Image 1 is STRICT GEOMETRY ANCHOR, Image 2 is immediately previous smile stage. Create the tiny final relaxation after Image 2 smile: closed lip corners relax downward by only 1–2 pixels, maintaining a gentle warm smile; eyes softly attentive and a touch more relaxed than Image 2, still both OPEN and meeting viewer. No teeth or open mouth. Preserve the exact upright 15–20 degree SCREEN LEFT head yaw, nose x~400 and chin x~454, face size, eye line, every hair strand silhouette, headband, whale-tail ornament, shoulder and bow positions, costume, lighting and transparency from Image 1. No head tilt, no nod, no turn, no camera move, no resizing or redesign. Same adult anime maid, beautiful delicate blue-white rendering. This is smile-settle sustaining endpoint of a smooth animation. Only microscopic eyelid/lip changes. Exactly one 1024x1536 transparent PNG.",
+      "refs": [
+        "generated://exec-38b81070-1a1e-44ef-b126-a81d4d6fb0f9.png",
+        "generated://exec-91235142-3647-4728-8794-44bfb6a91819.png"
+      ],
+      "source": "generated://exec-f3885c8d-7c74-49d1-a433-fae700294f69.png",
+      "output": "assets/portraits/maid-intro-smile-settle-v4.png",
+      "inspection": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA",
+        "bitDepth": 8,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "transparentPixels": 274555,
+        "partiallyTransparentPixels": 1298309,
+        "alphaUnder8": 291014,
+        "alphaUnder32": 293161,
+        "alphaSamples": {
+          "0": {
+            "0": 0,
+            "100": 0,
+            "512": 0,
+            "923": 0,
+            "1023": 0
+          },
+          "100": {
+            "0": 0,
+            "100": 0,
+            "512": 253,
+            "923": 0,
+            "1023": 0
+          },
+          "500": {
+            "0": 0,
+            "100": 0,
+            "512": 253,
+            "923": 253,
+            "1023": 0
+          }
+        },
+        "bytes": 2322861,
+        "sha256": "f58fc4f9fa005ec57f927dffe4147616c14ff9413ab89c1dbea76f9a0d91571a"
+      }
+    }
+  ],
+  "rejectedAttempts": [
+    {
+      "key": "turn-late",
+      "prompt": "Use case: identity-preserve. Create ONE in-between keyframe of the SAME adult blue-haired anime maid turning her head toward the viewer. Image 1 is the immediately previous pose, Image 2 the immediately next pose. Interpolate halfway between them, never turn more frontal than Image 2. Her nose must still point clearly toward SCREEN LEFT, about 22 degrees left of camera; both eyes gently meeting viewer, lips neutral. Her nose at about x385, chin around x442 y797, eyes halfway between the references. The head and shoulders remain upright without any tilt; only a tiny smooth yaw and corresponding facial geometry change. Preserve exactly the same maid headband, rich blue hair, braid and whale-tail jewel at image right, earrings, navy-white modest maid outfit, shoulder width, bow, crisp illustration detail and soft lighting. Keep canvas1024x1536, no camera zoom or pan, same head scale. This is turn-late-v4, a SMALL intermediate step between supplied frames, not a full-frontal redesign. Genuine transparent background retaining soft original alpha silhouette; no opaque backdrop, no text, no props.",
+      "refs": [
+        "assets/portraits/maid-intro-turn-middle-v3.png",
+        "assets/portraits/maid-intro-front-neutral-v4.png"
+      ],
+      "source": "generated://exec-1a009a47-f8d3-41ec-9c31-d42c7a731d68.png",
+      "reason": "Too close to old middle frame; chin moved upward instead of interpolating to neutral."
+    },
+    {
+      "key": "turn-late",
+      "prompt": "Use case: identity-preserve. Precise animation in-between edit of this SINGLE image: turn her face ONLY THREE DEGREES further toward SCREEN LEFT. Nose tip should move LEFT approximately 10 pixels; chin left approximately 8 pixels and up no more than 5 pixels. This must be a MINISCULE change relative to reference: same head upright, no tilt, identical camera position and head size; headband, scalp hair and shoulders all stay EXACTLY where they are. Both sapphire eyes still make gentle eye contact with the viewer. Lips neutral. Keep every other detail of this adult anime maid strictly fixed: eye level, face identity, ears, blue hair, braid, whale-tail jewel on image-right, maid headband, white/navy costume, crystal jewelry and shading. Do not zoom, do not redraw different proportions, do not move shoulders, do not make face front-on. This is just one tiny frame BEFORE the supplied image, ending still screen-left-biased. Exactly1024x1536 transparent PNG, retain real alpha silhouette, no opaque background, no text.",
+      "refs": [
+        "assets/portraits/maid-intro-front-neutral-v4.png"
+      ],
+      "source": "generated://exec-c2bae426-16c7-47c8-99ff-6190d885174d.png",
+      "reason": "Nose moved too far left, before old middle frame; rejected."
+    },
+    {
+      "key": "front-smile",
+      "prompt": "Use case: identity-preserve. Image 1 is STRICT GEOMETRY ANCHOR, Image 2 is immediately previous smile stage. Create a gentle welcoming smile only a tiny step warmer than Image 2: lips CLOSED, corners raised just 1–2 pixels further, relaxed natural cheeks, eyes softly attentive to viewer, same eye size. Subtle elegant smile, absolutely NO big grin, NO teeth and NO open mouth. Preserve the exact upright 15–20 degree SCREEN LEFT head yaw, nose x~400 and chin x~454, face size, eye line, every hair strand silhouette, headband, whale-tail ornament, shoulder and bow positions, costume, lighting and transparency from Image 1. No head tilt, no nod, no turn, no camera move, no resizing or redesign. Same adult anime maid, beautiful delicate blue-white rendering. This is front-smile at culmination of a smooth animation. Exactly one 1024x1536 transparent PNG.",
+      "refs": [
+        "generated://exec-38b81070-1a1e-44ef-b126-a81d4d6fb0f9.png",
+        "generated://exec-5abaf978-277c-45bf-8e1a-b97282a113be.png"
+      ],
+      "source": "generated://exec-91235142-3647-4728-8794-44bfb6a91819.png",
+      "output": "assets/portraits/maid-intro-front-smile-v4.png",
+      "inspection": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA",
+        "bitDepth": 8,
+        "alphaMin": 0,
+        "alphaMax": 253,
+        "transparentPixels": 6778,
+        "partiallyTransparentPixels": 1566086,
+        "alphaUnder8": 243695,
+        "alphaUnder32": 280661,
+        "alphaSamples": {
+          "0": {
+            "0": 30,
+            "100": 10,
+            "512": 7,
+            "923": 3,
+            "1023": 8
+          },
+          "100": {
+            "0": 20,
+            "100": 2,
+            "512": 252,
+            "923": 2,
+            "1023": 11
+          },
+          "500": {
+            "0": 1,
+            "100": 10,
+            "512": 252,
+            "923": 252,
+            "1023": 0
+          }
+        },
+        "bytes": 2351610,
+        "sha256": "80f44264c7deaf495c464830e64c268a18f6bab8dd03055261fc96dc290a9cdc"
+      },
+      "reason": "Original front-smile had low-alpha rectangular backdrop haze; regenerated from a single clean-alpha reference."
+    }
+  ]
+}

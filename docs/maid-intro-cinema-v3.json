@@ -1,0 +1,163 @@
+{
+  "method": "built-in image_gen",
+  "asset": "maid non-chibi cinema intro v3",
+  "generatedDate": "2026-10-04",
+  "pixelProcessing": "None; original PNG copied byte-for-byte",
+  "visualReview": "All selected frames viewed individually; turn-late first draft rejected for excessive side-facing angle and regenerated. New turn-middle replaces old turning to keep rotation monotonic. Small generative variation in hair edges and ruffles remains.",
+  "frames": [
+    {
+      "key": "attention-eyes",
+      "refs": [
+        "assets/portraits/maid-intro-away-v2.png",
+        "assets/portraits/maid-intro-noticing-v2.png"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: one individual high-definition in-between animation keyframe, NOT a sheet. Input Image 1 and Image 2 are adjacent reference frames of the SAME adult woman; retain precisely this character identity, painterly anime rendering, rich cobalt-blue hair, sapphire eyes, blue/white modest classic maid dress, ruffled headband, whale-tail jewel and dangling earrings. Primary request: Keep the head facing screen-left at EXACTLY the same angle as Image 1. Change only the irises/gaze: eyes have just begun to shift toward the viewer, halfway between Image 1 and Image 2. Closed relaxed neutral lips; no head tilt. This is the eye anticipation before she turns her head. Composition: EXACT original 1024x1536 portrait canvas and scale, top of headband around y=40, eyes around y=550, shoulders around y=950. Fixed camera, no zoom, no pan. Closely matching sharp linework, iris highlights, hair strand detail and soft lighting. Background genuinely transparent with original soft translucent edge falloff, no solid background or checkerboard drawing. Preserve every unaffected detail of the reference; single adult character; no text, watermark, props, hand gestures, extra ornaments. Output one 1024x1536 transparent PNG.",
+      "original": "generated://exec-537bd84e-b88f-4791-8cd0-ecd7507026a7.png",
+      "final": "assets/portraits/maid-intro-attention-eyes-v3.png",
+      "sha256": "7b2d139fec1901e7c3c816a75a9ff06e0c00bf607fb7ab4a6e47e77a65a86253",
+      "validation": {
+        "width": 1024,
+        "height": 1536,
+        "bitDepth": 8,
+        "colorType": 6,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "transparentPixels": 297440,
+        "partialAlphaPixels": 1275424,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "key": "turn-early",
+      "refs": [
+        "assets/portraits/maid-intro-noticing-v2.png",
+        "assets/portraits/maid-intro-turning-v2.png"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: one individual high-definition in-between animation keyframe, NOT a sheet. Input Image 1 and Image 2 are adjacent reference frames of the SAME adult woman; retain precisely this character identity, painterly anime rendering, rich cobalt-blue hair, sapphire eyes, blue/white modest classic maid dress, ruffled headband, whale-tail jewel and dangling earrings. Primary request: Interpolate the head yaw angle halfway between Image 1 and Image 2, a subtle early turn toward camera. Gaze attentive toward viewer, closed neutral lips. Body and shoulder axis stays fixed; no head tilt. Composition: EXACT original 1024x1536 portrait canvas and scale, top of headband around y=40, eyes around y=550, shoulders around y=950. Fixed camera, no zoom, no pan. Closely matching sharp linework, iris highlights, hair strand detail and soft lighting. Background genuinely transparent with original soft translucent edge falloff, no solid background or checkerboard drawing. Preserve every unaffected detail of the reference; single adult character; no text, watermark, props, hand gestures, extra ornaments. Output one 1024x1536 transparent PNG.",
+      "original": "generated://exec-11524b6e-8621-4e4a-98e9-01edc9b26fd3.png",
+      "final": "assets/portraits/maid-intro-turn-early-v3.png",
+      "sha256": "d5611765ca114556bceb386bd88087dc9b1177e1008208438bafce71d86013e1",
+      "validation": {
+        "width": 1024,
+        "height": 1536,
+        "bitDepth": 8,
+        "colorType": 6,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "transparentPixels": 281851,
+        "partialAlphaPixels": 1291013,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "key": "front-blink",
+      "refs": [
+        "assets/portraits/maid-intro-front-neutral-v2.png",
+        "assets/portraits/maid-intro-soft-smile-v2.png"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: one individual high-definition in-between animation keyframe, NOT a sheet. Input Image 1 and Image 2 are adjacent reference frames of the SAME adult woman; retain precisely this character identity, painterly anime rendering, rich cobalt-blue hair, sapphire eyes, blue/white modest classic maid dress, ruffled headband, whale-tail jewel and dangling earrings. Primary request: Use EXACTLY Image 1 frontal pose and alignment. Change only eyelids to a natural gentle blink with both eyes fully closed, relaxed neutral mouth almost smiling. Head perfectly upright, no tilt, symmetrical face, no bowing. Keep all facial anatomy and hair positions. Composition: EXACT original 1024x1536 portrait canvas and scale, top of headband around y=40, eyes around y=550, shoulders around y=950. Fixed camera, no zoom, no pan. Closely matching sharp linework, iris highlights, hair strand detail and soft lighting. Background genuinely transparent with original soft translucent edge falloff, no solid background or checkerboard drawing. Preserve every unaffected detail of the reference; single adult character; no text, watermark, props, hand gestures, extra ornaments. Output one 1024x1536 transparent PNG.",
+      "original": "generated://exec-418b4e99-6eaa-4370-a1d7-97631375d93e.png",
+      "final": "assets/portraits/maid-intro-front-blink-v3.png",
+      "sha256": "962e1bf3e9242735791f715b99025dbceddd2e1ea569d2bfeb4c0289fe234a8c",
+      "validation": {
+        "width": 1024,
+        "height": 1536,
+        "bitDepth": 8,
+        "colorType": 6,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "transparentPixels": 285432,
+        "partialAlphaPixels": 1287432,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "key": "turn-late",
+      "refs": [
+        "assets/portraits/maid-intro-front-neutral-v2.png",
+        "assets/portraits/maid-intro-turning-v2.png"
+      ],
+      "prompt": "Use case: identity-preserve. One portrait animation keyframe on transparent background, 1024x1536. EDIT IMAGE 1, the frontal face, very slightly only: turn her nose approximately 8 degrees toward screen-left, keeping BOTH EYES almost equally wide and BOTH EARS fully visible. She must look almost perfectly STRAIGHT at the viewer. This is the final instant before the fully frontal pose. Image 2 is supporting identity/style reference ONLY, do NOT copy its side-view angle. Same adult blue-haired maid with same sapphire eyes, closed neutral lips, head upright with zero tilt. Keep Image 1 camera scale, top of maid headband at y=30, eyes y=550, shoulders y=950, chest bow y=1020 exactly aligned. Keep all hair ornaments, maid outfit, jewelry, crisp painterly anime details, colors and soft light unchanged. Genuinely transparent background retaining gentle hair edge transparency; no checkerboard painted, no text, no new props. Output ONE 1024x1536 PNG.",
+      "original": "generated://exec-fd5109da-21a5-4fe4-9d52-c5b18b142504.png",
+      "final": "assets/portraits/maid-intro-turn-late-v3.png",
+      "sha256": "6ddd92e48bae30a2955bd187b8b5f588de692a24c95c007c437f0c36ba4f7dcc",
+      "validation": {
+        "width": 1024,
+        "height": 1536,
+        "bitDepth": 8,
+        "colorType": 6,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "transparentPixels": 275191,
+        "partialAlphaPixels": 1297673,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "key": "front-open",
+      "refs": [
+        "assets/portraits/maid-intro-front-neutral-v2.png",
+        "assets/portraits/maid-intro-soft-smile-v2.png"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: one individual high-definition in-between animation keyframe, NOT a sheet. Input Image 1 and Image 2 are adjacent reference frames of the SAME adult woman; retain precisely this character identity, painterly anime rendering, rich cobalt-blue hair, sapphire eyes, blue/white modest classic maid dress, ruffled headband, whale-tail jewel and dangling earrings. Primary request: Use EXACTLY Image 1 frontal pose and alignment. Eyes reopen from a blink, softly attentive, direct eye contact with viewer. Mouth only starts to smile, halfway from neutral of Image 1 to soft smile of Image 2. Head upright, no tilt. Composition: EXACT original 1024x1536 portrait canvas and scale, top of headband around y=40, eyes around y=550, shoulders around y=950. Fixed camera, no zoom, no pan. Closely matching sharp linework, iris highlights, hair strand detail and soft lighting. Background genuinely transparent with original soft translucent edge falloff, no solid background or checkerboard drawing. Preserve every unaffected detail of the reference; single adult character; no text, watermark, props, hand gestures, extra ornaments. Output one 1024x1536 transparent PNG.",
+      "original": "generated://exec-5bf17a65-c633-4050-a575-a0a867dbcdb1.png",
+      "final": "assets/portraits/maid-intro-front-open-v3.png",
+      "sha256": "6a91cb9a13e679e9670ad072186650f6e7230378b8e43cf458fa5fa25d31e4a7",
+      "validation": {
+        "width": 1024,
+        "height": 1536,
+        "bitDepth": 8,
+        "colorType": 6,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "transparentPixels": 283885,
+        "partialAlphaPixels": 1288979,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "key": "smile-settle",
+      "refs": [
+        "assets/portraits/maid-intro-front-smile-v2.png",
+        "assets/portraits/maid-intro-soft-smile-v2.png"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: one individual high-definition in-between animation keyframe, NOT a sheet. Input Image 1 and Image 2 are adjacent reference frames of the SAME adult woman; retain precisely this character identity, painterly anime rendering, rich cobalt-blue hair, sapphire eyes, blue/white modest classic maid dress, ruffled headband, whale-tail jewel and dangling earrings. Primary request: Use EXACTLY Image 1 frontal pose and facial alignment. The welcoming smile is settling naturally, slightly less broad than Image 1 but warmer than Image 2, eyes gently softened with direct eye contact. Shoulders relax only 2 pixels. Head upright, no tilt; keep shoulder crop and overall framing identical. Composition: EXACT original 1024x1536 portrait canvas and scale, top of headband around y=40, eyes around y=550, shoulders around y=950. Fixed camera, no zoom, no pan. Closely matching sharp linework, iris highlights, hair strand detail and soft lighting. Background genuinely transparent with original soft translucent edge falloff, no solid background or checkerboard drawing. Preserve every unaffected detail of the reference; single adult character; no text, watermark, props, hand gestures, extra ornaments. Output one 1024x1536 transparent PNG.",
+      "original": "generated://exec-4247bf7c-bdfd-432a-9add-273d762b7208.png",
+      "final": "assets/portraits/maid-intro-smile-settle-v3.png",
+      "sha256": "fd9d01eef7d90c62d6de3b668ea12df5ecc176d975787fc30969030aeb14a988",
+      "validation": {
+        "width": 1024,
+        "height": 1536,
+        "bitDepth": 8,
+        "colorType": 6,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "transparentPixels": 284197,
+        "partialAlphaPixels": 1288667,
+        "totalPixels": 1572864
+      }
+    },
+    {
+      "key": "turn-middle",
+      "refs": [
+        "assets/portraits/maid-intro-turn-early-v3.png",
+        "assets/portraits/maid-intro-turn-late-v3.png"
+      ],
+      "prompt": "Use case: identity-preserve. Asset type: a single new animation keyframe precisely halfway between provided two portraits, on transparent background. Image 1 is an early three-quarter head turn and Image 2 is an almost frontal head. Generate the SAME adult blue-haired maid at the exact intermediate head yaw, about 20 degrees facing screen-left, distinctly more frontal than Image 1 and less frontal than Image 2. BOTH eyes and both earrings visible, left cheek slightly narrower than right cheek, nose points slightly left but not a profile. Direct attentive gaze, neutral closed lips. Neck perfectly upright with no tilt. Keep identical 1024x1536 canvas, camera distance, headband height y=30, eye height y=550, shoulder line y=950, chest bow y=1010. Same painterly anime sharpness, blue hair, sapphire eyes, same white maid headband, whale-tail jewel, braids, earrings and modest blue/white maid dress. Do not add items or change hairstyle/outfit. Genuine transparent background with soft alpha edge falloff, no painted backdrop, no text or watermark. One 1024x1536 PNG, NOT a sheet.",
+      "original": "generated://exec-e6be05c2-eeb8-4afb-b354-92f6f3c62128.png",
+      "final": "assets/portraits/maid-intro-turn-middle-v3.png",
+      "sha256": "7b18145169d1afea3534f018d2e1e0e37b07481303273e744b47454c333c8e55",
+      "validation": {
+        "width": 1024,
+        "height": 1536,
+        "bitDepth": 8,
+        "colorType": 6,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "transparentPixels": 288229,
+        "partialAlphaPixels": 1284635,
+        "totalPixels": 1572864
+      }
+    }
+  ]
+}

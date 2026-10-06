@@ -1,0 +1,229 @@
+{
+  "version": 2,
+  "character": "maid_chibi",
+  "created": "2026-10-04",
+  "purpose": "0.12 tool action expansion and bookshelf compacting",
+  "generationMode": "built-in imagegen; one generation per action",
+  "assets": [
+    {
+      "action": "compacting",
+      "file": "assets/actions/maid-chibi-compacting-v2.png",
+      "prompt": "Use case: identity-preserve / stylized-concept. Production asset for DeepSeek desktop state skin. Input 1 and 2 are character identity and rendering references, not pose targets. Keep the exact same elegant chibi DeepSeek maid: enlarged head and small body matching references, long indigo blue hair, blue eyes, white ruffled maid headband, blue whale-tail gem hair ornament on screen-right braid, matching blue crystal earrings, navy-and-white modest classic maid dress, white apron and stockings, navy strap shoes. Painterly detailed anime illustration, polished clean edges. Full body including both shoes, no cropping, single character only, consistent proportions and face. Face and body turn toward SCREEN LEFT about 20-30 degrees, both eyes readable; no right-facing head, no tilted leaning head. Canvas 1024x1536 portrait. Real transparent alpha background, clean cutout, no black/white backdrop or rectangular glow/haze, no floor plane. Character and meaningful prop fill canvas with about 5% margin, no huge empty area. No writing, text, numbers, watermark or logo. NEW ACTION: organizing a small silver-white and pale-blue bookshelf. Character stands at screen-right of the waist-to-shoulder-height bookshelf on SCREEN LEFT, reaching one hand leftward to slide a blue book upright into its proper shelf slot; other arm cradles two closed blue books. Show shelf, book rows and hand placing the book clearly. Bookshelf must not cover face or look like a full-room background. Focused but relaxed expression. A complete coherent elegant pose with feet on same level as shelf. This is organizing context, NOT paperwork at a chest, NOT computer work.",
+      "references": [
+        "assets/actions/maid-chibi-working-v1.png",
+        "assets/actions/maid-chibi-thinking-v1.png"
+      ],
+      "tool": "image_gen.imagegen (built-in)",
+      "transparent_background": true,
+      "source": "generated://exec-1c5ce91e-0297-4f3a-ad4f-1f251d1676ec.png",
+      "review": {
+        "inspected": true,
+        "facing": "screen-left",
+        "notes": "站立向画面左方书架归置书本，人物头脚完整；书架外侧贴边并略裁切，手部入架动作明确。",
+        "pixelEdits": "none"
+      },
+      "sha256": "d57096416507887db9fc3a29af2b5046fcf1673f23e11818469c82a0d43b7332",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA"
+      },
+      "alpha": {
+        "min": 0,
+        "max": 254,
+        "fullyTransparentFraction": 0.321095,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "faceEstimate": {
+        "center": {
+          "x": 559,
+          "y": 449
+        },
+        "width": 335,
+        "units": "source pixels, 1024x1536 canvas",
+        "method": "approximate manual estimate from inspected original generation; hair and headband excluded"
+      }
+    },
+    {
+      "action": "writing",
+      "file": "assets/actions/maid-chibi-writing-v2.png",
+      "prompt": "Use case: identity-preserve / stylized-concept. Production asset for DeepSeek desktop state skin. Input 1 and 2 are character identity and rendering references, not pose targets. Keep the exact same elegant chibi DeepSeek maid: enlarged head and small body matching references, long indigo blue hair, blue eyes, white ruffled maid headband, blue whale-tail gem hair ornament on screen-right braid, matching blue crystal earrings, navy-and-white modest classic maid dress, white apron and stockings, navy strap shoes. Painterly detailed anime illustration, polished clean edges. Full body including both shoes, no cropping, single character only, consistent proportions and face. Face and body turn toward SCREEN LEFT about 20-30 degrees, both eyes readable; no right-facing head, no tilted leaning head. Canvas 1024x1536 portrait. Real transparent alpha background, clean cutout, no black/white backdrop or rectangular glow/haze, no floor plane. Character and meaningful prop fill canvas with about 5% margin, no huge empty area. No writing, text, numbers, watermark or logo. NEW ACTION: seated at a compact silver and pale-blue writing desk, actively writing with a blue fountain pen in a large open cream notebook. Writing forearm reaches toward screen-left; other hand gently holds notebook flat. Head looks down-left toward writing hand, attentive serene face. Pen nib visibly meets paper. Full seated character and both shoes visible below desk; no computer or keyboard. Small tasteful ink bottle allowed. Blank abstract page texture without readable words. This action must instantly read as writing rather than reading.",
+      "references": [
+        "assets/actions/maid-chibi-working-v1.png",
+        "assets/actions/maid-chibi-thinking-v1.png"
+      ],
+      "tool": "image_gen.imagegen (built-in)",
+      "transparent_background": true,
+      "source": "generated://exec-6bdf6a17-9d36-4e54-9807-39207973e182.png",
+      "review": {
+        "inspected": true,
+        "facing": "screen-left",
+        "notes": "坐桌边用蓝色笔在展开本子写字，面向左下；双脚完整，桌面外沿略贴左边。",
+        "pixelEdits": "none"
+      },
+      "sha256": "dde49008fb487c91fbf13733508d545fa7d9d5c6238ee295aa7565a06ef64488",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA"
+      },
+      "alpha": {
+        "min": 0,
+        "max": 254,
+        "fullyTransparentFraction": 0.383899,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "faceEstimate": {
+        "center": {
+          "x": 492,
+          "y": 446
+        },
+        "width": 342,
+        "units": "source pixels, 1024x1536 canvas",
+        "method": "approximate manual estimate from inspected original generation; hair and headband excluded"
+      }
+    },
+    {
+      "action": "reading",
+      "file": "assets/actions/maid-chibi-reading-v2.png",
+      "prompt": "Use case: identity-preserve / stylized-concept. Production asset for DeepSeek desktop state skin. Input 1 and 2 are character identity and rendering references, not pose targets. Keep the exact same elegant chibi DeepSeek maid: enlarged head and small body matching references, long indigo blue hair, blue eyes, white ruffled maid headband, blue whale-tail gem hair ornament on screen-right braid, matching blue crystal earrings, navy-and-white modest classic maid dress, white apron and stockings, navy strap shoes. Painterly detailed anime illustration, polished clean edges. Full body including both shoes, no cropping, single character only, consistent proportions and face. Face and body turn toward SCREEN LEFT about 20-30 degrees, both eyes readable; no right-facing head, no tilted leaning head. Canvas 1024x1536 portrait. Real transparent alpha background, clean cutout, no black/white backdrop or rectangular glow/haze, no floor plane. Character and meaningful prop fill canvas with about 5% margin, no huge empty area. No writing, text, numbers, watermark or logo. NEW ACTION: seated gracefully on a small pale-blue chair, opening and reading a large book spread across lap angled toward screen-left. One hand lifts a page mid-turn and the other index finger tracks a line on the open page. Head looks down-left toward page, eyes attentive; no hand touching chin, no thinking pose. Full body and feet included, book open pages visible, no desk/computer. No readable letters. This action must instantly read as active reading rather than idle contemplation.",
+      "references": [
+        "assets/actions/maid-chibi-working-v1.png",
+        "assets/actions/maid-chibi-thinking-v1.png"
+      ],
+      "tool": "image_gen.imagegen (built-in)",
+      "transparent_background": true,
+      "source": "generated://exec-b9af7224-86f1-46fa-9544-5270fafecd57.png",
+      "review": {
+        "inspected": true,
+        "facing": "screen-left",
+        "notes": "坐着翻页，另一只手指沿页阅读，面向左下；完整身体，区别于原思考托腮姿势。",
+        "pixelEdits": "none"
+      },
+      "sha256": "f8bb2f2a5c7888961782b05f768bf41fb1588e9f4d4727152a193dcf5deb14b8",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA"
+      },
+      "alpha": {
+        "min": 0,
+        "max": 254,
+        "fullyTransparentFraction": 0.379353,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "faceEstimate": {
+        "center": {
+          "x": 484,
+          "y": 436
+        },
+        "width": 326,
+        "units": "source pixels, 1024x1536 canvas",
+        "method": "approximate manual estimate from inspected original generation; hair and headband excluded"
+      }
+    },
+    {
+      "action": "searching",
+      "file": "assets/actions/maid-chibi-searching-v2.png",
+      "prompt": "Use case: identity-preserve / stylized-concept. Production asset for DeepSeek desktop state skin. Input 1 and 2 are character identity and rendering references, not pose targets. Keep the exact same elegant chibi DeepSeek maid: enlarged head and small body matching references, long indigo blue hair, blue eyes, white ruffled maid headband, blue whale-tail gem hair ornament on screen-right braid, matching blue crystal earrings, navy-and-white modest classic maid dress, white apron and stockings, navy strap shoes. Painterly detailed anime illustration, polished clean edges. Full body including both shoes, no cropping, single character only, consistent proportions and face. Face and body turn toward SCREEN LEFT about 20-30 degrees, both eyes readable; no right-facing head, no tilted leaning head. Canvas 1024x1536 portrait. Real transparent alpha background, clean cutout, no black/white backdrop or rectangular glow/haze, no floor plane. Character and meaningful prop fill canvas with about 5% margin, no huge empty area. No writing, text, numbers, watermark or logo. NEW ACTION: standing and leaning gently forward toward screen-left while examining an unfolded pale-blue blueprint on a small silver display stand/lectern using a small round silver magnifying glass in one hand; the other hand anchors a far corner of blueprint. Magnifier below face, not covering eyes. Gaze concentrated at magnified section, face clear with both eyes visible. Blueprint has abstract fine blue diagrams, no readable text. Full body with both shoes, distinct curious searching silhouette; no book reading pose, no computer.",
+      "references": [
+        "assets/actions/maid-chibi-working-v1.png",
+        "assets/actions/maid-chibi-thinking-v1.png"
+      ],
+      "tool": "image_gen.imagegen (built-in)",
+      "transparent_background": true,
+      "source": "generated://exec-b57d392c-e03c-4cb6-aeea-93b0e00e28f9.png",
+      "review": {
+        "inspected": true,
+        "facing": "screen-left",
+        "notes": "站立前倾，用放大镜看讲台上的蓝图，面向左下，脸未遮挡，完整身体。",
+        "pixelEdits": "none"
+      },
+      "sha256": "513ed63f62667fc4998cf758ca2b4cbcb7732c7ae8af95ad8ee039ec7b6bd880",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA"
+      },
+      "alpha": {
+        "min": 0,
+        "max": 254,
+        "fullyTransparentFraction": 0.454165,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "faceEstimate": {
+        "center": {
+          "x": 484,
+          "y": 411
+        },
+        "width": 333,
+        "units": "source pixels, 1024x1536 canvas",
+        "method": "approximate manual estimate from inspected original generation; hair and headband excluded"
+      }
+    },
+    {
+      "action": "delegating",
+      "file": "assets/actions/maid-chibi-delegating-v2.png",
+      "prompt": "Use case: identity-preserve / stylized-concept. Production asset for DeepSeek desktop state skin. Input 1 and 2 are character identity and rendering references, not pose targets. Keep the exact same elegant chibi DeepSeek maid: enlarged head and small body matching references, long indigo blue hair, blue eyes, white ruffled maid headband, blue whale-tail gem hair ornament on screen-right braid, matching blue crystal earrings, navy-and-white modest classic maid dress, white apron and stockings, navy strap shoes. Painterly detailed anime illustration, polished clean edges. Full body including both shoes, no cropping, single character only, consistent proportions and face. Face and body turn toward SCREEN LEFT about 20-30 degrees, both eyes readable; no right-facing head, no tilted leaning head. Canvas 1024x1536 portrait. Real transparent alpha background, clean cutout, no black/white backdrop or rectangular glow/haze, no floor plane. Character and meaningful prop fill canvas with about 5% margin, no huge empty area. No writing, text, numbers, watermark or logo. NEW ACTION: standing confidently, body and face turned slightly SCREEN LEFT, extending her leftward arm to hand a small blue task card outward to an unseen colleague; other arm cradles a slim stack of blue documents/folders against her waist. ONLY ONE CHARACTER. Open natural handing gesture, arm extended and card clearly visible; gentle assured smile and engaged eyes directed screen-left. Card has simple abstract line marks no text. Full figure both shoes visible, poised feet, no table/chair/computer. This is delegation/coordination with outward-reaching silhouette.",
+      "references": [
+        "assets/actions/maid-chibi-working-v1.png",
+        "assets/actions/maid-chibi-thinking-v1.png"
+      ],
+      "tool": "image_gen.imagegen (built-in)",
+      "transparent_background": true,
+      "source": "generated://exec-e1950960-b99a-4ce2-89f9-aba15cf9181d.png",
+      "review": {
+        "inspected": true,
+        "facing": "screen-left",
+        "notes": "站立向画面左边递出任务卡，另一手抱资料；完整身体，微笑且面朝左。",
+        "pixelEdits": "none"
+      },
+      "sha256": "0170ec49b50019b4ef473e39a049323be18371cd2db7d81ec19039cedaea77aa",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA"
+      },
+      "alpha": {
+        "min": 0,
+        "max": 254,
+        "fullyTransparentFraction": 0.482869,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "faceEstimate": {
+        "center": {
+          "x": 521,
+          "y": 400
+        },
+        "width": 346,
+        "units": "source pixels, 1024x1536 canvas",
+        "method": "approximate manual estimate from inspected original generation; hair and headband excluded"
+      }
+    }
+  ]
+}

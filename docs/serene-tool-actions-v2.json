@@ -1,0 +1,116 @@
+{
+  "tool": "image_gen.imagegen",
+  "version": "0.12.0",
+  "records": [
+    {
+      "state": "compacting",
+      "prompt": "Use case: identity-preserve. Edit the referenced character into a new full-body desktop companion action. Preserve exactly the same elegant adult anime woman, detailed fine painted style, long dark cobalt blue hair, blue eyes, silver whale-tail hair ornament, white blue long dress, translucent blue sleeves and crystal jewelry. Reference 1 defines correct screen-LEFT orientation and identity; reference 2 is identity only, do NOT copy its rightward direction. Character face and activity turn toward screen LEFT, no strong head tilt. One complete character and only the props named, show head through both feet without cropped extremities. Portrait 1024x1536, transparent RGBA background, no room/wall/floor rectangle, no painted glow backdrop, no text, no watermark. Crisp expressive facial details. Graceful ordinary working posture, not chibi, not exaggerated. Keep entire character and small props comfortably within frame, only narrow transparent margins. She is STANDING beside a small elegant silver-white and cobalt blue BOOKSHELF positioned at screen LEFT, organizing the books. Her leftward-reaching hand places a blue book upright onto the upper shelf, other hand cradles two books near her waist. Show two or three clearly legible rows of arranged books, the bookcase lower than her head, never covering her face. Torso gently turned left, focused calm face. No kneeling and no open binder.",
+      "references": [
+        "assets/actions/serene-working-v1.png",
+        "assets/actions/serene-compacting-v1.png"
+      ],
+      "source": "generated://exec-088a0b85-8e3d-4c3d-92bc-dff7f901c887.png",
+      "file": "assets/actions/serene-compacting-v2.png",
+      "facing": "left",
+      "faceCenter": [
+        0.4462890625,
+        0.1328125
+      ],
+      "faceWidth": 160,
+      "sha256": "2e4ef2aac8750b696ed6ba18703f5fae6c8f1a1b3ff279ba8c489c34f325e6ce",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6
+    },
+    {
+      "state": "writing",
+      "prompt": "Use case: identity-preserve. Edit the referenced character into a new full-body desktop companion action. Preserve exactly the same elegant adult anime woman, detailed fine painted style, long dark cobalt blue hair, blue eyes, silver whale-tail hair ornament, white blue long dress, translucent blue sleeves and crystal jewelry. Reference 1 defines correct screen-LEFT orientation and identity; reference 2 is identity only, do NOT copy its rightward direction. Character face and activity turn toward screen LEFT, no strong head tilt. One complete character and only the props named, show head through both feet without cropped extremities. Portrait 1024x1536, transparent RGBA background, no room/wall/floor rectangle, no painted glow backdrop, no text, no watermark. Crisp expressive facial details. Graceful ordinary working posture, not chibi, not exaggerated. Keep entire character and small props comfortably within frame, only narrow transparent margins. She is seated elegantly on a blue stool at a compact silver desk. Use a PEN held naturally in one hand to WRITE in an OPEN PAPER NOTEBOOK on the tabletop at screen LEFT, other hand steadies the pages. Eyes look down-left at her writing. The pen, fingers and notebook must be clearly visible; NO laptop or keyboard. Full-body including desk legs and feet.",
+      "references": [
+        "assets/actions/serene-working-v1.png",
+        "assets/actions/serene-compacting-v1.png"
+      ],
+      "source": "generated://exec-a9ec7a81-ac45-49c8-a695-944bdf8f6a7a.png",
+      "file": "assets/actions/serene-writing-v2.png",
+      "facing": "left",
+      "faceCenter": [
+        0.3984375,
+        0.1640625
+      ],
+      "faceWidth": 170,
+      "sha256": "fa455bfc8cca7c45304bd889b5f84bd88effa1235ae64613a2ccda6619709ee3",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6
+    },
+    {
+      "state": "reading",
+      "prompt": "Use case: identity-preserve. Edit the referenced character into a new full-body desktop companion action. Preserve exactly the same elegant adult anime woman, detailed fine painted style, long dark cobalt blue hair, blue eyes, silver whale-tail hair ornament, white blue long dress, translucent blue sleeves and crystal jewelry. Reference 1 defines correct screen-LEFT orientation and identity; reference 2 is identity only, do NOT copy its rightward direction. Character face and activity turn toward screen LEFT, no strong head tilt. One complete character and only the props named, show head through both feet without cropped extremities. Portrait 1024x1536, transparent RGBA background, no room/wall/floor rectangle, no painted glow backdrop, no text, no watermark. Crisp expressive facial details. Graceful ordinary working posture, not chibi, not exaggerated. Keep entire character and small props comfortably within frame, only narrow transparent margins. She is seated upright on a simple blue reading stool, holding a LARGE OPEN BOOK to screen LEFT of her torso, one index finger following a line on the page as the other hand turns a page. Calm focused gaze down-left. No chin-rest thinking gesture, no closed book, no laptop, no text on pages. Full-body distinct reading gesture.",
+      "references": [
+        "assets/actions/serene-working-v1.png",
+        "assets/actions/serene-compacting-v1.png"
+      ],
+      "source": "generated://exec-93c9a19a-4472-484c-9b89-aa6cc15db02e.png",
+      "file": "assets/actions/serene-reading-v2.png",
+      "facing": "left",
+      "faceCenter": [
+        0.4365234375,
+        0.154296875
+      ],
+      "faceWidth": 170,
+      "sha256": "4a07d73645a699a7deebeaf063300d857c04d2c220e1a97a0a050b07dcb868ed",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6
+    },
+    {
+      "state": "searching",
+      "prompt": "Use case: identity-preserve. Edit the referenced character into a new full-body desktop companion action. Preserve exactly the same elegant adult anime woman, detailed fine painted style, long dark cobalt blue hair, blue eyes, silver whale-tail hair ornament, white blue long dress, translucent blue sleeves and crystal jewelry. Reference 1 defines correct screen-LEFT orientation and identity; reference 2 is identity only, do NOT copy its rightward direction. Character face and activity turn toward screen LEFT, no strong head tilt. One complete character and only the props named, show head through both feet without cropped extremities. Portrait 1024x1536, transparent RGBA background, no room/wall/floor rectangle, no painted glow backdrop, no text, no watermark. Crisp expressive facial details. Graceful ordinary working posture, not chibi, not exaggerated. Keep entire character and small props comfortably within frame, only narrow transparent margins. She stands with a gentle forward lean toward screen LEFT, examining an unfolded blue map/document on a slim silver lectern with a SMALL ROUND MAGNIFYING GLASS held near the page. Other hand spreads the document. Concentrated curious eyes follow the glass, face visible above it. Full-body, no laptop, no bookshelf, no text.",
+      "references": [
+        "assets/actions/serene-working-v1.png",
+        "assets/actions/serene-compacting-v1.png"
+      ],
+      "source": "generated://exec-775d2bc0-82bb-4ca9-930c-a3043946fe48.png",
+      "file": "assets/actions/serene-searching-v2.png",
+      "facing": "left",
+      "faceCenter": [
+        0.36328125,
+        0.12434895833333333
+      ],
+      "faceWidth": 160,
+      "sha256": "057bd800c6b810e05dd2dccc74d5c8778ad3c0960180259d45a1f632c0bea5c7",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6
+    },
+    {
+      "state": "delegating",
+      "prompt": "Use case: identity-preserve. Edit the referenced character into a new full-body desktop companion action. Preserve exactly the same elegant adult anime woman, detailed fine painted style, long dark cobalt blue hair, blue eyes, silver whale-tail hair ornament, white blue long dress, translucent blue sleeves and crystal jewelry. Reference 1 defines correct screen-LEFT orientation and identity; reference 2 is identity only, do NOT copy its rightward direction. Character face and activity turn toward screen LEFT, no strong head tilt. One complete character and only the props named, show head through both feet without cropped extremities. Portrait 1024x1536, transparent RGBA background, no room/wall/floor rectangle, no painted glow backdrop, no text, no watermark. Crisp expressive facial details. Graceful ordinary working posture, not chibi, not exaggerated. Keep entire character and small props comfortably within frame, only narrow transparent margins. She is STANDING, extending one arm toward screen LEFT to hand over a single small cobalt blue TASK CARD while holding a tidy bundle of other blue-white cards against her waist with the other hand. Confident warm expression turned slightly toward user and left. Clear handing-off motion, no other person or detached receiving hand, no screens or labels. Full-body flowing dress with restrained motion.",
+      "references": [
+        "assets/actions/serene-working-v1.png",
+        "assets/actions/serene-compacting-v1.png"
+      ],
+      "source": "generated://exec-cf34d715-0ec6-4377-bd2b-a52cb919b9e7.png",
+      "file": "assets/actions/serene-delegating-v2.png",
+      "facing": "left",
+      "faceCenter": [
+        0.45703125,
+        0.12044270833333333
+      ],
+      "faceWidth": 170,
+      "sha256": "f8cee9eee457c5f9bf4fae4f047eae15a1afba649ea9b5c6dbfa6b45e29a5df1",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "pngColorType": 6
+    }
+  ]
+}

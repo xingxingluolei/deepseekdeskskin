@@ -1,0 +1,14 @@
+{
+  "name": "deepseekdeskskin",
+  "version": "0.13.0",
+  "private": true,
+  "type": "module",
+  "description": "独立的 DeepSeek 娘静态与动态皮肤工作室",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "build:plugin": "node scripts/build-plugin.mjs"
+  }
+}

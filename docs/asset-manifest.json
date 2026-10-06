@@ -1,0 +1,958 @@
+{
+  "version": "0.13.0",
+  "note": "Current distributed PNG and audio files. Historical generation references may describe earlier artwork not distributed here.",
+  "files": [
+    {
+      "file": "assets/actions/maid-answering-v1.png",
+      "bytes": 1843040,
+      "sha256": "6c3b97900d4c6cd8a854935cda4de5b6059976242894eff537cd55052f03eb3c",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-blocked-v1.png",
+      "bytes": 1899548,
+      "sha256": "44cc0eb68fbdafe6dc3be65976c16ca98b448da3b9523fbc627d0a1d51b0693d",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-answering-v1.png",
+      "bytes": 2370480,
+      "sha256": "7f565965ac63ff6e048b881a20743fef59732ae8fd63896ed4bb4b4d2b507ad9",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-blocked-v1.png",
+      "bytes": 2282946,
+      "sha256": "465b60148493d1f31b8f7282ad4a09ad33da5801ceda75bd380daf416eaad5e6",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-compacting-v2.png",
+      "bytes": 2528182,
+      "sha256": "d57096416507887db9fc3a29af2b5046fcf1673f23e11818469c82a0d43b7332",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-complete-v3.png",
+      "bytes": 2208338,
+      "sha256": "3cbea7928e8cf731a770d2532019488e6c81a437c1460ef39cf5c74fcc58f065",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-connecting-v1.png",
+      "bytes": 2237248,
+      "sha256": "8bf958e47d3de7ea96c42ed66d2229ac7cd69512abda8d5fe9b6dbce824e169f",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-delegating-v2.png",
+      "bytes": 2259821,
+      "sha256": "0170ec49b50019b4ef473e39a049323be18371cd2db7d81ec19039cedaea77aa",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-disconnected-v3.png",
+      "bytes": 2296928,
+      "sha256": "0fd8ba79d70826a90190820a781b2003a3fa3f132268baa5dbfa6ef2bf7dc57a",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-error-v3.png",
+      "bytes": 2232712,
+      "sha256": "b9462d08bff117b4eb83136d05a934e3d88014d1aaeb2bbec3d211d73064b563",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-intro-away-v1.png",
+      "bytes": 2130608,
+      "sha256": "b93869bf824303a4e1452b1958511bbfcc6fd65aa2428074795324cdb9588208",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-parallel-v1.png",
+      "bytes": 2303059,
+      "sha256": "9a924f78955a6f8d2b73905ca5b8071ca2cbc779818577b561fa58c0731b29dd",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-paused-v1.png",
+      "bytes": 2386768,
+      "sha256": "8b67ecffbdd7ba7e5f611e8db85de1503de3fb3510366775d8262f00f16f2c14",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-queued-v3.png",
+      "bytes": 2274547,
+      "sha256": "f8ed43e0f43076cf2ebc48dee1ef111c19b48195720ef324a7ce0d99cecded0e",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-reading-v2.png",
+      "bytes": 2525975,
+      "sha256": "f8bb2f2a5c7888961782b05f768bf41fb1588e9f4d4727152a193dcf5deb14b8",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-retrying-v3.png",
+      "bytes": 2377085,
+      "sha256": "5e35e0c3516cf2c0e1f30f337fabbe04896c4536459087a39046d33928047c73",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-searching-v2.png",
+      "bytes": 2446456,
+      "sha256": "513ed63f62667fc4998cf758ca2b4cbcb7732c7ae8af95ad8ee039ec7b6bd880",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-stopped-v3.png",
+      "bytes": 2265007,
+      "sha256": "3dfba8cc8487383f13fa580019612f3c62022c474f4c4201475e4d10a6e5de23",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-thinking-v3.png",
+      "bytes": 2238518,
+      "sha256": "81247a079d7c7b3a02ee45b24b52c9d121f0eae89c10aed7dd9cb81d731ee67f",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-waiting-v1.png",
+      "bytes": 2188065,
+      "sha256": "59ff7282ee932ebeb7a8ec6a7e0129f14fd94317a3146af6bfa565a6965ac5c0",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-working-v1.png",
+      "bytes": 2378325,
+      "sha256": "84f9a413db85b410b2ebe80f9853c6c5fbf76746779df4be367e9867de87cc98",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-working-v3.png",
+      "bytes": 2290730,
+      "sha256": "73f64835009493d9d2776750c2acfc02c4a5af84e846c0f87853f3db01c7eb9a",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-chibi-writing-v2.png",
+      "bytes": 2595931,
+      "sha256": "dde49008fb487c91fbf13733508d545fa7d9d5c6238ee295aa7565a06ef64488",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-compacting-v2.png",
+      "bytes": 2313589,
+      "sha256": "d3d117e6eebc21a1148d18d5d56fb5dbdc4a9df7a5fc7c475a15fef687d68549",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-complete-v3.png",
+      "bytes": 1974238,
+      "sha256": "17563552af0a6665a6c1d588216bb34c856ab3e438497363d97513a0ebf6726f",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-connecting-v1.png",
+      "bytes": 1928203,
+      "sha256": "04973c065925276e22bce2e60afd31e962f6acdc3bd6bee80c30240b78c4b54d",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-delegating-v2.png",
+      "bytes": 2012884,
+      "sha256": "4b800f949c5f161d6f5be46a2f40c0c091e2e3a8d53f33120469449256e2d353",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-disconnected-v3.png",
+      "bytes": 2066447,
+      "sha256": "d60b55b4777e2a9eb6976607321b08f98891fb503a5606f489c52c074575de1a",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-error-v3.png",
+      "bytes": 1928294,
+      "sha256": "47fa4bce86cf0fbf70dce6a3a2a9ba5b6213157b5d6005c23136a11d9198ac1c",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-intro-away-v1.png",
+      "bytes": 1812834,
+      "sha256": "779b40f84bdec06c867a14a57c3600143aa67bf7d2e9c824356f43e454949973",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-parallel-v1.png",
+      "bytes": 1901973,
+      "sha256": "e12efe073fa6c92e49aac295f713fcaa39b6887d8fe7fa2fb75576d1afbbfce2",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-paused-v1.png",
+      "bytes": 1981737,
+      "sha256": "3e5bd9f9c196000d35c39bb255125c3b1e6dfe1ed5bd1154bc778a4585135aec",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-queued-v3.png",
+      "bytes": 1974793,
+      "sha256": "fd622557c56ea0ec611149cb0e9dc316cf7f70b342dd26e02671337c7af72f08",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-reading-v2.png",
+      "bytes": 2243982,
+      "sha256": "126364731f32a8107335652d516e6b224fdc8ac59513ee60f610bfc660419b8e",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-retrying-v3.png",
+      "bytes": 2157414,
+      "sha256": "2608e31c63f30b7b020677d7567e71854bba3a31abb5bcbeb2e6590996edb794",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-searching-v2.png",
+      "bytes": 2135054,
+      "sha256": "fa98fbe5ddb04d60d9822f97ade4d208d10cba4e96cf58006dd15713e932d6a4",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-stopped-v3.png",
+      "bytes": 1912857,
+      "sha256": "00f4abedf6f9d5a9b1f58891d411cc2f7c5df8e7a4ec154a87582eb61fddec97",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-thinking-v3.png",
+      "bytes": 1866187,
+      "sha256": "fa4af09e6b0f0401596bf35175f24158028594719464f42c78ec03dabf4746e7",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-waiting-v1.png",
+      "bytes": 1830242,
+      "sha256": "1770435f4bffa9f7471178ea361a6c3d31fbd59b9e9eb6c9652dc30b15e7769b",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-working-v1.png",
+      "bytes": 1879078,
+      "sha256": "7ed3da98670226ca6f532781899d70e480dfcbb7daaf0aa684648a17eca89c30",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-working-v3.png",
+      "bytes": 2137637,
+      "sha256": "514002d6b334412ff7fc8199fa19a05a6f80e4723c69e901b69d4b382eb7c831",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/maid-writing-v2.png",
+      "bytes": 2218333,
+      "sha256": "1236f63c23eebea63878e9093bc35664c95b16ebd110cbd4fefa6955b520f2e6",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-answering-v1.png",
+      "bytes": 2645317,
+      "sha256": "06c42d78a4610e93b9386c494020a2b4ce3c8e511ac735533ed4d978a5063da6",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-blocked-v1.png",
+      "bytes": 2582033,
+      "sha256": "1b08146ebc8b65a548034ef4800ce92999c98eeab92fa07c06d3a34e5a96073b",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-compacting-v2.png",
+      "bytes": 2767164,
+      "sha256": "2e4ef2aac8750b696ed6ba18703f5fae6c8f1a1b3ff279ba8c489c34f325e6ce",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-complete-v3.png",
+      "bytes": 2631001,
+      "sha256": "d3c69b84d8532a1f1c2525044781d024eaca5ac347e3961343d5d94f1b2b3f18",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-connecting-v1.png",
+      "bytes": 2448615,
+      "sha256": "6991ef991c9502bab687a7c310ab0c8ba5da905d70ad52dd294d9d3d5325fd75",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-delegating-v2.png",
+      "bytes": 2481837,
+      "sha256": "f8cee9eee457c5f9bf4fae4f047eae15a1afba649ea9b5c6dbfa6b45e29a5df1",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-disconnected-v3.png",
+      "bytes": 2843325,
+      "sha256": "a9fe31c4a90a756f02734595a96ca11cb7759c035a7c36f36adda9f7852c31d3",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-error-v3.png",
+      "bytes": 2619476,
+      "sha256": "7216799e0a9ec8dd21bb3946779cdc3fca4d27949411968b35c4c164cf021c4e",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-intro-away-v1.png",
+      "bytes": 2472571,
+      "sha256": "89b61a4ac0ec629638639584a9e7676274754438c0c63a9a2a6ecdbba897af2a",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-parallel-v1.png",
+      "bytes": 2662063,
+      "sha256": "a431f6f6306e951655252c821456c611bdf020b5e97b673c5b40b0e4d09406b5",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-paused-v1.png",
+      "bytes": 2632990,
+      "sha256": "f728fe1d75d8ba3deba7252a86f4d8fc93822ea5126621cbaf6ef5f530777069",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-queued-v3.png",
+      "bytes": 2775420,
+      "sha256": "7f72a988bdbc14d3120fb111420f5010666a4d326692f3a3d4328c3b4a588665",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-reading-v2.png",
+      "bytes": 2716800,
+      "sha256": "4a07d73645a699a7deebeaf063300d857c04d2c220e1a97a0a050b07dcb868ed",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-retrying-v3.png",
+      "bytes": 2866973,
+      "sha256": "c599b9662f59e077e5b5d423872a9010b5410b25b14491af86e14a18d17201ed",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-searching-v2.png",
+      "bytes": 2735184,
+      "sha256": "057bd800c6b810e05dd2dccc74d5c8778ad3c0960180259d45a1f632c0bea5c7",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-stopped-v3.png",
+      "bytes": 2604061,
+      "sha256": "bba3cd4c5908a0e0f0c4340530cc7eaa1200a30bc7dcac30393a1458f953e3b7",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-thinking-v3.png",
+      "bytes": 2542645,
+      "sha256": "7aed86745e7035231e632651e86bb061ef5deedd70f1fe782bb8fb9a9e5d4a48",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-waiting-v1.png",
+      "bytes": 2520724,
+      "sha256": "7f8d8db52cb78996e59bd41c32889abda61603e5f50f79eae36e6c4adf37b1d5",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-working-v1.png",
+      "bytes": 2587592,
+      "sha256": "59415037cf72e5060030c189cb931339e7063e37d77091eb9dfa29fba2556d72",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-working-v3.png",
+      "bytes": 2599905,
+      "sha256": "9c3c621f71a9a04b69091beb7a03fb4b41a470386bf2e1ce4438a9eacaec2071",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/actions/serene-writing-v2.png",
+      "bytes": 2580815,
+      "sha256": "fa455bfc8cca7c45304bd889b5f84bd88effa1235ae64613a2ccda6619709ee3",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/audio/ui-v1/README.md",
+      "bytes": 2942,
+      "sha256": "a27f92ab1b1fdc41d662b1c6ca8fca13eef42035d223971f0821b4f2019a5747"
+    },
+    {
+      "file": "assets/audio/ui-v1/blocked.wav",
+      "bytes": 255980,
+      "sha256": "a952654b12f9a9c409baff2e65a4c4af97c4d6498be4eed738aa242b47ec76f1"
+    },
+    {
+      "file": "assets/audio/ui-v1/compacting.wav",
+      "bytes": 344300,
+      "sha256": "4b57c3ffa726f05b562e22df380f4f160593f5e244c371a80c09112585a0019e"
+    },
+    {
+      "file": "assets/audio/ui-v1/complete.wav",
+      "bytes": 263660,
+      "sha256": "fd7136a4036a3bbffed26a99aab8b90883f598cca6240784095fe4c36c3fd8f7"
+    },
+    {
+      "file": "assets/audio/ui-v1/connecting.wav",
+      "bytes": 231020,
+      "sha256": "61e33931227f830f1bdd1ca5c2d442c8f5dfd342a50293b319f42cf638062254"
+    },
+    {
+      "file": "assets/audio/ui-v1/deepseekdeskskin-sfx-v1.zip",
+      "bytes": 5442473,
+      "sha256": "9b6ebef15e04cdbeb83f169790168b4401fa49d11482af4376d49130a7e847ed"
+    },
+    {
+      "file": "assets/audio/ui-v1/delegating.wav",
+      "bytes": 204140,
+      "sha256": "fba83a097fd44f3d41f797cce2ee79aea1f8d79746db835456f33232e4c97003"
+    },
+    {
+      "file": "assets/audio/ui-v1/disconnected.wav",
+      "bytes": 238700,
+      "sha256": "0b0b582cb2e0d4d72cafdb240b79b3b15e46aceebef84b1a9e3ad64fcb2491b1"
+    },
+    {
+      "file": "assets/audio/ui-v1/error.wav",
+      "bytes": 234860,
+      "sha256": "8b006d70e0ebe7d79f555d40aa72e26385723dee8b5c540e562fa58183f5838f"
+    },
+    {
+      "file": "assets/audio/ui-v1/executing.wav",
+      "bytes": 140780,
+      "sha256": "073fb80a4ee77283266128b68f6bcb56a35a2f6f3af9761d4710ab9b7abeef14"
+    },
+    {
+      "file": "assets/audio/ui-v1/greeting.wav",
+      "bytes": 244460,
+      "sha256": "dfd0996b8317fe556c7fc8f9b7e7e485c63034d166b621160cb7069f1f8306f5"
+    },
+    {
+      "file": "assets/audio/ui-v1/manifest.json",
+      "bytes": 13316,
+      "sha256": "30276690d4de046f8504eddcf2d51d97ae55c0116cf8848fff8dc7a7a8e13d04"
+    },
+    {
+      "file": "assets/audio/ui-v1/parallel.wav",
+      "bytes": 213740,
+      "sha256": "51e099c3d2d8cc01e62a2df1b87b156c49eaf137f2f55454a6f31eeffecff332"
+    },
+    {
+      "file": "assets/audio/ui-v1/paused.wav",
+      "bytes": 190700,
+      "sha256": "54c82829574de0533c061251ae4e6f1b5bfc2acc49afb769bddbb1247897e9f6"
+    },
+    {
+      "file": "assets/audio/ui-v1/preview-all.wav",
+      "bytes": 6544748,
+      "sha256": "932a9071e6b5cc5bc150c87d0dc3b783a2c45ff38ed47ee2e22ae1f191969e50"
+    },
+    {
+      "file": "assets/audio/ui-v1/preview-core.wav",
+      "bytes": 2217260,
+      "sha256": "02998375c7b58f34d65a3eb92744540e53b04b0c74282837bac319282045bac2"
+    },
+    {
+      "file": "assets/audio/ui-v1/queued.wav",
+      "bytes": 152300,
+      "sha256": "426b98de87d33bd1b15bf594c42516b8796540452f5f981c0235476bff2c036f"
+    },
+    {
+      "file": "assets/audio/ui-v1/reading.wav",
+      "bytes": 190700,
+      "sha256": "aa389d49d2b29a41222ace1529058a9b0df4678ed74fdecf600f8d26a3e8ee28"
+    },
+    {
+      "file": "assets/audio/ui-v1/retrying.wav",
+      "bytes": 204140,
+      "sha256": "39e6bbac1853f1ce6681d52915c365f37b55e962c741d3e024b894e8cea97b63"
+    },
+    {
+      "file": "assets/audio/ui-v1/searching.wav",
+      "bytes": 190700,
+      "sha256": "1784b0e5c381f1fd718a33d5180b431743ab26c93b545fd3fe1b4c72112d21a9"
+    },
+    {
+      "file": "assets/audio/ui-v1/stopped.wav",
+      "bytes": 175340,
+      "sha256": "73b947f5b83c38f70529441ffc85bbc3061f51620678dcd5fb862d1464905840"
+    },
+    {
+      "file": "assets/audio/ui-v1/thinking.wav",
+      "bytes": 142700,
+      "sha256": "1d7ab41b119219f5536ad5f1beb230fcb10e9f41682547b18a1575b22c30aec7"
+    },
+    {
+      "file": "assets/audio/ui-v1/waiting.wav",
+      "bytes": 229100,
+      "sha256": "cb02770963d106dc5ae1320133724364514101265567a5d0bad07f82fa58fe3b"
+    },
+    {
+      "file": "assets/audio/ui-v1/writing.wav",
+      "bytes": 209900,
+      "sha256": "80ed2e9340e9d0001081ea2f1e199199858e112c3afbd64bed17b27ed4da0918"
+    },
+    {
+      "file": "assets/maid-avatar-v1.png",
+      "bytes": 2307802,
+      "sha256": "c5e51c4dbdd20a98ed4017b04fcf8fce46978ea7fe1d3b65cc9104d05bda48d4",
+      "width": 1254,
+      "height": 1254,
+      "pngColorType": 2
+    },
+    {
+      "file": "assets/maid-chibi-avatar-v1.png",
+      "bytes": 2265431,
+      "sha256": "b1968d3ef0197cdec8eab4d325971a2b346ab1f7fc9a2166476fabbb1932a4de",
+      "width": 1254,
+      "height": 1254,
+      "pngColorType": 2
+    },
+    {
+      "file": "assets/portraits/maid-chibi-intro-attention-eyes-v4.png",
+      "bytes": 2460825,
+      "sha256": "e859c83b2dc4fe52f3ff2a3c8a9c421eec43a27f6f60cf89c918f3c11d601c59",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-chibi-intro-away-v2.png",
+      "bytes": 2653604,
+      "sha256": "d2f26db337f5d7e7117e57edc750cd88f7911476723c661948c9a50e36d16de7",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-chibi-intro-away-v4.png",
+      "bytes": 2499547,
+      "sha256": "17b18fd66f98a7a3d25d4d89816d23253f65f3d63828b1d2dc4547c6a9e3f86b",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-chibi-intro-front-blink-v4.png",
+      "bytes": 2450333,
+      "sha256": "02317f952a4014111153d83da1ae855d8af74d4a721dbed7e1f5cf06f9a4450d",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-chibi-intro-front-neutral-v4.png",
+      "bytes": 2528927,
+      "sha256": "0bd0eea501bef023ae9e016312cdd6db5158d4d16d7addcd462557e807a564a3",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-chibi-intro-front-open-v4.png",
+      "bytes": 2449238,
+      "sha256": "409954b36620bf2f6032fd5cc0c562a107ddaac3e4afd8db220b1d61ac6d7596",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-chibi-intro-front-smile-v4.png",
+      "bytes": 2458901,
+      "sha256": "9420fb621ded3ec7a59a34ddf201e6b8292a6baf7a6ea42c4e23832e8a1469b6",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-chibi-intro-noticing-v4.png",
+      "bytes": 2468054,
+      "sha256": "a7f42e2af1afeeb82b0cb347517daa39fb879513f505665818f8b0a4930d4a68",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-chibi-intro-smile-settle-v4.png",
+      "bytes": 2445689,
+      "sha256": "2e4716bd85647429251a2efd10094723e685ebac2a958a64490a15761fade831",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-chibi-intro-soft-smile-v4.png",
+      "bytes": 2469991,
+      "sha256": "053b0779af150c18d54e744d4160a0764d7e131423114a0e3d40d4e14456fc00",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-chibi-intro-turn-early-v4.png",
+      "bytes": 2455326,
+      "sha256": "3c8a0c84c7691f118d68c80b542ce4aed4aa2bb56e51dfec51fc83d9ace8831e",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-chibi-intro-turn-late-v4.png",
+      "bytes": 2466607,
+      "sha256": "2d51ffd5206906937895d195d953ddd1db76c6b890d8f9b870924db9f4aa7c45",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-chibi-intro-turn-middle-v4.png",
+      "bytes": 2400623,
+      "sha256": "dff049ad14e038b43f799ecc2538ea8eec8ad2de6709b687c69c84d9730ae4f8",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-intro-attention-eyes-v3.png",
+      "bytes": 2351588,
+      "sha256": "7b2d139fec1901e7c3c816a75a9ff06e0c00bf607fb7ab4a6e47e77a65a86253",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-intro-away-v2.png",
+      "bytes": 2474237,
+      "sha256": "ee72ad2d4fbd76ccff48b0ae6b158f0e7b8382f8b4b284033a4d0cba7718bd00",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-intro-front-blink-v4.png",
+      "bytes": 2314851,
+      "sha256": "5b05a611f936fc00517da7dbf6317b02c236e531ea8e8ba78f8791fdfa69aafe",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-intro-front-neutral-v4.png",
+      "bytes": 2366325,
+      "sha256": "8565706e0a464113359010ff7ef109ea4412df8bc47a9d3f1d66af3391276119",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-intro-front-open-v4.png",
+      "bytes": 2305241,
+      "sha256": "c9f095ea576172bd8a1ad31c4972a5ddc7e2100a6f837e07e2721d3b292ec65c",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-intro-front-smile-v4.png",
+      "bytes": 2307848,
+      "sha256": "e619a832bec9e612bcd55ac8cf0a2dcc6b67f0b830d18cee61ec48e35f6ba9da",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-intro-noticing-v2.png",
+      "bytes": 2403338,
+      "sha256": "1f81340f628a740b64165771d101aa383d9e13e679dc60aa84aa72f38486bf41",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-intro-smile-settle-v4.png",
+      "bytes": 2322861,
+      "sha256": "f58fc4f9fa005ec57f927dffe4147616c14ff9413ab89c1dbea76f9a0d91571a",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-intro-soft-smile-v4.png",
+      "bytes": 2300987,
+      "sha256": "952eb3422bb00eb3482d2108794b6f8bdf87d59921025e6abdebecc6104edefd",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-intro-turn-early-v3.png",
+      "bytes": 2391585,
+      "sha256": "d5611765ca114556bceb386bd88087dc9b1177e1008208438bafce71d86013e1",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-intro-turn-late-v4.png",
+      "bytes": 2378387,
+      "sha256": "50e8ecf6f69a70faf760cdd1045ab8653f43c6bd8ca7eea2bc741c8831a12fa9",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/maid-intro-turn-middle-v3.png",
+      "bytes": 2357073,
+      "sha256": "7b18145169d1afea3534f018d2e1e0e37b07481303273e744b47454c333c8e55",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/serene-intro-attention-eyes-v3.png",
+      "bytes": 2724491,
+      "sha256": "31cdb1853822aeca672e40ac12f0fbca761300d75e48255bb42ba9404444bf02",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/serene-intro-away-v2.png",
+      "bytes": 2865268,
+      "sha256": "c31c7c9992d79e66e0aa6b4367994d7d343205dfc5e3d5c0cc7ab74b68c0a12b",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/serene-intro-front-blink-v4.png",
+      "bytes": 2712334,
+      "sha256": "7f809764dbe3b4b8d9b0c54f6bd10ead824d5e28431e267e72ef78b20097915a",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/serene-intro-front-neutral-v4.png",
+      "bytes": 2775833,
+      "sha256": "bbd76ab7b3dd2b4b0510d33ba4a57c303033de45f823978366bccdc8b0e153d8",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/serene-intro-front-open-v4.png",
+      "bytes": 2731453,
+      "sha256": "56635980203c1e63b85e63100161b15873e415325784d3e5651c0964e49f5909",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/serene-intro-front-smile-v4.png",
+      "bytes": 2732333,
+      "sha256": "06fb6e7ebde82ddb501394dbe4812ba5c6e75f8474e765b4ac9c040d0735593f",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/serene-intro-noticing-v2.png",
+      "bytes": 2760045,
+      "sha256": "7e4a90bf1e3891abf6d6ab6525e538aa67b29960c04f04f6b67ca705e092db46",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/serene-intro-smile-settle-v4.png",
+      "bytes": 2747525,
+      "sha256": "2f3cc38382da8d237f66e11301fe9bf3981e679fdb60d39d9971cba079e27c62",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/serene-intro-soft-smile-v4.png",
+      "bytes": 2736500,
+      "sha256": "e4ef7f7f79e8fea7f102750300448c08cb43728eeeeeb62634532c19e01e5dea",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/serene-intro-turn-early-v3.png",
+      "bytes": 2767714,
+      "sha256": "50dfb0cf3afb32e69b317f29fb48722f92e87d6a76b7f5d184ea601630d7f5f5",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/serene-intro-turn-late-v3.png",
+      "bytes": 2809948,
+      "sha256": "17f015bb0b5f2dbae2fe775c30145d94f79e7cdee4a1ecb0974241f6cc0bb422",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/portraits/serene-intro-turn-middle-v3.png",
+      "bytes": 2758424,
+      "sha256": "f787c7cb9de7864e5b4aad7b268e0031fd1983ff7a555afe6c7c9982d90b629b",
+      "width": 1024,
+      "height": 1536,
+      "pngColorType": 6
+    },
+    {
+      "file": "assets/serene-avatar-v1.png",
+      "bytes": 2582560,
+      "sha256": "772ee7a3a6c411661ecc5047bfeb1bffe3c909d8c47845a5f916cf93cb0a7bf6",
+      "width": 1254,
+      "height": 1254,
+      "pngColorType": 2
+    },
+    {
+      "file": "assets/serene-character-sheet-v1.png",
+      "bytes": 2955514,
+      "sha256": "9a63fc5b130b71dd6497a6cc1cce2c35ffc526fc0678baf36c161c4e356a670e",
+      "width": 1536,
+      "height": 1024,
+      "pngColorType": 2
+    }
+  ]
+}

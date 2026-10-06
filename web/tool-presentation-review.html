@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Read → Thinking · 真实渲染验收 · 0.13.0</title>
+  <link rel="stylesheet" href="/web/tool-presentation-review.css">
+</head>
+<body>
+  <main>
+    <header><p class="eyebrow">DEEPSEEK DESK SKIN / 0.13.0</p><h1>短工具，也要看得清</h1><p>20ms Read 调用结束后，让真实 controller 与 renderer 决定何时切回 Thinking。</p></header>
+    <section class="controls" aria-label="验收设置">
+      <label>角色 <select id="asset"><option value="serene">澄蓝</option><option value="maid">经典女仆</option><option value="maid_chibi">经典女仆 · Q版</option></select></label>
+      <label class="check"><input type="checkbox" id="slow" checked> Read 额外解码延迟 650ms</label>
+      <button id="start" type="button">手动开始验收</button><button id="reset" type="button" class="secondary">清空</button>
+    </section>
+    <div class="review-grid">
+      <section class="stage-panel" aria-label="真实 renderer 画面"><div id="stage"></div><p id="state-line">真实任务 — · 显示动作 —</p><p class="stage-note">身体与道具表达任务方向，脸部主要面向镜头。</p></section>
+      <section class="results" aria-live="polite"><p class="eyebrow">PRESENTATION RECEIPT</p><h2 id="verdict">等待手动开始</h2><p id="detail">先让上一张动作进入 420ms 淡出淡入，再在其间注入短 Read，覆盖真实排队路径。</p>
+        <dl><div><dt>Read call → result</dt><dd id="call-time">—</dd></div><div><dt>Read 完整淡入回执</dt><dd id="ack-time">—</dd></div><div><dt>Thinking 切回请求</dt><dd id="return-time">—</dd></div><div class="highlight"><dt>回执后清楚停留 / 要求 ≥ 900ms</dt><dd id="hold-time">—</dd></div><div><dt>Thinking 完整淡入</dt><dd id="thinking-time">—</dd></div></dl>
+        <p class="boundary">所有时间相对本轮启动。回执表示图片已解码且 420ms 淡入完成；切回请求是 controller 释放 Read 的时刻，之后还有正常淡入。系统“减少动态效果”会按产品规则跳过停留。</p>
+      </section>
+    </div>
+    <section class="timeline"><h2>本轮时间线</h2><div class="table-scroll"><table><thead><tr><th>时间</th><th>事件</th><th>真实状态</th><th>显示动作</th></tr></thead><tbody id="events"><tr><td colspan="4">尚未运行</td></tr></tbody></table></div></section>
+    <footer>本地合成公开状态 · 不请求模型 · 不读取会话或日志 · 不写客户端设置。<br>这项验收覆盖 controller / tracker / renderer 的实际链路；原生客户端的 React 发布、开场与宿主布局仍需单独验证。</footer>
+  </main>
+  <script type="module" src="/web/tool-presentation-review.mjs"></script>
+</body>
+</html>

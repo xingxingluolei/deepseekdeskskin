@@ -1,0 +1,1212 @@
+{
+  "schema_version": 1,
+  "status": "20 of 20 final assets saved; 16 task states plus 4 introductory head-turn keyframes.",
+  "generator": "builtin image_gen.imagegen",
+  "identity": "澄蓝 / SERENE BLUE, adult normal proportions, navy hair, silver whale-tail, blue crystal, blue-white high-collar gown.",
+  "scope": "Asset generation and source manifest only; no product code/catalog/deployment changes by this agent.",
+  "source_identity_paths": [
+    "assets/deepseek-serene-v1.png",
+    "assets/serene-character-sheet-v1.png"
+  ],
+  "state_keys": [
+    "idle",
+    "thinking",
+    "working",
+    "answering",
+    "parallel",
+    "compacting",
+    "retrying",
+    "waiting",
+    "complete",
+    "error",
+    "queued",
+    "connecting",
+    "disconnected",
+    "stopped",
+    "paused",
+    "blocked"
+  ],
+  "intro_keys": [
+    "intro-away",
+    "intro-turning",
+    "intro-front-neutral",
+    "intro-front-smile"
+  ],
+  "validation": "Every final image visually inspected; true transparent RGBA, full main head/limb/shoe outline, source output originals retained and final copies verified byte-equal. Generated pose/fabric/head-direction details may differ; no pixel postprocessing.",
+  "collaborators": {
+    "terminal_states_source": "docs/serene-terminal-actions-v1.json"
+  },
+  "records": [
+    {
+      "key": "idle",
+      "final_file": "assets/actions/serene-idle-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: one full-body transparent task-state character layer for deepseekdeskskin.\nCreate ONE polished full-body cutout of the exact adult woman 澄蓝 / SERENE BLUE from the supplied project identity illustrations. Image 1 anchors her identity and costume; image 2 confirms costume details and boots. Do not reproduce the design-sheet layout or labels. She is clearly about 25 with elegant normal anime proportions about seven heads tall, not chibi.\nPreserve deep navy flowing long hair, cobalt-blue eyes, the SMALL SILVER WHALE-TAIL hairpin with blue crystal drop on image-left of her head, crystal earrings, modest pearl-white high collar dress, tailored navy/cobalt waist with silver whale clasp, silver embroidery, translucent sapphire flowing sleeves and outer skirt panels, and white silver-trim ankle boots. Opaque dress lining, graceful refined adult appearance, no maid apron or bonnet.\nState IDLE: stand completely upright and FRONT-FACING to the viewer, shoulders level, head level with natural neck, both blue eyes symmetrical and looking directly into the camera, small calm closed-mouth smile. Both arms relaxed behind her back with hands held behind the waist; no hand in front of her dress. Both feet naturally close side by side, both boots fully visible, no crossed legs. Body silhouette is vertical and composed.\nSingle 1024 x 1536 portrait PNG, genuinely transparent alpha background, not a painted black background. Entire character including hairpin, both arms, long flowing hair and fabric, fingers if visible, hem and both complete shoes within the canvas, centered with 8–12 percent transparent safety margin at ALL edges. Character occupies about 80–84 percent of canvas height. Clear isolated cutout, no floor, room, scenery, cast-shadow rectangle or background halo. Beautiful detailed anime key visual with fine linework and soft pearlescent blue-white cel shading. No habitual head tilt, no side face, no extra limbs, no text, lettering, UI, watermark or props.",
+      "referenced_image_paths": [
+        "assets/deepseek-serene-v1.png",
+        "assets/serene-character-sheet-v1.png"
+      ],
+      "original_output": "generated://exec-5e30cae5-262b-44a6-8830-46bd98a7b715.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.503,
+        0.104
+      ],
+      "metadata": {
+        "path": "generated://exec-5e30cae5-262b-44a6-8830-46bd98a7b715.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2590422,
+        "sha256": "1d979bd3f2a90274c1d88a9f71e75a31e33c50be8e8bdc98557ae2f0554eaf0e",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 630772,
+          "opaque_pixels": 0,
+          "partial_pixels": 942092,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            14,
+            993,
+            1520
+          ],
+          "bbox_alpha_gt_128": [
+            56,
+            17,
+            989,
+            1518
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "pose": "Upright front-facing standing, hands behind back, boots together; viewer eye contact and slight closed-mouth smile.",
+        "full_body": true,
+        "true_alpha": true,
+        "limitations": "Complete outline is visible; generated safety margins are narrower than requested, especially flowing fabric and boots. No redraw for margin alone."
+      }
+    },
+    {
+      "key": "thinking",
+      "final_file": "assets/actions/serene-thinking-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: ONE full-body transparent task-state layer for the adult woman 澄蓝 / SERENE BLUE. Use the supplied accepted idle image as identity and costume reference, NOT as a fixed body pose.\nMaintain exact character identity: about 25, elegant normal seven-head adult anime proportions, delicate mature face and blue eyes, long deep navy hair, silver whale-tail hairpin and dangling blue crystal on image-left of head, crystal earrings. Keep modest pearl-white high-neck full-length dress with opaque lining, tailored navy/cobalt waist and silver whale clasp/embroidery, translucent sapphire ocean-flow sleeves and skirt overlays, white silver-trim ankle boots. Not a maid, no apron/bonnet, not chibi.\nCreate a NEW unmistakable whole-body action described below; body silhouette, arms and center of gravity must differ from neutral standing. Head natural upright with NO habitual sideways tilt. Head direction and eyes follow the action; no need to force a side face. Anatomically coherent visible hands.\nOutput one 1024 x 1536 portrait true-transparent RGBA PNG, single character and only the state-specific small props. ENTIRE head/hairpin, hair, both arms, hands, dress hem, legs and BOTH complete shoes, and all props must stay inside frame with roughly 8–12 percent genuine transparent safety margin at all edges. Use a somewhat smaller composed cutout, not edge-to-edge. Beautiful refined detailed anime linework, soft pearl-blue light, restrained navy/white/sapphire/silver palette. No room, floor, painted background, opaque rectangle, ground shadow, text, letters, icons, UI, labels, extra characters, watermarks or extra limbs. Do not make a contactsheet.\nSTATE ACTION: THINKING: seated upright on a simple small silver-blue chair in a gentle three-quarter view. One elbow rests naturally on her lap as that hand supports her chin; the other hand holds an open small blank blue book. Eyes thoughtfully study the book, neutral focused mouth. Both knees and both white boots placed naturally below her dress, fully visible. All chair legs visible. Clearly a chin-supporting seated silhouette, not standing.",
+      "referenced_image_paths": [
+        "assets/actions/serene-idle-v1.png"
+      ],
+      "original_output": "generated://exec-e7152df4-b338-4e7e-b673-fedb70a9006e.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.526,
+        0.165
+      ],
+      "metadata": {
+        "path": "generated://exec-e7152df4-b338-4e7e-b673-fedb70a9006e.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2616372,
+        "sha256": "92585613e6698528389db98d981ca30018054c63a58d5104e68f89cb70483fe1",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 647611,
+          "opaque_pixels": 0,
+          "partial_pixels": 925253,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            32,
+            1005,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            57,
+            58,
+            999,
+            1472
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Seated on chair, one hand supports chin, other holds open book; both complete boots visible.",
+        "limitations": "All main outlines complete; transparent safety margins narrower than requested. Fine pose/fabric/hair differences are generated, not pixel-identical."
+      }
+    },
+    {
+      "key": "working",
+      "final_file": "assets/actions/serene-working-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: ONE full-body transparent task-state layer for the adult woman 澄蓝 / SERENE BLUE. Use the supplied accepted idle image as identity and costume reference, NOT as a fixed body pose.\nMaintain exact character identity: about 25, elegant normal seven-head adult anime proportions, delicate mature face and blue eyes, long deep navy hair, silver whale-tail hairpin and dangling blue crystal on image-left of head, crystal earrings. Keep modest pearl-white high-neck full-length dress with opaque lining, tailored navy/cobalt waist and silver whale clasp/embroidery, translucent sapphire ocean-flow sleeves and skirt overlays, white silver-trim ankle boots. Not a maid, no apron/bonnet, not chibi.\nCreate a NEW unmistakable whole-body action described below; body silhouette, arms and center of gravity must differ from neutral standing. Head natural upright with NO habitual sideways tilt. Head direction and eyes follow the action; no need to force a side face. Anatomically coherent visible hands.\nOutput one 1024 x 1536 portrait true-transparent RGBA PNG, single character and only the state-specific small props. ENTIRE head/hairpin, hair, both arms, hands, dress hem, legs and BOTH complete shoes, and all props must stay inside frame with roughly 8–12 percent genuine transparent safety margin at all edges. Use a somewhat smaller composed cutout, not edge-to-edge. Beautiful refined detailed anime linework, soft pearl-blue light, restrained navy/white/sapphire/silver palette. No room, floor, painted background, opaque rectangle, ground shadow, text, letters, icons, UI, labels, extra characters, watermarks or extra limbs. Do not make a contactsheet.\nSTATE ACTION: WORKING: seated on a small silver-blue stool at a compact silver-blue desk, both forearms reaching forward to type on a small blue-silver laptop keyboard. Screen faces her, no screen letters. Torso and neck straight, head level and eyes focused on laptop to image-left. Legs and complete boots visible naturally below the desk and long skirt. Entire desk, stool, laptop and shoes within the frame. No vase, books or unrelated decorations. Clear desk-work seated silhouette.",
+      "referenced_image_paths": [
+        "assets/actions/serene-idle-v1.png"
+      ],
+      "original_output": "generated://exec-0880ff56-f58b-4367-8190-0cd5f9c282bd.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.472,
+        0.166
+      ],
+      "metadata": {
+        "path": "generated://exec-0880ff56-f58b-4367-8190-0cd5f9c282bd.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2587592,
+        "sha256": "59415037cf72e5060030c189cb931339e7063e37d77091eb9dfa29fba2556d72",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 636299,
+          "opaque_pixels": 0,
+          "partial_pixels": 936565,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            43,
+            1023,
+            1513
+          ],
+          "bbox_alpha_gt_128": [
+            13,
+            66,
+            1015,
+            1467
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Seated at complete desk/laptop typing with both arms, gaze toward image-left laptop; both complete boots.",
+        "limitations": "All main outlines complete; transparent safety margins narrower than requested. Fine pose/fabric/hair differences are generated, not pixel-identical."
+      }
+    },
+    {
+      "key": "answering",
+      "final_file": "assets/actions/serene-answering-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: ONE full-body transparent task-state layer for the adult woman 澄蓝 / SERENE BLUE. Use the supplied accepted idle image as identity and costume reference, NOT as a fixed body pose.\nMaintain exact character identity: about 25, elegant normal seven-head adult anime proportions, delicate mature face and blue eyes, long deep navy hair, silver whale-tail hairpin and dangling blue crystal on image-left of head, crystal earrings. Keep modest pearl-white high-neck full-length dress with opaque lining, tailored navy/cobalt waist and silver whale clasp/embroidery, translucent sapphire ocean-flow sleeves and skirt overlays, white silver-trim ankle boots. Not a maid, no apron/bonnet, not chibi.\nCreate a NEW unmistakable whole-body action described below; body silhouette, arms and center of gravity must differ from neutral standing. Head natural upright with NO habitual sideways tilt. Head direction and eyes follow the action; no need to force a side face. Anatomically coherent visible hands.\nOutput one 1024 x 1536 portrait true-transparent RGBA PNG, single character and only the state-specific small props. ENTIRE head/hairpin, hair, both arms, hands, dress hem, legs and BOTH complete shoes, and all props must stay inside frame with roughly 8–12 percent genuine transparent safety margin at all edges. Use a somewhat smaller composed cutout, not edge-to-edge. Beautiful refined detailed anime linework, soft pearl-blue light, restrained navy/white/sapphire/silver palette. No room, floor, painted background, opaque rectangle, ground shadow, text, letters, icons, UI, labels, extra characters, watermarks or extra limbs. Do not make a contactsheet.\nSTATE ACTION: ANSWERING: stand with weight gracefully on one leg, torso partly turned toward image-left reading area, ONE arm extended sideways toward image-left with open explanatory palm, other hand relaxed near waist. Face turns gently toward viewer with both eyes visible, a refined small smile and very slightly parted lips as if explaining. Whole arm extends, no tiny facial-only change.",
+      "referenced_image_paths": [
+        "assets/actions/serene-idle-v1.png"
+      ],
+      "original_output": "generated://exec-7a47d173-59ee-4fb8-b8ce-4a7f5b75a160.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.572,
+        0.106
+      ],
+      "metadata": {
+        "path": "generated://exec-7a47d173-59ee-4fb8-b8ce-4a7f5b75a160.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2645317,
+        "sha256": "06c42d78a4610e93b9386c494020a2b4ce3c8e511ac735533ed4d978a5063da6",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 576668,
+          "opaque_pixels": 0,
+          "partial_pixels": 996196,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            13,
+            993,
+            1521
+          ],
+          "bbox_alpha_gt_128": [
+            19,
+            16,
+            991,
+            1517
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Standing with one entire arm open toward image-left, slightly parted smiling lips and viewer-facing face.",
+        "limitations": "All main outlines complete; transparent safety margins narrower than requested. Fine pose/fabric/hair differences are generated, not pixel-identical."
+      }
+    },
+    {
+      "key": "parallel",
+      "final_file": "assets/actions/serene-parallel-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: ONE full-body transparent task-state layer for the adult woman 澄蓝 / SERENE BLUE. Use the supplied accepted idle image as identity and costume reference, NOT as a fixed body pose.\nMaintain exact character identity: about 25, elegant normal seven-head adult anime proportions, delicate mature face and blue eyes, long deep navy hair, silver whale-tail hairpin and dangling blue crystal on image-left of head, crystal earrings. Keep modest pearl-white high-neck full-length dress with opaque lining, tailored navy/cobalt waist and silver whale clasp/embroidery, translucent sapphire ocean-flow sleeves and skirt overlays, white silver-trim ankle boots. Not a maid, no apron/bonnet, not chibi.\nCreate a NEW unmistakable whole-body action described below; body silhouette, arms and center of gravity must differ from neutral standing. Head natural upright with NO habitual sideways tilt. Head direction and eyes follow the action; no need to force a side face. Anatomically coherent visible hands.\nOutput one 1024 x 1536 portrait true-transparent RGBA PNG, single character and only the state-specific small props. ENTIRE head/hairpin, hair, both arms, hands, dress hem, legs and BOTH complete shoes, and all props must stay inside frame with roughly 8–12 percent genuine transparent safety margin at all edges. Use a somewhat smaller composed cutout, not edge-to-edge. Beautiful refined detailed anime linework, soft pearl-blue light, restrained navy/white/sapphire/silver palette. No room, floor, painted background, opaque rectangle, ground shadow, text, letters, icons, UI, labels, extra characters, watermarks or extra limbs. Do not make a contactsheet.\nSTATE ACTION: PARALLEL: firmly stand with feet a little apart, BOTH arms opened wide in different directions at about waist/chest height, each hand organizing its own small blank blue folio/notecard stack, two clearly separate task groups. Face near frontal, focused neutral expression, both eyes visible. Wide bilateral working silhouette; only two small folios, no floating UI or many particles.",
+      "referenced_image_paths": [
+        "assets/actions/serene-idle-v1.png"
+      ],
+      "original_output": "generated://exec-7f89d299-c65d-4613-9868-4ee4f8e16537.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.503,
+        0.106
+      ],
+      "metadata": {
+        "path": "generated://exec-7f89d299-c65d-4613-9868-4ee4f8e16537.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2662063,
+        "sha256": "a431f6f6306e951655252c821456c611bdf020b5e97b673c5b40b0e4d09406b5",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 565292,
+          "opaque_pixels": 0,
+          "partial_pixels": 1007572,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            25,
+            18,
+            1007,
+            1511
+          ],
+          "bbox_alpha_gt_128": [
+            32,
+            22,
+            1000,
+            1508
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Standing feet apart, both arms widened with two separate folios.",
+        "limitations": "Generated cutouts preserve complete main outline, with narrow safety margins in some flowing fabric areas. Not pixel-identical artwork."
+      }
+    },
+    {
+      "key": "compacting",
+      "final_file": "assets/actions/serene-compacting-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: ONE full-body transparent task-state layer for the adult woman 澄蓝 / SERENE BLUE. Use the supplied accepted idle image as identity and costume reference, NOT as a fixed body pose.\nMaintain exact character identity: about 25, elegant normal seven-head adult anime proportions, delicate mature face and blue eyes, long deep navy hair, silver whale-tail hairpin and dangling blue crystal on image-left of head, crystal earrings. Keep modest pearl-white high-neck full-length dress with opaque lining, tailored navy/cobalt waist and silver whale clasp/embroidery, translucent sapphire ocean-flow sleeves and skirt overlays, white silver-trim ankle boots. Not a maid, no apron/bonnet, not chibi.\nCreate a NEW unmistakable whole-body action described below; body silhouette, arms and center of gravity must differ from neutral standing. Head natural upright with NO habitual sideways tilt. Head direction and eyes follow the action; no need to force a side face. Anatomically coherent visible hands.\nOutput one 1024 x 1536 portrait true-transparent RGBA PNG, single character and only the state-specific small props. ENTIRE head/hairpin, hair, both arms, hands, dress hem, legs and BOTH complete shoes, and all props must stay inside frame with roughly 8–12 percent genuine transparent safety margin at all edges. Use a somewhat smaller composed cutout, not edge-to-edge. Beautiful refined detailed anime linework, soft pearl-blue light, restrained navy/white/sapphire/silver palette. No room, floor, painted background, opaque rectangle, ground shadow, text, letters, icons, UI, labels, extra characters, watermarks or extra limbs. Do not make a contactsheet.\nSTATE ACTION: COMPACTING: lower into an elegant ONE-KNEE half-kneel, asymmetrical low silhouette. With both hands gather a few blank blue sheets into one small open blue folder resting across the raised knee. Eyes lowered attentively toward folder, straight neck, focused neutral face. Long dress folds modestly over knees with opaque lining. Both boots still complete and visible, no missing legs. No table or chair.",
+      "referenced_image_paths": [
+        "assets/actions/serene-idle-v1.png"
+      ],
+      "original_output": "generated://exec-c08b31fb-fee5-43ab-adb2-87a197605089.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.553,
+        0.224
+      ],
+      "metadata": {
+        "path": "generated://exec-c08b31fb-fee5-43ab-adb2-87a197605089.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2400657,
+        "sha256": "a003dea424a9e677c930f5383558d2251203c64574d27a44a63db1e273387349",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 716466,
+          "opaque_pixels": 0,
+          "partial_pixels": 856398,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            17,
+            61,
+            1009,
+            1432
+          ],
+          "bbox_alpha_gt_128": [
+            24,
+            137,
+            1005,
+            1415
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "One-knee half-kneel gathering sheets into folder, low asymmetric silhouette.",
+        "limitations": "Generated cutouts preserve complete main outline, with narrow safety margins in some flowing fabric areas. Not pixel-identical artwork."
+      }
+    },
+    {
+      "key": "retrying",
+      "final_file": "assets/actions/serene-retrying-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: ONE full-body transparent task-state layer for the adult woman 澄蓝 / SERENE BLUE. Use the supplied accepted idle image as identity and costume reference, NOT as a fixed body pose.\nMaintain exact character identity: about 25, elegant normal seven-head adult anime proportions, delicate mature face and blue eyes, long deep navy hair, silver whale-tail hairpin and dangling blue crystal on image-left of head, crystal earrings. Keep modest pearl-white high-neck full-length dress with opaque lining, tailored navy/cobalt waist and silver whale clasp/embroidery, translucent sapphire ocean-flow sleeves and skirt overlays, white silver-trim ankle boots. Not a maid, no apron/bonnet, not chibi.\nCreate a NEW unmistakable whole-body action described below; body silhouette, arms and center of gravity must differ from neutral standing. Head natural upright with NO habitual sideways tilt. Head direction and eyes follow the action; no need to force a side face. Anatomically coherent visible hands.\nOutput one 1024 x 1536 portrait true-transparent RGBA PNG, single character and only the state-specific small props. ENTIRE head/hairpin, hair, both arms, hands, dress hem, legs and BOTH complete shoes, and all props must stay inside frame with roughly 8–12 percent genuine transparent safety margin at all edges. Use a somewhat smaller composed cutout, not edge-to-edge. Beautiful refined detailed anime linework, soft pearl-blue light, restrained navy/white/sapphire/silver palette. No room, floor, painted background, opaque rectangle, ground shadow, text, letters, icons, UI, labels, extra characters, watermarks or extra limbs. Do not make a contactsheet.\nSTATE ACTION: RETRYING: actively rise/step forward from work, one white boot clearly takes a controlled stride toward image-left while rear heel lifts lightly, torso inclined forward just a little with upright neck. One arm reaches forward ready to resume action, the other holds a small closed blue booklet beside waist. Eyes focused toward the next task, brows slightly concentrated and mouth closed with calm determination, not scared or smiling. Strong forward-moving full-body silhouette, no running or comic pose.",
+      "referenced_image_paths": [
+        "assets/actions/serene-idle-v1.png"
+      ],
+      "original_output": "generated://exec-1cb3a64f-73ca-4fe5-954a-e258b4c89644.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.477,
+        0.115
+      ],
+      "metadata": {
+        "path": "generated://exec-1cb3a64f-73ca-4fe5-954a-e258b4c89644.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2589908,
+        "sha256": "eec2077d9d9010c1665c67bacd6b01805bf27fe278704882907213347e21096d",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 675612,
+          "opaque_pixels": 0,
+          "partial_pixels": 897252,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            17,
+            996,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            67,
+            24,
+            993,
+            1508
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Forward step with lead boot and forward-reaching arm, closed booklet in other hand, serious focused face.",
+        "limitations": "Generated cutouts preserve complete main outline, with narrow safety margins in some flowing fabric areas. Not pixel-identical artwork."
+      }
+    },
+    {
+      "key": "waiting",
+      "final_file": "assets/actions/serene-waiting-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: ONE full-body transparent task-state layer for the adult woman 澄蓝 / SERENE BLUE. Use the supplied accepted idle image as identity and costume reference, NOT as a fixed body pose.\nMaintain exact character identity: about 25, elegant normal seven-head adult anime proportions, delicate mature face and blue eyes, long deep navy hair, silver whale-tail hairpin and dangling blue crystal on image-left of head, crystal earrings. Keep modest pearl-white high-neck full-length dress with opaque lining, tailored navy/cobalt waist and silver whale clasp/embroidery, translucent sapphire ocean-flow sleeves and skirt overlays, white silver-trim ankle boots. Not a maid, no apron/bonnet, not chibi.\nCreate a NEW unmistakable whole-body action described below; body silhouette, arms and center of gravity must differ from neutral standing. Head natural upright with NO habitual sideways tilt. Head direction and eyes follow the action; no need to force a side face. Anatomically coherent visible hands.\nOutput one 1024 x 1536 portrait true-transparent RGBA PNG, single character and only the state-specific small props. ENTIRE head/hairpin, hair, both arms, hands, dress hem, legs and BOTH complete shoes, and all props must stay inside frame with roughly 8–12 percent genuine transparent safety margin at all edges. Use a somewhat smaller composed cutout, not edge-to-edge. Beautiful refined detailed anime linework, soft pearl-blue light, restrained navy/white/sapphire/silver palette. No room, floor, painted background, opaque rectangle, ground shadow, text, letters, icons, UI, labels, extra characters, watermarks or extra limbs. Do not make a contactsheet.\nSTATE ACTION: WAITING: fully upright FRONT-FACING standing, head level, both eyes looking directly at viewer. BOTH arms extend forward together to offer a small thin plain blue confirmation board held in both hands at mid-chest/waist level, clearly presented toward the audience. Patient expectant neutral-small smile. Feet naturally close, complete boots visible. No words, buttons or symbols on board.",
+      "referenced_image_paths": [
+        "assets/actions/serene-idle-v1.png"
+      ],
+      "original_output": "generated://exec-b260ff84-b8c0-466b-ad61-8e726de40153.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.501,
+        0.103
+      ],
+      "metadata": {
+        "path": "generated://exec-b260ff84-b8c0-466b-ad61-8e726de40153.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2520724,
+        "sha256": "7f8d8db52cb78996e59bd41c32889abda61603e5f50f79eae36e6c4adf37b1d5",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 640966,
+          "opaque_pixels": 0,
+          "partial_pixels": 931898,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            61,
+            14,
+            989,
+            1521
+          ],
+          "bbox_alpha_gt_128": [
+            64,
+            17,
+            982,
+            1517
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Front-facing patient stance, both hands offer plain confirmation board toward viewer.",
+        "limitations": "Full main outlines retained; some cloth/hair near canvas edges, safety margins smaller than prompted. Original generated PNG unmodified."
+      }
+    },
+    {
+      "key": "complete",
+      "final_file": "assets/actions/serene-complete-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: ONE full-body transparent task-state layer for the adult woman 澄蓝 / SERENE BLUE. Use the supplied accepted idle image as identity and costume reference, NOT as a fixed body pose.\nMaintain exact character identity: about 25, elegant normal seven-head adult anime proportions, delicate mature face and blue eyes, long deep navy hair, silver whale-tail hairpin and dangling blue crystal on image-left of head, crystal earrings. Keep modest pearl-white high-neck full-length dress with opaque lining, tailored navy/cobalt waist and silver whale clasp/embroidery, translucent sapphire ocean-flow sleeves and skirt overlays, white silver-trim ankle boots. Not a maid, no apron/bonnet, not chibi.\nCreate a NEW unmistakable whole-body action described below; body silhouette, arms and center of gravity must differ from neutral standing. Head natural upright with NO habitual sideways tilt. Head direction and eyes follow the action; no need to force a side face. Anatomically coherent visible hands.\nOutput one 1024 x 1536 portrait true-transparent RGBA PNG, single character and only the state-specific small props. ENTIRE head/hairpin, hair, both arms, hands, dress hem, legs and BOTH complete shoes, and all props must stay inside frame with roughly 8–12 percent genuine transparent safety margin at all edges. Use a somewhat smaller composed cutout, not edge-to-edge. Beautiful refined detailed anime linework, soft pearl-blue light, restrained navy/white/sapphire/silver palette. No room, floor, painted background, opaque rectangle, ground shadow, text, letters, icons, UI, labels, extra characters, watermarks or extra limbs. Do not make a contactsheet.\nSTATE ACTION: COMPLETE: front-facing standing with one arm lifted HIGH in a graceful small wave, other arm lowered relaxed, one foot lightly points/taps the ground while weight rests on the other leg. Head level, eyes OPEN looking directly into viewer, a gentle relaxed pleased smile. Clearly high-hand wave silhouette, refined and restrained, no confetti, applause, large grin or comedy.",
+      "referenced_image_paths": [
+        "assets/actions/serene-idle-v1.png"
+      ],
+      "original_output": "generated://exec-0b7b9717-01e3-40b2-9f4d-86ee166687fa.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.515,
+        0.11
+      ],
+      "metadata": {
+        "path": "generated://exec-0b7b9717-01e3-40b2-9f4d-86ee166687fa.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2597753,
+        "sha256": "70fb9eb2e3e434c11a31952804fd6f238c4204756e0f64fbcbf3777e89644164",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 616932,
+          "opaque_pixels": 0,
+          "partial_pixels": 955932,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            25,
+            994,
+            1484
+          ],
+          "bbox_alpha_gt_128": [
+            53,
+            29,
+            991,
+            1475
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Front viewer eye contact, high-hand small wave, lower other arm and one toe lightly pointed; gentle smile.",
+        "limitations": "Full main outlines retained; some cloth/hair near canvas edges, safety margins smaller than prompted. Original generated PNG unmodified."
+      }
+    },
+    {
+      "key": "error",
+      "final_file": "assets/actions/serene-error-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: ONE full-body transparent task-state layer for the adult woman 澄蓝 / SERENE BLUE. Use the supplied accepted idle image as identity and costume reference, NOT as a fixed body pose.\nMaintain exact character identity: about 25, elegant normal seven-head adult anime proportions, delicate mature face and blue eyes, long deep navy hair, silver whale-tail hairpin and dangling blue crystal on image-left of head, crystal earrings. Keep modest pearl-white high-neck full-length dress with opaque lining, tailored navy/cobalt waist and silver whale clasp/embroidery, translucent sapphire ocean-flow sleeves and skirt overlays, white silver-trim ankle boots. Not a maid, no apron/bonnet, not chibi.\nCreate a NEW unmistakable whole-body action described below; body silhouette, arms and center of gravity must differ from neutral standing. Head natural upright with NO habitual sideways tilt. Head direction and eyes follow the action; no need to force a side face. Anatomically coherent visible hands.\nOutput one 1024 x 1536 portrait true-transparent RGBA PNG, single character and only the state-specific small props. ENTIRE head/hairpin, hair, both arms, hands, dress hem, legs and BOTH complete shoes, and all props must stay inside frame with roughly 8–12 percent genuine transparent safety margin at all edges. Use a somewhat smaller composed cutout, not edge-to-edge. Beautiful refined detailed anime linework, soft pearl-blue light, restrained navy/white/sapphire/silver palette. No room, floor, painted background, opaque rectangle, ground shadow, text, letters, icons, UI, labels, extra characters, watermarks or extra limbs. Do not make a contactsheet.\nSTATE ACTION: ERROR: crouch LOW with knees bent, balancing naturally in long modest dress while carefully inspecting a small OPEN blank blue notebook at knee height. One hand supports the notebook, the other fingers lightly touch her forehead as she checks a problem. Brows visibly furrowed, lips slightly downturned, concerned eyes lowered toward notebook, no smile, no crying or panic. Low crouching silhouette, both complete boots visible, all limbs coherent.",
+      "referenced_image_paths": [
+        "assets/actions/serene-idle-v1.png"
+      ],
+      "original_output": "generated://exec-feccba89-88bd-46e9-aefc-1d10382e3ee0.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.57,
+        0.218
+      ],
+      "metadata": {
+        "path": "generated://exec-feccba89-88bd-46e9-aefc-1d10382e3ee0.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2628422,
+        "sha256": "7043364298c2c3f719ffe30ded12735857e46df4032b3183b45a97cf60f375d9",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 603527,
+          "opaque_pixels": 0,
+          "partial_pixels": 969337,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            33,
+            1023,
+            1474
+          ],
+          "bbox_alpha_gt_128": [
+            15,
+            78,
+            1010,
+            1472
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Low crouching checking open book, one hand near forehead, visibly furrowed brows and downturned mouth; both boots.",
+        "limitations": "Full main outlines retained; some cloth/hair near canvas edges, safety margins smaller than prompted. Original generated PNG unmodified."
+      }
+    },
+    {
+      "key": "queued",
+      "final_file": "assets/actions/serene-queued-v1.png",
+      "prompt": "Use case: identity-preserve. Asset type: ONE full-body transparent task-state layer for the adult woman 澄蓝 / SERENE BLUE. Use the supplied accepted idle image as identity and costume reference, NOT as a fixed body pose.\nMaintain exact character identity: about 25, elegant normal seven-head adult anime proportions, delicate mature face and blue eyes, long deep navy hair, silver whale-tail hairpin and dangling blue crystal on image-left of head, crystal earrings. Keep modest pearl-white high-neck full-length dress with opaque lining, tailored navy/cobalt waist and silver whale clasp/embroidery, translucent sapphire ocean-flow sleeves and skirt overlays, white silver-trim ankle boots. Not a maid, no apron/bonnet, not chibi.\nCreate a NEW unmistakable whole-body action described below; body silhouette, arms and center of gravity must differ from neutral standing. Head natural upright with NO habitual sideways tilt. Head direction and eyes follow the action; no need to force a side face. Anatomically coherent visible hands.\nOutput one 1024 x 1536 portrait true-transparent RGBA PNG, single character and only the state-specific small props. ENTIRE head/hairpin, hair, both arms, hands, dress hem, legs and BOTH complete shoes, and all props must stay inside frame with roughly 8–12 percent genuine transparent safety margin at all edges. Use a somewhat smaller composed cutout, not edge-to-edge. Beautiful refined detailed anime linework, soft pearl-blue light, restrained navy/white/sapphire/silver palette. No room, floor, painted background, opaque rectangle, ground shadow, text, letters, icons, UI, labels, extra characters, watermarks or extra limbs. Do not make a contactsheet.\nSTATE ACTION: QUEUED: mostly sideways three-quarter STANDING body, BOTH forearms wrap around and HUG a compact stack of two closed blank blue document folders held against chest, calm patient gaze slightly off to image-left. Upright level head, neutral closed mouth, feet together. Tight side-hugging silhouette clearly different from forward-offering waiting state.",
+      "referenced_image_paths": [
+        "assets/actions/serene-idle-v1.png"
+      ],
+      "original_output": "generated://exec-7fa336ef-cbed-41d1-ac53-308c4704489a.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.548,
+        0.109
+      ],
+      "metadata": {
+        "path": "generated://exec-7fa336ef-cbed-41d1-ac53-308c4704489a.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2566805,
+        "sha256": "2ec7d6c1f10eee8376aee82a2015e8a1a3cb053e7d0d3382eaf6d9c49d7673e1",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 631702,
+          "opaque_pixels": 0,
+          "partial_pixels": 941162,
+          "corners": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            20,
+            993,
+            1535
+          ],
+          "bbox_alpha_gt_128": [
+            49,
+            24,
+            988,
+            1521
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Side-hug stance holding two closed folios against chest, calm neutral face; both boots.",
+        "limitations": "Full main outlines retained; some cloth/hair near canvas edges, safety margins smaller than prompted. Original generated PNG unmodified."
+      }
+    },
+    {
+      "key": "connecting",
+      "final_file": "assets/actions/serene-connecting-v1.png",
+      "prompt": "Use case: precise-object-edit. Correct the single cropped prop in this supplied transparent 澄蓝 full-body artwork. The long blue cable leaves the image at the top-left; it must instead be a SHORT finite cable entirely INSIDE the canvas.\nPreserve the exact adult woman's diagonal-up reaching pose, hand/finger touching the blue-silver connector, other lowered balancing arm, upright neck looking toward raised hand, full blue-white high-collar long dress, silver whale-tail hairpin, navy hair, silver ornaments, both legs and complete white boots. Do not change character identity, expression, body pose, scale, position, wardrobe, or full-body silhouette.\nChange ONLY the cable extending toward image-left from her raised fingertip: replace its long off-canvas length by a short elegant blue cord making a small loose inward curved loop ending in one tiny blue-silver plug, wholly within the portrait. Keep BOTH cable ends, all of the cable, raised fingers and hand INSIDE frame, with transparent room around them. No dangling cord cut by any canvas edge. This is a physical small connection cable, not a glowing icon or extra scene.\nKeep exact 1024 x 1536 portrait with genuinely transparent alpha, original complete hair/boots and fine cutout edges. One character only, no text, UI, watermark, background, floor or new actions. Do not crop or enlarge. Do not change the body's pose to solve this: only shorten and coil the already-present cable into the available transparent area.",
+      "referenced_image_paths": [
+        "generated://exec-3f5fedc7-2e0a-4b59-b5cf-7f8cd8e4e471.png"
+      ],
+      "original_output": "generated://exec-e6622cd4-ac05-4a97-a354-2f260607f0e6.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.507,
+        0.17
+      ],
+      "metadata": {
+        "path": "generated://exec-e6622cd4-ac05-4a97-a354-2f260607f0e6.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2448615,
+        "sha256": "6991ef991c9502bab687a7c310ab0c8ba5da905d70ad52dd294d9d3d5325fd75",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 620775,
+          "opaque_pixels": 0,
+          "partial_pixels": 952089,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            37,
+            1009,
+            1515
+          ],
+          "bbox_alpha_gt_128": [
+            39,
+            42,
+            1005,
+            1495
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Diagonal-up extended arm touches small complete finite cable, other arm lowered for balance; head looks toward raised hand, both boots complete.",
+        "limitations": "Cloth safety margins narrower than requested; full main outline retained. One targeted cable-crop correction used."
+      },
+      "previous_attempt": {
+        "prompt": "Use case: identity-preserve. Asset type: ONE full-body transparent task-state layer for the adult woman 澄蓝 / SERENE BLUE. Use the supplied accepted idle image as identity and costume reference, NOT as a fixed body pose.\nMaintain exact character identity: about 25, elegant normal seven-head adult anime proportions, delicate mature face and blue eyes, long deep navy hair, silver whale-tail hairpin and dangling blue crystal on image-left of head, crystal earrings. Keep modest pearl-white high-neck full-length dress with opaque lining, tailored navy/cobalt waist and silver whale clasp/embroidery, translucent sapphire ocean-flow sleeves and skirt overlays, white silver-trim ankle boots. Not a maid, no apron/bonnet, not chibi.\nCreate a NEW unmistakable whole-body action described below; body silhouette, arms and center of gravity must differ from neutral standing. Head natural upright with NO habitual sideways tilt. Head direction and eyes follow the action; no need to force a side face. Anatomically coherent visible hands.\nOutput one 1024 x 1536 portrait true-transparent RGBA PNG, single character and only the state-specific small props. ENTIRE head/hairpin, hair, both arms, hands, dress hem, legs and BOTH complete shoes, and all props must stay inside frame with roughly 8–12 percent genuine transparent safety margin at all edges. Use a somewhat smaller composed cutout, not edge-to-edge. Beautiful refined detailed anime linework, soft pearl-blue light, restrained navy/white/sapphire/silver palette. No room, floor, painted background, opaque rectangle, ground shadow, text, letters, icons, UI, labels, extra characters, watermarks or extra limbs. Do not make a contactsheet.\nSTATE ACTION: CONNECTING: stand balanced with one ARM extended diagonally UP toward image-left, hand delicately reaching to a tiny blue-silver physical connection cable tip at fingertip height. Other arm lower and a little out to balance. Head level, eyes attentively follow the raised hand, focused neutral face. Full diagonal-reaching body action with both boots visible. No floating icon, text or glowing symbol.",
+        "referenced_image_paths": [
+          "assets/actions/serene-idle-v1.png"
+        ],
+        "original_output": "generated://exec-3f5fedc7-2e0a-4b59-b5cf-7f8cd8e4e471.png",
+        "metadata": {
+          "path": "generated://exec-3f5fedc7-2e0a-4b59-b5cf-7f8cd8e4e471.png",
+          "width": 1024,
+          "height": 1536,
+          "format": "PNG RGBA 8-bit",
+          "bytes": 2539589,
+          "sha256": "f8e94ad0f7c6a693e5ccf35246523a623bd7f5ed66a2055da551dccfaefacbda",
+          "alpha": {
+            "min": 0,
+            "max": 254,
+            "zero_pixels": 630103,
+            "opaque_pixels": 0,
+            "partial_pixels": 942761,
+            "corners": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "bbox_alpha_gt_0": [
+              0,
+              34,
+              1011,
+              1513
+            ],
+            "bbox_alpha_gt_128": [
+              0,
+              43,
+              1006,
+              1494
+            ]
+          }
+        },
+        "rejected_reason": "Blue cable continued beyond left canvas edge. Corrected once by builtin to finite short curved cord, no pixel editing."
+      }
+    },
+    {
+      "key": "disconnected",
+      "final_file": "assets/actions/serene-disconnected-v1.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: one independent full-body transparent PNG task-state character layer for deepseekdeskskin.\nInput image: the supplied serene-idle-v1.png is the sole identity, adult body proportion, costume and detailed illustration-style reference. Create a NEW body action, not a crop or sheet and not a reuse of this standing pose.\nPreserve the same clearly adult elegant woman 澄蓝 / SERENE BLUE, about 25, normal refined anime proportions approximately seven heads tall, deep navy flowing long hair, cobalt-blue eyes, SMALL SILVER WHALE-TAIL hairpin on image-left with blue crystal drop, long crystal earrings, pearl-white high-neck long formal dress, tailored navy/cobalt waist with silver whale clasp, silver embroidery, flowing translucent sapphire sleeves and outer skirt panels, modest opaque dress lining, white silver-trim ankle boots. She wears a blue-white FORMAL DRESS, NOT a maid outfit; no apron or bonnet. Keep level shoulders and naturally upright head/neck, no sideways habitual head tilt. Match the reference's fine polished anime key-visual linework and soft pearlescent blue-white shading.\nState DISCONNECTED / connection interrupted: show her STANDING in a clearly slightly backward-retracted posture, shoulders gently pulled back and weight on the rear foot, both knees soft, both feet on the same implied ground baseline. Both hands LOW at waist level carefully hold and inspect a compact silver-blue connector device with one unplugged blue crystal connector in the other hand and a short slack cable between. Gaze naturally looks down at this device, head only slightly lowered with no sideways tilt; small concerned knitted eyebrows and closed neutral lips. Calm concern, not crying, not celebrating. Both elbows drawn close to torso, a narrow withdrawn body silhouette distinctly different from forward reaching/blocked. Device and cable fully visible, without labels or screens containing text. Hair and dress follow the body naturally, do not obscure hands or feet.\nOutput one single 1024 x 1536 portrait PNG with GENUINE TRANSPARENT ALPHA. All space around character and props is fully transparent: NO dark or blue background, NO gradient, NO glow halo, NO painted floor, no room, no ground shadow rectangle. Complete full-body character, ALL head/hairpin, hair, both arms and hands, dress/hem, legs and BOTH complete boots, and all props fully visible inside the canvas, centered with about 7–10 percent transparent safety margin at ALL edges. Keep scene uncluttered, clear distinct silhouette at thumbnail scale. Exactly two arms, two legs, anatomically coherent hands, no extra fingers/limbs, no duplicate body, no text, no lettering, no symbols/emoji floating around her, no UI, watermark, borders or cropped shoes.",
+      "referenced_image_paths": [
+        "assets/actions/serene-idle-v1.png"
+      ],
+      "original_output": "generated://exec-50abbf14-7dcc-4c79-b66e-2a833298aebc.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.524,
+        0.113
+      ],
+      "metadata": {
+        "path": "generated://exec-50abbf14-7dcc-4c79-b66e-2a833298aebc.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2586549,
+        "sha256": "c7c76141b527cbdec988e217ea5625dc1fcfb1c022f6dbd08423068ed008b3f9",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 633808,
+          "opaque_pixels": 0,
+          "partial_pixels": 939056,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            49,
+            13,
+            1008,
+            1520
+          ],
+          "bbox_alpha_gt_128": [
+            55,
+            16,
+            1003,
+            1515
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Standing with elbows drawn inward, inspecting an unplugged silver-blue connector and slack cable; worried knitted brows and lowered task gaze.",
+        "limitations": "Generated hands are at mid-torso rather than low waist; backward withdrawal is subtle. All body, connector and both boots visible. Transparent margins are narrower than requested.",
+        "independent_merge_viewed": true
+      },
+      "merged_source_manifest": "docs/serene-terminal-actions-v1.json"
+    },
+    {
+      "key": "stopped",
+      "final_file": "assets/actions/serene-stopped-v1.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: one independent full-body transparent PNG task-state character layer for deepseekdeskskin.\nInput image: the supplied serene-idle-v1.png is the sole identity, adult body proportion, costume and detailed illustration-style reference. Create a NEW body action, not a crop or sheet and not a reuse of this standing pose.\nPreserve the same clearly adult elegant woman 澄蓝 / SERENE BLUE, about 25, normal refined anime proportions approximately seven heads tall, deep navy flowing long hair, cobalt-blue eyes, SMALL SILVER WHALE-TAIL hairpin on image-left with blue crystal drop, long crystal earrings, pearl-white high-neck long formal dress, tailored navy/cobalt waist with silver whale clasp, silver embroidery, flowing translucent sapphire sleeves and outer skirt panels, modest opaque dress lining, white silver-trim ankle boots. She wears a blue-white FORMAL DRESS, NOT a maid outfit; no apron or bonnet. Keep level shoulders and naturally upright head/neck, no sideways habitual head tilt. Match the reference's fine polished anime key-visual linework and soft pearlescent blue-white shading.\nState STOPPED / task intentionally stopped: stand completely FRONT-FACING to the viewer, upright and stable, shoulders level, head level, direct eye contact, calm serious neutral mouth and relaxed brows. BOTH arms hang naturally down with both hands holding a CLOSED slim silver-blue folder at LOW thigh level in front of her body. Folder is closed and modest sized, no symbols or writing. Both complete boots comfortably close and planted, no crossed legs. A composed vertical silhouette with activity fully gathered in, no waving, no gesture, no smile of achievement. Fingers visible and anatomically natural around the closed folder.\nOutput one single 1024 x 1536 portrait PNG with GENUINE TRANSPARENT ALPHA. All space around character and props is fully transparent: NO dark or blue background, NO gradient, NO glow halo, NO painted floor, no room, no ground shadow rectangle. Complete full-body character, ALL head/hairpin, hair, both arms and hands, dress/hem, legs and BOTH complete boots, and all props fully visible inside the canvas, centered with about 7–10 percent transparent safety margin at ALL edges. Keep scene uncluttered, clear distinct silhouette at thumbnail scale. Exactly two arms, two legs, anatomically coherent hands, no extra fingers/limbs, no duplicate body, no text, no lettering, no symbols/emoji floating around her, no UI, watermark, borders or cropped shoes.",
+      "referenced_image_paths": [
+        "assets/actions/serene-idle-v1.png"
+      ],
+      "original_output": "generated://exec-d2070c87-41e5-4a15-838d-f3c30856234f.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.505,
+        0.104
+      ],
+      "metadata": {
+        "path": "generated://exec-d2070c87-41e5-4a15-838d-f3c30856234f.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2533055,
+        "sha256": "7f6de4b8a5e27ebe08337a98794a0ea046453c348afbce89664167b91f64368d",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 638208,
+          "opaque_pixels": 0,
+          "partial_pixels": 934656,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            0,
+            14,
+            990,
+            1504
+          ],
+          "bbox_alpha_gt_128": [
+            63,
+            16,
+            981,
+            1496
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Upright front-facing stable standing, both arms low with a closed folder; direct viewer gaze, neutral serious mouth.",
+        "limitations": "Fine skirt and flowing hair extend close to the side edges, but the complete silhouette and both boots remain visible.",
+        "independent_merge_viewed": true
+      },
+      "merged_source_manifest": "docs/serene-terminal-actions-v1.json"
+    },
+    {
+      "key": "paused",
+      "final_file": "assets/actions/serene-paused-v1.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: one independent full-body transparent PNG task-state character layer for deepseekdeskskin.\nInput image: the supplied serene-idle-v1.png is the sole identity, adult body proportion, costume and detailed illustration-style reference. Create a NEW body action, not a crop or sheet and not a reuse of this standing pose.\nPreserve the same clearly adult elegant woman 澄蓝 / SERENE BLUE, about 25, normal refined anime proportions approximately seven heads tall, deep navy flowing long hair, cobalt-blue eyes, SMALL SILVER WHALE-TAIL hairpin on image-left with blue crystal drop, long crystal earrings, pearl-white high-neck long formal dress, tailored navy/cobalt waist with silver whale clasp, silver embroidery, flowing translucent sapphire sleeves and outer skirt panels, modest opaque dress lining, white silver-trim ankle boots. She wears a blue-white FORMAL DRESS, NOT a maid outfit; no apron or bonnet. Keep level shoulders and naturally upright head/neck, no sideways habitual head tilt. Match the reference's fine polished anime key-visual linework and soft pearlescent blue-white shading.\nState PAUSED / consciously resting while waiting to resume: show her whole body SEATED in a refined compact silver-blue chair with visible back, armrests and complete chair legs. She leans back gently into the chair, awake with open eyes and peaceful neutral lips, head upright with no sideways tilt. One hand rests naturally on each armrest or comfortably on the lap, both arms relaxed and LOW; NO book, NO keyboard, NO work desk, no sleeping. Both complete boots visible below the layered long dress, ankles relaxed naturally forward and side by side, coherent seated adult anatomy. The laid-back seated silhouette and low hands must clearly differ from working and chin-in-hand thinking. Full chair plus full hair, dress and feet within frame. Minimal chair design, no environment or floor.\nOutput one single 1024 x 1536 portrait PNG with GENUINE TRANSPARENT ALPHA. All space around character and props is fully transparent: NO dark or blue background, NO gradient, NO glow halo, NO painted floor, no room, no ground shadow rectangle. Complete full-body character, ALL head/hairpin, hair, both arms and hands, dress/hem, legs and BOTH complete boots, and all props fully visible inside the canvas, centered with about 7–10 percent transparent safety margin at ALL edges. Keep scene uncluttered, clear distinct silhouette at thumbnail scale. Exactly two arms, two legs, anatomically coherent hands, no extra fingers/limbs, no duplicate body, no text, no lettering, no symbols/emoji floating around her, no UI, watermark, borders or cropped shoes.",
+      "referenced_image_paths": [
+        "assets/actions/serene-idle-v1.png"
+      ],
+      "original_output": "generated://exec-f136dc45-be93-4ad2-917a-79c3e99fdf2c.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.478,
+        0.135
+      ],
+      "metadata": {
+        "path": "generated://exec-f136dc45-be93-4ad2-917a-79c3e99fdf2c.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2632990,
+        "sha256": "f728fe1d75d8ba3deba7252a86f4d8fc93822ea5126621cbaf6ef5f530777069",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 580332,
+          "opaque_pixels": 0,
+          "partial_pixels": 992532,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            19,
+            49,
+            1011,
+            1512
+          ],
+          "bbox_alpha_gt_128": [
+            26,
+            54,
+            1006,
+            1480
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Awake relaxed sitting against a complete silver-blue chair, both hands low on armrests, both boots visible; no work props or sleeping.",
+        "limitations": "Chair and flowing skirt occupy a wide footprint; seat and feet require contain rendering.",
+        "independent_merge_viewed": true
+      },
+      "merged_source_manifest": "docs/serene-terminal-actions-v1.json"
+    },
+    {
+      "key": "blocked",
+      "final_file": "assets/actions/serene-blocked-v1.png",
+      "prompt": "Use case: identity-preserve.\nAsset type: one independent full-body transparent PNG task-state character layer for deepseekdeskskin.\nInput image: the supplied serene-idle-v1.png is the sole identity, adult body proportion, costume and detailed illustration-style reference. Create a NEW body action, not a crop or sheet and not a reuse of this standing pose.\nPreserve the same clearly adult elegant woman 澄蓝 / SERENE BLUE, about 25, normal refined anime proportions approximately seven heads tall, deep navy flowing long hair, cobalt-blue eyes, SMALL SILVER WHALE-TAIL hairpin on image-left with blue crystal drop, long crystal earrings, pearl-white high-neck long formal dress, tailored navy/cobalt waist with silver whale clasp, silver embroidery, flowing translucent sapphire sleeves and outer skirt panels, modest opaque dress lining, white silver-trim ankle boots. She wears a blue-white FORMAL DRESS, NOT a maid outfit; no apron or bonnet. Keep level shoulders and naturally upright head/neck, no sideways habitual head tilt. Match the reference's fine polished anime key-visual linework and soft pearlescent blue-white shading.\nState BLOCKED / requires user intervention: stand firmly and truly FRONT-FACING, face and both eyes exactly toward camera, level head, natural straight neck, eyebrows slightly knit, serious clear appeal for help with closed mouth, no comic alarm and no cheerful grin. Extend ONE arm forward toward viewer at chest height with a CLEAR OPEN PALM showing all five natural fingers in a dignified stop/request-help gesture; keep moderate foreshortening so the hand remains natural and arm clearly connected. The OTHER arm holds a small closed silver-blue document folder against her side at waist level. Stable shoulder-width stance with both complete boots visible, torso front-facing. This must be a clear upright blocking/request-help silhouette, distinctly different from waiting's two-hand forward offering. No words or symbols on the folder.\nOutput one single 1024 x 1536 portrait PNG with GENUINE TRANSPARENT ALPHA. All space around character and props is fully transparent: NO dark or blue background, NO gradient, NO glow halo, NO painted floor, no room, no ground shadow rectangle. Complete full-body character, ALL head/hairpin, hair, both arms and hands, dress/hem, legs and BOTH complete boots, and all props fully visible inside the canvas, centered with about 7–10 percent transparent safety margin at ALL edges. Keep scene uncluttered, clear distinct silhouette at thumbnail scale. Exactly two arms, two legs, anatomically coherent hands, no extra fingers/limbs, no duplicate body, no text, no lettering, no symbols/emoji floating around her, no UI, watermark, borders or cropped shoes.",
+      "referenced_image_paths": [
+        "assets/actions/serene-idle-v1.png"
+      ],
+      "original_output": "generated://exec-a3fb5751-0342-49c7-919d-672693714e01.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.503,
+        0.106
+      ],
+      "metadata": {
+        "path": "generated://exec-a3fb5751-0342-49c7-919d-672693714e01.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2582033,
+        "sha256": "1b08146ebc8b65a548034ef4800ce92999c98eeab92fa07c06d3a34e5a96073b",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 588115,
+          "opaque_pixels": 0,
+          "partial_pixels": 984749,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            31,
+            13,
+            992,
+            1521
+          ],
+          "bbox_alpha_gt_128": [
+            38,
+            16,
+            989,
+            1513
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Truly front-facing stable broad stance, one clear five-finger open palm toward viewer, other arm holding closed folder; serious request for intervention.",
+        "limitations": "Open palm has natural perspective enlargement; flowing skirt approaches side edges, complete hands and boots retained.",
+        "independent_merge_viewed": true
+      },
+      "merged_source_manifest": "docs/serene-terminal-actions-v1.json"
+    },
+    {
+      "key": "intro-away",
+      "final_file": "assets/actions/serene-intro-away-v1.png",
+      "prompt": "Use case: precise-object-edit. Correct ONLY the direction of this character's head in the supplied transparent image. Her current nose points toward image-RIGHT; the required nose and gaze must point toward image-LEFT instead. LEFT means the left edge of the actual image, not the woman's anatomical left. Do NOT mirror or rotate the entire image or body.\nTurn just her head horizontally so nose is directed toward the LEFT EDGE of this portrait, approximately 55 degrees away from frontal, with neutral closed mouth and eyes looking off screen toward image-LEFT rather than at viewer. Head upright with no sideways tilt, natural neck. Silver whale-tail ornament retains its established image-left side of the hair.\nEVERYTHING below the chin must remain visually identical: fully frontal shoulders, standing torso, arms/hands behind back, white high collar long dress, sapphire sleeves and cloth panels, navy hair below the shoulders, silver waist ornaments, legs together and both complete boots. Keep exact scale, position, body silhouette and 1024 x 1536 canvas. Adult 澄蓝 identity and blue eyes unchanged. True transparent alpha background and complete full-body cutout; no new props, text, UI, opaque background or extra limbs. This is a head-direction correction only, not a new pose.",
+      "referenced_image_paths": [
+        "generated://exec-1d250dc4-5848-4d6d-a117-080915b8044f.png"
+      ],
+      "original_output": "generated://exec-2fb1332e-9f99-4686-8d41-55f5e1fb8854.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.449,
+        0.103
+      ],
+      "metadata": {
+        "path": "generated://exec-2fb1332e-9f99-4686-8d41-55f5e1fb8854.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2472571,
+        "sha256": "89b61a4ac0ec629638639584a9e7676274754438c0c63a9a2a6ecdbba897af2a",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 632596,
+          "opaque_pixels": 0,
+          "partial_pixels": 940268,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            27,
+            13,
+            995,
+            1521
+          ],
+          "bbox_alpha_gt_128": [
+            57,
+            16,
+            991,
+            1519
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Head facing image-left with neutral lips; front body, hands behind back and boots aligned with front-neutral.",
+        "limitations": "All main outlines complete; transparent safety margins narrower than requested. Fine pose/fabric/hair differences are generated, not pixel-identical."
+      },
+      "previous_attempt": {
+        "original_output": "generated://exec-1d250dc4-5848-4d6d-a117-080915b8044f.png",
+        "prompt": "Use case: identity-preserve. Edit the provided 澄蓝 / SERENE BLUE FRONT-NEUTRAL full-body transparent image into ONE introductory keyframe. The reference is the SOLE identity, pose and canvas anchor.\nLock the whole body: EXACT shoulders/front-facing torso, hands behind the back, long white high collar dress, navy/cobalt waist silver clasp, crystal ornaments, flowing sapphire translucent sleeves and panels, all hair below neck, both legs together and both complete silver-white boots remain in the same positions. Keep same adult normal anime proportions, navy hair, silver whale-tail hairpin on image-left, blue crystal earrings and blue eyes. The standing body does not rotate or move.\nChange ONLY the head/face region as specified next. Keep 1024 x 1536 canvas, same character scale and location and same transparent margins. Genuine clean transparent alpha, no opaque backdrop, no new props, no scenery, no UI or text, no watermark, no extra limbs. Head upright, natural straight neck, never sideways tilted. Full head, hair, hem and both boots in frame.\nAWAY START FRAME: turn just the head in horizontal yaw toward image-LEFT about 55 degrees away from frontal, calmly looking off screen to the left, gaze DOES NOT meet viewer. Face mostly left three-quarter/profile, far eye may be narrower. Mouth neutral and closed, no smile. Keep shoulders and all body fixed, do not turn the whole figure.",
+        "referenced_image_paths": [
+          "generated://exec-3480c76a-c863-4281-8108-3ed99319cb72.png"
+        ],
+        "metadata": {
+          "path": "generated://exec-1d250dc4-5848-4d6d-a117-080915b8044f.png",
+          "width": 1024,
+          "height": 1536,
+          "format": "PNG RGBA 8-bit",
+          "bytes": 2439428,
+          "sha256": "9837e7676586e45d7519924542610703b5cbe676d8d9bc8cb45401b3dbb31859",
+          "alpha": {
+            "min": 0,
+            "max": 254,
+            "zero_pixels": 635659,
+            "opaque_pixels": 0,
+            "partial_pixels": 937205,
+            "corners": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "bbox_alpha_gt_0": [
+              25,
+              14,
+              995,
+              1521
+            ],
+            "bbox_alpha_gt_128": [
+              57,
+              17,
+              991,
+              1519
+            ]
+          }
+        },
+        "rejected_reason": "Head pointed toward image-right. Exactly one targeted built-in head-direction correction applied, without pixel editing."
+      }
+    },
+    {
+      "key": "intro-turning",
+      "final_file": "assets/actions/serene-intro-turning-v1.png",
+      "prompt": "Use case: identity-preserve. Create ONE intermediate introductory head-turn frame from reference 1, the away-facing 澄蓝 transparent full-body image. Reference 1 is the exact body/pose/canvas edit target. Reference 2 is ONLY supporting face-direction guidance for the eventual frontal endpoint; do not copy a new body.\nTurn ONLY the head from image-left profile toward camera, finishing in a small LEFT three-quarter view about 15–20 degrees short of straight frontal. BOTH blue eyes now nearly fully visible, pupils start to meet viewer, nose still points slightly to image-LEFT. Neutral closed lips, no smile. Head level, natural neck, no habitual sideways tilt.\nKeep ALL body geometry exactly as reference 1: frontal shoulders, hands behind back, upright torso, long pearl-white high neck gown with navy/cobalt waist/silver whale clasp, translucent sapphire sleeves and skirts, navy hair below shoulders, silver whale-tail ornament/crystal identity, legs together and both complete white silver boots. Preserve exact scale, position and 1024 x 1536 canvas with original transparent margins. Do not rotate the whole figure like a paper card; shoulders/arms/feet must not move. Single adult normal-proportioned anime woman, not maid or chibi.\nGenuinely transparent alpha background, complete full-body silhouette and footwear, no props, labels, text, UI, watermark, scene or opaque rectangle. This is the BRIDGE frame, NOT full frontal, NOT a smile endpoint.",
+      "referenced_image_paths": [
+        "generated://exec-2fb1332e-9f99-4686-8d41-55f5e1fb8854.png",
+        "generated://exec-3480c76a-c863-4281-8108-3ed99319cb72.png"
+      ],
+      "original_output": "generated://exec-5f082673-11ee-43c2-8930-c0ee51cf2605.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.45,
+        0.104
+      ],
+      "metadata": {
+        "path": "generated://exec-5f082673-11ee-43c2-8930-c0ee51cf2605.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2521756,
+        "sha256": "3046b053355b7b5e0f997d6e91023a81d2100e77487c610f045ad6cfadf6bda8",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 630529,
+          "opaque_pixels": 0,
+          "partial_pixels": 942335,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            23,
+            13,
+            996,
+            1522
+          ],
+          "bbox_alpha_gt_128": [
+            57,
+            16,
+            993,
+            1519
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Small left three-quarter head turn, both eyes toward viewer, neutral lips; torso/arms/feet aligned with away.",
+        "limitations": "Generated cutouts preserve complete main outline, with narrow safety margins in some flowing fabric areas. Not pixel-identical artwork."
+      }
+    },
+    {
+      "key": "intro-front-neutral",
+      "final_file": "assets/actions/serene-intro-front-neutral-v1.png",
+      "prompt": "Use case: identity-preserve. Edit the supplied 澄蓝 / SERENE BLUE full-body transparent illustration into a FRONT-NEUTRAL introductory keyframe. This provided image is the sole body and identity anchor.\nMake ONLY a tiny facial-expression edit: remove the gentle smile, giving calm neutral closed lips. Keep the head upright exactly FRONT-FACING, both eyes symmetrical looking directly at the viewer, natural straight neck.\nPreserve ALL other pixels and geometry as closely as possible: exact standing upright pose, both hands held behind the back, shoulders and torso facing front, both close parallel feet and complete silver-white boots, full long navy hair outline, silver whale-tail hairpin on image-left, blue crystal earrings, white high-neck long dress, navy/cobalt waist clasp, silver embroidery and translucent ocean-blue sleeves/panels. Do NOT change the body pose, height, overall scale, location, hair below the face, clothing folds or shoe position.\nKeep the exact 1024 x 1536 portrait canvas and original transparent safety margins. Single adult normal-proportion anime woman, about 25; not chibi, not a maid. Genuine transparent alpha background, full hair/hem/shoes remain in frame, clean cutout, no new objects, no opaque background, no text, watermark or UI. Do NOT tilt the head or rotate the whole character.",
+      "referenced_image_paths": [
+        "generated://exec-5e30cae5-262b-44a6-8830-46bd98a7b715.png"
+      ],
+      "original_output": "generated://exec-3480c76a-c863-4281-8108-3ed99319cb72.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.503,
+        0.104
+      ],
+      "metadata": {
+        "path": "generated://exec-3480c76a-c863-4281-8108-3ed99319cb72.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2466586,
+        "sha256": "27db4568a0db367c8a980232205f87495859d8c40ada0c00bcaae98ff2e4a5c7",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 638606,
+          "opaque_pixels": 0,
+          "partial_pixels": 934258,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            27,
+            14,
+            993,
+            1521
+          ],
+          "bbox_alpha_gt_128": [
+            56,
+            17,
+            990,
+            1518
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Front-facing neutral closed mouth; body and feet visually aligned with idle."
+      }
+    },
+    {
+      "key": "intro-front-smile",
+      "final_file": "assets/actions/serene-intro-front-smile-v1.png",
+      "prompt": "Use case: identity-preserve. Edit the provided 澄蓝 / SERENE BLUE FRONT-NEUTRAL full-body transparent image into ONE introductory keyframe. The reference is the SOLE identity, pose and canvas anchor.\nLock the whole body: EXACT shoulders/front-facing torso, hands behind the back, long white high collar dress, navy/cobalt waist silver clasp, crystal ornaments, flowing sapphire translucent sleeves and panels, all hair below neck, both legs together and both complete silver-white boots remain in the same positions. Keep same adult normal anime proportions, navy hair, silver whale-tail hairpin on image-left, blue crystal earrings and blue eyes. The standing body does not rotate or move.\nChange ONLY the head/face region as specified next. Keep 1024 x 1536 canvas, same character scale and location and same transparent margins. Genuine clean transparent alpha, no opaque backdrop, no new props, no scenery, no UI or text, no watermark, no extra limbs. Head upright, natural straight neck, never sideways tilted. Full head, hair, hem and both boots in frame.\nFRONT SMILE END FRAME: keep exact fully FRONT-FACING head and symmetrical eyes, both pupils looking directly into the camera. Change neutral closed lips to a gentle warm small CLOSED-MOUTH smile; eyes soften slightly but remain OPEN and meet the viewer. Refined welcoming smile, no grin, no comedy, no open mouth. Body and head position remain fixed.",
+      "referenced_image_paths": [
+        "generated://exec-3480c76a-c863-4281-8108-3ed99319cb72.png"
+      ],
+      "original_output": "generated://exec-e329bb11-edd2-4327-874f-d0d32158ca4b.png",
+      "transparent_background": true,
+      "faceCenter": [
+        0.503,
+        0.104
+      ],
+      "metadata": {
+        "path": "generated://exec-e329bb11-edd2-4327-874f-d0d32158ca4b.png",
+        "width": 1024,
+        "height": 1536,
+        "format": "PNG RGBA 8-bit",
+        "bytes": 2460448,
+        "sha256": "79dab413c18a2c517f9d3dc2f518956a631d3526fb919a5a734401e8ef6a8807",
+        "alpha": {
+          "min": 0,
+          "max": 254,
+          "zero_pixels": 639567,
+          "opaque_pixels": 0,
+          "partial_pixels": 933297,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_0": [
+            31,
+            14,
+            994,
+            1521
+          ],
+          "bbox_alpha_gt_128": [
+            57,
+            17,
+            991,
+            1519
+          ]
+        }
+      },
+      "visual_review": {
+        "viewed": true,
+        "true_alpha": true,
+        "full_body": true,
+        "pose": "Front head with viewer eye contact and warm closed-mouth smile; body/boots aligned with neutral.",
+        "limitations": "All main outlines complete; transparent safety margins narrower than requested. Fine pose/fabric/hair differences are generated, not pixel-identical."
+      }
+    }
+  ]
+}

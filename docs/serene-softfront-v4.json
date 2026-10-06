@@ -1,0 +1,93 @@
+[
+  {
+    "key": "front-neutral",
+    "prompt": "Use case: identity-preserve. Edit image 1 as a fixed animation geometry anchor. Produce ONE 1024x1536 portrait keyframe PNG with genuinely transparent alpha background. Image 1 is the prior late-turn pose; image 2 is the same adult anime woman's identity reference. Make a refined natural attentive near-front face still turned gently toward SCREEN LEFT, about 18 degrees left, both blue eyes softly looking into the camera. Keep exact crown, head size, eye line, nose/chin, shoulders and hair silhouette of image 1: no head tilt, no nod, no reframe. Preserve the elegant elongated almond eyes, delicate restrained brows, fine nose, natural narrow jaw and high-quality detailed illustration; avoid overly large round staring eyes or plastic doll frontal symmetry. Neutral closed lips just relaxed, not smiling yet. Same dark sapphire long hair, braided crown, silver whale-tail hairpin on image-right and crystal earrings, high-collar blue-white dress, lighting and colors. Change only tiny face refinements and eye expression; preserve costume and exact shoulder geometry. This is the first of six continuous expression frames of the SAME stable pose. No redesign, no backdrop, no halo, no text. Transparent silhouette.",
+    "refs": [
+      "assets/portraits/serene-intro-turn-late-v3.png",
+      "assets/portraits/serene-intro-away-v2.png"
+    ],
+    "originalPath": "generated://exec-d95d1fc6-7dbf-40aa-b028-4d2b0082c1c7.png",
+    "finalPath": "assets/portraits/serene-intro-front-neutral-v4.png",
+    "sha256": "bbd76ab7b3dd2b4b0510d33ba4a57c303033de45f823978366bccdc8b0e153d8",
+    "size": [
+      1024,
+      1536
+    ],
+    "colorType": 6
+  },
+  {
+    "key": "front-blink",
+    "prompt": "Use case: identity-preserve. Edit the SINGLE reference image to make ONE animation expression keyframe, 1024x1536 PNG, preserve genuine transparent alpha. STRICT FIXED GEOMETRY: exactly retain her ~18 degree SCREEN LEFT head orientation, eye line, nose tip, chin, face size, crown, hair silhouette, braid, silver whale-tail hairpin, blue crystal earrings, shoulders, white-blue high-collar dress, lighting and same crisp detailed painterly anime style. No frontalization, no mirror, no head tilt, no nod, no zoom, no redesign, no changes outside eyes and mouth. This is the same adult woman in the same camera frame, consecutive moments. Close both eyelids softly in a natural blink. Keep lips exactly neutral. Change ONLY eyelids; no head nod or chin shift. Preserve the reference's elegant refined elongated almond eyes and delicate face identity. No background, no halo, no objects, no text. True transparent cutout.",
+    "refs": [
+      "assets/portraits/serene-intro-front-neutral-v4.png"
+    ],
+    "originalPath": "generated://exec-7672d488-107a-487b-8af6-1b5cf8321503.png",
+    "finalPath": "assets/portraits/serene-intro-front-blink-v4.png",
+    "sha256": "7f809764dbe3b4b8d9b0c54f6bd10ead824d5e28431e267e72ef78b20097915a",
+    "size": [
+      1024,
+      1536
+    ],
+    "colorType": 6
+  },
+  {
+    "key": "front-open",
+    "prompt": "Use case: identity-preserve. Edit the SINGLE reference image to make ONE animation expression keyframe, 1024x1536 PNG, preserve genuine transparent alpha. STRICT FIXED GEOMETRY: exactly retain her ~18 degree SCREEN LEFT head orientation, eye line, nose tip, chin, face size, crown, hair silhouette, braid, silver whale-tail hairpin, blue crystal earrings, shoulders, white-blue high-collar dress, lighting and same crisp detailed painterly anime style. No frontalization, no mirror, no head tilt, no nod, no zoom, no redesign, no changes outside eyes and mouth. This is the same adult woman in the same camera frame, consecutive moments. Eyes just reopened, attentive soft direct eye contact, and the faintest hint of warm lip corners. Almost neutral. Change ONLY eyelids and tiny lip expression. Preserve the reference's elegant refined elongated almond eyes and delicate face identity. No background, no halo, no objects, no text. True transparent cutout.",
+    "refs": [
+      "assets/portraits/serene-intro-front-neutral-v4.png"
+    ],
+    "originalPath": "generated://exec-e23dabd8-a96c-4040-a48b-9c75533005b9.png",
+    "finalPath": "assets/portraits/serene-intro-front-open-v4.png",
+    "sha256": "56635980203c1e63b85e63100161b15873e415325784d3e5651c0964e49f5909",
+    "size": [
+      1024,
+      1536
+    ],
+    "colorType": 6
+  },
+  {
+    "key": "soft-smile",
+    "prompt": "Use case: identity-preserve. Edit the SINGLE reference image to make ONE animation expression keyframe, 1024x1536 PNG, preserve genuine transparent alpha. STRICT FIXED GEOMETRY: exactly retain her ~18 degree SCREEN LEFT head orientation, eye line, nose tip, chin, face size, crown, hair silhouette, braid, silver whale-tail hairpin, blue crystal earrings, shoulders, white-blue high-collar dress, lighting and same crisp detailed painterly anime style. No frontalization, no mirror, no head tilt, no nod, no zoom, no redesign, no changes outside eyes and mouth. This is the same adult woman in the same camera frame, consecutive moments. Eyes open looking at the viewer and a small restrained closed-mouth smile, slightly raised lip corners. Natural elegant warm expression. Change ONLY tiny lip corners and subtle eye softness. Preserve the reference's elegant refined elongated almond eyes and delicate face identity. No background, no halo, no objects, no text. True transparent cutout.",
+    "refs": [
+      "assets/portraits/serene-intro-front-neutral-v4.png"
+    ],
+    "originalPath": "generated://exec-b0078517-876f-4628-8531-7dcd52d2d758.png",
+    "finalPath": "assets/portraits/serene-intro-soft-smile-v4.png",
+    "sha256": "e4ef7f7f79e8fea7f102750300448c08cb43728eeeeeb62634532c19e01e5dea",
+    "size": [
+      1024,
+      1536
+    ],
+    "colorType": 6
+  },
+  {
+    "key": "front-smile",
+    "prompt": "Use case: identity-preserve. Edit the SINGLE reference image to make ONE animation expression keyframe, 1024x1536 PNG, preserve genuine transparent alpha. STRICT FIXED GEOMETRY: exactly retain her ~18 degree SCREEN LEFT head orientation, eye line, nose tip, chin, face size, crown, hair silhouette, braid, silver whale-tail hairpin, blue crystal earrings, shoulders, white-blue high-collar dress, lighting and same crisp detailed painterly anime style. No frontalization, no mirror, no head tilt, no nod, no zoom, no redesign, no changes outside eyes and mouth. This is the same adult woman in the same camera frame, consecutive moments. A warm gentle relaxed closed-mouth smile, only slightly brighter than neutral. Almond sapphire eyes softly smile directly at viewer. No teeth, no exaggerated blush, no broad grin. Change ONLY tiny lip corners and subtle eye softness. Preserve the reference's elegant refined elongated almond eyes and delicate face identity. No background, no halo, no objects, no text. True transparent cutout.",
+    "refs": [
+      "assets/portraits/serene-intro-front-neutral-v4.png"
+    ],
+    "originalPath": "generated://exec-dc1b56fe-8e22-4bce-b2d5-dc056852525b.png",
+    "finalPath": "assets/portraits/serene-intro-front-smile-v4.png",
+    "sha256": "06fb6e7ebde82ddb501394dbe4812ba5c6e75f8474e765b4ac9c040d0735593f",
+    "size": [
+      1024,
+      1536
+    ],
+    "colorType": 6
+  },
+  {
+    "key": "smile-settle",
+    "prompt": "Use case: identity-preserve. Edit the SINGLE reference image to make ONE animation expression keyframe, 1024x1536 PNG, preserve genuine transparent alpha. STRICT FIXED GEOMETRY: exactly retain her ~18 degree SCREEN LEFT head orientation, eye line, nose tip, chin, face size, crown, hair silhouette, braid, silver whale-tail hairpin, blue crystal earrings, shoulders, white-blue high-collar dress, lighting and same crisp detailed painterly anime style. No frontalization, no mirror, no head tilt, no nod, no zoom, no redesign, no changes outside eyes and mouth. This is the same adult woman in the same camera frame, consecutive moments. After greeting, the gentle closed-mouth smile settles into a calm affectionate relaxed expression. Eyes open looking softly at the viewer. Barely less smiling than the warm smile, still clearly kind. Change ONLY subtle eyelids and lip corners. Preserve the reference's elegant refined elongated almond eyes and delicate face identity. No background, no halo, no objects, no text. True transparent cutout.",
+    "refs": [
+      "assets/portraits/serene-intro-front-neutral-v4.png"
+    ],
+    "originalPath": "generated://exec-4c542872-5bc1-44b9-8806-ef9d55cfa57a.png",
+    "finalPath": "assets/portraits/serene-intro-smile-settle-v4.png",
+    "sha256": "2f3cc38382da8d237f66e11301fe9bf3981e679fdb60d39d9971cba079e27c62",
+    "size": [
+      1024,
+      1536
+    ],
+    "colorType": 6
+  }
+]

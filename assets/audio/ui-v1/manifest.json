@@ -1,0 +1,417 @@
+{
+  "title": "澄蓝 · 非人声音效试听",
+  "version": "ui-v1",
+  "created": "2026-10-05",
+  "sampleRate": 48000,
+  "channels": 2,
+  "format": "PCM signed 16-bit WAV",
+  "method": "原创程序合成；无语音、无外部采样、无录音素材。",
+  "previews": {
+    "core": {
+      "file": "preview-core.wav",
+      "durationSeconds": 11.548,
+      "order": [
+        {
+          "id": "greeting",
+          "startSeconds": 0.0,
+          "durationSeconds": 1.273
+        },
+        {
+          "id": "compacting",
+          "startSeconds": 1.993,
+          "durationSeconds": 1.793
+        },
+        {
+          "id": "complete",
+          "startSeconds": 4.506,
+          "durationSeconds": 1.373
+        },
+        {
+          "id": "waiting",
+          "startSeconds": 6.599,
+          "durationSeconds": 1.193
+        },
+        {
+          "id": "error",
+          "startSeconds": 8.512,
+          "durationSeconds": 1.223
+        },
+        {
+          "id": "writing",
+          "startSeconds": 10.455,
+          "durationSeconds": 1.093
+        }
+      ]
+    },
+    "all": {
+      "file": "preview-all.wav",
+      "durationSeconds": 34.087,
+      "order": [
+        {
+          "id": "greeting",
+          "startSeconds": 0.0,
+          "durationSeconds": 1.273
+        },
+        {
+          "id": "thinking",
+          "startSeconds": 1.993,
+          "durationSeconds": 0.743
+        },
+        {
+          "id": "writing",
+          "startSeconds": 3.456,
+          "durationSeconds": 1.093
+        },
+        {
+          "id": "reading",
+          "startSeconds": 5.269,
+          "durationSeconds": 0.993
+        },
+        {
+          "id": "searching",
+          "startSeconds": 6.982,
+          "durationSeconds": 0.993
+        },
+        {
+          "id": "executing",
+          "startSeconds": 8.695,
+          "durationSeconds": 0.733
+        },
+        {
+          "id": "delegating",
+          "startSeconds": 10.148,
+          "durationSeconds": 1.063
+        },
+        {
+          "id": "parallel",
+          "startSeconds": 11.931,
+          "durationSeconds": 1.113
+        },
+        {
+          "id": "compacting",
+          "startSeconds": 13.764,
+          "durationSeconds": 1.793
+        },
+        {
+          "id": "retrying",
+          "startSeconds": 16.277,
+          "durationSeconds": 1.063
+        },
+        {
+          "id": "complete",
+          "startSeconds": 18.06,
+          "durationSeconds": 1.373
+        },
+        {
+          "id": "waiting",
+          "startSeconds": 20.153,
+          "durationSeconds": 1.193
+        },
+        {
+          "id": "error",
+          "startSeconds": 22.066,
+          "durationSeconds": 1.223
+        },
+        {
+          "id": "connecting",
+          "startSeconds": 24.009,
+          "durationSeconds": 1.203
+        },
+        {
+          "id": "disconnected",
+          "startSeconds": 25.932,
+          "durationSeconds": 1.243
+        },
+        {
+          "id": "queued",
+          "startSeconds": 27.895,
+          "durationSeconds": 0.793
+        },
+        {
+          "id": "stopped",
+          "startSeconds": 29.408,
+          "durationSeconds": 0.913
+        },
+        {
+          "id": "paused",
+          "startSeconds": 31.041,
+          "durationSeconds": 0.993
+        },
+        {
+          "id": "blocked",
+          "startSeconds": 32.754,
+          "durationSeconds": 1.333
+        }
+      ]
+    }
+  },
+  "archive": "deepseekdeskskin-sfx-v1.zip",
+  "items": [
+    {
+      "id": "greeting",
+      "label": "开场 · 晶光轻启",
+      "description": "一缕轻风托起三枚上行水晶音，配合转头微笑。",
+      "group": "core",
+      "file": "greeting.wav",
+      "durationSeconds": 1.273,
+      "peakDbfs": -14.0,
+      "rmsDbfs": -27.8,
+      "truePeakDbfs": -13.98,
+      "enabledSuggestion": true,
+      "recommendation": "仅新对话第一次发送，随微笑时机播放一次。",
+      "sha256": "dfd0996b8317fe556c7fc8f9b7e7e485c63034d166b621160cb7069f1f8306f5"
+    },
+    {
+      "id": "thinking",
+      "label": "思考 · 水滴微光",
+      "description": "两层轻微水滴般的清音，短促而不连续催促。",
+      "group": "status",
+      "file": "thinking.wav",
+      "durationSeconds": 0.743,
+      "peakDbfs": -20.0,
+      "rmsDbfs": -34.9,
+      "truePeakDbfs": -19.99,
+      "enabledSuggestion": false,
+      "recommendation": "同类动作限频，避免频繁打扰。",
+      "sha256": "1d7ab41b119219f5536ad5f1beb230fcb10e9f41682547b18a1575b22c30aec7"
+    },
+    {
+      "id": "writing",
+      "label": "写入 · 笔尖轻写",
+      "description": "四段柔和的纸上短笔触，配合执笔书写。",
+      "group": "tool",
+      "file": "writing.wav",
+      "durationSeconds": 1.093,
+      "peakDbfs": -19.0,
+      "rmsDbfs": -38.48,
+      "truePeakDbfs": -18.99,
+      "enabledSuggestion": false,
+      "recommendation": "进入 Write/Edit 后轻响一次；连续写入应限频。",
+      "sha256": "80ed2e9340e9d0001081ea2f1e199199858e112c3afbd64bed17b27ed4da0918"
+    },
+    {
+      "id": "reading",
+      "label": "查阅 · 轻翻一页",
+      "description": "纸张掀起、翻过，再轻轻落下。",
+      "group": "tool",
+      "file": "reading.wav",
+      "durationSeconds": 0.993,
+      "peakDbfs": -19.0,
+      "rmsDbfs": -38.67,
+      "truePeakDbfs": -18.95,
+      "enabledSuggestion": false,
+      "recommendation": "同类动作限频，避免频繁打扰。",
+      "sha256": "aa389d49d2b29a41222ace1529058a9b0df4678ed74fdecf600f8d26a3e8ee28"
+    },
+    {
+      "id": "searching",
+      "label": "搜索 · 发现线索",
+      "description": "两枚间隔清晰的亮点音，从寻找落到发现。",
+      "group": "tool",
+      "file": "searching.wav",
+      "durationSeconds": 0.993,
+      "peakDbfs": -18.0,
+      "rmsDbfs": -32.79,
+      "truePeakDbfs": -17.99,
+      "enabledSuggestion": false,
+      "recommendation": "同类动作限频，避免频繁打扰。",
+      "sha256": "1784b0e5c381f1fd718a33d5180b431743ab26c93b545fd3fe1b4c72112d21a9"
+    },
+    {
+      "id": "executing",
+      "label": "命令执行 · 轻触按键",
+      "description": "三个柔和木质按键，末尾附一枚低亮度确认音。",
+      "group": "tool",
+      "file": "executing.wav",
+      "durationSeconds": 0.733,
+      "peakDbfs": -19.0,
+      "rmsDbfs": -35.5,
+      "truePeakDbfs": -18.99,
+      "enabledSuggestion": false,
+      "recommendation": "同类动作限频，避免频繁打扰。",
+      "sha256": "073fb80a4ee77283266128b68f6bcb56a35a2f6f3af9761d4710ab9b7abeef14"
+    },
+    {
+      "id": "delegating",
+      "label": "任务分派 · 递出卡片",
+      "description": "薄纸滑出，清音从左侧递向右侧。",
+      "group": "tool",
+      "file": "delegating.wav",
+      "durationSeconds": 1.063,
+      "peakDbfs": -17.0,
+      "rmsDbfs": -32.31,
+      "truePeakDbfs": -16.99,
+      "enabledSuggestion": false,
+      "recommendation": "同类动作限频，避免频繁打扰。",
+      "sha256": "fba83a097fd44f3d41f797cce2ee79aea1f8d79746db835456f33232e4c97003"
+    },
+    {
+      "id": "parallel",
+      "label": "并行协作 · 双线汇合",
+      "description": "两侧交错的轻清音，随后在中间汇合。",
+      "group": "status",
+      "file": "parallel.wav",
+      "durationSeconds": 1.113,
+      "peakDbfs": -18.0,
+      "rmsDbfs": -31.89,
+      "truePeakDbfs": -17.99,
+      "enabledSuggestion": false,
+      "recommendation": "同类动作限频，避免频繁打扰。",
+      "sha256": "51e099c3d2d8cc01e62a2df1b87b156c49eaf137f2f55454a6f31eeffecff332"
+    },
+    {
+      "id": "compacting",
+      "label": "整理上下文 · 书本归位",
+      "description": "书脊轻擦、两次落架声，最后一枚微光表示归整。",
+      "group": "core",
+      "file": "compacting.wav",
+      "durationSeconds": 1.793,
+      "peakDbfs": -17.0,
+      "rmsDbfs": -36.99,
+      "truePeakDbfs": -16.97,
+      "enabledSuggestion": true,
+      "recommendation": "整理开始时播放一次，不随整理耗时循环。",
+      "sha256": "4b57c3ffa726f05b562e22df380f4f160593f5e244c371a80c09112585a0019e"
+    },
+    {
+      "id": "retrying",
+      "label": "重试 · 回旋再启",
+      "description": "轻轻回旋后重新抬起的清音。",
+      "group": "status",
+      "file": "retrying.wav",
+      "durationSeconds": 1.063,
+      "peakDbfs": -19.0,
+      "rmsDbfs": -34.44,
+      "truePeakDbfs": -18.99,
+      "enabledSuggestion": false,
+      "recommendation": "同一任务多次重试应设冷却时间。",
+      "sha256": "39e6bbac1853f1ce6681d52915c365f37b55e962c741d3e024b894e8cea97b63"
+    },
+    {
+      "id": "complete",
+      "label": "完成 · 温柔落定",
+      "description": "三个上行和声音符，尾音温暖落定。",
+      "group": "core",
+      "file": "complete.wav",
+      "durationSeconds": 1.373,
+      "peakDbfs": -13.0,
+      "rmsDbfs": -26.94,
+      "truePeakDbfs": -12.99,
+      "enabledSuggestion": true,
+      "recommendation": "每轮真实成功完成一次；打开历史对话不播放。",
+      "sha256": "fd7136a4036a3bbffed26a99aab8b90883f598cca6240784095fe4c36c3fd8f7"
+    },
+    {
+      "id": "waiting",
+      "label": "等待确认 · 轻声叩门",
+      "description": "一前一后的轻敲清音，留出等待回应的空隙。",
+      "group": "core",
+      "file": "waiting.wav",
+      "durationSeconds": 1.193,
+      "peakDbfs": -14.0,
+      "rmsDbfs": -27.98,
+      "truePeakDbfs": -13.99,
+      "enabledSuggestion": true,
+      "recommendation": "每个新确认请求一次，不循环催促。",
+      "sha256": "cb02770963d106dc5ae1320133724364514101265567a5d0bad07f82fa58fe3b"
+    },
+    {
+      "id": "error",
+      "label": "出错 · 柔和下行",
+      "description": "两枚温暖下行音，表达需要检查，没有尖锐警报。",
+      "group": "core",
+      "file": "error.wav",
+      "durationSeconds": 1.223,
+      "peakDbfs": -14.0,
+      "rmsDbfs": -26.78,
+      "truePeakDbfs": -13.99,
+      "enabledSuggestion": true,
+      "recommendation": "仅新发生的失败播一次，同一错误去重。",
+      "sha256": "8b006d70e0ebe7d79f555d40aa72e26385723dee8b5c540e562fa58183f5838f"
+    },
+    {
+      "id": "connecting",
+      "label": "连接中 · 星点连起",
+      "description": "三个间隔渐进的亮点，提示连接开始。",
+      "group": "status",
+      "file": "connecting.wav",
+      "durationSeconds": 1.203,
+      "peakDbfs": -19.0,
+      "rmsDbfs": -32.23,
+      "truePeakDbfs": -18.99,
+      "enabledSuggestion": false,
+      "recommendation": "每次连接尝试只播一次，重连需限频。",
+      "sha256": "61e33931227f830f1bdd1ca5c2d442c8f5dfd342a50293b319f42cf638062254"
+    },
+    {
+      "id": "disconnected",
+      "label": "连接中断 · 光点暂歇",
+      "description": "三枚逐渐降低的音符，轻柔收住。",
+      "group": "status",
+      "file": "disconnected.wav",
+      "durationSeconds": 1.243,
+      "peakDbfs": -16.0,
+      "rmsDbfs": -29.25,
+      "truePeakDbfs": -15.99,
+      "enabledSuggestion": false,
+      "recommendation": "同类动作限频，避免频繁打扰。",
+      "sha256": "0b0b582cb2e0d4d72cafdb240b79b3b15e46aceebef84b1a9e3ad64fcb2491b1"
+    },
+    {
+      "id": "queued",
+      "label": "排队 · 卡片入列",
+      "description": "一声轻触和短清音，表示任务已排入。",
+      "group": "status",
+      "file": "queued.wav",
+      "durationSeconds": 0.793,
+      "peakDbfs": -20.0,
+      "rmsDbfs": -33.85,
+      "truePeakDbfs": -19.99,
+      "enabledSuggestion": false,
+      "recommendation": "同类动作限频，避免频繁打扰。",
+      "sha256": "426b98de87d33bd1b15bf594c42516b8796540452f5f981c0235476bff2c036f"
+    },
+    {
+      "id": "stopped",
+      "label": "已停止 · 轻轻收束",
+      "description": "低柔的短音加轻落点，结束当前动作。",
+      "group": "status",
+      "file": "stopped.wav",
+      "durationSeconds": 0.913,
+      "peakDbfs": -18.0,
+      "rmsDbfs": -31.72,
+      "truePeakDbfs": -17.99,
+      "enabledSuggestion": false,
+      "recommendation": "同类动作限频，避免频繁打扰。",
+      "sha256": "73b947f5b83c38f70529441ffc85bbc3061f51620678dcd5fb862d1464905840"
+    },
+    {
+      "id": "paused",
+      "label": "已暂停 · 双点停留",
+      "description": "两次同音轻点，平静暂停而非错误。",
+      "group": "status",
+      "file": "paused.wav",
+      "durationSeconds": 0.993,
+      "peakDbfs": -19.0,
+      "rmsDbfs": -32.19,
+      "truePeakDbfs": -18.99,
+      "enabledSuggestion": false,
+      "recommendation": "同类动作限频，避免频繁打扰。",
+      "sha256": "54c82829574de0533c061251ae4e6f1b5bfc2acc49afb769bddbb1247897e9f6"
+    },
+    {
+      "id": "blocked",
+      "label": "需要介入 · 请留意",
+      "description": "两声柔和呼唤后轻抬一音，等待你介入。",
+      "group": "status",
+      "file": "blocked.wav",
+      "durationSeconds": 1.333,
+      "peakDbfs": -15.0,
+      "rmsDbfs": -26.76,
+      "truePeakDbfs": -14.99,
+      "enabledSuggestion": false,
+      "recommendation": "同类动作限频，避免频繁打扰。",
+      "sha256": "a952654b12f9a9c409baff2e65a4c4af97c4d6498be4eed738aa242b47ec76f1"
+    }
+  ]
+}

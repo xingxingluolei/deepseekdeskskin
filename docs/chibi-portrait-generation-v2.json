@@ -1,0 +1,813 @@
+{
+  "version": 2,
+  "character": "maid_chibi",
+  "tool": "builtin image_gen",
+  "transparentBackground": true,
+  "canvas": [
+    1024,
+    1536
+  ],
+  "updatedAt": "2026-10-04T11:29:46.827368+00:00",
+  "assets": [
+    {
+      "state": "intro-away",
+      "prompt": "Use case: identity-preserve. Asset: production transparent shoulder-up portrait for DeepSeek desktop skin, the SAME chibi maid as references. Redraw from the references as a crisp high-definition close-up, not an enlargement of a full-body picture. Portrait 1024x1536. Head and shoulders only: crown/frilled maid band at y=90, bottom of chin about y=1000, shoulders enter lower edges, no waist/skirt/legs. Face ~540 pixels wide. Huge clean sapphire eyes, silky navy-blue hair and side braid, classic navy/white maid collar, blue whale tail hairclip on viewer-right, crystal blue earrings. Fixed upright head, NOT tilted. For this IDLE frame her head and pupils face towards screen LEFT at roughly 40 degrees, quiet neutral mouth, attentive restful expression. The same warm intricate anime illustration style, retain cute chibi proportions, lighting, identity and costume. Very sharp eyelashes, clean hair strands and fabric detail; no soft focus, no white fog, no overexposure. Entire character completely opaque; actual transparent background outside cutout, NO black/blue backdrop or glow, no background color, no text, no other figures. Keep hair and shoulders within canvas with a little breathing room. This will be the master reference for subsequent close-up expressions.",
+      "references": [
+        "assets/actions/maid-chibi-intro-away-v1.png",
+        "assets/actions/maid-chibi-intro-front-smile-v1.png"
+      ],
+      "original": "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png",
+      "final": "assets/portraits/maid-chibi-intro-away-v2.png",
+      "note": "Parent-supplied builtin source copied exactly, source prompt confirmed by parent.",
+      "faceCenter": [
+        0.46,
+        0.56
+      ],
+      "visualReview": "Quiet screen-left gaze, upright neck, same premium chibi maid close-up identity/frill/right ornament and braid.",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          92,
+          1024,
+          1536
+        ],
+        "transparentPixels": 267477,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          103,
+          232
+        ]
+      },
+      "sha256": "d2f26db337f5d7e7117e57edc750cd88f7911476723c661948c9a50e36d16de7"
+    },
+    {
+      "state": "intro-noticing",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: intro-noticing. An early intermediate head-turn frame: head yaw approximately 30 degrees toward SCREEN LEFT, less side-facing than the reference's 40 degrees; pupils have just begun to shift toward the viewer. Keep both eyes visible but the farther eye subtly narrower, nose left of face center, neutral small closed mouth and attentive brows. Upright level head. Keep the exact head scale, center, crown and both shoulders of the reference; do not zoom or move the camera. One still only.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-e6c0ccc1-86cf-459f-9fe8-aa626d33803a.png",
+      "final": "assets/portraits/maid-chibi-intro-noticing-v2.png",
+      "visualReview": "Intermediate left yaw and gaze returning toward viewer, neutral mouth, same upright shoulder portrait.",
+      "faceCenter": [
+        0.46,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          84,
+          1024,
+          1536
+        ],
+        "transparentPixels": 268724,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          183,
+          214
+        ]
+      },
+      "sha256": "aebc5b857330a5efbd52949ec7bba173cba14eda8a11607407ce7781a0f089e7"
+    },
+    {
+      "state": "intro-turning",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: intro-turning. She is slowly turning her attention from screen left toward the viewer. Show a subtle THREE-QUARTER angle only 15 degrees to SCREEN LEFT (halfway between the reference left-facing yaw and truly frontal), both blue eyes fully visible, nose still slightly left of face center, mouth closed and neutral, eyebrows relaxed. Her chin and neck stay vertical, with no head roll. Keep the identical hairband/ornament/shoulder silhouette and camera framing. This is one intermediate still, not multiple panels.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-d016cc66-dbe3-49db-977b-a2a21322d657.png",
+      "final": "assets/portraits/maid-chibi-intro-turning-v2.png",
+      "visualReview": "Intermediate leftward three-quarter angle, level neck, neutral closed mouth, identity/framing intact.",
+      "faceCenter": [
+        0.47,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          88,
+          1024,
+          1536
+        ],
+        "transparentPixels": 266796,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          240,
+          248
+        ]
+      },
+      "sha256": "9f5ec1279f2e624291523bb41e30744a67cdec0b94ee736390ad10c99a00a44c"
+    },
+    {
+      "state": "intro-front-neutral",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: intro-front-neutral. Turn ONLY her head and gaze to a truly straight FRONTAL portrait looking directly at the viewer. ZERO head yaw, ZERO head roll: nose tip and closed neutral mouth centered between two equally visible cheeks; BOTH enormous blue eyes shown fully at equal width, both pupils centered looking into the camera. Symmetric straight-on face geometry, upright neck and level chin. Do not produce a three-quarter face or a profile. She is attentive with natural neutral brows and tiny closed unsmiling mouth. Preserve the head scale, white frill crown near y=95, right whale-tail ornament/right braid, shoulder silhouette, costume and 1024x1536 transparent canvas. This is the next head-turn keyframe; shoulders remain as the reference.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-93009d20-a58e-4f5f-bf3f-58ef0d3a2d15.png",
+      "final": "assets/portraits/maid-chibi-intro-front-neutral-v2.png",
+      "visualReview": "True frontal face: equal visible eyes and cheeks, centered nose/mouth, upright head; same frill/right ornament/braid and close-up scale.",
+      "faceCenter": [
+        0.49,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          71,
+          1024,
+          1536
+        ],
+        "transparentPixels": 250539,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          5,
+          7
+        ]
+      },
+      "sha256": "72cbd5580229a2c0257ae2d2bf8d1bf634075efc8a2f75d499286522e67f2fc6"
+    },
+    {
+      "state": "intro-soft-smile",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: intro-soft-smile. The input is the completed front-neutral frame. Change ONLY the mouth corners into the very beginning of a gentle smile, subtly upturned, less curved than a full smile; eyebrows only just soften. Keep mouth closed, eyes fully open gazing straight at viewer. Preserve the EXACT truly frontal face, centered nose, equal cheeks/eyes, zero yaw and zero tilt, same head center/scale and both shoulders. No zoom or camera shift. One still only.",
+      "references": [
+        "generated://exec-93009d20-a58e-4f5f-bf3f-58ef0d3a2d15.png"
+      ],
+      "original": "generated://exec-d0cb17e4-0e0f-467d-88aa-e36d992aca13.png",
+      "final": "assets/portraits/maid-chibi-intro-soft-smile-v2.png",
+      "visualReview": "Frontal faint beginnings of a smile, same neutral face geometry/shoulder composition.",
+      "faceCenter": [
+        0.49,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          94,
+          1024,
+          1536
+        ],
+        "transparentPixels": 253323,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          1,
+          4
+        ]
+      },
+      "sha256": "487c3069c8e2de1624d8788bf835cc8a3c36871d34d3d8bf0a554c184062bfbf"
+    },
+    {
+      "state": "intro-front-smile",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: intro-front-smile. The supplied image is the completed FRONTAL NEUTRAL frame. Edit ONLY the facial expression into a natural gentle welcome smile: softly curved tiny closed mouth, relaxed eyebrows, warm bright blue eyes looking directly at viewer. Do not change head angle at all: maintain truly straight-on face with equally visible eyes/cheeks, centered nose, upright neck and level head. Preserve exact head size, location, hair strands, white frill crown, right whale-tail clip/braid, shoulder framing and costume. Not an exuberant laugh, no closed eyes, no toothy grin. Same 1024x1536 genuine transparent alpha portrait.",
+      "references": [
+        "generated://exec-93009d20-a58e-4f5f-bf3f-58ef0d3a2d15.png"
+      ],
+      "original": "generated://exec-89df27bf-021d-4445-8b31-f33cec200b8b.png",
+      "final": "assets/portraits/maid-chibi-intro-front-smile-v2.png",
+      "visualReview": "Frontal warm small closed-mouth smile; same centered eyes/nose, level head, identical frill/shoulder framing.",
+      "faceCenter": [
+        0.49,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          71,
+          1024,
+          1536
+        ],
+        "transparentPixels": 252402,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          2,
+          8
+        ]
+      },
+      "sha256": "814cab54bda22b2caa4702e9793b9f3556792c63adfbdbb80b24cf10ff7caf70"
+    },
+    {
+      "state": "thinking",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: thinking. Head turned just 15 degrees SCREEN LEFT; eyes look thoughtfully UP-LEFT, one inner eyebrow lifted and the other slightly gathered, tiny pursed closed mouth as she considers a difficult question. Clearly contemplative rather than idle; level head, no hand or prop.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-b5ee9a01-e02c-4bc4-a71b-3e0d4d9b9968.png",
+      "final": "assets/portraits/maid-chibi-thinking-v2.png",
+      "visualReview": "Thoughtful up-left gaze, asymmetric brows and pursed mouth; level head and same detailed identity.",
+      "faceCenter": [
+        0.46,
+        0.55
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          81,
+          1024,
+          1536
+        ],
+        "transparentPixels": 266766,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          221,
+          252
+        ]
+      },
+      "sha256": "1eb78472533e28168ab743f26b796b0e71417391f9fd22cc9e91e9af762a1f56"
+    },
+    {
+      "state": "working",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: working. Head 15 degrees SCREEN LEFT; eyes look DOWN-LEFT with visibly narrowed upper eyelids and focused pupils, brows lowered slightly inward, small straight closed firm mouth. Serious precise concentration, not angry and not smiling; level upright head.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-a690c6e4-6d68-43e6-bd54-acbfd4a156ba.png",
+      "final": "assets/portraits/maid-chibi-working-v2.png",
+      "visualReview": "Focused lowered brows/upper eyelids and firm mouth; clear concentration, same close-up identity.",
+      "faceCenter": [
+        0.46,
+        0.55
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          90,
+          1024,
+          1536
+        ],
+        "transparentPixels": 263684,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          177,
+          220
+        ]
+      },
+      "sha256": "044b064aff19cb794770d7e0715eec0d5730e02bfe5f29e2f7209ee78a36906d"
+    },
+    {
+      "state": "answering",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: answering. TRULY FRONTAL face, equal visible eyes/cheeks and centered nose; eyes look warmly at viewer, relaxed lifted brows, tiny mouth gently OPEN mid-explanation with natural dark interior, no exaggerated grin. Clearly speaking; level head.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-620a2c56-7445-42b2-a660-8bdc46f8ac5d.png",
+      "final": "assets/portraits/maid-chibi-answering-v2.png",
+      "visualReview": "Frontal direct gaze and open speaking mouth; centered symmetrical face, same right ornament/maid costume.",
+      "faceCenter": [
+        0.49,
+        0.55
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          0,
+          1024,
+          1536
+        ],
+        "transparentPixels": 219309,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          246,
+          251
+        ]
+      },
+      "sha256": "2b06eb73252e9ddbefa4c30d135764e96e7fa0532c650cd3488509decc0033c8"
+    },
+    {
+      "state": "parallel",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: parallel. TRULY FRONTAL upright face; blue eyes wide and sharply alert with pupils looking slightly SCREEN RIGHT as if checking another task, both brows visibly raised, lips pressed into a tiny determined upward curve. Alert multitasking expression, lively but composed, distinct from restful idle or dreamy thinking.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-ba4a26bd-c471-4b03-8ae0-3bbb52aa06c4.png",
+      "final": "assets/portraits/maid-chibi-parallel-v2.png",
+      "visualReview": "Frontal alert wide eyes and energetic focused brow, faint determined smile; same identity and upright close-up.",
+      "faceCenter": [
+        0.49,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          78,
+          1024,
+          1536
+        ],
+        "transparentPixels": 242698,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          233,
+          245
+        ]
+      },
+      "sha256": "98a6da72ed621801fdff16cf6196296b0d17da9911dbf974efe9731f83fb39d3"
+    },
+    {
+      "state": "compacting",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: compacting. Head just 15 degrees SCREEN LEFT, eyes lowered clearly toward the bottom edge, upper lids half lowered and brows neutrally straight, closed tiny mouth in a faint thoughtful crease. Quiet methodical sorting/consolidating focus, no prop or hand, eyes visibly down rather than upper-left thinking.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-165df7c4-aab3-4733-8760-1bdd650bf281.png",
+      "final": "assets/portraits/maid-chibi-compacting-v2.png",
+      "visualReview": "Down-left gaze, relaxed straight brows and small neutral closed mouth; level head, same close-up framing.",
+      "faceCenter": [
+        0.46,
+        0.57
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          88,
+          1024,
+          1536
+        ],
+        "transparentPixels": 258446,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          245,
+          248
+        ]
+      },
+      "sha256": "1fa24cedecd4b118d6b076a401b6a7b1f36d718098382cfa8b4bdf6094e77b35"
+    },
+    {
+      "state": "retrying",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: retrying. TRULY FRONTAL upright face; eyebrows firmly gathered inward, blue eyes slightly narrowed with steady direct gaze, closed mouth small and determined with lips subtly compressed. Resolute patient retry after a setback, no panic or tears; more determined than waiting.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-cce25578-2fb1-41f3-a377-5cbbbbcebb92.png",
+      "final": "assets/portraits/maid-chibi-retrying-v2.png",
+      "visualReview": "Frontal firm inward brows and determined small frown, direct eyes; no panic/tears, same identity.",
+      "faceCenter": [
+        0.49,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          81,
+          1024,
+          1536
+        ],
+        "transparentPixels": 250085,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          250,
+          208
+        ]
+      },
+      "sha256": "af040664155fdcbf1e0f09507abf1e6ce17ff3f36dd93eea002242538128f3c9"
+    },
+    {
+      "state": "waiting",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: waiting. TRULY FRONTAL upright face looking directly at viewer; eyebrows softly raised inviting a reply, both eyes open attentively, tiny mouth gently parted as if waiting for confirmation. Patient gentle questioning expression, no grin, no props.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-94f60772-b3fc-4658-a65f-266869576d97.png",
+      "final": "assets/portraits/maid-chibi-waiting-v2.png",
+      "visualReview": "Frontal attentive open eyes, gently raised brows and small round mouth, same upright close-up.",
+      "faceCenter": [
+        0.49,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          80,
+          1024,
+          1536
+        ],
+        "transparentPixels": 240905,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          249,
+          251
+        ]
+      },
+      "sha256": "c63bd25849316c6f1c20994f9cd9be4416e852eee5d9f734ded0e460a64dee4d"
+    },
+    {
+      "state": "complete",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: complete. TRULY FRONTAL level head; both eyes gently CLOSED into smooth joyful arcs, brows relaxed, tiny closed mouth clearly curved into a delighted but refined satisfied smile. Obvious finished/pleased state, calm rather than exuberant, no icons/confetti.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-b51fda8c-353e-4195-8a08-c88ade4b70c1.png",
+      "final": "assets/portraits/maid-chibi-complete-v2.png",
+      "visualReview": "Frontal softly closed smiling eyes and clear gentle closed-mouth smile, same identity/framing.",
+      "faceCenter": [
+        0.49,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          83,
+          1024,
+          1536
+        ],
+        "transparentPixels": 269227,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          202,
+          193
+        ]
+      },
+      "sha256": "91b49ba7e5a38b7216681e8c9d528b5c7a923702c8fa4b7a2a57fc9b171e722d"
+    },
+    {
+      "state": "error",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: error. TRULY FRONTAL level head; both eyes open visibly wider in surprised concern, inner eyebrow corners raised and knitted, tiny mouth downturned with a small parted opening. Clear worried discovery of an error, no crying, panic, tears or comedic marks.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-b5f3efde-f13e-4d2f-8122-ce7194582b7b.png",
+      "final": "assets/portraits/maid-chibi-error-v2.png",
+      "visualReview": "Frontal concerned open eyes, raised knitted inner brows and small worried parted mouth, no tears or symbols.",
+      "faceCenter": [
+        0.49,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          0,
+          1024,
+          1536
+        ],
+        "transparentPixels": 213261,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          232,
+          244
+        ]
+      },
+      "sha256": "b43c7920d0733a1b47697513663fc1b2acb70005fc17305a5019d5bd03c253e9"
+    },
+    {
+      "state": "queued",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: queued. Head 15 degrees SCREEN LEFT, pupils resting toward screen left, upper eyelids gently lowered to a patient half-open attentive gaze; relaxed horizontal brows and tiny neutral flat closed mouth. Quiet waiting in a queue, neither asleep nor sad nor actively concentrating.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-9eca628c-e9ad-4006-a5b7-4807a01abf10.png",
+      "final": "assets/portraits/maid-chibi-queued-v2.png",
+      "visualReview": "Patient half-lidded leftward gaze and small neutral mouth, same upright close-up.",
+      "faceCenter": [
+        0.46,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          2,
+          1024,
+          1536
+        ],
+        "transparentPixels": 271064,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          236,
+          248
+        ]
+      },
+      "sha256": "c416bf720af85688b3f3cac8131f3c9ba83a659ceea443357aff1dbb54adf142"
+    },
+    {
+      "state": "connecting",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: connecting. TRULY FRONTAL level head; eyes look slightly UP as she listens for connection, eyebrows visibly lifted in alert hopeful curiosity, tiny mouth forms a small open round o. Listening/establishing contact rather than talking, no hands or symbols.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-cf472498-a94a-47f1-ac64-de657666f347.png",
+      "final": "assets/portraits/maid-chibi-connecting-v2.png",
+      "visualReview": "Frontal upward-looking attentive eyes, raised brows and small round mouth; same identity.",
+      "faceCenter": [
+        0.49,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          1,
+          1024,
+          1536
+        ],
+        "transparentPixels": 241662,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          199,
+          247
+        ]
+      },
+      "sha256": "46b39593e3a8b3ac0e5c88c16e0aba32cfef8fbd7602f7bff21ff659dcd79205"
+    },
+    {
+      "state": "disconnected",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: disconnected. TRULY FRONTAL level head; eyes cast clearly DOWN with heavy worried upper lids, inner brows lifted into a gentle sad arch, tiny closed mouth noticeably downturned. Subdued concern for lost connection, distinct from wide-eyed error surprise, no tears.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-5464ddb4-9a5d-4a13-8b13-1fa3982d3b9b.png",
+      "final": "assets/portraits/maid-chibi-disconnected-v2.png",
+      "visualReview": "Frontal lowered heavy eyes, worried inner brows and downturned closed mouth, distinct from surprised error.",
+      "faceCenter": [
+        0.49,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          92,
+          1024,
+          1536
+        ],
+        "transparentPixels": 241201,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          236,
+          213
+        ]
+      },
+      "sha256": "23cf4a7fdd69e5bfaa37096366f52daaf56c07a5df167b737dad1cb31eb6a43d"
+    },
+    {
+      "state": "stopped",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: stopped. TRULY FRONTAL upright level head; half-open blue eyes facing viewer, brows calmly level, tiny CLOSED mouth held straight neutral. Settled calm attentive halt, fully awake, no smile or concern, visually less focused than working.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-1c93b665-275c-41e9-9220-15c5d19b8c3f.png",
+      "final": "assets/portraits/maid-chibi-stopped-v2.png",
+      "visualReview": "Frontal open calm eyes with level brows and tiny flat closed mouth; alert neutral settled halt.",
+      "faceCenter": [
+        0.49,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          81,
+          1024,
+          1536
+        ],
+        "transparentPixels": 240350,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          249,
+          246
+        ]
+      },
+      "sha256": "5df2c1afc486a3153532abba75aab5d95b798c4363c54492ade0f5f5fd0a4d23"
+    },
+    {
+      "state": "paused",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: paused. TRULY FRONTAL level upright head; BOTH eyes fully CLOSED in relaxed restful curves, brows softly neutral, tiny CLOSED mouth flat and relaxed without a smile. Peaceful pause/rest rather than completion celebration, no sleep symbols.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-2989c1f9-e7b8-44d4-9fb2-142c4dc11516.png",
+      "final": "assets/portraits/maid-chibi-paused-v2.png",
+      "visualReview": "Frontal closed restful eyes and neutral closed mouth without smile, clearly different from completion.",
+      "faceCenter": [
+        0.49,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          81,
+          1024,
+          1536
+        ],
+        "transparentPixels": 268027,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          248,
+          241
+        ]
+      },
+      "sha256": "d90b3c112a58ef3e315cd35a9479f889e2d5185627af43c794d80d9222053af4"
+    },
+    {
+      "state": "blocked",
+      "prompt": "Use case: identity-preserve. Edit the supplied image as the only identity/composition anchor. Produce ONE finished premium anime chibi maid SHOULDER-UP portrait, on a genuinely transparent alpha background, at 1024x1536. Lock the close-up composition: large head and face about 600px across, head crown near y=95, face center and head scale matching the reference, shoulders and navy collar bow remain at the bottom. Keep her same dark sapphire-blue hair, enormous detailed blue eyes, white ruffled maid headband, bright blue whale-tail hair ornament on SCREEN RIGHT, right braided hair detail, dangling blue diamond/pearl accessories, navy maid shoulders and white ruffles with jeweled navy collar bow. Keep the neck upright and head LEVEL, with no habitual sideways tilt. Crisp native-resolution linework and rich eye detail, refined cute chibi proportions; do not convert to a realistic or tall adult face. Change ONLY the specified head yaw and/or facial expression. No hands, no props, no extra limbs, no full body, no text, logos, watermark, UI, backdrop, black/white rectangle, opaque glow or painted halo. Preserve genuine transparent edges and original portrait framing.\nSTATE: blocked. TRULY FRONTAL level head looking at viewer; ONE eyebrow visibly raised while the other gently furrowed, wide eyes with a questioning direct gaze, tiny mouth parted to one side in an uncertain question. Asking for a decision because progress is blocked, no panic, no hand or symbols.\nMake the expression clearly readable in eyebrows, eyelids, pupils and mouth while preserving the same close-up head scale/center and shoulders. Camera and crop remain locked.",
+      "references": [
+        "generated://exec-1ff1970b-b4d8-4e27-8ec7-d4a8f2e4c002.png"
+      ],
+      "original": "generated://exec-b064622f-fc41-4668-89c1-901b5b220aa9.png",
+      "final": "assets/portraits/maid-chibi-blocked-v2.png",
+      "visualReview": "Frontal questioning asymmetric eyebrows and small parted mouth, direct eyes; upright identity/framing.",
+      "faceCenter": [
+        0.49,
+        0.56
+      ],
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          84,
+          1024,
+          1536
+        ],
+        "transparentPixels": 266170,
+        "totalPixels": 1572864,
+        "cornerAlpha": [
+          0,
+          0,
+          250,
+          247
+        ]
+      },
+      "sha256": "88898ee03e4b77c90a7ef08c256ed60879a40c2b7246451abba4313234d9b583"
+    }
+  ]
+}
